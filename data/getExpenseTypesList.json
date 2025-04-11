@@ -1,0 +1,732 @@
+[
+    {
+        "id_despesa": 70,
+        "cod_despesa": "01.01.01",
+        "despesa": "FOLHA NORMAL"
+    },
+    {
+        "id_despesa": 71,
+        "cod_despesa": "01.01.02",
+        "despesa": "13º SALÁRIO"
+    },
+    {
+        "id_despesa": 72,
+        "cod_despesa": "01.01.03",
+        "despesa": "FÉRIAS"
+    },
+    {
+        "id_despesa": 167,
+        "cod_despesa": "01.01.04",
+        "despesa": "RESCISÃO CONTRATUAL"
+    },
+    {
+        "id_despesa": 243,
+        "cod_despesa": "01.01.05",
+        "despesa": "1/3 DE FÉRIAS"
+    },
+    {
+        "id_despesa": 244,
+        "cod_despesa": "01.01.06",
+        "despesa": "SALDO SALÁRIO RESCISÃO"
+    },
+    {
+        "id_despesa": 73,
+        "cod_despesa": "01.02.01",
+        "despesa": "VALE TRANSPORTE"
+    },
+    {
+        "id_despesa": 74,
+        "cod_despesa": "01.02.02",
+        "despesa": "CESTA BÁSICA"
+    },
+    {
+        "id_despesa": 75,
+        "cod_despesa": "01.02.03",
+        "despesa": "CONVÊNIOS"
+    },
+    {
+        "id_despesa": 154,
+        "cod_despesa": "01.02.04",
+        "despesa": "VALE ALIMENTAÇÃO"
+    },
+    {
+        "id_despesa": 179,
+        "cod_despesa": "01.02.05",
+        "despesa": "VALE REFEIÇÃO"
+    },
+    {
+        "id_despesa": 201,
+        "cod_despesa": "01.02.06",
+        "despesa": "VALE COMBUSTÍVEL"
+    },
+    {
+        "id_despesa": 233,
+        "cod_despesa": "01.02.07",
+        "despesa": "AUXÍLIO MORADIA (MAIS MÉDICOS)"
+    },
+    {
+        "id_despesa": 236,
+        "cod_despesa": "01.02.08",
+        "despesa": "SEGURO DE VIDA"
+    },
+    {
+        "id_despesa": 76,
+        "cod_despesa": "01.03.01",
+        "despesa": "FGTS"
+    },
+    {
+        "id_despesa": 77,
+        "cod_despesa": "01.03.02",
+        "despesa": "OUTROS DESCONTOS DE ENCARGOS e CONTRIBUIÇÕES"
+    },
+    {
+        "id_despesa": 78,
+        "cod_despesa": "01.03.03",
+        "despesa": "ADICIONAL 1/3 DE FÉRIAS- OUTROS DESCONTOS"
+    },
+    {
+        "id_despesa": 155,
+        "cod_despesa": "01.03.04",
+        "despesa": "INSS S/ FOPAG"
+    },
+    {
+        "id_despesa": 156,
+        "cod_despesa": "01.03.05",
+        "despesa": "IRRF S/ FOPAG"
+    },
+    {
+        "id_despesa": 157,
+        "cod_despesa": "01.03.06",
+        "despesa": "FGTS Recisão"
+    },
+    {
+        "id_despesa": 171,
+        "cod_despesa": "01.03.07",
+        "despesa": "PIS S/FOPAG"
+    },
+    {
+        "id_despesa": 196,
+        "cod_despesa": "01.03.08",
+        "despesa": "EMPRÉSTIMO CONSIGNADO"
+    },
+    {
+        "id_despesa": 259,
+        "cod_despesa": "01.03.09",
+        "despesa": "ISS - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)"
+    },
+    {
+        "id_despesa": 260,
+        "cod_despesa": "01.03.10",
+        "despesa": "INSS - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)"
+    },
+    {
+        "id_despesa": 261,
+        "cod_despesa": "01.03.11",
+        "despesa": "IR - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)"
+    },
+    {
+        "id_despesa": 98,
+        "cod_despesa": "01.04.01",
+        "despesa": "OUTRAS DESPESAS DE PESSOAL"
+    },
+    {
+        "id_despesa": 199,
+        "cod_despesa": "01.04.02",
+        "despesa": "BLOQUEIO JUDICIAL"
+    },
+    {
+        "id_despesa": 225,
+        "cod_despesa": "01.04.03",
+        "despesa": "TRANSFERÊNCIA DE PROVISIONAMENTO PARA OUTRO CONTRATO"
+    },
+    {
+        "id_despesa": 158,
+        "cod_despesa": "01.05.01",
+        "despesa": "PAGAMENTOS A AUTÔNOMOS"
+    },
+    {
+        "id_despesa": 160,
+        "cod_despesa": "01.06.01",
+        "despesa": "PAGAMENTOS A ESTAGIÁRIOS"
+    },
+    {
+        "id_despesa": 198,
+        "cod_despesa": "01.06.02",
+        "despesa": "PAGAMENTO A BOLSISTAS"
+    },
+    {
+        "id_despesa": 224,
+        "cod_despesa": "01.06.03",
+        "despesa": "SERVIÇOS MÉDICOS ( DESABILITADO A PARTIR DA COMPETÊNCIA DE OUTUBRO DE 2019)"
+    },
+    {
+        "id_despesa": 99,
+        "cod_despesa": "02.01.01",
+        "despesa": "MATERIAL DE ESCRITÓRIO/PAPÉIS EM GERAL/ IMPRESSOS"
+    },
+    {
+        "id_despesa": 100,
+        "cod_despesa": "02.02.01",
+        "despesa": "MATERIAL DE INFORMÁTICA"
+    },
+    {
+        "id_despesa": 79,
+        "cod_despesa": "02.03.01",
+        "despesa": "MANUTENÇÃO PREDIAL"
+    },
+    {
+        "id_despesa": 80,
+        "cod_despesa": "02.03.02",
+        "despesa": "PEÇAS DE EQUIPAMENTOS EM GERAL"
+    },
+    {
+        "id_despesa": 81,
+        "cod_despesa": "02.03.03",
+        "despesa": "PEÇAS DE EQUIPAMENTOS INFORMÁTICA"
+    },
+    {
+        "id_despesa": 82,
+        "cod_despesa": "02.03.04",
+        "despesa": "FERRAMENTAS AVULSAS NÃO ACIONADAS POR FORÇA MOTRIZ"
+    },
+    {
+        "id_despesa": 101,
+        "cod_despesa": "02.04.01",
+        "despesa": "COMBUSTÍVEIS"
+    },
+    {
+        "id_despesa": 102,
+        "cod_despesa": "02.05.01",
+        "despesa": "MATERIAL DE LIMPEZA"
+    },
+    {
+        "id_despesa": 103,
+        "cod_despesa": "02.06.01",
+        "despesa": "GÊNEROS ALIMENTÍCIOS"
+    },
+    {
+        "id_despesa": 83,
+        "cod_despesa": "02.07.01",
+        "despesa": "MEDICAMENTOS e INSUMOS FARMACÊUTICOS"
+    },
+    {
+        "id_despesa": 84,
+        "cod_despesa": "02.07.02",
+        "despesa": "GASES MEDICINAIS(FORNECIMENTO)"
+    },
+    {
+        "id_despesa": 189,
+        "cod_despesa": "02.07.03",
+        "despesa": "Materiais para Laboratórios"
+    },
+    {
+        "id_despesa": 249,
+        "cod_despesa": "02.07.04",
+        "despesa": "SANEANTES"
+    },
+    {
+        "id_despesa": 250,
+        "cod_despesa": "02.07.05",
+        "despesa": "MATERIAL DE USO ODONTOLÓGICO"
+    },
+    {
+        "id_despesa": 251,
+        "cod_despesa": "02.07.06",
+        "despesa": "MATERIAL DE RADIOLOGIA"
+    },
+    {
+        "id_despesa": 252,
+        "cod_despesa": "02.07.07",
+        "despesa": "MATERIAL DE HEMOTERAPIA"
+    },
+    {
+        "id_despesa": 253,
+        "cod_despesa": "02.07.08",
+        "despesa": "MATERIAL PARA USO VETERINÁRIO"
+    },
+    {
+        "id_despesa": 254,
+        "cod_despesa": "02.07.09",
+        "despesa": "NUTRIÇÃO PARENTERAL"
+    },
+    {
+        "id_despesa": 255,
+        "cod_despesa": "02.07.10",
+        "despesa": "NUTRIÇÃO ENTERAL"
+    },
+    {
+        "id_despesa": 104,
+        "cod_despesa": "02.08.01",
+        "despesa": "MATERIAL EDUCATIVO/ESPORTIVO/CULTURAL"
+    },
+    {
+        "id_despesa": 105,
+        "cod_despesa": "02.09.01",
+        "despesa": "LIVROS/JORNAIS/PUBLICAÇÕES EM GERAL"
+    },
+    {
+        "id_despesa": 106,
+        "cod_despesa": "02.10.01",
+        "despesa": "MATERIAL DE CONSTRUÇÃO"
+    },
+    {
+        "id_despesa": 107,
+        "cod_despesa": "02.11.01",
+        "despesa": "VESTUÁRIO"
+    },
+    {
+        "id_despesa": 108,
+        "cod_despesa": "02.12.01",
+        "despesa": "OUTRAS DESPESAS DE CONSUMO"
+    },
+    {
+        "id_despesa": 185,
+        "cod_despesa": "02.13.01",
+        "despesa": "COMPOSIÇÃO DO FUNDO FIXO"
+    },
+    {
+        "id_despesa": 188,
+        "cod_despesa": "02.14.01",
+        "despesa": "Materiais Hospitalares"
+    },
+    {
+        "id_despesa": 240,
+        "cod_despesa": "02.14.02",
+        "despesa": "OPME (ÓRTESE, PRÓTESE E MATERIAIS ESPECIAIS)"
+    },
+    {
+        "id_despesa": 256,
+        "cod_despesa": "02.14.03",
+        "despesa": "ENXOVAL HOSPITALAR"
+    },
+    {
+        "id_despesa": 258,
+        "cod_despesa": "02.15.01",
+        "despesa": "MATERIAIS PARA EQUIPAMENTOS HOSPITALARES"
+    },
+    {
+        "id_despesa": 267,
+        "cod_despesa": "02.16.01",
+        "despesa": "MATERIAL DE GUARDA VIDA"
+    },
+    {
+        "id_despesa": 85,
+        "cod_despesa": "03.01.01",
+        "despesa": "REPAROS/ADAPTAÇÕES"
+    },
+    {
+        "id_despesa": 86,
+        "cod_despesa": "03.01.02",
+        "despesa": "SERVIÇOS DE DEDETIZAÇÃO/DESRATIZAÇÃO"
+    },
+    {
+        "id_despesa": 109,
+        "cod_despesa": "03.02.01",
+        "despesa": "SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS EM GERAL"
+    },
+    {
+        "id_despesa": 110,
+        "cod_despesa": "03.03.01",
+        "despesa": "SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS DE INFORMÁTICA"
+    },
+    {
+        "id_despesa": 111,
+        "cod_despesa": "03.04.01",
+        "despesa": "LOCAÇÃO DE EQUIPAMENTOS"
+    },
+    {
+        "id_despesa": 112,
+        "cod_despesa": "03.05.01",
+        "despesa": "LOCAÇÃO PREDIAL"
+    },
+    {
+        "id_despesa": 113,
+        "cod_despesa": "03.06.01",
+        "despesa": "LOCAÇÃO CILINDROS GASES MEDICINAIS"
+    },
+    {
+        "id_despesa": 114,
+        "cod_despesa": "03.07.01",
+        "despesa": "LIMPEZA"
+    },
+    {
+        "id_despesa": 115,
+        "cod_despesa": "03.08.01",
+        "despesa": "SEGURANÇA e VIGILÃ‚NCIA"
+    },
+    {
+        "id_despesa": 116,
+        "cod_despesa": "03.09.01",
+        "despesa": "TV A CABO"
+    },
+    {
+        "id_despesa": 117,
+        "cod_despesa": "03.10.01",
+        "despesa": "TELEFONIA A CABO"
+    },
+    {
+        "id_despesa": 118,
+        "cod_despesa": "03.11.01",
+        "despesa": "INTERNET A CABO"
+    },
+    {
+        "id_despesa": 200,
+        "cod_despesa": "03.11.02",
+        "despesa": "INTERNET MÓVEL"
+    },
+    {
+        "id_despesa": 119,
+        "cod_despesa": "03.12.01",
+        "despesa": "OUTROS SERVIÇOS DE INTERNET"
+    },
+    {
+        "id_despesa": 176,
+        "cod_despesa": "03.12.02",
+        "despesa": "SERVIÇOS DE IMPLANTAÇÃO DE SISTEMAS"
+    },
+    {
+        "id_despesa": 120,
+        "cod_despesa": "03.13.01",
+        "despesa": "CURSOS E TREINAMENTOS"
+    },
+    {
+        "id_despesa": 121,
+        "cod_despesa": "03.14.01",
+        "despesa": "SERVIÇOS DE LAVANDERIA"
+    },
+    {
+        "id_despesa": 87,
+        "cod_despesa": "03.15.01",
+        "despesa": "SERVIÇOS DE CONSULTORIA PESSOA JURÍDICA"
+    },
+    {
+        "id_despesa": 88,
+        "cod_despesa": "03.15.02",
+        "despesa": "SERVIÇOS DE CONSULTORIA PESSOA FÍSICA"
+    },
+    {
+        "id_despesa": 122,
+        "cod_despesa": "03.16.01",
+        "despesa": "SEGUROS"
+    },
+    {
+        "id_despesa": 123,
+        "cod_despesa": "03.17.01",
+        "despesa": "CONDOMÍNIO"
+    },
+    {
+        "id_despesa": 182,
+        "cod_despesa": "03.17.02",
+        "despesa": "ALUGUEL"
+    },
+    {
+        "id_despesa": 124,
+        "cod_despesa": "03.18.01",
+        "despesa": "HONORÁRIOS ADVOCATÍCIOS"
+    },
+    {
+        "id_despesa": 89,
+        "cod_despesa": "03.19.01",
+        "despesa": "REGIME DE QUILOMETRAGEM"
+    },
+    {
+        "id_despesa": 90,
+        "cod_despesa": "03.19.02",
+        "despesa": "PEDÁGIO"
+    },
+    {
+        "id_despesa": 91,
+        "cod_despesa": "03.19.03",
+        "despesa": "PASSAGENS AÉREAS"
+    },
+    {
+        "id_despesa": 92,
+        "cod_despesa": "03.19.04",
+        "despesa": "PASSAGENS RODOVIÁRIAS"
+    },
+    {
+        "id_despesa": 93,
+        "cod_despesa": "03.19.05",
+        "despesa": "LOCAÇÃO DE VEÍCULOS/AERONAVES/OUTROS"
+    },
+    {
+        "id_despesa": 94,
+        "cod_despesa": "03.19.06",
+        "despesa": "DESPESAS COM TÁXI"
+    },
+    {
+        "id_despesa": 95,
+        "cod_despesa": "03.19.07",
+        "despesa": "OUTRAS DESPESAS COM TRANSPORTE E LOCOMOÇÃO"
+    },
+    {
+        "id_despesa": 170,
+        "cod_despesa": "03.19.08",
+        "despesa": "FRETES"
+    },
+    {
+        "id_despesa": 172,
+        "cod_despesa": "03.19.09",
+        "despesa": "LOCAÇÃO DE AMBULANCIA / CEGONHA"
+    },
+    {
+        "id_despesa": 125,
+        "cod_despesa": "03.20.01",
+        "despesa": "DESPESAS COM HOSPEDAGEM e ALIMENTAÇÃO"
+    },
+    {
+        "id_despesa": 186,
+        "cod_despesa": "03.20.02",
+        "despesa": "SERVIÇOS DE ALIMENTAÇÃO"
+    },
+    {
+        "id_despesa": 126,
+        "cod_despesa": "03.21.01",
+        "despesa": "DESPESAS COM PROPAGANDA E PUBLICIDADE"
+    },
+    {
+        "id_despesa": 127,
+        "cod_despesa": "03.22.01",
+        "despesa": "OUTROS SERVIÇOS DE TERCEIROS"
+    },
+    {
+        "id_despesa": 175,
+        "cod_despesa": "03.22.02",
+        "despesa": "DESPESAS CARTORARIAS"
+    },
+    {
+        "id_despesa": 180,
+        "cod_despesa": "03.22.03",
+        "despesa": "SERVIÇO DE RAIO X"
+    },
+    {
+        "id_despesa": 181,
+        "cod_despesa": "03.22.04",
+        "despesa": "SERVIÇOS DE ESTERILIZAÇÃO "
+    },
+    {
+        "id_despesa": 194,
+        "cod_despesa": "03.22.05",
+        "despesa": "SERVIÇOS DE ULTRASSOM"
+    },
+    {
+        "id_despesa": 193,
+        "cod_despesa": "03.22.06",
+        "despesa": "SERVIÇOS DE ANÁLISES CLÍNICAS"
+    },
+    {
+        "id_despesa": 195,
+        "cod_despesa": "03.22.07",
+        "despesa": "SERVIÇOS DE SADT (Serviço Auxiliar de Diagnostico e Terapia)"
+    },
+    {
+        "id_despesa": 183,
+        "cod_despesa": "03.23.01",
+        "despesa": "SERVIÇOS TÉCNICOS ESPECIALIZADOS"
+    },
+    {
+        "id_despesa": 184,
+        "cod_despesa": "03.23.02",
+        "despesa": "SERVIÇOS DE APOIO A GESTÃO"
+    },
+    {
+        "id_despesa": 229,
+        "cod_despesa": "03.24.01",
+        "despesa": "SERVICOS DE LIMPEZA E TRATAMENTO DE PISCINAS NAS UNIDADES ESPORTIVAS"
+    },
+    {
+        "id_despesa": 231,
+        "cod_despesa": "03.25.01",
+        "despesa": "EVENTOS DA UNIDADE ESPORTIVA"
+    },
+    {
+        "id_despesa": 238,
+        "cod_despesa": "03.26.01",
+        "despesa": "EXAMES MÉDICOS OCUPACIONAIS"
+    },
+    {
+        "id_despesa": 239,
+        "cod_despesa": "03.26.02",
+        "despesa": "PERFIL PROFISSIOGRÁFICO PREVIDENCIÁRIO"
+    },
+    {
+        "id_despesa": 128,
+        "cod_despesa": "04.01.01",
+        "despesa": "ISS"
+    },
+    {
+        "id_despesa": 246,
+        "cod_despesa": "04.01.02",
+        "despesa": "ISS - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)"
+    },
+    {
+        "id_despesa": 129,
+        "cod_despesa": "04.02.01",
+        "despesa": "PIS/COFINS/CSLL"
+    },
+    {
+        "id_despesa": 130,
+        "cod_despesa": "04.03.01",
+        "despesa": "INSS SOBRE PRESTAÇÃO DE SERVIÇOS"
+    },
+    {
+        "id_despesa": 247,
+        "cod_despesa": "04.03.02",
+        "despesa": "INSS - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)"
+    },
+    {
+        "id_despesa": 131,
+        "cod_despesa": "04.04.01",
+        "despesa": "IR SOBRE PRESTAÇÃO DE SERVIÇOS"
+    },
+    {
+        "id_despesa": 248,
+        "cod_despesa": "04.04.02",
+        "despesa": "IR - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)"
+    },
+    {
+        "id_despesa": 132,
+        "cod_despesa": "04.05.01",
+        "despesa": "IPTU"
+    },
+    {
+        "id_despesa": 162,
+        "cod_despesa": "04.06.01",
+        "despesa": "OUTRAS TAXAS/IMPOSTOS/CONTRIBUIÇÕES"
+    },
+    {
+        "id_despesa": 133,
+        "cod_despesa": "05.01.01",
+        "despesa": "ÁGUA"
+    },
+    {
+        "id_despesa": 134,
+        "cod_despesa": "05.02.01",
+        "despesa": "ENERGIA ELÉTRICA"
+    },
+    {
+        "id_despesa": 135,
+        "cod_despesa": "05.03.01",
+        "despesa": "GÁS"
+    },
+    {
+        "id_despesa": 136,
+        "cod_despesa": "05.04.01",
+        "despesa": "TELEFONIA FIXA"
+    },
+    {
+        "id_despesa": 137,
+        "cod_despesa": "05.05.01",
+        "despesa": "TELEFONIA CELULAR"
+    },
+    {
+        "id_despesa": 139,
+        "cod_despesa": "05.06.01",
+        "despesa": "TELEFONIA VIA RÁDIO"
+    },
+    {
+        "id_despesa": 140,
+        "cod_despesa": "05.07.01",
+        "despesa": "CORREIO"
+    },
+    {
+        "id_despesa": 141,
+        "cod_despesa": "05.08.01",
+        "despesa": "COLETA DE LIXO ESPECIAL"
+    },
+    {
+        "id_despesa": 142,
+        "cod_despesa": "06.01.01",
+        "despesa": "EQUIPAMENTOS MÉDICO-HOSPITALARES"
+    },
+    {
+        "id_despesa": 163,
+        "cod_despesa": "06.01.02",
+        "despesa": "EQUIPAMENTOS DE INFORMÁTICA"
+    },
+    {
+        "id_despesa": 164,
+        "cod_despesa": "06.01.03",
+        "despesa": "OUTROS EQUIPAMENTOS"
+    },
+    {
+        "id_despesa": 143,
+        "cod_despesa": "06.02.01",
+        "despesa": "MOBILIÁRIO"
+    },
+    {
+        "id_despesa": 144,
+        "cod_despesa": "06.03.01",
+        "despesa": "VEÍCULOS"
+    },
+    {
+        "id_despesa": 145,
+        "cod_despesa": "06.04.01",
+        "despesa": "OUTROS BENS DURÁVEIS"
+    },
+    {
+        "id_despesa": 146,
+        "cod_despesa": "07.01.01",
+        "despesa": "PREMIAÇÕES CULTURAIS/ ARTÍSTICA/ CIENTÍFICAS/DESPORTIVAS"
+    },
+    {
+        "id_despesa": 147,
+        "cod_despesa": "07.02.01",
+        "despesa": "MATERIAL PARA DISTRIBUIÇÃO GRATUITA"
+    },
+    {
+        "id_despesa": 241,
+        "cod_despesa": "07.03.01",
+        "despesa": "MULTAS E JUROS"
+    },
+    {
+        "id_despesa": 269,
+        "cod_despesa": "07.04.01",
+        "despesa": "Bolsa Auxílio Aluno"
+    },
+    {
+        "id_despesa": 270,
+        "cod_despesa": "07.04.02",
+        "despesa": "Auxílio Transporte Aluno"
+    },
+    {
+        "id_despesa": 148,
+        "cod_despesa": "08.01.01",
+        "despesa": "TAXAS E TARIFAS"
+    },
+    {
+        "id_despesa": 152,
+        "cod_despesa": "08.01.02",
+        "despesa": "OUTRAS DESPESAS BANCÁRIAS"
+    },
+    {
+        "id_despesa": 205,
+        "cod_despesa": "09.01.01",
+        "despesa": "CONCESSÃO DE EMPRÉSTIMO"
+    },
+    {
+        "id_despesa": 206,
+        "cod_despesa": "09.01.02",
+        "despesa": "REEMBOLSO DE EMPRÉSTIMO"
+    },
+    {
+        "id_despesa": 222,
+        "cod_despesa": "09.02.01",
+        "despesa": "TRANSFERÊNCIA DA CONTA EXECUÇÃO PARA PROVISIONAMENTO"
+    },
+    {
+        "id_despesa": 232,
+        "cod_despesa": "09.02.02",
+        "despesa": "TRANSFERÊNCIA DA CONTA DE PROVISIONAMENTO PARA EXECUÇÃO"
+    },
+    {
+        "id_despesa": 235,
+        "cod_despesa": "09.03.01",
+        "despesa": "ESTORNO DE RECEITA"
+    },
+    {
+        "id_despesa": 263,
+        "cod_despesa": "09.04.01",
+        "despesa": "PAGAMENTO INDEVIDO"
+    }
+]

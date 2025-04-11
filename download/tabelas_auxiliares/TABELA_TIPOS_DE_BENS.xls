@@ -1,0 +1,46 @@
+<table width="55%" align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" border="0"  bgcolor="#FFFFFF" border="1"  ><tr bgcolor="#FFFFFF">
+					<td><img src="http://osinfo1.prefeitura.rio///imagens/logo_pref_rj.jpg" style="float:left;padding:10px"></td>
+					<td colspan="1" align="left" nowrap="true" >
+						<br/>Lista Bens&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border:0;font: normal normal normal 11px Verdana, Sans-Serif;" valign="top" align="right" width="1%" nowrap="true" >11-04-2025 11:45</span>
+						<br/>
+						
+					</td>
+				</tr><tr class="titulo">
+					<td>CÓDIGO</td><td>DESCRIÇÃO</td>
+				 </tr>
+					<tr class="linha_escuro">
+						<td nowrap width="5%" >1</td>
+						<td nowrap width="95%" >Veículos</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="5%" >2</td>
+						<td nowrap width="95%" >Mobiliário</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="5%" >3</td>
+						<td nowrap width="95%" >Equipamentos Médicos/Hospitalares</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="5%" >4</td>
+						<td nowrap width="95%" >Equipamentos Odontológicos</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="5%" >5</td>
+						<td nowrap width="95%" >Equipamentos em Geral</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="5%" >6</td>
+						<td nowrap width="95%" >Outros Bens Duráveis</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="5%" >7</td>
+						<td nowrap width="95%" >Eletrodomésticos</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="5%" >8</td>
+						<td nowrap width="95%" >Equipamentos de informática</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="5%" >9</td>
+						<td nowrap width="95%" >Não foram adquiridos novos bens no mês</td>
+					</tr></table>

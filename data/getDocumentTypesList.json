@@ -1,0 +1,122 @@
+[
+    {
+        "id_tipo_documento": 1,
+        "cod_tipo_documento": "NF",
+        "tipo_documento": "Nota Fiscal"
+    },
+    {
+        "id_tipo_documento": 2,
+        "cod_tipo_documento": "DARF",
+        "tipo_documento": "DARF"
+    },
+    {
+        "id_tipo_documento": 3,
+        "cod_tipo_documento": "IR",
+        "tipo_documento": "Imposto de Renda"
+    },
+    {
+        "id_tipo_documento": 4,
+        "cod_tipo_documento": "FGTS",
+        "tipo_documento": "Fundo de Garantia"
+    },
+    {
+        "id_tipo_documento": 5,
+        "cod_tipo_documento": "GPS",
+        "tipo_documento": "GPS"
+    },
+    {
+        "id_tipo_documento": 6,
+        "cod_tipo_documento": "FOLHA",
+        "tipo_documento": "Folha de Pagamento"
+    },
+    {
+        "id_tipo_documento": 7,
+        "cod_tipo_documento": "RECIBO",
+        "tipo_documento": "Recibos Para Pessoa Física"
+    },
+    {
+        "id_tipo_documento": 8,
+        "cod_tipo_documento": "BOLETO",
+        "tipo_documento": "Boleto Bancário"
+    },
+    {
+        "id_tipo_documento": 9,
+        "cod_tipo_documento": "IMPOSTO",
+        "tipo_documento": "Outros Tipos de Impostos"
+    },
+    {
+        "id_tipo_documento": 10,
+        "cod_tipo_documento": "GUIA",
+        "tipo_documento": "Outras Guias de Recolhimento"
+    },
+    {
+        "id_tipo_documento": 11,
+        "cod_tipo_documento": "OUTROS",
+        "tipo_documento": "Outros Tipos de Pagamento"
+    },
+    {
+        "id_tipo_documento": 12,
+        "cod_tipo_documento": "INSS",
+        "tipo_documento": "INSS"
+    },
+    {
+        "id_tipo_documento": 13,
+        "cod_tipo_documento": "RDV",
+        "tipo_documento": "RDV"
+    },
+    {
+        "id_tipo_documento": 15,
+        "cod_tipo_documento": "RPA",
+        "tipo_documento": "RPA"
+    },
+    {
+        "id_tipo_documento": 16,
+        "cod_tipo_documento": "PGCH",
+        "tipo_documento": "Pagamentos em Cheque"
+    },
+    {
+        "id_tipo_documento": 17,
+        "cod_tipo_documento": "PGPA",
+        "tipo_documento": "Recibo de Pensão Alimentícia"
+    },
+    {
+        "id_tipo_documento": 18,
+        "cod_tipo_documento": "PGRF",
+        "tipo_documento": "Recibo de férias"
+    },
+    {
+        "id_tipo_documento": 21,
+        "cod_tipo_documento": "PGRCT",
+        "tipo_documento": "Rescisão de Contrato de Trabalho"
+    },
+    {
+        "id_tipo_documento": 22,
+        "cod_tipo_documento": "KIT",
+        "tipo_documento": "KIT Cegonha Carioca"
+    },
+    {
+        "id_tipo_documento": 23,
+        "cod_tipo_documento": "EMPRE",
+        "tipo_documento": "Empréstimos outros contratos"
+    },
+    {
+        "id_tipo_documento": 24,
+        "cod_tipo_documento": "PGEMPR",
+        "tipo_documento": "Pagamento de Empréstimos"
+    },
+    {
+        "id_tipo_documento": 26,
+        "cod_tipo_documento": "DARM",
+        "tipo_documento": "Documento de Arrecadação de Receitas Municipais"
+    },
+    {
+        "id_tipo_documento": 27,
+        "cod_tipo_documento": "EXTRATO",
+        "tipo_documento": "Extrato"
+    },
+    {
+        "id_tipo_documento": 28,
+        "cod_tipo_documento": "CONTRATO",
+        "tipo_documento": "Contrato"
+    }
+]

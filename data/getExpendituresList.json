@@ -1,0 +1,3514 @@
+[
+    {
+        "id_rubrica": 1,
+        "rubrica": "Gestão do TEIAS"
+    },
+    {
+        "id_rubrica": 2,
+        "rubrica": "Parte Variável 3 (profissionais)"
+    },
+    {
+        "id_rubrica": 3,
+        "rubrica": "Transferência de recursos entre contratos"
+    },
+    {
+        "id_rubrica": 4,
+        "rubrica": "Invest. / Resgates de Aplicações Financeiras"
+    },
+    {
+        "id_rubrica": 5,
+        "rubrica": "RH equipe NASF"
+    },
+    {
+        "id_rubrica": 6,
+        "rubrica": "RH -Aten. Famarcêutica"
+    },
+    {
+        "id_rubrica": 7,
+        "rubrica": "Repasse x de y do Contrato de Gestão"
+    },
+    {
+        "id_rubrica": 8,
+        "rubrica": "Apoio à gestão do PADI"
+    },
+    {
+        "id_rubrica": 9,
+        "rubrica": "Investimentos: Material Permanente/Equipamentos Informática/Mobiliário"
+    },
+    {
+        "id_rubrica": 10,
+        "rubrica": "Apoio à gestão do Programa Cegonha Carioca"
+    },
+    {
+        "id_rubrica": 11,
+        "rubrica": "Investimentos: Material Permanente/Equipamentos Informática/Mobiliário"
+    },
+    {
+        "id_rubrica": 12,
+        "rubrica": "Apoio à gestão das Unidades"
+    },
+    {
+        "id_rubrica": 13,
+        "rubrica": "Investimentos: Material Permanente/Equipamentos Informática/Mobiliário"
+    },
+    {
+        "id_rubrica": 14,
+        "rubrica": "Apoio à gestão da CAP"
+    },
+    {
+        "id_rubrica": 15,
+        "rubrica": "Apoio à gestão TEIAS"
+    },
+    {
+        "id_rubrica": 16,
+        "rubrica": "RH/Clínicas S.Família"
+    },
+    {
+        "id_rubrica": 17,
+        "rubrica": "RH/Clínicas S.Família/Equipes Tipo II Saúde Bucal"
+    },
+    {
+        "id_rubrica": 18,
+        "rubrica": "RH/Clínicas S.Família/Equipes de Atenção Farmacêutica"
+    },
+    {
+        "id_rubrica": 19,
+        "rubrica": "Manutenção das Unidades/Ações de educação,vigilância e promoção da saúde"
+    },
+    {
+        "id_rubrica": 20,
+        "rubrica": "Manutenção das Unidades/Contratos e consumo-Unidades de Atenção Primária"
+    },
+    {
+        "id_rubrica": 21,
+        "rubrica": "Manutenção das Unidades/Serviços de Raios X e Ultrassom"
+    },
+    {
+        "id_rubrica": 22,
+        "rubrica": "Manutenção das Unidades/Sistemas de Informação/Prontuário Eletrônico"
+    },
+    {
+        "id_rubrica": 23,
+        "rubrica": "RH ESF Equipe de Saúde na Família"
+    },
+    {
+        "id_rubrica": 24,
+        "rubrica": "RH ESB Equipe de Saúde Tipo II De Saúde Bucal"
+    },
+    {
+        "id_rubrica": 25,
+        "rubrica": "Manutenção das Unidades/Ações de Dengue"
+    },
+    {
+        "id_rubrica": 26,
+        "rubrica": "Adaptações de Instalações/Equipamentos (Clin Fam / Post Saúde Família"
+    },
+    {
+        "id_rubrica": 27,
+        "rubrica": "Parte Variável  1"
+    },
+    {
+        "id_rubrica": 28,
+        "rubrica": "Parte Variável 2 (Unidade de Saúde)"
+    },
+    {
+        "id_rubrica": 29,
+        "rubrica": "Parcela Fixa"
+    },
+    {
+        "id_rubrica": 30,
+        "rubrica": "Parcela de Equipamentos"
+    },
+    {
+        "id_rubrica": 31,
+        "rubrica": "Parcela Variável 1"
+    },
+    {
+        "id_rubrica": 32,
+        "rubrica": "Parcela Variável 2"
+    },
+    {
+        "id_rubrica": 33,
+        "rubrica": "Investimentos: Obras/Reformas"
+    },
+    {
+        "id_rubrica": 34,
+        "rubrica": "Ações de Educação Continuada"
+    },
+    {
+        "id_rubrica": 35,
+        "rubrica": "RH/UPA"
+    },
+    {
+        "id_rubrica": 36,
+        "rubrica": "RH/PADI"
+    },
+    {
+        "id_rubrica": 37,
+        "rubrica": "RH/Cegonha Carioca"
+    },
+    {
+        "id_rubrica": 38,
+        "rubrica": "KIT Cegonha Carioca"
+    },
+    {
+        "id_rubrica": 39,
+        "rubrica": "Exames Laboratoriais por Equipe"
+    },
+    {
+        "id_rubrica": 40,
+        "rubrica": "CAPS - AD"
+    },
+    {
+        "id_rubrica": 41,
+        "rubrica": "Exames Laboratoriais por serviço de apoio especializado NASF"
+    },
+    {
+        "id_rubrica": 42,
+        "rubrica": "Ativação do Pólo 12 hs de Dengue"
+    },
+    {
+        "id_rubrica": 43,
+        "rubrica": "Ativação do Pólo 24 hr de Dengue"
+    },
+    {
+        "id_rubrica": 44,
+        "rubrica": "Apoio a Saúde Básica"
+    },
+    {
+        "id_rubrica": 45,
+        "rubrica": "RH/HOSPITAL MATERNIDADE"
+    },
+    {
+        "id_rubrica": 46,
+        "rubrica": "Serviços Técnicos Operacionais Especializados"
+    },
+    {
+        "id_rubrica": 47,
+        "rubrica": "Serviços de Apoio a Gestão"
+    },
+    {
+        "id_rubrica": 48,
+        "rubrica": "Despesas Gerais Administrativas"
+    },
+    {
+        "id_rubrica": 49,
+        "rubrica": "Material Médico Hospitalar/Medicamentos/Insumos Gerais"
+    },
+    {
+        "id_rubrica": 50,
+        "rubrica": "Utilidade Pública"
+    },
+    {
+        "id_rubrica": 51,
+        "rubrica": "INVESTIMENTOS/ADAPTAÇÃO/AQUISIÇÃO DE BENS PERMANENTES"
+    },
+    {
+        "id_rubrica": 52,
+        "rubrica": "Despesas Gerais não Operacionais"
+    },
+    {
+        "id_rubrica": 53,
+        "rubrica": "TESTE"
+    },
+    {
+        "id_rubrica": 54,
+        "rubrica": "TESTE2"
+    },
+    {
+        "id_rubrica": 55,
+        "rubrica": "Parcela Variável 3"
+    },
+    {
+        "id_rubrica": 56,
+        "rubrica": "OUTROS SERVIÇOS DE INTERNET"
+    },
+    {
+        "id_rubrica": 57,
+        "rubrica": "RH/CER"
+    },
+    {
+        "id_rubrica": 58,
+        "rubrica": "RH - Maternidade"
+    },
+    {
+        "id_rubrica": 59,
+        "rubrica": "RH - Hospitais"
+    },
+    {
+        "id_rubrica": 60,
+        "rubrica": "Despesas de Consumo - CER"
+    },
+    {
+        "id_rubrica": 61,
+        "rubrica": "Despesas de Consumo - Maternidade"
+    },
+    {
+        "id_rubrica": 62,
+        "rubrica": "Despesas de Consumo - Hospitais"
+    },
+    {
+        "id_rubrica": 63,
+        "rubrica": "Serviço de Terceiros - CER"
+    },
+    {
+        "id_rubrica": 64,
+        "rubrica": "Serviço de Terceiros - Maternidade"
+    },
+    {
+        "id_rubrica": 65,
+        "rubrica": "Serviço de Terceiros - Hospitais "
+    },
+    {
+        "id_rubrica": 66,
+        "rubrica": "CUSTO OPERACIONAL ENSP"
+    },
+    {
+        "id_rubrica": 67,
+        "rubrica": "PROFORMAR - CTAVS"
+    },
+    {
+        "id_rubrica": 68,
+        "rubrica": "APOIO OTICS-RIO"
+    },
+    {
+        "id_rubrica": 69,
+        "rubrica": "CRIE"
+    },
+    {
+        "id_rubrica": 70,
+        "rubrica": "PROFORMAR - CTACS"
+    },
+    {
+        "id_rubrica": 71,
+        "rubrica": "APOIO A PESQUISA CLÍNICA"
+    },
+    {
+        "id_rubrica": 72,
+        "rubrica": "CURSO ESPECIALIZAÇÃO SAÚDE PÚBLICA"
+    },
+    {
+        "id_rubrica": 73,
+        "rubrica": "CURSO ATENÇÃO FARMACÊUTICA"
+    },
+    {
+        "id_rubrica": 74,
+        "rubrica": "RESIDÊNCIA MULTIPROFISSIONAL"
+    },
+    {
+        "id_rubrica": 75,
+        "rubrica": "MESTRADO PROFISSIONAL"
+    },
+    {
+        "id_rubrica": 76,
+        "rubrica": "PROJETOS DE PESQUISA"
+    },
+    {
+        "id_rubrica": 77,
+        "rubrica": "PROJETOS SAP/SUBPAV"
+    },
+    {
+        "id_rubrica": 78,
+        "rubrica": "SAÚDE DO TRABALHADOR E ATENÇÃO PRIMÁRIA"
+    },
+    {
+        "id_rubrica": 79,
+        "rubrica": "PROFORMAR - CUSTO OPERACIONAL"
+    },
+    {
+        "id_rubrica": 80,
+        "rubrica": "IPEC SVS"
+    },
+    {
+        "id_rubrica": 81,
+        "rubrica": "ESTAÇÕES OTICS - RIO"
+    },
+    {
+        "id_rubrica": 82,
+        "rubrica": "IPEC SUBPAV CUSTO OPERACIONAL"
+    },
+    {
+        "id_rubrica": 83,
+        "rubrica": "IPEC SVS - CUSTO OPERACIONAL"
+    },
+    {
+        "id_rubrica": 84,
+        "rubrica": "IPEC CRIE - CUSTO OPERACIONAL"
+    },
+    {
+        "id_rubrica": 85,
+        "rubrica": "ICICT - SPS/SUBPAV"
+    },
+    {
+        "id_rubrica": 86,
+        "rubrica": "ICICT - CUSTO OPERACIONAL"
+    },
+    {
+        "id_rubrica": 87,
+        "rubrica": "CUSTO OPERACIONAL BIO"
+    },
+    {
+        "id_rubrica": 88,
+        "rubrica": "PARCELA VARIÁVEL 4 (2% APOIO A GESTÃO)"
+    },
+    {
+        "id_rubrica": 89,
+        "rubrica": "PARCELA VARIÁVEL 5 (3% EQUIPE PROFISSIONAL)"
+    },
+    {
+        "id_rubrica": 90,
+        "rubrica": "Recursos Físicos"
+    },
+    {
+        "id_rubrica": 91,
+        "rubrica": "Proformar ACS"
+    },
+    {
+        "id_rubrica": 92,
+        "rubrica": "CAPSI"
+    },
+    {
+        "id_rubrica": 93,
+        "rubrica": "Despesas de Consumo - UPA"
+    },
+    {
+        "id_rubrica": 94,
+        "rubrica": "Serviço de Terceiros - UPA"
+    },
+    {
+        "id_rubrica": 95,
+        "rubrica": "RH/COPA DO MUNDO FIFA"
+    },
+    {
+        "id_rubrica": 96,
+        "rubrica": "MATERIAL HOSPITALAR/COPA DO MUNDO FIFA"
+    },
+    {
+        "id_rubrica": 97,
+        "rubrica": "TARIFAS (FARE E CART) COPA DO MUNDO  FIFA"
+    },
+    {
+        "id_rubrica": 98,
+        "rubrica": "GÁS MEDICINAL/COPA DO MUNDO FIFA"
+    },
+    {
+        "id_rubrica": 99,
+        "rubrica": "LOCAÇÃO DE EQUIPAMENTOS/COPA DO MUNDO FIFA"
+    },
+    {
+        "id_rubrica": 100,
+        "rubrica": "REFEIÇÕES/COPA DO MUNDO FIFA"
+    },
+    {
+        "id_rubrica": 101,
+        "rubrica": "Serviços de Terceiros - PADI"
+    },
+    {
+        "id_rubrica": 102,
+        "rubrica": "Material de Consumo - PADI"
+    },
+    {
+        "id_rubrica": 103,
+        "rubrica": "RH - CAPS III"
+    },
+    {
+        "id_rubrica": 104,
+        "rubrica": "APOIO A GESTÃO CAPS"
+    },
+    {
+        "id_rubrica": 105,
+        "rubrica": "RH - SERVIÇO DE APOIO ESPECIALIZADO"
+    },
+    {
+        "id_rubrica": 106,
+        "rubrica": "GESTÃO RUE"
+    },
+    {
+        "id_rubrica": 107,
+        "rubrica": "CONTRATO DE CONSUMO - UPA"
+    },
+    {
+        "id_rubrica": 108,
+        "rubrica": "SERVIÇO DE LABORATÓRIO - UPA"
+    },
+    {
+        "id_rubrica": 109,
+        "rubrica": "SISTEMA DE INFORMAÇÃO - UPA"
+    },
+    {
+        "id_rubrica": 110,
+        "rubrica": "SERVIÇO DE RAIO X - UPA"
+    },
+    {
+        "id_rubrica": 111,
+        "rubrica": "Serviços de Oftalmologia Básica, Raio X eÂ Â Ultrassom e prótese dentaria"
+    },
+    {
+        "id_rubrica": 112,
+        "rubrica": "Sistemas de Informação / prontuário eletrônico e Telefonia Saúde da Família"
+    },
+    {
+        "id_rubrica": 113,
+        "rubrica": "Sistemas de Informação / prontuário eletrônico e Telefonia - NASF"
+    },
+    {
+        "id_rubrica": 114,
+        "rubrica": "Consumo - CAPS"
+    },
+    {
+        "id_rubrica": 115,
+        "rubrica": "Rh - Unidade de Pronto Atendimento"
+    },
+    {
+        "id_rubrica": 116,
+        "rubrica": "Medicamento - Unidade de Pronto Atendimento"
+    },
+    {
+        "id_rubrica": 117,
+        "rubrica": "Implantação e Avaliação de Modelos de Educação Permanente em Saúde"
+    },
+    {
+        "id_rubrica": 118,
+        "rubrica": "Apoio às Linhas de Cuidado e Projetos Especiais - SAP"
+    },
+    {
+        "id_rubrica": 119,
+        "rubrica": "Apoio às Ações da Regulação Ambulatorial"
+    },
+    {
+        "id_rubrica": 120,
+        "rubrica": "Apoio ao Monitoramento e Análise de Qualidade de Ações"
+    },
+    {
+        "id_rubrica": 121,
+        "rubrica": "Monitoramento de Vacância nas Equipes"
+    },
+    {
+        "id_rubrica": 122,
+        "rubrica": "Qualificação das Ações e Informações de Vigilância em Saúde"
+    },
+    {
+        "id_rubrica": 123,
+        "rubrica": "Cursos Técnico de Agentes de Vigilância em Saúde"
+    },
+    {
+        "id_rubrica": 124,
+        "rubrica": "Ações Contingenciais para o Enfrentamento da Tuberculose"
+    },
+    {
+        "id_rubrica": 125,
+        "rubrica": "Qualificação das Ações de Vigilância no Controle das DST AIDS e Hepatites Virais"
+    },
+    {
+        "id_rubrica": 126,
+        "rubrica": "Residência de Medicina de Família e Comunidade"
+    },
+    {
+        "id_rubrica": 127,
+        "rubrica": "Especialização em Vigilância em Saúde na Atenção Primária"
+    },
+    {
+        "id_rubrica": 128,
+        "rubrica": "Apoio à Manutenção das Estações OTICS-RIO"
+    },
+    {
+        "id_rubrica": 129,
+        "rubrica": "Gerenciamento, Operacionalização e ExecuçãoÂ Â das Ações de Promoção da Saúde para o ServiÃ"
+    },
+    {
+        "id_rubrica": 130,
+        "rubrica": "Pesquisas Clínicas de Imunobiológicos"
+    },
+    {
+        "id_rubrica": 131,
+        "rubrica": "Parte Variável 1 - UPA"
+    },
+    {
+        "id_rubrica": 132,
+        "rubrica": "Parte Variável 2 - UPA"
+    },
+    {
+        "id_rubrica": 133,
+        "rubrica": "Parte Variável 3 - UPA"
+    },
+    {
+        "id_rubrica": 134,
+        "rubrica": "Rh Equipes de Saúde da Família"
+    },
+    {
+        "id_rubrica": 135,
+        "rubrica": "Contratos, consumo e promoção - Unidades de Atenção Primária"
+    },
+    {
+        "id_rubrica": 136,
+        "rubrica": "APOIO A GESTÃO da RAS/SUS"
+    },
+    {
+        "id_rubrica": 137,
+        "rubrica": "RH CENTRO DE APOIO HOSPITALAR URGÊNCIA E EMERGÊNCIA"
+    },
+    {
+        "id_rubrica": 138,
+        "rubrica": "RH CENTRO DE APOIO AMBULATORIAL"
+    },
+    {
+        "id_rubrica": 139,
+        "rubrica": "Contrato e Consumo"
+    },
+    {
+        "id_rubrica": 140,
+        "rubrica": "RH EQUIPE DE MONITORAMENTO DE OCUPAÇÃO DE LEITOS HOSPITALARES"
+    },
+    {
+        "id_rubrica": 141,
+        "rubrica": "APOIO AOS EVENTOS DE NATAL E REVEILLON"
+    },
+    {
+        "id_rubrica": 142,
+        "rubrica": "APOIO AOS EVENTOS CARNAVAL, ENSAIOS TÉCNICOS, TERREIRÃO, SAMBÓDROMO E BLOCOS DE RUA"
+    },
+    {
+        "id_rubrica": 143,
+        "rubrica": "Custos Gerais / Concessionárias / Investimento"
+    },
+    {
+        "id_rubrica": 144,
+        "rubrica": "Rede de Urgência e Emergência (RUE)"
+    },
+    {
+        "id_rubrica": 145,
+        "rubrica": "Pessoal / Encargos / Provisão"
+    },
+    {
+        "id_rubrica": 146,
+        "rubrica": "Custo Operacional Fiotec"
+    },
+    {
+        "id_rubrica": 147,
+        "rubrica": "ENFERMEIRO/NR"
+    },
+    {
+        "id_rubrica": 148,
+        "rubrica": "RH - Unidade de Parto de Puerpério"
+    },
+    {
+        "id_rubrica": 149,
+        "rubrica": "Custeio - Unidade de Parto e Puerpério"
+    },
+    {
+        "id_rubrica": 150,
+        "rubrica": "RH - Leitos Alto Risco Obstétrico"
+    },
+    {
+        "id_rubrica": 151,
+        "rubrica": "Custeio - Leitos Alto Risco Obstétrico"
+    },
+    {
+        "id_rubrica": 152,
+        "rubrica": "RH- Emergência Obstétrica"
+    },
+    {
+        "id_rubrica": 153,
+        "rubrica": "Custeio - Emergência Obstétrica"
+    },
+    {
+        "id_rubrica": 154,
+        "rubrica": "RH- Ambulatório Pré-natal"
+    },
+    {
+        "id_rubrica": 155,
+        "rubrica": "Custeio- Ambulatório Pré-natal"
+    },
+    {
+        "id_rubrica": 156,
+        "rubrica": "RH- UTIN"
+    },
+    {
+        "id_rubrica": 157,
+        "rubrica": "Custeio - UTIN"
+    },
+    {
+        "id_rubrica": 158,
+        "rubrica": "RH -  Nco/UCI Nca e Cirurgia Neonatal"
+    },
+    {
+        "id_rubrica": 159,
+        "rubrica": "Custeio -Nco/UCI Nca e Cirurgia Neonatal"
+    },
+    {
+        "id_rubrica": 160,
+        "rubrica": "RH - NAIRR"
+    },
+    {
+        "id_rubrica": 161,
+        "rubrica": "Custeio - NAIRR"
+    },
+    {
+        "id_rubrica": 162,
+        "rubrica": "RH - UTIP"
+    },
+    {
+        "id_rubrica": 163,
+        "rubrica": "Custeio - UTIP"
+    },
+    {
+        "id_rubrica": 164,
+        "rubrica": "Serviços de Laboratório"
+    },
+    {
+        "id_rubrica": 165,
+        "rubrica": "Sistemas de Informação/Prontuário Eletrônico"
+    },
+    {
+        "id_rubrica": 166,
+        "rubrica": "Serviços de Raio X"
+    },
+    {
+        "id_rubrica": 167,
+        "rubrica": "PAGAMENTOS INDEVIDOS A SEREM  ESTORNADOS"
+    },
+    {
+        "id_rubrica": 168,
+        "rubrica": "SMEL - Despesas Gerais da Unidade"
+    },
+    {
+        "id_rubrica": 169,
+        "rubrica": "SMEL - Despesas com Pessoal"
+    },
+    {
+        "id_rubrica": 170,
+        "rubrica": "SMEL - Demais Despesas"
+    },
+    {
+        "id_rubrica": 171,
+        "rubrica": "SMEL - Custo Operacional"
+    },
+    {
+        "id_rubrica": 172,
+        "rubrica": "SMEL - Despesas com Empregados e Dirigentes"
+    },
+    {
+        "id_rubrica": 173,
+        "rubrica": "APOIO A GESTÃO DA RUE/SUS (HMRG)"
+    },
+    {
+        "id_rubrica": 174,
+        "rubrica": "APOIO A GESTÃO DO HOSPITAL"
+    },
+    {
+        "id_rubrica": 175,
+        "rubrica": "RH DIREÇÃO DA UNIDADE"
+    },
+    {
+        "id_rubrica": 176,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DA DIREÇÃO DA UNIDADE)"
+    },
+    {
+        "id_rubrica": 177,
+        "rubrica": "RH - EQUIPE DA UTI ADULTO (EQUIPE DE COORDENAÇÃO DA UTI ADULTO)"
+    },
+    {
+        "id_rubrica": 178,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DE COORDENAÇÃO DA UTI ADULTO)"
+    },
+    {
+        "id_rubrica": 179,
+        "rubrica": "RH - EQUIPE DA UTI ADULTO (EQUIPE DA UTI ADULTO)"
+    },
+    {
+        "id_rubrica": 180,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DA UTI ADULTO)"
+    },
+    {
+        "id_rubrica": 181,
+        "rubrica": "RH - EQUIPE DA UTI NEONATAL (EQUIPE DE COORDENAÇÃO DA UTI NEONATAL)"
+    },
+    {
+        "id_rubrica": 182,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DE COORDENAÇÃO DA UTI NEONATAL)"
+    },
+    {
+        "id_rubrica": 183,
+        "rubrica": "RH DE EQUIPE DA UTI NEONATAL (EQUIPE DA UTI NEONATAL)"
+    },
+    {
+        "id_rubrica": 184,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DA UTI NEONATAL)"
+    },
+    {
+        "id_rubrica": 185,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DA MATERNIDADE)"
+    },
+    {
+        "id_rubrica": 186,
+        "rubrica": "CONTRATOS E CONSUMO (EQUIPE DE LEITOS CLINICOS)"
+    },
+    {
+        "id_rubrica": 187,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DA FARMÁCIA)"
+    },
+    {
+        "id_rubrica": 188,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DO AMBULATÓRIO MÉDICO)"
+    },
+    {
+        "id_rubrica": 189,
+        "rubrica": "EXAMES CONTRATADOS DISPONIBILIZADOS AO SISREG AMBULATORIAL"
+    },
+    {
+        "id_rubrica": 190,
+        "rubrica": "Serviço de Apoio Diagnóstico e Terapêutico"
+    },
+    {
+        "id_rubrica": 191,
+        "rubrica": "Gestão do Complexo"
+    },
+    {
+        "id_rubrica": 192,
+        "rubrica": "Coordenação UTI Infantil"
+    },
+    {
+        "id_rubrica": 193,
+        "rubrica": "Unidades Complementares"
+    },
+    {
+        "id_rubrica": 194,
+        "rubrica": "Módulo transporte"
+    },
+    {
+        "id_rubrica": 195,
+        "rubrica": "RH DA EQUIPE DE COORDENAÇÃO DA RADIOLOGIA"
+    },
+    {
+        "id_rubrica": 196,
+        "rubrica": "CONTRATO E CONSUMO (COORDENAÇÃ‚O DE RADIOLOGIA)"
+    },
+    {
+        "id_rubrica": 197,
+        "rubrica": "CONTRATO E CONSUMO (EQUIPE DE RADIOLOGIA)"
+    },
+    {
+        "id_rubrica": 198,
+        "rubrica": "RH - Equipe das Salas Amarela e Vermelha"
+    },
+    {
+        "id_rubrica": 199,
+        "rubrica": "Contrato e Consumo (Salas Amarela e Vermelha)"
+    },
+    {
+        "id_rubrica": 200,
+        "rubrica": "RH - Equipe Centro Cirúrgico"
+    },
+    {
+        "id_rubrica": 201,
+        "rubrica": "Contrato e Consumo (Equipe do Centro Cirúrgico)"
+    },
+    {
+        "id_rubrica": 202,
+        "rubrica": "RH da Equipe de Saúde Mental"
+    },
+    {
+        "id_rubrica": 203,
+        "rubrica": "Contrato e Consumo (Equipe de Saúde Mental)"
+    },
+    {
+        "id_rubrica": 204,
+        "rubrica": "RH - Equipe Acolhimento Maternidade"
+    },
+    {
+        "id_rubrica": 205,
+        "rubrica": "Contrato e Consumo (Equipe de Acolhimento Maternidade)"
+    },
+    {
+        "id_rubrica": 206,
+        "rubrica": "Contrato e Consumo (Equipe de Coordenação dos Leitos)"
+    },
+    {
+        "id_rubrica": 207,
+        "rubrica": "RH da Equipe de Leitos Cirúrgicos"
+    },
+    {
+        "id_rubrica": 208,
+        "rubrica": "Contrato e Consumo (Equipe de Leitos Cirúrgicos)"
+    },
+    {
+        "id_rubrica": 209,
+        "rubrica": "RH DA EQUIPE DE LEITOS (COORDENAÇÃO DOS LEITOS)"
+    },
+    {
+        "id_rubrica": 210,
+        "rubrica": "Projeto Olimpíadas 2016"
+    },
+    {
+        "id_rubrica": 211,
+        "rubrica": "Unidade de Terapia Intensiva"
+    },
+    {
+        "id_rubrica": 212,
+        "rubrica": "Leitos"
+    },
+    {
+        "id_rubrica": 213,
+        "rubrica": "SERVIÇOS DE APOIO"
+    },
+    {
+        "id_rubrica": 214,
+        "rubrica": "Não aplicável"
+    },
+    {
+        "id_rubrica": 215,
+        "rubrica": "RH - CAP"
+    },
+    {
+        "id_rubrica": 216,
+        "rubrica": "Serviços e insumos - CAP"
+    },
+    {
+        "id_rubrica": 217,
+        "rubrica": "RH - TEIAS"
+    },
+    {
+        "id_rubrica": 218,
+        "rubrica": "Serviços e Insumos - TEIAS"
+    },
+    {
+        "id_rubrica": 219,
+        "rubrica": "RH Equipes de Saúde Bucal"
+    },
+    {
+        "id_rubrica": 220,
+        "rubrica": "RG Equipe de Gestão"
+    },
+    {
+        "id_rubrica": 221,
+        "rubrica": "RH Equipe de Farmácia"
+    },
+    {
+        "id_rubrica": 222,
+        "rubrica": "RH Equipe de Apoio Técnico"
+    },
+    {
+        "id_rubrica": 223,
+        "rubrica": "RH Equipe Consultório na Rua"
+    },
+    {
+        "id_rubrica": 224,
+        "rubrica": "RH Equipes de Serv ApoioÂ Especializado/ NASF"
+    },
+    {
+        "id_rubrica": 225,
+        "rubrica": "RH - CAPS"
+    },
+    {
+        "id_rubrica": 226,
+        "rubrica": "RH -SPA"
+    },
+    {
+        "id_rubrica": 227,
+        "rubrica": "RH - SAISP"
+    },
+    {
+        "id_rubrica": 228,
+        "rubrica": "Contratos, consumo e promoção - UBS"
+    },
+    {
+        "id_rubrica": 229,
+        "rubrica": "Contratos, consumo e promoção - CAPS"
+    },
+    {
+        "id_rubrica": 230,
+        "rubrica": "Serviços especializados em saúde"
+    },
+    {
+        "id_rubrica": 231,
+        "rubrica": "Sistemas de Informação / prontuário eletrônico"
+    },
+    {
+        "id_rubrica": 232,
+        "rubrica": "Adaptação de instalações / Aquisição de Equipamentos"
+    },
+    {
+        "id_rubrica": 233,
+        "rubrica": "Recursos Humanos (RH)"
+    },
+    {
+        "id_rubrica": 234,
+        "rubrica": "Apoio à gestão da CGE"
+    },
+    {
+        "id_rubrica": 235,
+        "rubrica": "RH da Equipe de Leitos Clinicos"
+    },
+    {
+        "id_rubrica": 236,
+        "rubrica": "RH - Equipe da UTI Neonatal e Ped"
+    },
+    {
+        "id_rubrica": 237,
+        "rubrica": "RH da Equipe da CTI Pediátrico"
+    },
+    {
+        "id_rubrica": 238,
+        "rubrica": "RH da Equipe da UCINCo"
+    },
+    {
+        "id_rubrica": 239,
+        "rubrica": "RH da Eq de Acolhimento Obstétrico"
+    },
+    {
+        "id_rubrica": 240,
+        "rubrica": "RH da Equipe Centros Obstétricos ppp"
+    },
+    {
+        "id_rubrica": 241,
+        "rubrica": "RH da Equipe da Radiologia"
+    },
+    {
+        "id_rubrica": 242,
+        "rubrica": "RH DA EQUIPE DO AMBULATÓRIO MÉDICO"
+    },
+    {
+        "id_rubrica": 243,
+        "rubrica": "RH da Equipe do Núcleo Interno de Regulação"
+    },
+    {
+        "id_rubrica": 244,
+        "rubrica": "RH Direção CER"
+    },
+    {
+        "id_rubrica": 245,
+        "rubrica": "RH DA EQUIPE MÉDICA"
+    },
+    {
+        "id_rubrica": 246,
+        "rubrica": "RH da Sala de Medicação"
+    },
+    {
+        "id_rubrica": 247,
+        "rubrica": "RH da Equipe de Acolhimento"
+    },
+    {
+        "id_rubrica": 248,
+        "rubrica": "RH da Equipe do Centro Obstétrico"
+    },
+    {
+        "id_rubrica": 249,
+        "rubrica": "Apoio à Gestão da RUE"
+    },
+    {
+        "id_rubrica": 250,
+        "rubrica": "RH - Equipe da Sala Amarela/Vermelha"
+    },
+    {
+        "id_rubrica": 251,
+        "rubrica": "RH - Equipe Psiquiatria"
+    },
+    {
+        "id_rubrica": 252,
+        "rubrica": "Equipe da Maternidade"
+    },
+    {
+        "id_rubrica": 253,
+        "rubrica": "Equipe do Ambulatório"
+    },
+    {
+        "id_rubrica": 254,
+        "rubrica": "Equipe do Posto de Coleta de Leite"
+    },
+    {
+        "id_rubrica": 255,
+        "rubrica": "Residência de Enfermagem em Saúde da Família e Comunidade"
+    },
+    {
+        "id_rubrica": 256,
+        "rubrica": "Rh Equipes de Saúde da Família e Consultório na Rua"
+    },
+    {
+        "id_rubrica": 257,
+        "rubrica": "RH - Equipe de Especialistas"
+    },
+    {
+        "id_rubrica": 258,
+        "rubrica": "Consumo"
+    },
+    {
+        "id_rubrica": 259,
+        "rubrica": "Rh Apoio e Gestão das Unidades de Atenção Primária - ESF"
+    },
+    {
+        "id_rubrica": 260,
+        "rubrica": "Administrador / Coordenador"
+    },
+    {
+        "id_rubrica": 261,
+        "rubrica": "Apoio Administrativo"
+    },
+    {
+        "id_rubrica": 262,
+        "rubrica": "Assessoria Contábil / Contador"
+    },
+    {
+        "id_rubrica": 263,
+        "rubrica": "Assistente Administrativo / Produção / Coordenação"
+    },
+    {
+        "id_rubrica": 264,
+        "rubrica": "Auxiliar Administrativo / Produção / Coordenação"
+    },
+    {
+        "id_rubrica": 265,
+        "rubrica": "Auxiliar de Serviços Gerais"
+    },
+    {
+        "id_rubrica": 266,
+        "rubrica": "Bibliotecário"
+    },
+    {
+        "id_rubrica": 267,
+        "rubrica": "Despesas administrativas"
+    },
+    {
+        "id_rubrica": 268,
+        "rubrica": "Despesas com Divulgação"
+    },
+    {
+        "id_rubrica": 269,
+        "rubrica": "Despesas com equipamentos e serviços"
+    },
+    {
+        "id_rubrica": 270,
+        "rubrica": "Despesas com manutenção"
+    },
+    {
+        "id_rubrica": 271,
+        "rubrica": "Despesas com materiais de consumo"
+    },
+    {
+        "id_rubrica": 272,
+        "rubrica": "Despesas com Programação e eventos"
+    },
+    {
+        "id_rubrica": 273,
+        "rubrica": "Despesas com Projetos Culturais"
+    },
+    {
+        "id_rubrica": 274,
+        "rubrica": "Despesas com telefonia / internet"
+    },
+    {
+        "id_rubrica": 275,
+        "rubrica": "Despesas com transporte (pessoas ou equipamentos)"
+    },
+    {
+        "id_rubrica": 276,
+        "rubrica": "Assessoria de Comunicação / Diretor de Comunicação"
+    },
+    {
+        "id_rubrica": 277,
+        "rubrica": "Gestor Cultural"
+    },
+    {
+        "id_rubrica": 278,
+        "rubrica": "Locação de equipamentos de sonorização e iluminação"
+    },
+    {
+        "id_rubrica": 279,
+        "rubrica": "Locação de equipamentos de sonorização"
+    },
+    {
+        "id_rubrica": 280,
+        "rubrica": "Locação de equipamentos de iluminação"
+    },
+    {
+        "id_rubrica": 281,
+        "rubrica": "Oficineiro"
+    },
+    {
+        "id_rubrica": 282,
+        "rubrica": "Produtor Cultural"
+    },
+    {
+        "id_rubrica": 283,
+        "rubrica": "Técnico de Som e Luz"
+    },
+    {
+        "id_rubrica": 284,
+        "rubrica": "Técnico de Som"
+    },
+    {
+        "id_rubrica": 285,
+        "rubrica": "Técnico de Luz"
+    },
+    {
+        "id_rubrica": 286,
+        "rubrica": "Vigia Diurno"
+    },
+    {
+        "id_rubrica": 287,
+        "rubrica": "Vigia noturno"
+    },
+    {
+        "id_rubrica": 288,
+        "rubrica": "Devolução / Estorno de Receitas"
+    },
+    {
+        "id_rubrica": 289,
+        "rubrica": "Serviços de Transporte Utilitário"
+    },
+    {
+        "id_rubrica": 290,
+        "rubrica": "Sistema"
+    },
+    {
+        "id_rubrica": 291,
+        "rubrica": "Coongresso de Genética Hibrido"
+    },
+    {
+        "id_rubrica": 292,
+        "rubrica": "Congresso de Genética"
+    },
+    {
+        "id_rubrica": 293,
+        "rubrica": "Oficina de Dança"
+    },
+    {
+        "id_rubrica": 294,
+        "rubrica": "Oficina de Música"
+    },
+    {
+        "id_rubrica": 295,
+        "rubrica": "Evento"
+    },
+    {
+        "id_rubrica": 296,
+        "rubrica": "Salários"
+    },
+    {
+        "id_rubrica": 297,
+        "rubrica": "Encargos Trabalhistas"
+    },
+    {
+        "id_rubrica": 298,
+        "rubrica": "Encargos para Provisão"
+    },
+    {
+        "id_rubrica": 299,
+        "rubrica": "Verbas Rescisórias"
+    },
+    {
+        "id_rubrica": 300,
+        "rubrica": "Vale Transporte"
+    },
+    {
+        "id_rubrica": 301,
+        "rubrica": "Vale Refeição"
+    },
+    {
+        "id_rubrica": 302,
+        "rubrica": "Telefone e  Internet"
+    },
+    {
+        "id_rubrica": 303,
+        "rubrica": "Serviços de Transporte doblo"
+    },
+    {
+        "id_rubrica": 304,
+        "rubrica": "Serviço de Utilitário Eventos"
+    },
+    {
+        "id_rubrica": 305,
+        "rubrica": "Apoio Nutricional_Casas"
+    },
+    {
+        "id_rubrica": 306,
+        "rubrica": "Materiais Permanentes"
+    },
+    {
+        "id_rubrica": 307,
+        "rubrica": "Materiais de Consumo"
+    },
+    {
+        "id_rubrica": 308,
+        "rubrica": "."
+    },
+    {
+        "id_rubrica": 309,
+        "rubrica": "Materiais de Limpeza e Higiene Pessoal"
+    },
+    {
+        "id_rubrica": 310,
+        "rubrica": "Materiais de Expediente"
+    },
+    {
+        "id_rubrica": 311,
+        "rubrica": "Uniformes"
+    },
+    {
+        "id_rubrica": 312,
+        "rubrica": "Pronto Pagamento"
+    },
+    {
+        "id_rubrica": 313,
+        "rubrica": "Verbas Rescisórias"
+    },
+    {
+        "id_rubrica": 314,
+        "rubrica": "Material Permanente e Equipamentos em Geral_Vila Isabel"
+    },
+    {
+        "id_rubrica": 315,
+        "rubrica": "Material Permanente e Equipamentos em Geral_São Conrado"
+    },
+    {
+        "id_rubrica": 316,
+        "rubrica": "Despesas com Oficinas Terapêuticas Vila Isabel"
+    },
+    {
+        "id_rubrica": 317,
+        "rubrica": "Despesas com Oficinas Terapêuticas São Conrado"
+    },
+    {
+        "id_rubrica": 318,
+        "rubrica": "Material de Consumo Vila Isabel"
+    },
+    {
+        "id_rubrica": 319,
+        "rubrica": "Material de Consumo_São Conrado"
+    },
+    {
+        "id_rubrica": 320,
+        "rubrica": "Manutenção e Obtenção de novas \"Aquisições Pontuais\""
+    },
+    {
+        "id_rubrica": 321,
+        "rubrica": "Cozinha Experimental Vila Isabel"
+    },
+    {
+        "id_rubrica": 322,
+        "rubrica": "Artesanato Vila Isabel"
+    },
+    {
+        "id_rubrica": 323,
+        "rubrica": "Jardinagem Vila Isabel"
+    },
+    {
+        "id_rubrica": 324,
+        "rubrica": "Eventos Educativos e Inclusivos ( 02 eventos por ano)"
+    },
+    {
+        "id_rubrica": 325,
+        "rubrica": "Manutenção"
+    },
+    {
+        "id_rubrica": 326,
+        "rubrica": "Despesas com Oficinas Terapêuticas e Pedagógicas"
+    },
+    {
+        "id_rubrica": 327,
+        "rubrica": "Material de Consumo"
+    },
+    {
+        "id_rubrica": 328,
+        "rubrica": "Material de Artesanato"
+    },
+    {
+        "id_rubrica": 329,
+        "rubrica": "Kit Lanche"
+    },
+    {
+        "id_rubrica": 330,
+        "rubrica": "Treinamento"
+    },
+    {
+        "id_rubrica": 331,
+        "rubrica": "Locação de Impressora"
+    },
+    {
+        "id_rubrica": 332,
+        "rubrica": "Locação Central Telefonica"
+    },
+    {
+        "id_rubrica": 333,
+        "rubrica": "Material Permanente e Equipamentos em Geral"
+    },
+    {
+        "id_rubrica": 334,
+        "rubrica": "Despesas com Oficinas Terapêuticas"
+    },
+    {
+        "id_rubrica": 335,
+        "rubrica": "Artesanato"
+    },
+    {
+        "id_rubrica": 336,
+        "rubrica": "Serviço de Guardião de Piscina"
+    },
+    {
+        "id_rubrica": 337,
+        "rubrica": "Jardinagem"
+    },
+    {
+        "id_rubrica": 338,
+        "rubrica": "Oficina de Cozinha Experimental"
+    },
+    {
+        "id_rubrica": 339,
+        "rubrica": "Serviços de PABX"
+    },
+    {
+        "id_rubrica": 340,
+        "rubrica": "Serviço de Telefonia Movel e Fixa"
+    },
+    {
+        "id_rubrica": 341,
+        "rubrica": "Serviço de Locação de Impressora"
+    },
+    {
+        "id_rubrica": 342,
+        "rubrica": "Internet"
+    },
+    {
+        "id_rubrica": 343,
+        "rubrica": "Material Informática"
+    },
+    {
+        "id_rubrica": 344,
+        "rubrica": "Pessoal"
+    },
+    {
+        "id_rubrica": 345,
+        "rubrica": "Encargos Patronais Sociais e Trabalhistas"
+    },
+    {
+        "id_rubrica": 346,
+        "rubrica": "Provisionamento"
+    },
+    {
+        "id_rubrica": 347,
+        "rubrica": "Alimentação - Gêneros"
+    },
+    {
+        "id_rubrica": 348,
+        "rubrica": "Alimentação- lanches tipo 1"
+    },
+    {
+        "id_rubrica": 349,
+        "rubrica": "Alimentação- lanches tipo 2"
+    },
+    {
+        "id_rubrica": 350,
+        "rubrica": "Veículos"
+    },
+    {
+        "id_rubrica": 351,
+        "rubrica": "Combustível"
+    },
+    {
+        "id_rubrica": 352,
+        "rubrica": "Atividades Integrativas"
+    },
+    {
+        "id_rubrica": 353,
+        "rubrica": "Uniformes - Integrador"
+    },
+    {
+        "id_rubrica": 354,
+        "rubrica": "Uniformes - Professor de Educação Física"
+    },
+    {
+        "id_rubrica": 355,
+        "rubrica": "Uniformes - Supervisor Técnico de Área"
+    },
+    {
+        "id_rubrica": 356,
+        "rubrica": "Uniformes - Técnico de Enfermagem"
+    },
+    {
+        "id_rubrica": 357,
+        "rubrica": "Uniformes - Usuários"
+    },
+    {
+        "id_rubrica": 358,
+        "rubrica": "Serviços"
+    },
+    {
+        "id_rubrica": 359,
+        "rubrica": "Material Operacional"
+    },
+    {
+        "id_rubrica": 360,
+        "rubrica": "Material Pedagógico"
+    },
+    {
+        "id_rubrica": 361,
+        "rubrica": "Material Escritório"
+    },
+    {
+        "id_rubrica": 362,
+        "rubrica": "Locação de Bens Imóveis"
+    },
+    {
+        "id_rubrica": 363,
+        "rubrica": "Locação de Bens Móveis"
+    },
+    {
+        "id_rubrica": 364,
+        "rubrica": "Prestação de Serviços de Terceiros(RPA)"
+    },
+    {
+        "id_rubrica": 365,
+        "rubrica": "Prestação de Serviços de Terceiros (MEI)"
+    },
+    {
+        "id_rubrica": 366,
+        "rubrica": "Eventos"
+    },
+    {
+        "id_rubrica": 367,
+        "rubrica": "Divulgações"
+    },
+    {
+        "id_rubrica": 368,
+        "rubrica": "Locação Eventual de Ônibus"
+    },
+    {
+        "id_rubrica": 369,
+        "rubrica": "Manutenções"
+    },
+    {
+        "id_rubrica": 370,
+        "rubrica": "Locação de Iluminação"
+    },
+    {
+        "id_rubrica": 371,
+        "rubrica": "Locação de Palco"
+    },
+    {
+        "id_rubrica": 372,
+        "rubrica": "Locação de Equipamento de Som"
+    },
+    {
+        "id_rubrica": 373,
+        "rubrica": "Locação de Mesas/Cadeiras"
+    },
+    {
+        "id_rubrica": 374,
+        "rubrica": "Consumo de água(copos de 200ml)"
+    },
+    {
+        "id_rubrica": 375,
+        "rubrica": "Banda ou DJ"
+    },
+    {
+        "id_rubrica": 376,
+        "rubrica": "Despesas com Comunicação"
+    },
+    {
+        "id_rubrica": 377,
+        "rubrica": "Custeio Operacional"
+    },
+    {
+        "id_rubrica": 378,
+        "rubrica": "Custos Indiretos"
+    },
+    {
+        "id_rubrica": 379,
+        "rubrica": "Multas e JurosÂ "
+    },
+    {
+        "id_rubrica": 380,
+        "rubrica": "Apoio a Gestão da CAP - Estratégia Saúde da Família (ESF)"
+    },
+    {
+        "id_rubrica": 381,
+        "rubrica": "Contratos, consumo, promoção e vigilância em saúde das Unidades de Atenção Primária - ESF"
+    },
+    {
+        "id_rubrica": 382,
+        "rubrica": "Sistemas de Informação / Conectividade / Telefonia - ESF"
+    },
+    {
+        "id_rubrica": 383,
+        "rubrica": "RH Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB) / Serviço de Apoio Especial"
+    },
+    {
+        "id_rubrica": 384,
+        "rubrica": "Sistemas de Informação / Conectividade / Telefonia - NASF-AB / SAE"
+    },
+    {
+        "id_rubrica": 385,
+        "rubrica": "Contratos e Consumo - CAPS"
+    },
+    {
+        "id_rubrica": 386,
+        "rubrica": "Adaptações de instalações / Aquisição de Equipamentos"
+    },
+    {
+        "id_rubrica": 387,
+        "rubrica": "Parte Variável 2"
+    },
+    {
+        "id_rubrica": 388,
+        "rubrica": "Parte Variável 3"
+    },
+    {
+        "id_rubrica": 389,
+        "rubrica": "Apoio a Gestão da Coordenação de Atenção Especializada (CAE) - Oftalmologia"
+    },
+    {
+        "id_rubrica": 390,
+        "rubrica": "Apoio a Gestão do Centro do Olho Carioca (COC) - OSS - Oftalmologia"
+    },
+    {
+        "id_rubrica": 391,
+        "rubrica": "RH Equipe COC"
+    },
+    {
+        "id_rubrica": 392,
+        "rubrica": "Contratos, consumo, serviços e promoção em saúde - Oftalmologia"
+    },
+    {
+        "id_rubrica": 393,
+        "rubrica": "Sistemas de Informação / Conectividade / Telefonia - COC"
+    },
+    {
+        "id_rubrica": 394,
+        "rubrica": "Parte Variável - Oftalmologia"
+    },
+    {
+        "id_rubrica": 395,
+        "rubrica": "RH da Equipe da Ginecologia Cirúrgica"
+    },
+    {
+        "id_rubrica": 396,
+        "rubrica": "CUSTEIO"
+    },
+    {
+        "id_rubrica": 397,
+        "rubrica": "Custeio Serviço Ginecologia"
+    },
+    {
+        "id_rubrica": 398,
+        "rubrica": "Custeio Infraestrutura"
+    },
+    {
+        "id_rubrica": 399,
+        "rubrica": "RH equipes CDC"
+    },
+    {
+        "id_rubrica": 400,
+        "rubrica": "Contratos, consumo, serviços e promoção em saúde - Diagnóstico"
+    },
+    {
+        "id_rubrica": 401,
+        "rubrica": "Sistemas de Informação / Conectividade / Telefonia - CDC"
+    },
+    {
+        "id_rubrica": 402,
+        "rubrica": "Variável 1 - Desempenho da Gestão"
+    },
+    {
+        "id_rubrica": 403,
+        "rubrica": "Variável 2 - Desempenho Assistencial"
+    },
+    {
+        "id_rubrica": 404,
+        "rubrica": "Variável 3 - Satisfação do Usuário"
+    },
+    {
+        "id_rubrica": 405,
+        "rubrica": "Manutenção de ar condicionado"
+    },
+    {
+        "id_rubrica": 406,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 407,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 408,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 409,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 410,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 411,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 412,
+        "rubrica": "Conserto do drywall da rampa"
+    },
+    {
+        "id_rubrica": 413,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 414,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 415,
+        "rubrica": "Conserto do quadro elétrico da bomba d'água"
+    },
+    {
+        "id_rubrica": 416,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 417,
+        "rubrica": "Reparo do vazamento da caixa d'água"
+    },
+    {
+        "id_rubrica": 418,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 419,
+        "rubrica": "inativo"
+    },
+    {
+        "id_rubrica": 420,
+        "rubrica": "Apoio a Gestão da Coordenação de Atenção Especializada (CAE) - Diagnóstico"
+    },
+    {
+        "id_rubrica": 421,
+        "rubrica": "Apoio a Gestão do Centro Diagnóstico Carioca (CDC) - OSC (Diagnóstico)"
+    },
+    {
+        "id_rubrica": 422,
+        "rubrica": "Formatura"
+    },
+    {
+        "id_rubrica": 423,
+        "rubrica": "Apoio a Gestão da Coordenação de Atenção Especializada - Especialidades"
+    },
+    {
+        "id_rubrica": 424,
+        "rubrica": "Apoio a Gestão do Centro de Especialidades Carioca (CEC) - OSC"
+    },
+    {
+        "id_rubrica": 425,
+        "rubrica": "RH equipe CEC"
+    },
+    {
+        "id_rubrica": 426,
+        "rubrica": "Contratos, consumo, serviços e promoção em saúde - Especialidades"
+    },
+    {
+        "id_rubrica": 427,
+        "rubrica": "Sistema de Informação / Conectividade / Telefonia - CEC"
+    },
+    {
+        "id_rubrica": 428,
+        "rubrica": "Ambulatório de Ginecologia"
+    },
+    {
+        "id_rubrica": 429,
+        "rubrica": "Equipe do Ambulatório de Ginecologia"
+    },
+    {
+        "id_rubrica": 430,
+        "rubrica": "Ambulatório de Proctologia"
+    },
+    {
+        "id_rubrica": 431,
+        "rubrica": "Cardiologia"
+    },
+    {
+        "id_rubrica": 432,
+        "rubrica": "Equipe de Cardiologia"
+    },
+    {
+        "id_rubrica": 433,
+        "rubrica": "Anatomia Patológica"
+    },
+    {
+        "id_rubrica": 434,
+        "rubrica": "Equipe de Anatomia Patológica"
+    },
+    {
+        "id_rubrica": 435,
+        "rubrica": "Núcleo Interno de Regulação"
+    },
+    {
+        "id_rubrica": 436,
+        "rubrica": "Cirurgia Ginecológica e Proctológica"
+    },
+    {
+        "id_rubrica": 437,
+        "rubrica": "Equipe de Cirurgia Ginecológica e Proctológica"
+    },
+    {
+        "id_rubrica": 438,
+        "rubrica": "Internação Ginecológica"
+    },
+    {
+        "id_rubrica": 439,
+        "rubrica": "Equipe de Internação Ginecológica"
+    },
+    {
+        "id_rubrica": 440,
+        "rubrica": "Internação Proctológica"
+    },
+    {
+        "id_rubrica": 441,
+        "rubrica": "Equipe de Internação Proctológica"
+    },
+    {
+        "id_rubrica": 442,
+        "rubrica": "Centro diagnostico - Endoscopia e Colonoscopia"
+    },
+    {
+        "id_rubrica": 443,
+        "rubrica": "Equipe Centro diagnostico - Endoscopia e Colonoscopia"
+    },
+    {
+        "id_rubrica": 444,
+        "rubrica": "Investimento"
+    },
+    {
+        "id_rubrica": 445,
+        "rubrica": "Equipe do Ambulatório de Proctologia"
+    },
+    {
+        "id_rubrica": 446,
+        "rubrica": "Equipe do Centro Cirúrgico"
+    },
+    {
+        "id_rubrica": 447,
+        "rubrica": "Equipe da Recuperação Pós-anestésica"
+    },
+    {
+        "id_rubrica": 448,
+        "rubrica": "Equipe Central de Esterilização de Material"
+    },
+    {
+        "id_rubrica": 449,
+        "rubrica": "Equipe de Enfermaria"
+    },
+    {
+        "id_rubrica": 450,
+        "rubrica": "Equipe de Telemedicina"
+    },
+    {
+        "id_rubrica": 451,
+        "rubrica": "Apoio a Gestão da SAP - Atenção Primária Prisional"
+    },
+    {
+        "id_rubrica": 452,
+        "rubrica": "Apoio a Gestão APP - OSS"
+    },
+    {
+        "id_rubrica": 453,
+        "rubrica": "Rh Apoio e Gestão das Unidades Ambulatoriais de Atenção Primária Prisional"
+    },
+    {
+        "id_rubrica": 454,
+        "rubrica": "Rh equipes de Atenção Primária Prisional e Complementar Psicossocial - APP"
+    },
+    {
+        "id_rubrica": 455,
+        "rubrica": "Contratos, consumo, promoção e vigilância em saúde - APP"
+    },
+    {
+        "id_rubrica": 456,
+        "rubrica": "Sistemas de Informação / Conectividade / Telefonia - APP"
+    },
+    {
+        "id_rubrica": 457,
+        "rubrica": "Adaptações / Aquisições de Equipamentos - unidades ambulatorias prisionais"
+    },
+    {
+        "id_rubrica": 458,
+        "rubrica": "Diversos"
+    },
+    {
+        "id_rubrica": 459,
+        "rubrica": "Operacional"
+    },
+    {
+        "id_rubrica": 460,
+        "rubrica": "Custos Indiretos"
+    },
+    {
+        "id_rubrica": 461,
+        "rubrica": "Equipe do Ambulatório do Risco Cirúrgico"
+    },
+    {
+        "id_rubrica": 462,
+        "rubrica": "Equipe de Anestesiologia"
+    },
+    {
+        "id_rubrica": 463,
+        "rubrica": "Equipe de Internação Pós Operatório"
+    },
+    {
+        "id_rubrica": 464,
+        "rubrica": "Equipe de Internação Ortopédica"
+    },
+    {
+        "id_rubrica": 465,
+        "rubrica": "Contrato e consumo - Pronto Atendimento"
+    },
+    {
+        "id_rubrica": 466,
+        "rubrica": "RH - Leitos de Emergência"
+    },
+    {
+        "id_rubrica": 467,
+        "rubrica": "Contrato e consumo - Leitos Emergência"
+    },
+    {
+        "id_rubrica": 468,
+        "rubrica": "RH - CTI Geral"
+    },
+    {
+        "id_rubrica": 469,
+        "rubrica": "Contrato e consumo - CTI Geral"
+    },
+    {
+        "id_rubrica": 470,
+        "rubrica": "RH - Unidade neurointensiva"
+    },
+    {
+        "id_rubrica": 471,
+        "rubrica": "Contratos e consumo - Unidade neurointensiva"
+    },
+    {
+        "id_rubrica": 472,
+        "rubrica": "RH - Unidade cardiointensiva"
+    },
+    {
+        "id_rubrica": 473,
+        "rubrica": "Contratos e consumo - Unidade cardiointensiva"
+    },
+    {
+        "id_rubrica": 474,
+        "rubrica": "RH - Ambulatório de neurologia"
+    },
+    {
+        "id_rubrica": 475,
+        "rubrica": "Contrato e consumo - Ambulatório de neurologia"
+    },
+    {
+        "id_rubrica": 476,
+        "rubrica": "RH - Unidade de internação Neurológica"
+    },
+    {
+        "id_rubrica": 477,
+        "rubrica": "Contratos e consumo - Unidade de internação Neurológica"
+    },
+    {
+        "id_rubrica": 478,
+        "rubrica": "RH - Ambulatório de cardiologia"
+    },
+    {
+        "id_rubrica": 479,
+        "rubrica": "Contrato e consumo - Ambulatório de cardiologia"
+    },
+    {
+        "id_rubrica": 480,
+        "rubrica": "RH - Unidade de internação Cardio"
+    },
+    {
+        "id_rubrica": 481,
+        "rubrica": "Contratos e consumo - Unidade de internação Cardio"
+    },
+    {
+        "id_rubrica": 482,
+        "rubrica": "RH - Hemodinâmica"
+    },
+    {
+        "id_rubrica": 483,
+        "rubrica": "Contratos e consumo - Hemodinâmica"
+    },
+    {
+        "id_rubrica": 484,
+        "rubrica": "RH - Telemedicina"
+    },
+    {
+        "id_rubrica": 485,
+        "rubrica": "Contrato e consumo - Telemedicina"
+    },
+    {
+        "id_rubrica": 486,
+        "rubrica": "Guiamento"
+    },
+    {
+        "id_rubrica": 487,
+        "rubrica": "Material Gráfico"
+    },
+    {
+        "id_rubrica": 488,
+        "rubrica": "Ingresso"
+    },
+    {
+        "id_rubrica": 489,
+        "rubrica": "Curso de espanhol"
+    },
+    {
+        "id_rubrica": 490,
+        "rubrica": "Curso de inglês"
+    },
+    {
+        "id_rubrica": 491,
+        "rubrica": "Material didático"
+    },
+    {
+        "id_rubrica": 492,
+        "rubrica": "Vivência cultural"
+    },
+    {
+        "id_rubrica": 493,
+        "rubrica": "Acompanhamento pedagógico"
+    },
+    {
+        "id_rubrica": 494,
+        "rubrica": "Gestão projeto"
+    },
+    {
+        "id_rubrica": 495,
+        "rubrica": "Processo seletivo das cursistas"
+    },
+    {
+        "id_rubrica": 496,
+        "rubrica": "Impostos"
+    },
+    {
+        "id_rubrica": 497,
+        "rubrica": "Certificação das cursistas"
+    },
+    {
+        "id_rubrica": 498,
+        "rubrica": "Avaliação de impacto"
+    },
+    {
+        "id_rubrica": 499,
+        "rubrica": "Transporte"
+    },
+    {
+        "id_rubrica": 500,
+        "rubrica": "Equipe do Núcleo Interno de Regulação"
+    },
+    {
+        "id_rubrica": 501,
+        "rubrica": "Equipe do Ambulatório de Cirurgia"
+    },
+    {
+        "id_rubrica": 502,
+        "rubrica": "Equipe de Clínica Cirúrgica"
+    },
+    {
+        "id_rubrica": 503,
+        "rubrica": "Equipe de Internação Infectologia Adulto"
+    },
+    {
+        "id_rubrica": 504,
+        "rubrica": "Equipe de Internação Pneumologia Adulto"
+    },
+    {
+        "id_rubrica": 505,
+        "rubrica": "Equipe internação Pneumologia Infanto-Juvenil"
+    },
+    {
+        "id_rubrica": 506,
+        "rubrica": "Equipe Multidisciplinar para Internação"
+    },
+    {
+        "id_rubrica": 507,
+        "rubrica": "Equipe de Ambulatório"
+    },
+    {
+        "id_rubrica": 508,
+        "rubrica": "Equipe Centro de Imagem"
+    },
+    {
+        "id_rubrica": 509,
+        "rubrica": "Equipe de Internação Pneumologia Infanto-Juvenil"
+    },
+    {
+        "id_rubrica": 510,
+        "rubrica": "Benefício auxílio vale transporte para alunas"
+    },
+    {
+        "id_rubrica": 511,
+        "rubrica": "Benefício bolsa auxílio para alunas"
+    },
+    {
+        "id_rubrica": 512,
+        "rubrica": "Prestação de serviços eventuais (monitoria e palestrante)"
+    },
+    {
+        "id_rubrica": 513,
+        "rubrica": "Material de Fisioterapia"
+    },
+    {
+        "id_rubrica": 514,
+        "rubrica": "Reuniões"
+    },
+    {
+        "id_rubrica": 515,
+        "rubrica": "Bens Permanentes"
+    },
+    {
+        "id_rubrica": 516,
+        "rubrica": "Concessionária"
+    },
+    {
+        "id_rubrica": 517,
+        "rubrica": "Apoio à gestão da OSC - RAPS"
+    },
+    {
+        "id_rubrica": 518,
+        "rubrica": "RH - Centro de Atenção Psicossocial AD III"
+    },
+    {
+        "id_rubrica": 519,
+        "rubrica": "RH - Centro de Atenção Psicossocial II"
+    },
+    {
+        "id_rubrica": 520,
+        "rubrica": "RH - Centro de Atenção Psicossocial III"
+    },
+    {
+        "id_rubrica": 521,
+        "rubrica": "RH - Centro de Atenção Psicossocial CAPSi III"
+    },
+    {
+        "id_rubrica": 522,
+        "rubrica": "RH - Centro de Atenção Psicossocial CAPSi II"
+    },
+    {
+        "id_rubrica": 523,
+        "rubrica": "RH - Equipe Multiprofissional de Saúde Mental - EMSM"
+    },
+    {
+        "id_rubrica": 524,
+        "rubrica": "RH - Enfermarias de Saúde Mental"
+    },
+    {
+        "id_rubrica": 525,
+        "rubrica": "RH - Centro de Convivencia"
+    },
+    {
+        "id_rubrica": 526,
+        "rubrica": "Investimento (material permanente e adaptação da estrutura)"
+    },
+    {
+        "id_rubrica": 527,
+        "rubrica": "Apoio a Gestão Tecnica - SSM"
+    },
+    {
+        "id_rubrica": 528,
+        "rubrica": "Contrato e Consumo Centro de Atenção Psicossocial AD III"
+    },
+    {
+        "id_rubrica": 529,
+        "rubrica": "Contrato e Consumo"
+    },
+    {
+        "id_rubrica": 530,
+        "rubrica": "Contrato e Consumo - Centro de Atenção Psicossocial III"
+    },
+    {
+        "id_rubrica": 531,
+        "rubrica": "Contrato e Consumo - Centro de Atenção Psicossocial CAPSi III"
+    },
+    {
+        "id_rubrica": 532,
+        "rubrica": "Contrato e Consumo - Centro de Atenção Psicossocial Capsi II"
+    },
+    {
+        "id_rubrica": 533,
+        "rubrica": "Contrato e Consumo - Equipe Multiprofissional de Saúde Mental - EMSM"
+    },
+    {
+        "id_rubrica": 534,
+        "rubrica": "Contrato e Consumo"
+    },
+    {
+        "id_rubrica": 535,
+        "rubrica": "Contrato e Consumo - Centro de Convivência"
+    },
+    {
+        "id_rubrica": 536,
+        "rubrica": "Curso de formação de Jovens Promotores da saúde - Rede de acolhimento e Jovens Promotores da saúde ("
+    },
+    {
+        "id_rubrica": 537,
+        "rubrica": "Adaptações de Instalações / Aquisição de Equipamentos - CENTRO CARIOCA DE FORMAÇÃO"
+    },
+    {
+        "id_rubrica": 538,
+        "rubrica": "RH - Equipe de Reabilitação Psicossocial"
+    },
+    {
+        "id_rubrica": 539,
+        "rubrica": "Contrato e Consumo - Equipe de Reabilitação Psicossocial"
+    },
+    {
+        "id_rubrica": 540,
+        "rubrica": "RH - Unidade de Acolhimento Adulto"
+    },
+    {
+        "id_rubrica": 541,
+        "rubrica": "Contrato e Consumo - Unidade de Acolhimento Adulto"
+    },
+    {
+        "id_rubrica": 542,
+        "rubrica": "Material Esportivo"
+    },
+    {
+        "id_rubrica": 543,
+        "rubrica": "Serviço de Vigilância"
+    },
+    {
+        "id_rubrica": 544,
+        "rubrica": "Prestação de Serviço de T.I"
+    },
+    {
+        "id_rubrica": 545,
+        "rubrica": "Locação de Ônibus"
+    },
+    {
+        "id_rubrica": 546,
+        "rubrica": "Vale Alimentação"
+    },
+    {
+        "id_rubrica": 547,
+        "rubrica": "Serviço de Limpeza"
+    },
+    {
+        "id_rubrica": 548,
+        "rubrica": "Serviço de Manutenção Predial"
+    },
+    {
+        "id_rubrica": 549,
+        "rubrica": "Seguros de Vida"
+    },
+    {
+        "id_rubrica": 550,
+        "rubrica": "Módulo Tecnológico"
+    },
+    {
+        "id_rubrica": 551,
+        "rubrica": "Serviços Gráficos"
+    },
+    {
+        "id_rubrica": 552,
+        "rubrica": "Serviço de impressão"
+    },
+    {
+        "id_rubrica": 553,
+        "rubrica": "Serviço limpeza e manutenção de piscinas"
+    },
+    {
+        "id_rubrica": 554,
+        "rubrica": "Auxílio Incentivo ao Usuário"
+    },
+    {
+        "id_rubrica": 555,
+        "rubrica": "Auxílio Transporte para Deslocamento no Trabalho da Equipe Técnica"
+    },
+    {
+        "id_rubrica": 556,
+        "rubrica": "Certificação"
+    },
+    {
+        "id_rubrica": 557,
+        "rubrica": "Confecção de Camisas"
+    },
+    {
+        "id_rubrica": 558,
+        "rubrica": "Material de Guarda Vida"
+    },
+    {
+        "id_rubrica": 559,
+        "rubrica": "Rh - Centro De Atenção Psicossocial Iii Rubens Correia"
+    },
+    {
+        "id_rubrica": 560,
+        "rubrica": "Contrato E Consumo - Centro De Atenção Psicossocial III Rubens Correia"
+    },
+    {
+        "id_rubrica": 561,
+        "rubrica": "Rh - Centro De Atenção Psicossocial Iii Clarice  Lispector"
+    },
+    {
+        "id_rubrica": 562,
+        "rubrica": "Contrato E Consumo -  Centro De Atenção Psicossocial III Clarice  Lispector"
+    },
+    {
+        "id_rubrica": 563,
+        "rubrica": "Rh - Unidade De Acolhimento Infanto-Juvenil"
+    },
+    {
+        "id_rubrica": 564,
+        "rubrica": "Contrato E Consumo -  Rh - Unidade De Acolhimento Infanto-Juvenil"
+    },
+    {
+        "id_rubrica": 565,
+        "rubrica": "Rh - Nise Da Silveira"
+    },
+    {
+        "id_rubrica": 566,
+        "rubrica": "Contrato E Consumo -  Rh - Nise Da Silveira"
+    },
+    {
+        "id_rubrica": 567,
+        "rubrica": "Apoio  Gestão Técnica - Nise Da Silveira"
+    },
+    {
+        "id_rubrica": 568,
+        "rubrica": "Aquisição de Bens Móveis"
+    },
+    {
+        "id_rubrica": 569,
+        "rubrica": "Prestação de Serviços de Terceiros Lavanderia"
+    },
+    {
+        "id_rubrica": 570,
+        "rubrica": "ENCARGOS"
+    },
+    {
+        "id_rubrica": 571,
+        "rubrica": "CONCESSIONÁRIAS DE SERVIÇOS ESSENCIAIS (ÁGUA/LUZ/TV/INTERNET/TELEFONE)"
+    },
+    {
+        "id_rubrica": 572,
+        "rubrica": "GÁS"
+    },
+    {
+        "id_rubrica": 573,
+        "rubrica": "ALIMENTAÇÃO"
+    },
+    {
+        "id_rubrica": 574,
+        "rubrica": "Material de expediente/escritório"
+    },
+    {
+        "id_rubrica": 575,
+        "rubrica": "MATERIAL DE HIGIENE"
+    },
+    {
+        "id_rubrica": 576,
+        "rubrica": "MATERIAL DE LIMPEZA"
+    },
+    {
+        "id_rubrica": 577,
+        "rubrica": "ALUGUEL"
+    },
+    {
+        "id_rubrica": 578,
+        "rubrica": "PRESTADORES DE SERVIÇOS"
+    },
+    {
+        "id_rubrica": 579,
+        "rubrica": "AUTÔNOMOS"
+    },
+    {
+        "id_rubrica": 580,
+        "rubrica": "HONORÁRIO CONTÁBIL"
+    },
+    {
+        "id_rubrica": 581,
+        "rubrica": "ENERGIA ELÉTRICA"
+    },
+    {
+        "id_rubrica": 582,
+        "rubrica": "AGUÁ E ESGOTO"
+    },
+    {
+        "id_rubrica": 583,
+        "rubrica": "MEDICAMENTOS"
+    },
+    {
+        "id_rubrica": 584,
+        "rubrica": "Pagamento de profissionais especializados"
+    },
+    {
+        "id_rubrica": 585,
+        "rubrica": "MEDICAÇÃO NÃO DISPONÍVEL NAS UNIDADES E PROGRAMAS DA SAÚDE DO IDOSO"
+    },
+    {
+        "id_rubrica": 586,
+        "rubrica": "FRALDAS"
+    },
+    {
+        "id_rubrica": 587,
+        "rubrica": "MANUTENÇÃO GERAL"
+    },
+    {
+        "id_rubrica": 588,
+        "rubrica": "MATERIAL DE LIMPEZA E HIGIENE"
+    },
+    {
+        "id_rubrica": 589,
+        "rubrica": "LAVANDERIA"
+    },
+    {
+        "id_rubrica": 590,
+        "rubrica": "FOLHA DE PAGAMENTO"
+    },
+    {
+        "id_rubrica": 591,
+        "rubrica": "RESCISÃO"
+    },
+    {
+        "id_rubrica": 592,
+        "rubrica": "FÉRIAS"
+    },
+    {
+        "id_rubrica": 593,
+        "rubrica": "13º. Salário"
+    },
+    {
+        "id_rubrica": 594,
+        "rubrica": "GRF FÉRIAS"
+    },
+    {
+        "id_rubrica": 595,
+        "rubrica": "GRF 13º. SALÁRIO"
+    },
+    {
+        "id_rubrica": 596,
+        "rubrica": "INSS E IRRF"
+    },
+    {
+        "id_rubrica": 597,
+        "rubrica": "PIS"
+    },
+    {
+        "id_rubrica": 598,
+        "rubrica": "IRRF"
+    },
+    {
+        "id_rubrica": 599,
+        "rubrica": "CONTA ÁGUA"
+    },
+    {
+        "id_rubrica": 600,
+        "rubrica": "CONTA TELEFONE"
+    },
+    {
+        "id_rubrica": 601,
+        "rubrica": "DESPESAS MATERIAL DE HIGIENE"
+    },
+    {
+        "id_rubrica": 602,
+        "rubrica": "DESPESA GÁS"
+    },
+    {
+        "id_rubrica": 603,
+        "rubrica": "DESPESAS CONSUMO"
+    },
+    {
+        "id_rubrica": 604,
+        "rubrica": "DESPESAS COM COMBUSTÍVEL"
+    },
+    {
+        "id_rubrica": 605,
+        "rubrica": "MATERIAL DE EXPEDIENTE"
+    },
+    {
+        "id_rubrica": 606,
+        "rubrica": "MATERIAL DE HIGIENE PESSOAL"
+    },
+    {
+        "id_rubrica": 607,
+        "rubrica": "DESPESAS DE INFORMÁTICA"
+    },
+    {
+        "id_rubrica": 608,
+        "rubrica": "CONTA DE LUZ"
+    },
+    {
+        "id_rubrica": 609,
+        "rubrica": "JOVEM APRENDIZ (FOLHA DE PAGAMENTO)"
+    },
+    {
+        "id_rubrica": 610,
+        "rubrica": "CONTRIBUIÇÃO SINDICAL (TAXA DE CUSTEIO)"
+    },
+    {
+        "id_rubrica": 611,
+        "rubrica": "DESPESAS ALIMENTAÇÃO"
+    },
+    {
+        "id_rubrica": 612,
+        "rubrica": "DESPESAS HIGIENE PESSOAL"
+    },
+    {
+        "id_rubrica": 613,
+        "rubrica": "DESPESAS INTERNET"
+    },
+    {
+        "id_rubrica": 614,
+        "rubrica": "DESPESA CORREIOS"
+    },
+    {
+        "id_rubrica": 615,
+        "rubrica": "PRODUTOS DE LIMPEZA"
+    },
+    {
+        "id_rubrica": 616,
+        "rubrica": "DESPESAS GÁS DE COZINHA"
+    },
+    {
+        "id_rubrica": 617,
+        "rubrica": "DESPESAS MANUTENÇÃO E REPAROS"
+    },
+    {
+        "id_rubrica": 618,
+        "rubrica": "DESPESAS COMLURB"
+    },
+    {
+        "id_rubrica": 619,
+        "rubrica": "DESPESAS UTENSÍLIOS"
+    },
+    {
+        "id_rubrica": 620,
+        "rubrica": "DESPESAS TRANSPORTE"
+    },
+    {
+        "id_rubrica": 621,
+        "rubrica": "MATERIAL DE CONSTRUÇÃO"
+    },
+    {
+        "id_rubrica": 622,
+        "rubrica": "DESPESAS GÁS"
+    },
+    {
+        "id_rubrica": 623,
+        "rubrica": "SERVIÇOS CONTÁBEIS"
+    },
+    {
+        "id_rubrica": 624,
+        "rubrica": "PRODUTOS HIGIENE PESSOAL"
+    },
+    {
+        "id_rubrica": 625,
+        "rubrica": "PRESTAÇÃO DE SERVIÇOS"
+    },
+    {
+        "id_rubrica": 626,
+        "rubrica": "DESPESAS COMBUSTÍVEL"
+    },
+    {
+        "id_rubrica": 627,
+        "rubrica": "DESPESAS SUPRIMENTOS (MEDICAMENTOS)"
+    },
+    {
+        "id_rubrica": 628,
+        "rubrica": "MOTORISTA"
+    },
+    {
+        "id_rubrica": 629,
+        "rubrica": "REMUNERAÇÃO DA EQUIPE DIMENSIONADA"
+    },
+    {
+        "id_rubrica": 630,
+        "rubrica": "AQUISIÇÃO DE MATERIAL DE CONSUMO"
+    },
+    {
+        "id_rubrica": 631,
+        "rubrica": "CONTRATAÇÃO DE SERVIÇOS ADEQUAÇÃO/MANUTENÇÃO DA INFRAESTRUTURA"
+    },
+    {
+        "id_rubrica": 632,
+        "rubrica": "CONTRATAÇÃO DE SERVIÇOS"
+    },
+    {
+        "id_rubrica": 633,
+        "rubrica": "MANUTENÇÃO DO ESPAÇO"
+    },
+    {
+        "id_rubrica": 634,
+        "rubrica": "MANUTENÇÃO DE VEÍCULO"
+    },
+    {
+        "id_rubrica": 635,
+        "rubrica": "ÁGUA"
+    },
+    {
+        "id_rubrica": 636,
+        "rubrica": "TELEFONIA"
+    },
+    {
+        "id_rubrica": 637,
+        "rubrica": "INTERNET"
+    },
+    {
+        "id_rubrica": 638,
+        "rubrica": "TELEVISÃO POR ASSINATURA"
+    },
+    {
+        "id_rubrica": 639,
+        "rubrica": "SERVIÇO DE CONTROLE DE PRAGAS"
+    },
+    {
+        "id_rubrica": 640,
+        "rubrica": "COLETA DE LIXO"
+    },
+    {
+        "id_rubrica": 641,
+        "rubrica": "ASSESSORIA JURÍDICA"
+    },
+    {
+        "id_rubrica": 642,
+        "rubrica": "Assistência financeira complementar da União - Novo Piso Salarial da cat. profissional de Enfermagem"
+    },
+    {
+        "id_rubrica": 643,
+        "rubrica": "GÊNEROS ALIMENTÍCIOS"
+    },
+    {
+        "id_rubrica": 644,
+        "rubrica": "CONTRATAÇÃO DE PRESTADORES DE SERVIÇOS"
+    },
+    {
+        "id_rubrica": 645,
+        "rubrica": "LAZER"
+    },
+    {
+        "id_rubrica": 646,
+        "rubrica": "OUTRAS DESPESAS"
+    },
+    {
+        "id_rubrica": 647,
+        "rubrica": "Ajuda de custos de voluntários"
+    },
+    {
+        "id_rubrica": 648,
+        "rubrica": "Aluguel de transporte"
+    },
+    {
+        "id_rubrica": 649,
+        "rubrica": "Aluguel e Taxas Imobiliárias"
+    },
+    {
+        "id_rubrica": 650,
+        "rubrica": "Aquisição de materiais"
+    },
+    {
+        "id_rubrica": 651,
+        "rubrica": "Atividades Extramuros"
+    },
+    {
+        "id_rubrica": 652,
+        "rubrica": "Capacitação de equipe"
+    },
+    {
+        "id_rubrica": 653,
+        "rubrica": "Compra de Equipamentos"
+    },
+    {
+        "id_rubrica": 654,
+        "rubrica": "Concessionárias"
+    },
+    {
+        "id_rubrica": 655,
+        "rubrica": "Alimentação/Kit Lanche"
+    },
+    {
+        "id_rubrica": 656,
+        "rubrica": "Confecção de uniformes"
+    },
+    {
+        "id_rubrica": 657,
+        "rubrica": "Conservação de adaptação do espaço físico"
+    },
+    {
+        "id_rubrica": 658,
+        "rubrica": "Contratação para oficinas"
+    },
+    {
+        "id_rubrica": 659,
+        "rubrica": "Dedetização"
+    },
+    {
+        "id_rubrica": 660,
+        "rubrica": "Descupinização"
+    },
+    {
+        "id_rubrica": 661,
+        "rubrica": "Desinfecção do espaço"
+    },
+    {
+        "id_rubrica": 662,
+        "rubrica": "Deslocamento de equipe"
+    },
+    {
+        "id_rubrica": 663,
+        "rubrica": "Deslocamento de usuários"
+    },
+    {
+        "id_rubrica": 664,
+        "rubrica": "Deslocamento de usuários e equipe"
+    },
+    {
+        "id_rubrica": 665,
+        "rubrica": "Despesas com Cartório"
+    },
+    {
+        "id_rubrica": 666,
+        "rubrica": "Despesas com Correios"
+    },
+    {
+        "id_rubrica": 667,
+        "rubrica": "Desratização"
+    },
+    {
+        "id_rubrica": 668,
+        "rubrica": "Diárias a colaboradores eventuais no país"
+    },
+    {
+        "id_rubrica": 669,
+        "rubrica": "Equipamentos"
+    },
+    {
+        "id_rubrica": 670,
+        "rubrica": "Equipamentos de proteção, segurança e socorro"
+    },
+    {
+        "id_rubrica": 671,
+        "rubrica": "Exposições, congressos e conferências"
+    },
+    {
+        "id_rubrica": 672,
+        "rubrica": "fornecedores"
+    },
+    {
+        "id_rubrica": 673,
+        "rubrica": "Higiene"
+    },
+    {
+        "id_rubrica": 674,
+        "rubrica": "Higienização de caixa d'água e cisternas"
+    },
+    {
+        "id_rubrica": 675,
+        "rubrica": "Hospedagem de site"
+    },
+    {
+        "id_rubrica": 676,
+        "rubrica": "Instrumentos musicais e artísticos"
+    },
+    {
+        "id_rubrica": 677,
+        "rubrica": "IPTU"
+    },
+    {
+        "id_rubrica": 678,
+        "rubrica": "Lanche"
+    },
+    {
+        "id_rubrica": 679,
+        "rubrica": "Limpeza"
+    },
+    {
+        "id_rubrica": 680,
+        "rubrica": "Limpeza de Caixa D'Água"
+    },
+    {
+        "id_rubrica": 681,
+        "rubrica": "Limpeza de desentupimento de esgoto"
+    },
+    {
+        "id_rubrica": 682,
+        "rubrica": "Limpeza de Reservatórios de Água"
+    },
+    {
+        "id_rubrica": 683,
+        "rubrica": "Limpeza e Manutenção de Caixa d'água"
+    },
+    {
+        "id_rubrica": 684,
+        "rubrica": "Locação de Materiais Permanentes"
+    },
+    {
+        "id_rubrica": 685,
+        "rubrica": "Locação de material permanente"
+    },
+    {
+        "id_rubrica": 686,
+        "rubrica": "Locação de transportes"
+    },
+    {
+        "id_rubrica": 687,
+        "rubrica": "Locação de Veículos"
+    },
+    {
+        "id_rubrica": 688,
+        "rubrica": "Manutenção da estrutura"
+    },
+    {
+        "id_rubrica": 689,
+        "rubrica": "Manutenção de Bens Móveis"
+    },
+    {
+        "id_rubrica": 690,
+        "rubrica": "Manutenção de Computadores"
+    },
+    {
+        "id_rubrica": 691,
+        "rubrica": "Manutenção de Equipamentos"
+    },
+    {
+        "id_rubrica": 692,
+        "rubrica": "Manutenção de Equipamentos de Incêndio"
+    },
+    {
+        "id_rubrica": 693,
+        "rubrica": "Manutenção de Espaço Físico"
+    },
+    {
+        "id_rubrica": 694,
+        "rubrica": "Manutenção de Geladeiras e Freezer"
+    },
+    {
+        "id_rubrica": 695,
+        "rubrica": "Manutenção de Informática"
+    },
+    {
+        "id_rubrica": 696,
+        "rubrica": "Manutenção de software e equipamentos de informática e eletrônicos em geral"
+    },
+    {
+        "id_rubrica": 697,
+        "rubrica": "manutenção e recarga de extintores"
+    },
+    {
+        "id_rubrica": 698,
+        "rubrica": "Manutenção e Reparo do Espaço Físico"
+    },
+    {
+        "id_rubrica": 699,
+        "rubrica": "Materiais de Gêneros Alimentícios"
+    },
+    {
+        "id_rubrica": 700,
+        "rubrica": "Materiais de Gráficas"
+    },
+    {
+        "id_rubrica": 701,
+        "rubrica": "Materiais de Limpeza/Higienização"
+    },
+    {
+        "id_rubrica": 702,
+        "rubrica": "Materiais de Papelaria"
+    },
+    {
+        "id_rubrica": 703,
+        "rubrica": "Materiais de Processamento de Dados"
+    },
+    {
+        "id_rubrica": 704,
+        "rubrica": "Materiais Didáticos"
+    },
+    {
+        "id_rubrica": 705,
+        "rubrica": "Materiais e Manutenção de Luz, Água, Predial e Veículos da Instituição"
+    },
+    {
+        "id_rubrica": 706,
+        "rubrica": "Materiais e Serviços para Piscina"
+    },
+    {
+        "id_rubrica": 707,
+        "rubrica": "Materiais Gráficos"
+    },
+    {
+        "id_rubrica": 708,
+        "rubrica": "Materiais para Oficinas"
+    },
+    {
+        "id_rubrica": 709,
+        "rubrica": "Material de Áudio, Vídeo e Foto"
+    },
+    {
+        "id_rubrica": 710,
+        "rubrica": "Material de Escritório"
+    },
+    {
+        "id_rubrica": 711,
+        "rubrica": "Material de Escritório e Papelaria"
+    },
+    {
+        "id_rubrica": 712,
+        "rubrica": "Material de Esporte"
+    },
+    {
+        "id_rubrica": 713,
+        "rubrica": "Material de Esporte e Oficina Pedagógica"
+    },
+    {
+        "id_rubrica": 714,
+        "rubrica": "Material de Higiene e Limpeza"
+    },
+    {
+        "id_rubrica": 715,
+        "rubrica": "Material de Informática"
+    },
+    {
+        "id_rubrica": 716,
+        "rubrica": "Material de Livraria"
+    },
+    {
+        "id_rubrica": 717,
+        "rubrica": "Material de Manutenção e Reparos"
+    },
+    {
+        "id_rubrica": 718,
+        "rubrica": "Material de Manutenção Predial e Reparos"
+    },
+    {
+        "id_rubrica": 719,
+        "rubrica": "Material de Oficinas Pedagógicas"
+    },
+    {
+        "id_rubrica": 720,
+        "rubrica": "Material de Papelaria"
+    },
+    {
+        "id_rubrica": 721,
+        "rubrica": "material de reparo"
+    },
+    {
+        "id_rubrica": 722,
+        "rubrica": "Material Educacional e Cultural"
+    },
+    {
+        "id_rubrica": 723,
+        "rubrica": "Material Educativo e Esportivo"
+    },
+    {
+        "id_rubrica": 724,
+        "rubrica": "Material Elétrico e Eletrônico"
+    },
+    {
+        "id_rubrica": 725,
+        "rubrica": "material lúdico"
+    },
+    {
+        "id_rubrica": 726,
+        "rubrica": "Material lúdico, didático e pedagógico"
+    },
+    {
+        "id_rubrica": 727,
+        "rubrica": "Material para Copa e Cozinha"
+    },
+    {
+        "id_rubrica": 728,
+        "rubrica": "Material para divulgação"
+    },
+    {
+        "id_rubrica": 729,
+        "rubrica": "Material para Oficinas"
+    },
+    {
+        "id_rubrica": 730,
+        "rubrica": "Material para Oficinas (Artes, informática e raciocínio lógico)"
+    },
+    {
+        "id_rubrica": 731,
+        "rubrica": "material para reparos e manutenção"
+    },
+    {
+        "id_rubrica": 732,
+        "rubrica": "Material Pedagógico e Oficinas"
+    },
+    {
+        "id_rubrica": 733,
+        "rubrica": "Medicina do Trabalho"
+    },
+    {
+        "id_rubrica": 734,
+        "rubrica": "Medicina Ocupacional"
+    },
+    {
+        "id_rubrica": 735,
+        "rubrica": "Mobiliário (exige autorização prévia)"
+    },
+    {
+        "id_rubrica": 736,
+        "rubrica": "Oficinas"
+    },
+    {
+        "id_rubrica": 737,
+        "rubrica": "Oficinas para mães e crianças"
+    },
+    {
+        "id_rubrica": 738,
+        "rubrica": "Programa de informática"
+    },
+    {
+        "id_rubrica": 739,
+        "rubrica": "Recarga e Manutenção de Extintores"
+    },
+    {
+        "id_rubrica": 740,
+        "rubrica": "Seguro de veículo (Van)"
+    },
+    {
+        "id_rubrica": 741,
+        "rubrica": "Seguro Social"
+    },
+    {
+        "id_rubrica": 742,
+        "rubrica": "Serviço de áudio, vídeo, foto e filmagem"
+    },
+    {
+        "id_rubrica": 743,
+        "rubrica": "Serviço de Comunicação"
+    },
+    {
+        "id_rubrica": 744,
+        "rubrica": "Serviço de Informática"
+    },
+    {
+        "id_rubrica": 745,
+        "rubrica": "Serviço de limpeza de caixa d'água e potabilidade"
+    },
+    {
+        "id_rubrica": 746,
+        "rubrica": "Serviço de Manutenção do Local"
+    },
+    {
+        "id_rubrica": 747,
+        "rubrica": "serviço de manutenção e conservação das instalações"
+    },
+    {
+        "id_rubrica": 748,
+        "rubrica": "Serviço de Marketing"
+    },
+    {
+        "id_rubrica": 749,
+        "rubrica": "Serviço de Pintura"
+    },
+    {
+        "id_rubrica": 750,
+        "rubrica": "Serviço de seleção e treinamento"
+    },
+    {
+        "id_rubrica": 751,
+        "rubrica": "Serviços Advocatícios"
+    },
+    {
+        "id_rubrica": 752,
+        "rubrica": "Serviços Contábeis e Jurídicos"
+    },
+    {
+        "id_rubrica": 753,
+        "rubrica": "Serviços de apoio administrativo"
+    },
+    {
+        "id_rubrica": 754,
+        "rubrica": "Serviços de brigada de incêndio"
+    },
+    {
+        "id_rubrica": 755,
+        "rubrica": "Serviços de comunicação em geral"
+    },
+    {
+        "id_rubrica": 756,
+        "rubrica": "Serviços de conservação e manutenção"
+    },
+    {
+        "id_rubrica": 757,
+        "rubrica": "Serviços de Contabilidade"
+    },
+    {
+        "id_rubrica": 758,
+        "rubrica": "Serviços de Dedetização"
+    },
+    {
+        "id_rubrica": 759,
+        "rubrica": "Serviços de Gráfica"
+    },
+    {
+        "id_rubrica": 760,
+        "rubrica": "Serviços de higienização de reservatórios de água"
+    },
+    {
+        "id_rubrica": 761,
+        "rubrica": "Serviços de Limpeza"
+    },
+    {
+        "id_rubrica": 762,
+        "rubrica": "Serviços de limpeza de caixa d'água"
+    },
+    {
+        "id_rubrica": 763,
+        "rubrica": "Serviços de limpeza e conservação"
+    },
+    {
+        "id_rubrica": 764,
+        "rubrica": "Serviços de Manutenção de Ar Condicionado"
+    },
+    {
+        "id_rubrica": 765,
+        "rubrica": "Serviços de manutenção e reparos com refrigeração, marcenaria, serralheria e equipamentos eletrônico"
+    },
+    {
+        "id_rubrica": 766,
+        "rubrica": "Serviços de manutenção, conservação e desinfecção de espaço físico e imobiliário"
+    },
+    {
+        "id_rubrica": 767,
+        "rubrica": "Serviços de Pessoas Jurídicas"
+    },
+    {
+        "id_rubrica": 768,
+        "rubrica": "Serviços de publicidade de utilidade pública"
+    },
+    {
+        "id_rubrica": 769,
+        "rubrica": "Serviços de purificador de água/bebedouro"
+    },
+    {
+        "id_rubrica": 770,
+        "rubrica": "Serviços de Reparos de Elétrica"
+    },
+    {
+        "id_rubrica": 771,
+        "rubrica": "Serviços de Reparos de Hidráulica"
+    },
+    {
+        "id_rubrica": 772,
+        "rubrica": "Serviços de Reparos de Informática"
+    },
+    {
+        "id_rubrica": 773,
+        "rubrica": "Serviços de Reparos de Marcenaria"
+    },
+    {
+        "id_rubrica": 774,
+        "rubrica": "Serviços de Reparos de Pintura"
+    },
+    {
+        "id_rubrica": 775,
+        "rubrica": "Serviços de Reparos de Serralheria"
+    },
+    {
+        "id_rubrica": 776,
+        "rubrica": "Serviços de Reparos Elétricos"
+    },
+    {
+        "id_rubrica": 777,
+        "rubrica": "Serviços de Reparos Hidráulicos"
+    },
+    {
+        "id_rubrica": 778,
+        "rubrica": "Serviços de reparos, pinturas, adaptações e reformas"
+    },
+    {
+        "id_rubrica": 779,
+        "rubrica": "Serviços Jurídicos"
+    },
+    {
+        "id_rubrica": 780,
+        "rubrica": "Serviços Terceirizados"
+    },
+    {
+        "id_rubrica": 781,
+        "rubrica": "Software"
+    },
+    {
+        "id_rubrica": 782,
+        "rubrica": "Taxa Anual da Vigilância Sanitária"
+    },
+    {
+        "id_rubrica": 783,
+        "rubrica": "Taxa de Incêndio"
+    },
+    {
+        "id_rubrica": 784,
+        "rubrica": "Taxa de Inspeção Sanitária"
+    },
+    {
+        "id_rubrica": 785,
+        "rubrica": "Taxa de vigilância sanitária"
+    },
+    {
+        "id_rubrica": 786,
+        "rubrica": "Taxas federais, estaduais e municipais"
+    },
+    {
+        "id_rubrica": 787,
+        "rubrica": "Tecnologias Assistivas"
+    },
+    {
+        "id_rubrica": 788,
+        "rubrica": "Telefone"
+    },
+    {
+        "id_rubrica": 789,
+        "rubrica": "Transporte e alimentação dos usuários"
+    },
+    {
+        "id_rubrica": 790,
+        "rubrica": "Utensílios de cozinha"
+    },
+    {
+        "id_rubrica": 791,
+        "rubrica": "RH - Juliano Moreira"
+    },
+    {
+        "id_rubrica": 792,
+        "rubrica": "GRF"
+    },
+    {
+        "id_rubrica": 793,
+        "rubrica": "AQUISIÇÃO DE BENS MÓVEIS E PRESTAÇÃO DE SERVIÇOS DE TERCEIROS"
+    },
+    {
+        "id_rubrica": 794,
+        "rubrica": "RH - Centro Especializado de Estímulo do Desenvolvimento Infantil (CEEDI)"
+    },
+    {
+        "id_rubrica": 795,
+        "rubrica": "Custeio - Centro Especializado de Estímulo do Desenvolvimento Infantil (CEEDI)"
+    },
+    {
+        "id_rubrica": 796,
+        "rubrica": "SERVIÇO RESIDENCIAL TERAPÊUTICO"
+    },
+    {
+        "id_rubrica": 797,
+        "rubrica": "RH SRT"
+    },
+    {
+        "id_rubrica": 798,
+        "rubrica": "Total"
+    },
+    {
+        "id_rubrica": 799,
+        "rubrica": "Apoio à Gestão"
+    },
+    {
+        "id_rubrica": 800,
+        "rubrica": "RH - Supervisão e Gerência PADI"
+    },
+    {
+        "id_rubrica": 801,
+        "rubrica": "RH - Equipe EMAD"
+    },
+    {
+        "id_rubrica": 802,
+        "rubrica": "RH - Equipe EMAP"
+    },
+    {
+        "id_rubrica": 803,
+        "rubrica": "RH - Equipe AID"
+    },
+    {
+        "id_rubrica": 804,
+        "rubrica": "Contratos e Consumo"
+    },
+    {
+        "id_rubrica": 805,
+        "rubrica": "Investimentos"
+    },
+    {
+        "id_rubrica": 806,
+        "rubrica": "Total Fixa"
+    },
+    {
+        "id_rubrica": 807,
+        "rubrica": "Total Variável"
+    },
+    {
+        "id_rubrica": 808,
+        "rubrica": "Total Padi"
+    },
+    {
+        "id_rubrica": 809,
+        "rubrica": "Apoioa Gestão OSC"
+    },
+    {
+        "id_rubrica": 810,
+        "rubrica": "Apoio à Gestão IVISA-Rio"
+    },
+    {
+        "id_rubrica": 811,
+        "rubrica": "Equipe Administrativa"
+    },
+    {
+        "id_rubrica": 812,
+        "rubrica": "RH Administrativo"
+    },
+    {
+        "id_rubrica": 813,
+        "rubrica": "RH - Centro Cirúrgico"
+    },
+    {
+        "id_rubrica": 814,
+        "rubrica": "Equipe UPAV"
+    },
+    {
+        "id_rubrica": 815,
+        "rubrica": "RH - Equipe UPAV"
+    },
+    {
+        "id_rubrica": 816,
+        "rubrica": "Equipe dos Ambulatórios"
+    },
+    {
+        "id_rubrica": 817,
+        "rubrica": "Contratos e Serviços"
+    },
+    {
+        "id_rubrica": 818,
+        "rubrica": "Adaptações"
+    },
+    {
+        "id_rubrica": 819,
+        "rubrica": "Investimento, adaptações e equipamentos"
+    },
+    {
+        "id_rubrica": 820,
+        "rubrica": "RH Equipe dos Ambulatórios"
+    },
+    {
+        "id_rubrica": 821,
+        "rubrica": "Diretoria"
+    },
+    {
+        "id_rubrica": 822,
+        "rubrica": "Unidade de Neonatologia"
+    },
+    {
+        "id_rubrica": 823,
+        "rubrica": "Alojamento conjunto"
+    },
+    {
+        "id_rubrica": 824,
+        "rubrica": "Centro Cirurgico"
+    },
+    {
+        "id_rubrica": 825,
+        "rubrica": "Emergência Obstétrica"
+    },
+    {
+        "id_rubrica": 826,
+        "rubrica": "NIR e Faturamento"
+    },
+    {
+        "id_rubrica": 827,
+        "rubrica": "Central de Material de Especialização - CME"
+    },
+    {
+        "id_rubrica": 828,
+        "rubrica": "Hematoterapia"
+    },
+    {
+        "id_rubrica": 829,
+        "rubrica": "Ultrassonografia"
+    },
+    {
+        "id_rubrica": 830,
+        "rubrica": "Radiologia"
+    },
+    {
+        "id_rubrica": 831,
+        "rubrica": "Banco Lactário"
+    },
+    {
+        "id_rubrica": 832,
+        "rubrica": "SERVIÇO DE APOIO ESPECIALIZADO"
+    },
+    {
+        "id_rubrica": 833,
+        "rubrica": "FARMÁCIA"
+    },
+    {
+        "id_rubrica": 834,
+        "rubrica": "manutenção preventiva e corretiva de elevadores"
+    },
+    {
+        "id_rubrica": 835,
+        "rubrica": "Núcleo téc. de assessoramento"
+    },
+    {
+        "id_rubrica": 836,
+        "rubrica": "Coordenação Módulos Acolhimento/Transporte"
+    },
+    {
+        "id_rubrica": 837,
+        "rubrica": "Módulo Acolhimento"
+    },
+    {
+        "id_rubrica": 838,
+        "rubrica": "Equipe Módulo Acolhimento"
+    },
+    {
+        "id_rubrica": 839,
+        "rubrica": "Equipe Módulo Transporte"
+    },
+    {
+        "id_rubrica": 840,
+        "rubrica": "Locação de Ambulância"
+    },
+    {
+        "id_rubrica": 841,
+        "rubrica": "Apoio a Shows"
+    },
+    {
+        "id_rubrica": 842,
+        "rubrica": "Equipe de Gestão"
+    },
+    {
+        "id_rubrica": 843,
+        "rubrica": "Equipe Fixa"
+    },
+    {
+        "id_rubrica": 844,
+        "rubrica": "Equipe Itinerantes"
+    },
+    {
+        "id_rubrica": 845,
+        "rubrica": "Custo de Implantação"
+    },
+    {
+        "id_rubrica": 846,
+        "rubrica": "Locação de Espaços"
+    },
+    {
+        "id_rubrica": 847,
+        "rubrica": "Custos Operacionais"
+    },
+    {
+        "id_rubrica": 848,
+        "rubrica": "Locação de Automóveis"
+    },
+    {
+        "id_rubrica": 849,
+        "rubrica": "Locação de Mobiliario e Equipamentos"
+    },
+    {
+        "id_rubrica": 850,
+        "rubrica": "Curso de Formação de Lideranças Comunitária e Terceiro Setor"
+    },
+    {
+        "id_rubrica": 851,
+        "rubrica": "Oficinas de Atividades Recreativas, Culturais e Artísticas, com fornecimento de mão de obra, materia"
+    },
+    {
+        "id_rubrica": 852,
+        "rubrica": "Demais Despesas"
+    },
+    {
+        "id_rubrica": 853,
+        "rubrica": "Custo Operacional"
+    },
+    {
+        "id_rubrica": 854,
+        "rubrica": "Empregados e Dirigentes"
+    },
+    {
+        "id_rubrica": 855,
+        "rubrica": "RH - Equipe Multidisciplinar e Assistencial"
+    },
+    {
+        "id_rubrica": 856,
+        "rubrica": "RH - Pronto Atendimento"
+    },
+    {
+        "id_rubrica": 857,
+        "rubrica": "RH - CTI Geral"
+    },
+    {
+        "id_rubrica": 858,
+        "rubrica": "RH - Unidade Pediatria"
+    },
+    {
+        "id_rubrica": 859,
+        "rubrica": "RH - Unidade de Psiquiatria"
+    },
+    {
+        "id_rubrica": 860,
+        "rubrica": "RH - CTQ"
+    },
+    {
+        "id_rubrica": 861,
+        "rubrica": "Telemedicina"
+    },
+    {
+        "id_rubrica": 862,
+        "rubrica": "CPRE"
+    },
+    {
+        "id_rubrica": 863,
+        "rubrica": "RH Equipe DA UTI"
+    },
+    {
+        "id_rubrica": 864,
+        "rubrica": "RH da Equipe da UTI Ped"
+    },
+    {
+        "id_rubrica": 865,
+        "rubrica": "RH da Equipe Cirurgia Geral"
+    },
+    {
+        "id_rubrica": 866,
+        "rubrica": "RH da Equipe Cirurgia Pediátrica"
+    },
+    {
+        "id_rubrica": 867,
+        "rubrica": "RH da Equipe de Ginecologia"
+    },
+    {
+        "id_rubrica": 868,
+        "rubrica": "RH da Equipe Clínica Médica"
+    },
+    {
+        "id_rubrica": 869,
+        "rubrica": "RH da Equipe  Pediatria"
+    },
+    {
+        "id_rubrica": 870,
+        "rubrica": "RH da Equipe do Hospital Dia"
+    },
+    {
+        "id_rubrica": 871,
+        "rubrica": "RH da Equipe da Pneumologia"
+    },
+    {
+        "id_rubrica": 872,
+        "rubrica": "RH da Equipe Nefrologia/urologia"
+    },
+    {
+        "id_rubrica": 873,
+        "rubrica": "RH da Equipe Emergência"
+    },
+    {
+        "id_rubrica": 874,
+        "rubrica": "RH da Equipe Multiprofissional"
+    },
+    {
+        "id_rubrica": 875,
+        "rubrica": "RH da Equipe Multiespecial"
+    },
+    {
+        "id_rubrica": 876,
+        "rubrica": "RH da Equipe Colonoscopia/Endoscopia"
+    },
+    {
+        "id_rubrica": 877,
+        "rubrica": "Equipe servilo Oncologia"
+    },
+    {
+        "id_rubrica": 878,
+        "rubrica": "RH da Equipe de diálise"
+    }
+]

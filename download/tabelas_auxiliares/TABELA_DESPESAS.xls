@@ -1,0 +1,1161 @@
+<table width="65%" align="center" cellspacing="1" cellpadding="3" border="0" bgcolor="#CFCFCF"  bgcolor="#FFFFFF" border="1"  style="cursor: pointer;"><tr bgcolor="#FFFFFF">
+					<td><img src="http://osinfo1.prefeitura.rio///imagens/logo_pref_rj.jpg" style="float:left;padding:10px"></td>
+					<td colspan="1" align="left" nowrap="true" >
+						<br/>Cadastro de Despesa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border:0;font: normal normal normal 11px Verdana, Sans-Serif;" valign="top" align="right" width="1%" nowrap="true" >11-04-2025 11:49</span>
+						<br/>
+						
+					</td>
+				</tr><tr>
+				<td class="titulo">Código</td>
+				<td class="titulo">Despesa</td>
+				</tr>
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=1; document.formulario.submit();">
+						<td nowrap="true">01&nbsp;</td>
+						<td nowrap="true">PESSOAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=9; document.formulario.submit();">
+						<td nowrap="true">01.01&nbsp;</td>
+						<td nowrap="true">SALARIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=70; document.formulario.submit();">
+						<td nowrap="true">01.01.01&nbsp;</td>
+						<td nowrap="true">FOLHA NORMAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=71; document.formulario.submit();">
+						<td nowrap="true">01.01.02&nbsp;</td>
+						<td nowrap="true">13º SALÁRIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=72; document.formulario.submit();">
+						<td nowrap="true">01.01.03&nbsp;</td>
+						<td nowrap="true">FÉRIAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=167; document.formulario.submit();">
+						<td nowrap="true">01.01.04&nbsp;</td>
+						<td nowrap="true">RESCISÃO CONTRATUAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=243; document.formulario.submit();">
+						<td nowrap="true">01.01.05&nbsp;</td>
+						<td nowrap="true">1/3 DE FÉRIAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=244; document.formulario.submit();">
+						<td nowrap="true">01.01.06&nbsp;</td>
+						<td nowrap="true">SALDO SALÁRIO RESCISÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=10; document.formulario.submit();">
+						<td nowrap="true">01.02&nbsp;</td>
+						<td nowrap="true">BENEFÍCIOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=73; document.formulario.submit();">
+						<td nowrap="true">01.02.01&nbsp;</td>
+						<td nowrap="true">VALE TRANSPORTE</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=74; document.formulario.submit();">
+						<td nowrap="true">01.02.02&nbsp;</td>
+						<td nowrap="true">CESTA BÁSICA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=75; document.formulario.submit();">
+						<td nowrap="true">01.02.03&nbsp;</td>
+						<td nowrap="true">CONVÊNIOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=154; document.formulario.submit();">
+						<td nowrap="true">01.02.04&nbsp;</td>
+						<td nowrap="true">VALE ALIMENTAÇÃO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=179; document.formulario.submit();">
+						<td nowrap="true">01.02.05&nbsp;</td>
+						<td nowrap="true">VALE REFEIÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=201; document.formulario.submit();">
+						<td nowrap="true">01.02.06&nbsp;</td>
+						<td nowrap="true">VALE COMBUSTÍVEL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=233; document.formulario.submit();">
+						<td nowrap="true">01.02.07&nbsp;</td>
+						<td nowrap="true">AUXÍLIO MORADIA (MAIS MÉDICOS)</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=236; document.formulario.submit();">
+						<td nowrap="true">01.02.08&nbsp;</td>
+						<td nowrap="true">SEGURO DE VIDA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=11; document.formulario.submit();">
+						<td nowrap="true">01.03&nbsp;</td>
+						<td nowrap="true">ENCARGOS e CONTRIBUIÇÕES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=76; document.formulario.submit();">
+						<td nowrap="true">01.03.01&nbsp;</td>
+						<td nowrap="true">FGTS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=77; document.formulario.submit();">
+						<td nowrap="true">01.03.02&nbsp;</td>
+						<td nowrap="true">OUTROS DESCONTOS DE ENCARGOS e CONTRIBUIÇÕES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=78; document.formulario.submit();">
+						<td nowrap="true">01.03.03&nbsp;</td>
+						<td nowrap="true">ADICIONAL 1/3 DE FÉRIAS- OUTROS DESCONTOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=155; document.formulario.submit();">
+						<td nowrap="true">01.03.04&nbsp;</td>
+						<td nowrap="true">INSS S/ FOPAG</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=156; document.formulario.submit();">
+						<td nowrap="true">01.03.05&nbsp;</td>
+						<td nowrap="true">IRRF S/ FOPAG</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=157; document.formulario.submit();">
+						<td nowrap="true">01.03.06&nbsp;</td>
+						<td nowrap="true">FGTS Recisão</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=171; document.formulario.submit();">
+						<td nowrap="true">01.03.07&nbsp;</td>
+						<td nowrap="true">PIS S/FOPAG</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=196; document.formulario.submit();">
+						<td nowrap="true">01.03.08&nbsp;</td>
+						<td nowrap="true">EMPRÉSTIMO CONSIGNADO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=259; document.formulario.submit();">
+						<td nowrap="true">01.03.09&nbsp;</td>
+						<td nowrap="true">ISS - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=260; document.formulario.submit();">
+						<td nowrap="true">01.03.10&nbsp;</td>
+						<td nowrap="true">INSS - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=261; document.formulario.submit();">
+						<td nowrap="true">01.03.11&nbsp;</td>
+						<td nowrap="true">IR - PAGAMENTO DE AUTONÔMO (EXCETO SERVIÇOS DE TERCEIROS)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=12; document.formulario.submit();">
+						<td nowrap="true">01.04&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS DE PESSOAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=98; document.formulario.submit();">
+						<td nowrap="true">01.04.01&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS DE PESSOAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=199; document.formulario.submit();">
+						<td nowrap="true">01.04.02&nbsp;</td>
+						<td nowrap="true">BLOQUEIO JUDICIAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=225; document.formulario.submit();">
+						<td nowrap="true">01.04.03&nbsp;</td>
+						<td nowrap="true">TRANSFERÊNCIA DE PROVISIONAMENTO PARA OUTRO CONTRATO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=153; document.formulario.submit();">
+						<td nowrap="true">01.05&nbsp;</td>
+						<td nowrap="true">PAGAMENTO DE AUTÔNOMO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=158; document.formulario.submit();">
+						<td nowrap="true">01.05.01&nbsp;</td>
+						<td nowrap="true">PAGAMENTOS A AUTÔNOMOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=159; document.formulario.submit();">
+						<td nowrap="true">01.06&nbsp;</td>
+						<td nowrap="true">PAGAMENTOS A ESTAGIÁRIOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=160; document.formulario.submit();">
+						<td nowrap="true">01.06.01&nbsp;</td>
+						<td nowrap="true">PAGAMENTOS A ESTAGIÁRIOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=198; document.formulario.submit();">
+						<td nowrap="true">01.06.02&nbsp;</td>
+						<td nowrap="true">PAGAMENTO A BOLSISTAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=224; document.formulario.submit();">
+						<td nowrap="true">01.06.03&nbsp;</td>
+						<td nowrap="true">SERVIÇOS MÉDICOS ( DESABILITADO A PARTIR DA COMPETÊNCIA DE OUTUBRO DE 2019)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=2; document.formulario.submit();">
+						<td nowrap="true">02&nbsp;</td>
+						<td nowrap="true">MATERIAIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=13; document.formulario.submit();">
+						<td nowrap="true">02.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE ESCRITÓRIO/PAPÉIS EM GERAL/ IMPRESSOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=99; document.formulario.submit();">
+						<td nowrap="true">02.01.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE ESCRITÓRIO/PAPÉIS EM GERAL/ IMPRESSOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=14; document.formulario.submit();">
+						<td nowrap="true">02.02&nbsp;</td>
+						<td nowrap="true">MATERIAL DE INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=100; document.formulario.submit();">
+						<td nowrap="true">02.02.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=15; document.formulario.submit();">
+						<td nowrap="true">02.03&nbsp;</td>
+						<td nowrap="true">PEÇAS e MATERIAIS MANUTENÇÃO PREDIAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=79; document.formulario.submit();">
+						<td nowrap="true">02.03.01&nbsp;</td>
+						<td nowrap="true">MANUTENÇÃO PREDIAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=80; document.formulario.submit();">
+						<td nowrap="true">02.03.02&nbsp;</td>
+						<td nowrap="true">PEÇAS DE EQUIPAMENTOS EM GERAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=81; document.formulario.submit();">
+						<td nowrap="true">02.03.03&nbsp;</td>
+						<td nowrap="true">PEÇAS DE EQUIPAMENTOS INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=82; document.formulario.submit();">
+						<td nowrap="true">02.03.04&nbsp;</td>
+						<td nowrap="true">FERRAMENTAS AVULSAS NÃO ACIONADAS POR FORÇA MOTRIZ</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=16; document.formulario.submit();">
+						<td nowrap="true">02.04&nbsp;</td>
+						<td nowrap="true">COMBUSTÍVEIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=101; document.formulario.submit();">
+						<td nowrap="true">02.04.01&nbsp;</td>
+						<td nowrap="true">COMBUSTÍVEIS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=17; document.formulario.submit();">
+						<td nowrap="true">02.05&nbsp;</td>
+						<td nowrap="true">MATERIAL DE LIMPEZA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=102; document.formulario.submit();">
+						<td nowrap="true">02.05.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE LIMPEZA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=18; document.formulario.submit();">
+						<td nowrap="true">02.06&nbsp;</td>
+						<td nowrap="true">GÊNEROS ALIMENTÍCIOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=103; document.formulario.submit();">
+						<td nowrap="true">02.06.01&nbsp;</td>
+						<td nowrap="true">GÊNEROS ALIMENTÍCIOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=19; document.formulario.submit();">
+						<td nowrap="true">02.07&nbsp;</td>
+						<td nowrap="true">MATERIAL DE USO MEDICINAL / EXAMES / ODONTOLÓGICOS / VETERINÁRIOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=83; document.formulario.submit();">
+						<td nowrap="true">02.07.01&nbsp;</td>
+						<td nowrap="true">MEDICAMENTOS e INSUMOS FARMACÊUTICOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=84; document.formulario.submit();">
+						<td nowrap="true">02.07.02&nbsp;</td>
+						<td nowrap="true">GASES MEDICINAIS(FORNECIMENTO)</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=189; document.formulario.submit();">
+						<td nowrap="true">02.07.03&nbsp;</td>
+						<td nowrap="true">Materiais para Laboratórios</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=249; document.formulario.submit();">
+						<td nowrap="true">02.07.04&nbsp;</td>
+						<td nowrap="true">SANEANTES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=250; document.formulario.submit();">
+						<td nowrap="true">02.07.05&nbsp;</td>
+						<td nowrap="true">MATERIAL DE USO ODONTOLÓGICO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=251; document.formulario.submit();">
+						<td nowrap="true">02.07.06&nbsp;</td>
+						<td nowrap="true">MATERIAL DE RADIOLOGIA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=252; document.formulario.submit();">
+						<td nowrap="true">02.07.07&nbsp;</td>
+						<td nowrap="true">MATERIAL DE HEMOTERAPIA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=253; document.formulario.submit();">
+						<td nowrap="true">02.07.08&nbsp;</td>
+						<td nowrap="true">MATERIAL PARA USO VETERINÁRIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=254; document.formulario.submit();">
+						<td nowrap="true">02.07.09&nbsp;</td>
+						<td nowrap="true">NUTRIÇÃO PARENTERAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=255; document.formulario.submit();">
+						<td nowrap="true">02.07.10&nbsp;</td>
+						<td nowrap="true">NUTRIÇÃO ENTERAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=20; document.formulario.submit();">
+						<td nowrap="true">02.08&nbsp;</td>
+						<td nowrap="true">MATERIAL EDUCATIVO/ESPORTIVO/CULTURAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=104; document.formulario.submit();">
+						<td nowrap="true">02.08.01&nbsp;</td>
+						<td nowrap="true">MATERIAL EDUCATIVO/ESPORTIVO/CULTURAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=21; document.formulario.submit();">
+						<td nowrap="true">02.09&nbsp;</td>
+						<td nowrap="true">LIVROS/JORNAIS/PUBLICAÇÕES EM GERAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=105; document.formulario.submit();">
+						<td nowrap="true">02.09.01&nbsp;</td>
+						<td nowrap="true">LIVROS/JORNAIS/PUBLICAÇÕES EM GERAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=22; document.formulario.submit();">
+						<td nowrap="true">02.10&nbsp;</td>
+						<td nowrap="true">MATERIAL DE CONSTRUÇÃO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=106; document.formulario.submit();">
+						<td nowrap="true">02.10.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE CONSTRUÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=96; document.formulario.submit();">
+						<td nowrap="true">02.11&nbsp;</td>
+						<td nowrap="true">VESTUÁRIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=107; document.formulario.submit();">
+						<td nowrap="true">02.11.01&nbsp;</td>
+						<td nowrap="true">VESTUÁRIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=97; document.formulario.submit();">
+						<td nowrap="true">02.12&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS DE CONSUMO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=108; document.formulario.submit();">
+						<td nowrap="true">02.12.01&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS DE CONSUMO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=202; document.formulario.submit();">
+						<td nowrap="true">02.13&nbsp;</td>
+						<td nowrap="true">COMPOSIÇÃO DE FUNDO FIXO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=185; document.formulario.submit();">
+						<td nowrap="true">02.13.01&nbsp;</td>
+						<td nowrap="true">COMPOSIÇÃO DO FUNDO FIXO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=187; document.formulario.submit();">
+						<td nowrap="true">02.14&nbsp;</td>
+						<td nowrap="true">Materiais Hospitalares</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=188; document.formulario.submit();">
+						<td nowrap="true">02.14.01&nbsp;</td>
+						<td nowrap="true">Materiais Hospitalares</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=240; document.formulario.submit();">
+						<td nowrap="true">02.14.02&nbsp;</td>
+						<td nowrap="true">OPME (ÓRTESE, PRÓTESE E MATERIAIS ESPECIAIS)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=256; document.formulario.submit();">
+						<td nowrap="true">02.14.03&nbsp;</td>
+						<td nowrap="true">ENXOVAL HOSPITALAR</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=257; document.formulario.submit();">
+						<td nowrap="true">02.15&nbsp;</td>
+						<td nowrap="true">MATERIAIS PARA EQUIPAMENTOS HOSPITALARES</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=258; document.formulario.submit();">
+						<td nowrap="true">02.15.01&nbsp;</td>
+						<td nowrap="true">MATERIAIS PARA EQUIPAMENTOS HOSPITALARES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=266; document.formulario.submit();">
+						<td nowrap="true">02.16&nbsp;</td>
+						<td nowrap="true">MATERIAL DE GUARDA VIDA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=267; document.formulario.submit();">
+						<td nowrap="true">02.16.01&nbsp;</td>
+						<td nowrap="true">MATERIAL DE GUARDA VIDA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=3; document.formulario.submit();">
+						<td nowrap="true">03&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE TERCEIROS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=24; document.formulario.submit();">
+						<td nowrap="true">03.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS-MANUTENÇÃO PREDIAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=85; document.formulario.submit();">
+						<td nowrap="true">03.01.01&nbsp;</td>
+						<td nowrap="true">REPAROS/ADAPTAÇÕES</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=86; document.formulario.submit();">
+						<td nowrap="true">03.01.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE DEDETIZAÇÃO/DESRATIZAÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=25; document.formulario.submit();">
+						<td nowrap="true">03.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS EM GERAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=109; document.formulario.submit();">
+						<td nowrap="true">03.02.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS EM GERAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=26; document.formulario.submit();">
+						<td nowrap="true">03.03&nbsp;</td>
+						<td nowrap="true">SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS DE INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=110; document.formulario.submit();">
+						<td nowrap="true">03.03.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS-MANUTENÇÃO EQUIPAMENTOS DE INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=27; document.formulario.submit();">
+						<td nowrap="true">03.04&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO DE EQUIPAMENTOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=111; document.formulario.submit();">
+						<td nowrap="true">03.04.01&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO DE EQUIPAMENTOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=28; document.formulario.submit();">
+						<td nowrap="true">03.05&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO PREDIAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=112; document.formulario.submit();">
+						<td nowrap="true">03.05.01&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO PREDIAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=29; document.formulario.submit();">
+						<td nowrap="true">03.06&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO CILINDROS GASES MEDICINAIS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=113; document.formulario.submit();">
+						<td nowrap="true">03.06.01&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO CILINDROS GASES MEDICINAIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=30; document.formulario.submit();">
+						<td nowrap="true">03.07&nbsp;</td>
+						<td nowrap="true">LIMPEZA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=114; document.formulario.submit();">
+						<td nowrap="true">03.07.01&nbsp;</td>
+						<td nowrap="true">LIMPEZA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=31; document.formulario.submit();">
+						<td nowrap="true">03.08&nbsp;</td>
+						<td nowrap="true">SEGURANÇA e VIGILÃ‚NCIA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=115; document.formulario.submit();">
+						<td nowrap="true">03.08.01&nbsp;</td>
+						<td nowrap="true">SEGURANÇA e VIGILÃ‚NCIA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=32; document.formulario.submit();">
+						<td nowrap="true">03.09&nbsp;</td>
+						<td nowrap="true">TV A CABO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=116; document.formulario.submit();">
+						<td nowrap="true">03.09.01&nbsp;</td>
+						<td nowrap="true">TV A CABO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=33; document.formulario.submit();">
+						<td nowrap="true">03.10&nbsp;</td>
+						<td nowrap="true">TELEFONIA A CABO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=117; document.formulario.submit();">
+						<td nowrap="true">03.10.01&nbsp;</td>
+						<td nowrap="true">TELEFONIA A CABO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=34; document.formulario.submit();">
+						<td nowrap="true">03.11&nbsp;</td>
+						<td nowrap="true">LINK DE INTERNET</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=118; document.formulario.submit();">
+						<td nowrap="true">03.11.01&nbsp;</td>
+						<td nowrap="true">INTERNET A CABO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=200; document.formulario.submit();">
+						<td nowrap="true">03.11.02&nbsp;</td>
+						<td nowrap="true">INTERNET MÓVEL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=35; document.formulario.submit();">
+						<td nowrap="true">03.12&nbsp;</td>
+						<td nowrap="true">OUTROS SERVIÇOS DE INTERNET</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=119; document.formulario.submit();">
+						<td nowrap="true">03.12.01&nbsp;</td>
+						<td nowrap="true">OUTROS SERVIÇOS DE INTERNET</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=176; document.formulario.submit();">
+						<td nowrap="true">03.12.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE IMPLANTAÇÃO DE SISTEMAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=36; document.formulario.submit();">
+						<td nowrap="true">03.13&nbsp;</td>
+						<td nowrap="true">CURSOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=120; document.formulario.submit();">
+						<td nowrap="true">03.13.01&nbsp;</td>
+						<td nowrap="true">CURSOS E TREINAMENTOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=37; document.formulario.submit();">
+						<td nowrap="true">03.14&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE LAVANDERIA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=121; document.formulario.submit();">
+						<td nowrap="true">03.14.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE LAVANDERIA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=38; document.formulario.submit();">
+						<td nowrap="true">03.15&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE CONSULTORIA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=87; document.formulario.submit();">
+						<td nowrap="true">03.15.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE CONSULTORIA PESSOA JURÍDICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=88; document.formulario.submit();">
+						<td nowrap="true">03.15.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE CONSULTORIA PESSOA FÍSICA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=39; document.formulario.submit();">
+						<td nowrap="true">03.16&nbsp;</td>
+						<td nowrap="true">SEGUROS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=122; document.formulario.submit();">
+						<td nowrap="true">03.16.01&nbsp;</td>
+						<td nowrap="true">SEGUROS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=40; document.formulario.submit();">
+						<td nowrap="true">03.17&nbsp;</td>
+						<td nowrap="true">CONDOMÍNIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=123; document.formulario.submit();">
+						<td nowrap="true">03.17.01&nbsp;</td>
+						<td nowrap="true">CONDOMÍNIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=182; document.formulario.submit();">
+						<td nowrap="true">03.17.02&nbsp;</td>
+						<td nowrap="true">ALUGUEL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=41; document.formulario.submit();">
+						<td nowrap="true">03.18&nbsp;</td>
+						<td nowrap="true">HONORÁRIOS ADVOCATÍCIOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=124; document.formulario.submit();">
+						<td nowrap="true">03.18.01&nbsp;</td>
+						<td nowrap="true">HONORÁRIOS ADVOCATÍCIOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=42; document.formulario.submit();">
+						<td nowrap="true">03.19&nbsp;</td>
+						<td nowrap="true">DESPESAS COM LOCOMOÇÃO E TRANSPORTE</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=89; document.formulario.submit();">
+						<td nowrap="true">03.19.01&nbsp;</td>
+						<td nowrap="true">REGIME DE QUILOMETRAGEM</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=90; document.formulario.submit();">
+						<td nowrap="true">03.19.02&nbsp;</td>
+						<td nowrap="true">PEDÁGIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=91; document.formulario.submit();">
+						<td nowrap="true">03.19.03&nbsp;</td>
+						<td nowrap="true">PASSAGENS AÉREAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=92; document.formulario.submit();">
+						<td nowrap="true">03.19.04&nbsp;</td>
+						<td nowrap="true">PASSAGENS RODOVIÁRIAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=93; document.formulario.submit();">
+						<td nowrap="true">03.19.05&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO DE VEÍCULOS/AERONAVES/OUTROS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=94; document.formulario.submit();">
+						<td nowrap="true">03.19.06&nbsp;</td>
+						<td nowrap="true">DESPESAS COM TÁXI</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=95; document.formulario.submit();">
+						<td nowrap="true">03.19.07&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS COM TRANSPORTE E LOCOMOÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=170; document.formulario.submit();">
+						<td nowrap="true">03.19.08&nbsp;</td>
+						<td nowrap="true">FRETES</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=172; document.formulario.submit();">
+						<td nowrap="true">03.19.09&nbsp;</td>
+						<td nowrap="true">LOCAÇÃO DE AMBULANCIA / CEGONHA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=43; document.formulario.submit();">
+						<td nowrap="true">03.20&nbsp;</td>
+						<td nowrap="true">DESPESAS COM HOSPEDAGEM e ALIMENTAÇÃO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=125; document.formulario.submit();">
+						<td nowrap="true">03.20.01&nbsp;</td>
+						<td nowrap="true">DESPESAS COM HOSPEDAGEM e ALIMENTAÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=186; document.formulario.submit();">
+						<td nowrap="true">03.20.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE ALIMENTAÇÃO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=44; document.formulario.submit();">
+						<td nowrap="true">03.21&nbsp;</td>
+						<td nowrap="true">DESPESAS COM PROPAGANDA E PUBLICIDADE</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=126; document.formulario.submit();">
+						<td nowrap="true">03.21.01&nbsp;</td>
+						<td nowrap="true">DESPESAS COM PROPAGANDA E PUBLICIDADE</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=45; document.formulario.submit();">
+						<td nowrap="true">03.22&nbsp;</td>
+						<td nowrap="true">OUTROS SERVIÇOS DE TERCEIROS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=127; document.formulario.submit();">
+						<td nowrap="true">03.22.01&nbsp;</td>
+						<td nowrap="true">OUTROS SERVIÇOS DE TERCEIROS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=175; document.formulario.submit();">
+						<td nowrap="true">03.22.02&nbsp;</td>
+						<td nowrap="true">DESPESAS CARTORARIAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=180; document.formulario.submit();">
+						<td nowrap="true">03.22.03&nbsp;</td>
+						<td nowrap="true">SERVIÇO DE RAIO X</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=181; document.formulario.submit();">
+						<td nowrap="true">03.22.04&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE ESTERILIZAÇÃO </td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=194; document.formulario.submit();">
+						<td nowrap="true">03.22.05&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE ULTRASSOM</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=193; document.formulario.submit();">
+						<td nowrap="true">03.22.06&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE ANÁLISES CLÍNICAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=195; document.formulario.submit();">
+						<td nowrap="true">03.22.07&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE SADT (Serviço Auxiliar de Diagnostico e Terapia)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=203; document.formulario.submit();">
+						<td nowrap="true">03.23&nbsp;</td>
+						<td nowrap="true">SERVIÇOS TÉCNICOS ESPECIALIZADOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=183; document.formulario.submit();">
+						<td nowrap="true">03.23.01&nbsp;</td>
+						<td nowrap="true">SERVIÇOS TÉCNICOS ESPECIALIZADOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=184; document.formulario.submit();">
+						<td nowrap="true">03.23.02&nbsp;</td>
+						<td nowrap="true">SERVIÇOS DE APOIO A GESTÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=228; document.formulario.submit();">
+						<td nowrap="true">03.24&nbsp;</td>
+						<td nowrap="true">SERVICOS DE LIMPEZA E TRATAMENTO DE PISCINAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=229; document.formulario.submit();">
+						<td nowrap="true">03.24.01&nbsp;</td>
+						<td nowrap="true">SERVICOS DE LIMPEZA E TRATAMENTO DE PISCINAS NAS UNIDADES ESPORTIVAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=230; document.formulario.submit();">
+						<td nowrap="true">03.25&nbsp;</td>
+						<td nowrap="true">EVENTOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=231; document.formulario.submit();">
+						<td nowrap="true">03.25.01&nbsp;</td>
+						<td nowrap="true">EVENTOS DA UNIDADE ESPORTIVA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=237; document.formulario.submit();">
+						<td nowrap="true">03.26&nbsp;</td>
+						<td nowrap="true">EXAMES MÉDICOS OCUPACIONAIS / PERFIL PROFISSIOGRÁFICO PREVIDENCIÁRIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=238; document.formulario.submit();">
+						<td nowrap="true">03.26.01&nbsp;</td>
+						<td nowrap="true">EXAMES MÉDICOS OCUPACIONAIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=239; document.formulario.submit();">
+						<td nowrap="true">03.26.02&nbsp;</td>
+						<td nowrap="true">PERFIL PROFISSIOGRÁFICO PREVIDENCIÁRIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=4; document.formulario.submit();">
+						<td nowrap="true">04&nbsp;</td>
+						<td nowrap="true">TAXAS/ IMPOSTOS/ CONTRIBUIÇÕES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=46; document.formulario.submit();">
+						<td nowrap="true">04.01&nbsp;</td>
+						<td nowrap="true">ISS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=128; document.formulario.submit();">
+						<td nowrap="true">04.01.01&nbsp;</td>
+						<td nowrap="true">ISS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=246; document.formulario.submit();">
+						<td nowrap="true">04.01.02&nbsp;</td>
+						<td nowrap="true">ISS - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=47; document.formulario.submit();">
+						<td nowrap="true">04.02&nbsp;</td>
+						<td nowrap="true">PIS/COFINS/CSLL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=129; document.formulario.submit();">
+						<td nowrap="true">04.02.01&nbsp;</td>
+						<td nowrap="true">PIS/COFINS/CSLL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=48; document.formulario.submit();">
+						<td nowrap="true">04.03&nbsp;</td>
+						<td nowrap="true">INSS SOBRE PRESTAÇÃO DE SERVIÇOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=130; document.formulario.submit();">
+						<td nowrap="true">04.03.01&nbsp;</td>
+						<td nowrap="true">INSS SOBRE PRESTAÇÃO DE SERVIÇOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=247; document.formulario.submit();">
+						<td nowrap="true">04.03.02&nbsp;</td>
+						<td nowrap="true">INSS - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=49; document.formulario.submit();">
+						<td nowrap="true">04.04&nbsp;</td>
+						<td nowrap="true">IR SOBRE PRESTAÇÃO DE SERVIÇOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=131; document.formulario.submit();">
+						<td nowrap="true">04.04.01&nbsp;</td>
+						<td nowrap="true">IR SOBRE PRESTAÇÃO DE SERVIÇOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=248; document.formulario.submit();">
+						<td nowrap="true">04.04.02&nbsp;</td>
+						<td nowrap="true">IR - PAGAMENTO DE AUTONÔMO (EXCETO PESSOAL)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=50; document.formulario.submit();">
+						<td nowrap="true">04.05&nbsp;</td>
+						<td nowrap="true">IPTU</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=132; document.formulario.submit();">
+						<td nowrap="true">04.05.01&nbsp;</td>
+						<td nowrap="true">IPTU</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=161; document.formulario.submit();">
+						<td nowrap="true">04.06&nbsp;</td>
+						<td nowrap="true">OUTRAS TAXAS  /IMPOSTOS/CONTRIBUIÇÕES</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=162; document.formulario.submit();">
+						<td nowrap="true">04.06.01&nbsp;</td>
+						<td nowrap="true">OUTRAS TAXAS/IMPOSTOS/CONTRIBUIÇÕES</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=5; document.formulario.submit();">
+						<td nowrap="true">05&nbsp;</td>
+						<td nowrap="true">SERVIÇOS PÚBLICOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=51; document.formulario.submit();">
+						<td nowrap="true">05.01&nbsp;</td>
+						<td nowrap="true">ÁGUA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=133; document.formulario.submit();">
+						<td nowrap="true">05.01.01&nbsp;</td>
+						<td nowrap="true">ÁGUA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=52; document.formulario.submit();">
+						<td nowrap="true">05.02&nbsp;</td>
+						<td nowrap="true">ENERGIA ELÉTRICA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=134; document.formulario.submit();">
+						<td nowrap="true">05.02.01&nbsp;</td>
+						<td nowrap="true">ENERGIA ELÉTRICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=53; document.formulario.submit();">
+						<td nowrap="true">05.03&nbsp;</td>
+						<td nowrap="true">GÁS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=135; document.formulario.submit();">
+						<td nowrap="true">05.03.01&nbsp;</td>
+						<td nowrap="true">GÁS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=54; document.formulario.submit();">
+						<td nowrap="true">05.04&nbsp;</td>
+						<td nowrap="true">TELEFONIA FIXA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=136; document.formulario.submit();">
+						<td nowrap="true">05.04.01&nbsp;</td>
+						<td nowrap="true">TELEFONIA FIXA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=55; document.formulario.submit();">
+						<td nowrap="true">05.05&nbsp;</td>
+						<td nowrap="true">TELEFONIA CELULAR</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=137; document.formulario.submit();">
+						<td nowrap="true">05.05.01&nbsp;</td>
+						<td nowrap="true">TELEFONIA CELULAR</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=56; document.formulario.submit();">
+						<td nowrap="true">05.06&nbsp;</td>
+						<td nowrap="true">TELEFONIA VIA RÁDIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=139; document.formulario.submit();">
+						<td nowrap="true">05.06.01&nbsp;</td>
+						<td nowrap="true">TELEFONIA VIA RÁDIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=57; document.formulario.submit();">
+						<td nowrap="true">05.07&nbsp;</td>
+						<td nowrap="true">CORREIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=140; document.formulario.submit();">
+						<td nowrap="true">05.07.01&nbsp;</td>
+						<td nowrap="true">CORREIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=58; document.formulario.submit();">
+						<td nowrap="true">05.08&nbsp;</td>
+						<td nowrap="true">COLETA DE LIXO ESPECIAL</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=141; document.formulario.submit();">
+						<td nowrap="true">05.08.01&nbsp;</td>
+						<td nowrap="true">COLETA DE LIXO ESPECIAL</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=6; document.formulario.submit();">
+						<td nowrap="true">06&nbsp;</td>
+						<td nowrap="true">INVESTIMENTOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=59; document.formulario.submit();">
+						<td nowrap="true">06.01&nbsp;</td>
+						<td nowrap="true">EQUIPAMENTOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=142; document.formulario.submit();">
+						<td nowrap="true">06.01.01&nbsp;</td>
+						<td nowrap="true">EQUIPAMENTOS MÉDICO-HOSPITALARES</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=163; document.formulario.submit();">
+						<td nowrap="true">06.01.02&nbsp;</td>
+						<td nowrap="true">EQUIPAMENTOS DE INFORMÁTICA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=164; document.formulario.submit();">
+						<td nowrap="true">06.01.03&nbsp;</td>
+						<td nowrap="true">OUTROS EQUIPAMENTOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=60; document.formulario.submit();">
+						<td nowrap="true">06.02&nbsp;</td>
+						<td nowrap="true">MOBILIÁRIO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=143; document.formulario.submit();">
+						<td nowrap="true">06.02.01&nbsp;</td>
+						<td nowrap="true">MOBILIÁRIO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=61; document.formulario.submit();">
+						<td nowrap="true">06.03&nbsp;</td>
+						<td nowrap="true">VEÍCULOS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=144; document.formulario.submit();">
+						<td nowrap="true">06.03.01&nbsp;</td>
+						<td nowrap="true">VEÍCULOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=62; document.formulario.submit();">
+						<td nowrap="true">06.04&nbsp;</td>
+						<td nowrap="true">OUTROS BENS DURÁVEIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=145; document.formulario.submit();">
+						<td nowrap="true">06.04.01&nbsp;</td>
+						<td nowrap="true">OUTROS BENS DURÁVEIS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=7; document.formulario.submit();">
+						<td nowrap="true">07&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS OPERACIONAIS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=63; document.formulario.submit();">
+						<td nowrap="true">07.01&nbsp;</td>
+						<td nowrap="true">PREMIAÇÕES CULTURAIS/ ARTÍSTICA/ CIENTÍFICAS/DESPORTIVAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=146; document.formulario.submit();">
+						<td nowrap="true">07.01.01&nbsp;</td>
+						<td nowrap="true">PREMIAÇÕES CULTURAIS/ ARTÍSTICA/ CIENTÍFICAS/DESPORTIVAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=64; document.formulario.submit();">
+						<td nowrap="true">07.02&nbsp;</td>
+						<td nowrap="true">MATERIAL PARA DISTRIBUIÇÃO GRATUITA</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=147; document.formulario.submit();">
+						<td nowrap="true">07.02.01&nbsp;</td>
+						<td nowrap="true">MATERIAL PARA DISTRIBUIÇÃO GRATUITA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=242; document.formulario.submit();">
+						<td nowrap="true">07.03&nbsp;</td>
+						<td nowrap="true">MULTAS E JUROS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=241; document.formulario.submit();">
+						<td nowrap="true">07.03.01&nbsp;</td>
+						<td nowrap="true">MULTAS E JUROS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=268; document.formulario.submit();">
+						<td nowrap="true">07.04&nbsp;</td>
+						<td nowrap="true">Pagamento Aluno</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=269; document.formulario.submit();">
+						<td nowrap="true">07.04.01&nbsp;</td>
+						<td nowrap="true">Bolsa Auxílio Aluno</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=270; document.formulario.submit();">
+						<td nowrap="true">07.04.02&nbsp;</td>
+						<td nowrap="true">Auxílio Transporte Aluno</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=8; document.formulario.submit();">
+						<td nowrap="true">08&nbsp;</td>
+						<td nowrap="true">DESPESAS BANCÁRIAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=65; document.formulario.submit();">
+						<td nowrap="true">08.01&nbsp;</td>
+						<td nowrap="true">TAXAS E TARIFAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=148; document.formulario.submit();">
+						<td nowrap="true">08.01.01&nbsp;</td>
+						<td nowrap="true">TAXAS E TARIFAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=152; document.formulario.submit();">
+						<td nowrap="true">08.01.02&nbsp;</td>
+						<td nowrap="true">OUTRAS DESPESAS BANCÁRIAS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=204; document.formulario.submit();">
+						<td nowrap="true">09&nbsp;</td>
+						<td nowrap="true">TRANSFERÊNCIAS ENTRE CONTAS</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=207; document.formulario.submit();">
+						<td nowrap="true">09.01&nbsp;</td>
+						<td nowrap="true">EMPRÉSTIMOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=205; document.formulario.submit();">
+						<td nowrap="true">09.01.01&nbsp;</td>
+						<td nowrap="true">CONCESSÃO DE EMPRÉSTIMO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=206; document.formulario.submit();">
+						<td nowrap="true">09.01.02&nbsp;</td>
+						<td nowrap="true">REEMBOLSO DE EMPRÉSTIMO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=223; document.formulario.submit();">
+						<td nowrap="true">09.02&nbsp;</td>
+						<td nowrap="true">TRANSFERÊNCIAS ENTRE CONTAS EXCLUSIVO DO RECURSO DE PROVISIONAMENTO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=222; document.formulario.submit();">
+						<td nowrap="true">09.02.01&nbsp;</td>
+						<td nowrap="true">TRANSFERÊNCIA DA CONTA EXECUÇÃO PARA PROVISIONAMENTO</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=232; document.formulario.submit();">
+						<td nowrap="true">09.02.02&nbsp;</td>
+						<td nowrap="true">TRANSFERÊNCIA DA CONTA DE PROVISIONAMENTO PARA EXECUÇÃO</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=234; document.formulario.submit();">
+						<td nowrap="true">09.03&nbsp;</td>
+						<td nowrap="true">ESTORNOS</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=235; document.formulario.submit();">
+						<td nowrap="true">09.03.01&nbsp;</td>
+						<td nowrap="true">ESTORNO DE RECEITA</td>
+					</tr>
+			
+					<tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=262; document.formulario.submit();">
+						<td nowrap="true">09.04&nbsp;</td>
+						<td nowrap="true">PAGAMENTOS INDEVIDOS (SMF-CAP-2022/00113)</td>
+					</tr>
+			
+					<tr class="linha_claro" onclick="document.formulario.hdd_acao.value=263; document.formulario.submit();">
+						<td nowrap="true">09.04.01&nbsp;</td>
+						<td nowrap="true">PAGAMENTO INDEVIDO</td>
+					</tr>
+			</table>

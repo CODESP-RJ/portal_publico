@@ -1,0 +1,2984 @@
+[
+    {
+        "id_contrato": 11,
+        "num_contrato": "001/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 28,
+        "num_contrato": "003/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 31,
+        "num_contrato": "004/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 33,
+        "num_contrato": "002/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 35,
+        "num_contrato": "020/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 36,
+        "num_contrato": "016/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 38,
+        "num_contrato": "004/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 39,
+        "num_contrato": "005/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 40,
+        "num_contrato": "006/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 41,
+        "num_contrato": "002/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 43,
+        "num_contrato": "006/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 44,
+        "num_contrato": "003/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 45,
+        "num_contrato": "021/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 46,
+        "num_contrato": "008/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 47,
+        "num_contrato": "022/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 48,
+        "num_contrato": "004/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 49,
+        "num_contrato": "001/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 52,
+        "num_contrato": "003/2009",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 53,
+        "num_contrato": "005/2010",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 54,
+        "num_contrato": "006/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 57,
+        "num_contrato": "008/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 58,
+        "num_contrato": "010/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 60,
+        "num_contrato": "007/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 66,
+        "num_contrato": "011/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 70,
+        "num_contrato": "016/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 72,
+        "num_contrato": "06/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 98,
+        "num_contrato": "007/2013",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 99,
+        "num_contrato": "021/2013",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 100,
+        "num_contrato": "024/2013",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 101,
+        "num_contrato": "048/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 102,
+        "num_contrato": "010/2013",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 103,
+        "num_contrato": "020/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 104,
+        "num_contrato": "047/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 105,
+        "num_contrato": "017/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 106,
+        "num_contrato": "030/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 107,
+        "num_contrato": "146/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 108,
+        "num_contrato": "019/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 109,
+        "num_contrato": "032/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 110,
+        "num_contrato": "034/2014",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 111,
+        "num_contrato": "001/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 112,
+        "num_contrato": "007/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 113,
+        "num_contrato": "016/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 114,
+        "num_contrato": "014/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 115,
+        "num_contrato": "007/2015-52",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 116,
+        "num_contrato": "034/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 117,
+        "num_contrato": "009/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 118,
+        "num_contrato": "06/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 119,
+        "num_contrato": "047/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 120,
+        "num_contrato": "025/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 121,
+        "num_contrato": "026/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 122,
+        "num_contrato": "020/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 123,
+        "num_contrato": "038/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 124,
+        "num_contrato": "037/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 125,
+        "num_contrato": "007/2015-UPA",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 126,
+        "num_contrato": "007/2015-H",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 127,
+        "num_contrato": "002/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 128,
+        "num_contrato": "073/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 129,
+        "num_contrato": "001/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 130,
+        "num_contrato": "015/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 131,
+        "num_contrato": "001/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 133,
+        "num_contrato": "003/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 134,
+        "num_contrato": "001/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 136,
+        "num_contrato": "001/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 137,
+        "num_contrato": "002/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 138,
+        "num_contrato": "003/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 140,
+        "num_contrato": "004/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 141,
+        "num_contrato": "007/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 146,
+        "num_contrato": "001/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 147,
+        "num_contrato": "003/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 148,
+        "num_contrato": "003/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 149,
+        "num_contrato": "049/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 150,
+        "num_contrato": "078/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 151,
+        "num_contrato": "072/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 152,
+        "num_contrato": "026/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 156,
+        "num_contrato": "012/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 157,
+        "num_contrato": "008/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 158,
+        "num_contrato": "037/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 159,
+        "num_contrato": "011/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 160,
+        "num_contrato": "003/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 161,
+        "num_contrato": "025/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 162,
+        "num_contrato": "058/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 163,
+        "num_contrato": "059/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 164,
+        "num_contrato": "002/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 165,
+        "num_contrato": "062/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 166,
+        "num_contrato": "061/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 167,
+        "num_contrato": "017/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 168,
+        "num_contrato": "016/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 169,
+        "num_contrato": "016/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 170,
+        "num_contrato": "018/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 171,
+        "num_contrato": "013/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 172,
+        "num_contrato": "001/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 173,
+        "num_contrato": "12.712/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 174,
+        "num_contrato": "12.712/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 175,
+        "num_contrato": "001/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 176,
+        "num_contrato": "005/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 177,
+        "num_contrato": "004/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 178,
+        "num_contrato": "011/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 179,
+        "num_contrato": "014/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 180,
+        "num_contrato": "008/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 181,
+        "num_contrato": "024/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 184,
+        "num_contrato": "007/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 185,
+        "num_contrato": "016/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 186,
+        "num_contrato": "023/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 187,
+        "num_contrato": "004/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 188,
+        "num_contrato": "007/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 189,
+        "num_contrato": "012/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 190,
+        "num_contrato": "001/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 191,
+        "num_contrato": "012/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 192,
+        "num_contrato": "015/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 193,
+        "num_contrato": "016/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 194,
+        "num_contrato": "001/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 195,
+        "num_contrato": "003/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 196,
+        "num_contrato": "017/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 197,
+        "num_contrato": "011/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 198,
+        "num_contrato": "013/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 199,
+        "num_contrato": "025/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 200,
+        "num_contrato": "002/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 201,
+        "num_contrato": "INEXISTENTE",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 202,
+        "num_contrato": "017/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 203,
+        "num_contrato": "022/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 204,
+        "num_contrato": "021/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 205,
+        "num_contrato": "022/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 206,
+        "num_contrato": "008/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 207,
+        "num_contrato": "028/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 208,
+        "num_contrato": "027/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 209,
+        "num_contrato": "020/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 210,
+        "num_contrato": "007/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 211,
+        "num_contrato": "47/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 212,
+        "num_contrato": "019/2017",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 213,
+        "num_contrato": "011/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 214,
+        "num_contrato": "025/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 215,
+        "num_contrato": "029/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 216,
+        "num_contrato": "007/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 217,
+        "num_contrato": "036/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 218,
+        "num_contrato": "029/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 219,
+        "num_contrato": "051/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 220,
+        "num_contrato": "023/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 221,
+        "num_contrato": "004/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 222,
+        "num_contrato": "006/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 223,
+        "num_contrato": "019/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 224,
+        "num_contrato": "11/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 225,
+        "num_contrato": "029/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 226,
+        "num_contrato": "030/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 227,
+        "num_contrato": "082/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 228,
+        "num_contrato": "083/2011",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 229,
+        "num_contrato": "028/2012",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 230,
+        "num_contrato": "05/2013",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 231,
+        "num_contrato": "071/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 232,
+        "num_contrato": "22/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 233,
+        "num_contrato": "042/2019",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 234,
+        "num_contrato": "01/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 235,
+        "num_contrato": "005/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 236,
+        "num_contrato": "003/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 237,
+        "num_contrato": "002/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 238,
+        "num_contrato": "004/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 239,
+        "num_contrato": "009/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 240,
+        "num_contrato": "002/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 243,
+        "num_contrato": "002/2021 Pessoal",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 244,
+        "num_contrato": "012/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 245,
+        "num_contrato": "001/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 246,
+        "num_contrato": "002/2021 Pessoal HMSF",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 247,
+        "num_contrato": "011/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 248,
+        "num_contrato": "001/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 249,
+        "num_contrato": "002/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 250,
+        "num_contrato": "003/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 251,
+        "num_contrato": "002/2021-52",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 252,
+        "num_contrato": "02/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 253,
+        "num_contrato": "05/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 254,
+        "num_contrato": "013/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 255,
+        "num_contrato": "021/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 256,
+        "num_contrato": "015/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 257,
+        "num_contrato": "009/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 258,
+        "num_contrato": "016/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 259,
+        "num_contrato": "004/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 260,
+        "num_contrato": "021/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 261,
+        "num_contrato": "020/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 262,
+        "num_contrato": "019/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 263,
+        "num_contrato": "018/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 264,
+        "num_contrato": "017/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 265,
+        "num_contrato": "007/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 266,
+        "num_contrato": "171/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 267,
+        "num_contrato": "10/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 268,
+        "num_contrato": "192/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 269,
+        "num_contrato": "002/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 270,
+        "num_contrato": "027/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 271,
+        "num_contrato": "037/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 272,
+        "num_contrato": "14/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 273,
+        "num_contrato": "15/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 274,
+        "num_contrato": "13/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 275,
+        "num_contrato": "66/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 276,
+        "num_contrato": "63/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 277,
+        "num_contrato": "207/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 278,
+        "num_contrato": "067/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 279,
+        "num_contrato": "061/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 280,
+        "num_contrato": "046/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 281,
+        "num_contrato": "036/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 282,
+        "num_contrato": "035/22021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 283,
+        "num_contrato": "035/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 284,
+        "num_contrato": "050/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 285,
+        "num_contrato": "037/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 286,
+        "num_contrato": "070/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 287,
+        "num_contrato": "042/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 288,
+        "num_contrato": "252/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 289,
+        "num_contrato": "044/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 290,
+        "num_contrato": "038/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 291,
+        "num_contrato": "042/2021-UPAS32",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 292,
+        "num_contrato": "004/2021-UPAS51",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 293,
+        "num_contrato": "004/2021-UPAS53",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 294,
+        "num_contrato": "085/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 295,
+        "num_contrato": "084/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 296,
+        "num_contrato": "068/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 297,
+        "num_contrato": "071/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 298,
+        "num_contrato": "069/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 299,
+        "num_contrato": "020/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 300,
+        "num_contrato": "01/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 301,
+        "num_contrato": "003/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 302,
+        "num_contrato": "851/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 303,
+        "num_contrato": "852/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 304,
+        "num_contrato": "12.841/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 305,
+        "num_contrato": "12.843/2018",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 306,
+        "num_contrato": "903/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 307,
+        "num_contrato": "845/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 308,
+        "num_contrato": "850/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 309,
+        "num_contrato": "846/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 310,
+        "num_contrato": "815/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 311,
+        "num_contrato": "875/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 312,
+        "num_contrato": "847/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 313,
+        "num_contrato": "848/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 314,
+        "num_contrato": "849/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 315,
+        "num_contrato": "029/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 316,
+        "num_contrato": "005/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 317,
+        "num_contrato": "004/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 318,
+        "num_contrato": "003/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 319,
+        "num_contrato": "002/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 320,
+        "num_contrato": "006/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 321,
+        "num_contrato": "001/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 322,
+        "num_contrato": "004/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 323,
+        "num_contrato": "008/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 324,
+        "num_contrato": "028/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 325,
+        "num_contrato": "017/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 326,
+        "num_contrato": "022/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 327,
+        "num_contrato": "016/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 328,
+        "num_contrato": "007/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 329,
+        "num_contrato": "023/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 330,
+        "num_contrato": "009/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 331,
+        "num_contrato": "080/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 332,
+        "num_contrato": "04/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 333,
+        "num_contrato": "08/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 334,
+        "num_contrato": "38/2019-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 335,
+        "num_contrato": "008/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 336,
+        "num_contrato": "863/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 337,
+        "num_contrato": "870/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 338,
+        "num_contrato": "006/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 339,
+        "num_contrato": "09/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 340,
+        "num_contrato": "59/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 341,
+        "num_contrato": "62/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 342,
+        "num_contrato": "69/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 343,
+        "num_contrato": "67/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 344,
+        "num_contrato": "66/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 345,
+        "num_contrato": "65/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 346,
+        "num_contrato": "64/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 347,
+        "num_contrato": "63/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 348,
+        "num_contrato": "60/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 349,
+        "num_contrato": "61/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 350,
+        "num_contrato": "003/2022-CER",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 351,
+        "num_contrato": "013/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 352,
+        "num_contrato": "013/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 353,
+        "num_contrato": "881/2020",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 354,
+        "num_contrato": "015/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 355,
+        "num_contrato": "054/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 356,
+        "num_contrato": "12.260/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 357,
+        "num_contrato": "12.656/2016",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 358,
+        "num_contrato": "12.256/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 359,
+        "num_contrato": "12.258/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 360,
+        "num_contrato": "12.261/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 361,
+        "num_contrato": "12.255/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 362,
+        "num_contrato": "12.254/2015",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 363,
+        "num_contrato": "01/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 364,
+        "num_contrato": "008/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 365,
+        "num_contrato": "013/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 366,
+        "num_contrato": "009/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 367,
+        "num_contrato": "006/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 368,
+        "num_contrato": "128/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 369,
+        "num_contrato": "010/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 370,
+        "num_contrato": "159/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 372,
+        "num_contrato": "22/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 373,
+        "num_contrato": "04/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 374,
+        "num_contrato": "08/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 375,
+        "num_contrato": "17/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 376,
+        "num_contrato": "026/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 377,
+        "num_contrato": "021/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 378,
+        "num_contrato": "018/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 379,
+        "num_contrato": "027/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 380,
+        "num_contrato": "169/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 381,
+        "num_contrato": "164/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 382,
+        "num_contrato": "179/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 383,
+        "num_contrato": "008/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 384,
+        "num_contrato": "955/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 385,
+        "num_contrato": "949/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 386,
+        "num_contrato": "031/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 387,
+        "num_contrato": "959/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 388,
+        "num_contrato": "960/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 389,
+        "num_contrato": "906/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 390,
+        "num_contrato": "001/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 391,
+        "num_contrato": "001/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 392,
+        "num_contrato": "003/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 393,
+        "num_contrato": "004/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 394,
+        "num_contrato": "002/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 395,
+        "num_contrato": "006/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 396,
+        "num_contrato": "005/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 397,
+        "num_contrato": "005/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 398,
+        "num_contrato": "006/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 399,
+        "num_contrato": "004/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 400,
+        "num_contrato": "010/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 401,
+        "num_contrato": "20/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 402,
+        "num_contrato": "048/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 403,
+        "num_contrato": "21/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 404,
+        "num_contrato": "22/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 405,
+        "num_contrato": "059/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 406,
+        "num_contrato": "03/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 407,
+        "num_contrato": "08/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 408,
+        "num_contrato": "10/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 409,
+        "num_contrato": "07/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 410,
+        "num_contrato": "081/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 411,
+        "num_contrato": "902/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 412,
+        "num_contrato": "09/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 413,
+        "num_contrato": "023/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 414,
+        "num_contrato": "960/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 415,
+        "num_contrato": "961/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 416,
+        "num_contrato": "58/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 417,
+        "num_contrato": "153/2021",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 418,
+        "num_contrato": "124/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 419,
+        "num_contrato": "154/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 420,
+        "num_contrato": "126/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 421,
+        "num_contrato": "127/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 422,
+        "num_contrato": "130/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 423,
+        "num_contrato": "131/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 424,
+        "num_contrato": "122/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 425,
+        "num_contrato": "128/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 426,
+        "num_contrato": "129/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 427,
+        "num_contrato": "123/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 428,
+        "num_contrato": "011/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 429,
+        "num_contrato": "001/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 430,
+        "num_contrato": "072/2020-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 431,
+        "num_contrato": "70/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 432,
+        "num_contrato": "60/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 433,
+        "num_contrato": "239/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 434,
+        "num_contrato": "240/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 435,
+        "num_contrato": "241/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 436,
+        "num_contrato": "242/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 438,
+        "num_contrato": "243/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 439,
+        "num_contrato": "248/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 440,
+        "num_contrato": "249/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 441,
+        "num_contrato": "250/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 442,
+        "num_contrato": "251/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 443,
+        "num_contrato": "252/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 444,
+        "num_contrato": "253/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 445,
+        "num_contrato": "255/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 446,
+        "num_contrato": "256/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 447,
+        "num_contrato": "244/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 448,
+        "num_contrato": "245/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 449,
+        "num_contrato": "246/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 450,
+        "num_contrato": "247/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 451,
+        "num_contrato": "238/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 452,
+        "num_contrato": "002/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 453,
+        "num_contrato": "015/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 454,
+        "num_contrato": "012/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 455,
+        "num_contrato": "16/2022",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 456,
+        "num_contrato": "003/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 457,
+        "num_contrato": "004/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 458,
+        "num_contrato": "005/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 459,
+        "num_contrato": "006/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 460,
+        "num_contrato": "007/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 461,
+        "num_contrato": "125/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 462,
+        "num_contrato": "01/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 463,
+        "num_contrato": "12/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 464,
+        "num_contrato": "254/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 465,
+        "num_contrato": "09/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 466,
+        "num_contrato": "16/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 467,
+        "num_contrato": "18/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 468,
+        "num_contrato": "21/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 469,
+        "num_contrato": "24/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 470,
+        "num_contrato": "029/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 471,
+        "num_contrato": "14/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 472,
+        "num_contrato": "17/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 473,
+        "num_contrato": "20/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 474,
+        "num_contrato": "028/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 475,
+        "num_contrato": "10/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 476,
+        "num_contrato": "11/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 477,
+        "num_contrato": "12/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 478,
+        "num_contrato": "13/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 479,
+        "num_contrato": "15/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 480,
+        "num_contrato": "22/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 481,
+        "num_contrato": "023/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 482,
+        "num_contrato": "25/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 483,
+        "num_contrato": "026/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 484,
+        "num_contrato": "030/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 485,
+        "num_contrato": "168/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 486,
+        "num_contrato": "169/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 487,
+        "num_contrato": "170/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 488,
+        "num_contrato": "171/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 489,
+        "num_contrato": "172/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 490,
+        "num_contrato": "173/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 491,
+        "num_contrato": "174/2021-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 492,
+        "num_contrato": "007/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 493,
+        "num_contrato": "006/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 494,
+        "num_contrato": "01/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 495,
+        "num_contrato": "011/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 496,
+        "num_contrato": "55/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 497,
+        "num_contrato": "60/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 498,
+        "num_contrato": "61/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 499,
+        "num_contrato": "54/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 500,
+        "num_contrato": "196/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 501,
+        "num_contrato": "001/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 502,
+        "num_contrato": "008/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 503,
+        "num_contrato": "04/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 504,
+        "num_contrato": "31/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 505,
+        "num_contrato": "032/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 506,
+        "num_contrato": "33/2022-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 507,
+        "num_contrato": "204/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 508,
+        "num_contrato": "77/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 509,
+        "num_contrato": "030/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 510,
+        "num_contrato": "84/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 511,
+        "num_contrato": "85/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 512,
+        "num_contrato": "82/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 513,
+        "num_contrato": "81/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 514,
+        "num_contrato": "83/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 515,
+        "num_contrato": "001/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 516,
+        "num_contrato": "09/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 517,
+        "num_contrato": "09/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 518,
+        "num_contrato": "06/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 519,
+        "num_contrato": "05/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 521,
+        "num_contrato": "001/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 522,
+        "num_contrato": "002/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 523,
+        "num_contrato": "11/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 524,
+        "num_contrato": "008/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 525,
+        "num_contrato": "009/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 526,
+        "num_contrato": "012/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 527,
+        "num_contrato": "092/2023",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 528,
+        "num_contrato": "010/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 529,
+        "num_contrato": "011/2023-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 530,
+        "num_contrato": "05/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 532,
+        "num_contrato": "06/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 533,
+        "num_contrato": "10/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 534,
+        "num_contrato": "38/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 535,
+        "num_contrato": "36/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 536,
+        "num_contrato": "37/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 537,
+        "num_contrato": "38/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 538,
+        "num_contrato": "39/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 539,
+        "num_contrato": "40/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 540,
+        "num_contrato": "7/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 541,
+        "num_contrato": "53/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 542,
+        "num_contrato": "55/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 543,
+        "num_contrato": "54/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 544,
+        "num_contrato": "57/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 545,
+        "num_contrato": "56/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 546,
+        "num_contrato": "1186/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 547,
+        "num_contrato": "08/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 548,
+        "num_contrato": "09/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 549,
+        "num_contrato": "69/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 550,
+        "num_contrato": "70/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 551,
+        "num_contrato": "71/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 552,
+        "num_contrato": "72/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 553,
+        "num_contrato": "73/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 554,
+        "num_contrato": "07/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 555,
+        "num_contrato": "01/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 556,
+        "num_contrato": "053/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 557,
+        "num_contrato": "75/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 558,
+        "num_contrato": "78/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 559,
+        "num_contrato": "87/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 560,
+        "num_contrato": "86/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 561,
+        "num_contrato": "83/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 562,
+        "num_contrato": "74/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 563,
+        "num_contrato": "84/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 564,
+        "num_contrato": "82/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 565,
+        "num_contrato": "055/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 566,
+        "num_contrato": "06/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 567,
+        "num_contrato": "85/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 568,
+        "num_contrato": "09/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 569,
+        "num_contrato": "08/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 570,
+        "num_contrato": "1314/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 571,
+        "num_contrato": "1356/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 572,
+        "num_contrato": "1357/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 573,
+        "num_contrato": "1358/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 574,
+        "num_contrato": "1359/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 575,
+        "num_contrato": "1360/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 576,
+        "num_contrato": "1361/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 577,
+        "num_contrato": "065/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 578,
+        "num_contrato": "066/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 579,
+        "num_contrato": "1519/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 580,
+        "num_contrato": "218/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 581,
+        "num_contrato": "107/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 582,
+        "num_contrato": "219/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 583,
+        "num_contrato": "1355/2024",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 584,
+        "num_contrato": "106/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 585,
+        "num_contrato": "02/2025-TC",
+        "cod_os": 0,
+        "propria_os": null
+    },
+    {
+        "id_contrato": 586,
+        "num_contrato": "10/2024-TC",
+        "cod_os": 0,
+        "propria_os": null
+    }
+]

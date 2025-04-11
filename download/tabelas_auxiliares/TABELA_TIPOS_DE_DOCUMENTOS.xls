@@ -1,0 +1,106 @@
+<table width="55%" align="center" cellspacing="1" cellpadding="3" border="0" bgcolor="#cfcfcf"  bgcolor="#FFFFFF" border="1"  ><tr bgcolor="#FFFFFF">
+					<td><img src="http://osinfo1.prefeitura.rio///imagens/logo_pref_rj.jpg" style="float:left;padding:10px"></td>
+					<td colspan="1" align="left" nowrap="true" >
+						<br/>Tipos de Documentos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border:0;font: normal normal normal 11px Verdana, Sans-Serif;" valign="top" align="right" width="1%" nowrap="true" >11-04-2025 11:45</span>
+						<br/>
+						
+					</td>
+				</tr><tr>
+						<td class="titulo">Código</td><td class="titulo">Despesa</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">NF</td>
+						<td nowrap width="55%">Nota Fiscal</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">DARF</td>
+						<td nowrap width="55%">DARF</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">IR</td>
+						<td nowrap width="55%">Imposto de Renda</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">FGTS</td>
+						<td nowrap width="55%">Fundo de Garantia</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">GPS</td>
+						<td nowrap width="55%">GPS</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">FOLHA</td>
+						<td nowrap width="55%">Folha de Pagamento</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">RECIBO</td>
+						<td nowrap width="55%">Recibos Para Pessoa Física</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">BOLETO</td>
+						<td nowrap width="55%">Boleto Bancário</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">IMPOSTO</td>
+						<td nowrap width="55%">Outros Tipos de Impostos</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">GUIA</td>
+						<td nowrap width="55%">Outras Guias de Recolhimento</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">OUTROS</td>
+						<td nowrap width="55%">Outros Tipos de Pagamento</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">INSS</td>
+						<td nowrap width="55%">INSS</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">RDV</td>
+						<td nowrap width="55%">RDV</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">RPA</td>
+						<td nowrap width="55%">RPA</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">PGCH</td>
+						<td nowrap width="55%">Pagamentos em Cheque</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">PGPA</td>
+						<td nowrap width="55%">Recibo de Pensão Alimentícia</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">PGRF</td>
+						<td nowrap width="55%">Recibo de férias</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">PGRCT</td>
+						<td nowrap width="55%">Rescisão de Contrato de Trabalho</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">KIT</td>
+						<td nowrap width="55%">KIT Cegonha Carioca</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">EMPRE</td>
+						<td nowrap width="55%">Empréstimos outros contratos</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">PGEMPR</td>
+						<td nowrap width="55%">Pagamento de Empréstimos</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">DARM</td>
+						<td nowrap width="55%">Documento de Arrecadação de Receitas Municipais</td>
+					</tr>
+					<tr class="linha_escuro">
+						<td nowrap width="30%">EXTRATO</td>
+						<td nowrap width="55%">Extrato</td>
+					</tr>
+					<tr class="linha_claro">
+						<td nowrap width="30%">CONTRATO</td>
+						<td nowrap width="55%">Contrato</td>
+					</tr></table>

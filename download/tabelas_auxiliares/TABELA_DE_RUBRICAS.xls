@@ -1,0 +1,2642 @@
+<table width="60%" align="center" cellspacing="1" cellpadding="3" border="0" bgcolor="#cfcfcf" border="0"  bgcolor="#FFFFFF" border="1"  style="cursor: pointer;"><tr bgcolor="#FFFFFF">
+					<td><img src="http://osinfo1.prefeitura.rio///imagens/logo_pref_rj.jpg" style="float:left;padding:10px"></td>
+					<td colspan="1" align="left" nowrap="true" >
+						<br/>Cadastro de Rubrica&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border:0;font: normal normal normal 11px Verdana, Sans-Serif;" valign="top" align="right" width="1%" nowrap="true" >11-04-2025 11:46</span>
+						<br/>
+						
+					</td>
+				</tr><tr><td class="titulo">Código</td><td class="titulo">Rubrica</td></tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=1;document.formulario.submit();">
+						<td nowrap width="5%" >1</td>
+						<td nowrap width="95%" >Gestão do TEIAS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=2;document.formulario.submit();">
+						<td nowrap width="5%" >2</td>
+						<td nowrap width="95%" >Parte Variável 3 (profissionais)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=3;document.formulario.submit();">
+						<td nowrap width="5%" >3</td>
+						<td nowrap width="95%" >Transferência de recursos entre contratos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=4;document.formulario.submit();">
+						<td nowrap width="5%" >4</td>
+						<td nowrap width="95%" >Invest. / Resgates de Aplicações Financeiras</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=5;document.formulario.submit();">
+						<td nowrap width="5%" >5</td>
+						<td nowrap width="95%" >RH equipe NASF</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=6;document.formulario.submit();">
+						<td nowrap width="5%" >6</td>
+						<td nowrap width="95%" >RH -Aten. Famarcêutica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=7;document.formulario.submit();">
+						<td nowrap width="5%" >7</td>
+						<td nowrap width="95%" >Repasse x de y do Contrato de Gestão</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=8;document.formulario.submit();">
+						<td nowrap width="5%" >8</td>
+						<td nowrap width="95%" >Apoio à gestão do PADI</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=9;document.formulario.submit();">
+						<td nowrap width="5%" >9</td>
+						<td nowrap width="95%" >Investimentos: Material Permanente/Equipamentos Informática/Mobiliário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=10;document.formulario.submit();">
+						<td nowrap width="5%" >10</td>
+						<td nowrap width="95%" >Apoio à gestão do Programa Cegonha Carioca</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=11;document.formulario.submit();">
+						<td nowrap width="5%" >11</td>
+						<td nowrap width="95%" >Investimentos: Material Permanente/Equipamentos Informática/Mobiliário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=12;document.formulario.submit();">
+						<td nowrap width="5%" >12</td>
+						<td nowrap width="95%" >Apoio à gestão das Unidades</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=13;document.formulario.submit();">
+						<td nowrap width="5%" >13</td>
+						<td nowrap width="95%" >Investimentos: Material Permanente/Equipamentos Informática/Mobiliário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=14;document.formulario.submit();">
+						<td nowrap width="5%" >14</td>
+						<td nowrap width="95%" >Apoio à gestão da CAP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=15;document.formulario.submit();">
+						<td nowrap width="5%" >15</td>
+						<td nowrap width="95%" >Apoio à gestão TEIAS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=16;document.formulario.submit();">
+						<td nowrap width="5%" >16</td>
+						<td nowrap width="95%" >RH/Clínicas S.Família</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=17;document.formulario.submit();">
+						<td nowrap width="5%" >17</td>
+						<td nowrap width="95%" >RH/Clínicas S.Família/Equipes Tipo II Saúde Bucal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=18;document.formulario.submit();">
+						<td nowrap width="5%" >18</td>
+						<td nowrap width="95%" >RH/Clínicas S.Família/Equipes de Atenção Farmacêutica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=19;document.formulario.submit();">
+						<td nowrap width="5%" >19</td>
+						<td nowrap width="95%" >Manutenção das Unidades/Ações de educação,vigilância e promoção da saúde</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=20;document.formulario.submit();">
+						<td nowrap width="5%" >20</td>
+						<td nowrap width="95%" >Manutenção das Unidades/Contratos e consumo-Unidades de Atenção Primária</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=21;document.formulario.submit();">
+						<td nowrap width="5%" >21</td>
+						<td nowrap width="95%" >Manutenção das Unidades/Serviços de Raios X e Ultrassom</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=22;document.formulario.submit();">
+						<td nowrap width="5%" >22</td>
+						<td nowrap width="95%" >Manutenção das Unidades/Sistemas de Informação/Prontuário Eletrônico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=23;document.formulario.submit();">
+						<td nowrap width="5%" >23</td>
+						<td nowrap width="95%" >RH ESF Equipe de Saúde na Família</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=24;document.formulario.submit();">
+						<td nowrap width="5%" >24</td>
+						<td nowrap width="95%" >RH ESB Equipe de Saúde Tipo II De Saúde Bucal</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=25;document.formulario.submit();">
+						<td nowrap width="5%" >25</td>
+						<td nowrap width="95%" >Manutenção das Unidades/Ações de Dengue</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=26;document.formulario.submit();">
+						<td nowrap width="5%" >26</td>
+						<td nowrap width="95%" >Adaptações de Instalações/Equipamentos (Clin Fam / Post Saúde Família</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=27;document.formulario.submit();">
+						<td nowrap width="5%" >27</td>
+						<td nowrap width="95%" >Parte Variável  1</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=28;document.formulario.submit();">
+						<td nowrap width="5%" >28</td>
+						<td nowrap width="95%" >Parte Variável 2 (Unidade de Saúde)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=29;document.formulario.submit();">
+						<td nowrap width="5%" >29</td>
+						<td nowrap width="95%" >Parcela Fixa</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=30;document.formulario.submit();">
+						<td nowrap width="5%" >30</td>
+						<td nowrap width="95%" >Parcela de Equipamentos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=31;document.formulario.submit();">
+						<td nowrap width="5%" >31</td>
+						<td nowrap width="95%" >Parcela Variável 1</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=32;document.formulario.submit();">
+						<td nowrap width="5%" >32</td>
+						<td nowrap width="95%" >Parcela Variável 2</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=33;document.formulario.submit();">
+						<td nowrap width="5%" >33</td>
+						<td nowrap width="95%" >Investimentos: Obras/Reformas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=34;document.formulario.submit();">
+						<td nowrap width="5%" >34</td>
+						<td nowrap width="95%" >Ações de Educação Continuada</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=35;document.formulario.submit();">
+						<td nowrap width="5%" >35</td>
+						<td nowrap width="95%" >RH/UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=36;document.formulario.submit();">
+						<td nowrap width="5%" >36</td>
+						<td nowrap width="95%" >RH/PADI</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=37;document.formulario.submit();">
+						<td nowrap width="5%" >37</td>
+						<td nowrap width="95%" >RH/Cegonha Carioca</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=38;document.formulario.submit();">
+						<td nowrap width="5%" >38</td>
+						<td nowrap width="95%" >KIT Cegonha Carioca</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=39;document.formulario.submit();">
+						<td nowrap width="5%" >39</td>
+						<td nowrap width="95%" >Exames Laboratoriais por Equipe</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=40;document.formulario.submit();">
+						<td nowrap width="5%" >40</td>
+						<td nowrap width="95%" >CAPS - AD</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=41;document.formulario.submit();">
+						<td nowrap width="5%" >41</td>
+						<td nowrap width="95%" >Exames Laboratoriais por serviço de apoio especializado NASF</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=42;document.formulario.submit();">
+						<td nowrap width="5%" >42</td>
+						<td nowrap width="95%" >Ativação do Pólo 12 hs de Dengue</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=43;document.formulario.submit();">
+						<td nowrap width="5%" >43</td>
+						<td nowrap width="95%" >Ativação do Pólo 24 hr de Dengue</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=44;document.formulario.submit();">
+						<td nowrap width="5%" >44</td>
+						<td nowrap width="95%" >Apoio a Saúde Básica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=45;document.formulario.submit();">
+						<td nowrap width="5%" >45</td>
+						<td nowrap width="95%" >RH/HOSPITAL MATERNIDADE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=46;document.formulario.submit();">
+						<td nowrap width="5%" >46</td>
+						<td nowrap width="95%" >Serviços Técnicos Operacionais Especializados</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=47;document.formulario.submit();">
+						<td nowrap width="5%" >47</td>
+						<td nowrap width="95%" >Serviços de Apoio a Gestão</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=48;document.formulario.submit();">
+						<td nowrap width="5%" >48</td>
+						<td nowrap width="95%" >Despesas Gerais Administrativas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=49;document.formulario.submit();">
+						<td nowrap width="5%" >49</td>
+						<td nowrap width="95%" >Material Médico Hospitalar/Medicamentos/Insumos Gerais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=50;document.formulario.submit();">
+						<td nowrap width="5%" >50</td>
+						<td nowrap width="95%" >Utilidade Pública</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=51;document.formulario.submit();">
+						<td nowrap width="5%" >51</td>
+						<td nowrap width="95%" >INVESTIMENTOS/ADAPTAÇÃO/AQUISIÇÃO DE BENS PERMANENTES</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=52;document.formulario.submit();">
+						<td nowrap width="5%" >52</td>
+						<td nowrap width="95%" >Despesas Gerais não Operacionais</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=53;document.formulario.submit();">
+						<td nowrap width="5%" >53</td>
+						<td nowrap width="95%" >TESTE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=54;document.formulario.submit();">
+						<td nowrap width="5%" >54</td>
+						<td nowrap width="95%" >TESTE2</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=55;document.formulario.submit();">
+						<td nowrap width="5%" >55</td>
+						<td nowrap width="95%" >Parcela Variável 3</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=56;document.formulario.submit();">
+						<td nowrap width="5%" >56</td>
+						<td nowrap width="95%" >OUTROS SERVIÇOS DE INTERNET</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=57;document.formulario.submit();">
+						<td nowrap width="5%" >57</td>
+						<td nowrap width="95%" >RH/CER</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=58;document.formulario.submit();">
+						<td nowrap width="5%" >58</td>
+						<td nowrap width="95%" >RH - Maternidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=59;document.formulario.submit();">
+						<td nowrap width="5%" >59</td>
+						<td nowrap width="95%" >RH - Hospitais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=60;document.formulario.submit();">
+						<td nowrap width="5%" >60</td>
+						<td nowrap width="95%" >Despesas de Consumo - CER</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=61;document.formulario.submit();">
+						<td nowrap width="5%" >61</td>
+						<td nowrap width="95%" >Despesas de Consumo - Maternidade</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=62;document.formulario.submit();">
+						<td nowrap width="5%" >62</td>
+						<td nowrap width="95%" >Despesas de Consumo - Hospitais</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=63;document.formulario.submit();">
+						<td nowrap width="5%" >63</td>
+						<td nowrap width="95%" >Serviço de Terceiros - CER</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=64;document.formulario.submit();">
+						<td nowrap width="5%" >64</td>
+						<td nowrap width="95%" >Serviço de Terceiros - Maternidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=65;document.formulario.submit();">
+						<td nowrap width="5%" >65</td>
+						<td nowrap width="95%" >Serviço de Terceiros - Hospitais </td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=66;document.formulario.submit();">
+						<td nowrap width="5%" >66</td>
+						<td nowrap width="95%" >CUSTO OPERACIONAL ENSP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=67;document.formulario.submit();">
+						<td nowrap width="5%" >67</td>
+						<td nowrap width="95%" >PROFORMAR - CTAVS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=68;document.formulario.submit();">
+						<td nowrap width="5%" >68</td>
+						<td nowrap width="95%" >APOIO OTICS-RIO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=69;document.formulario.submit();">
+						<td nowrap width="5%" >69</td>
+						<td nowrap width="95%" >CRIE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=70;document.formulario.submit();">
+						<td nowrap width="5%" >70</td>
+						<td nowrap width="95%" >PROFORMAR - CTACS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=71;document.formulario.submit();">
+						<td nowrap width="5%" >71</td>
+						<td nowrap width="95%" >APOIO A PESQUISA CLÍNICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=72;document.formulario.submit();">
+						<td nowrap width="5%" >72</td>
+						<td nowrap width="95%" >CURSO ESPECIALIZAÇÃO SAÚDE PÚBLICA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=73;document.formulario.submit();">
+						<td nowrap width="5%" >73</td>
+						<td nowrap width="95%" >CURSO ATENÇÃO FARMACÊUTICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=74;document.formulario.submit();">
+						<td nowrap width="5%" >74</td>
+						<td nowrap width="95%" >RESIDÊNCIA MULTIPROFISSIONAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=75;document.formulario.submit();">
+						<td nowrap width="5%" >75</td>
+						<td nowrap width="95%" >MESTRADO PROFISSIONAL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=76;document.formulario.submit();">
+						<td nowrap width="5%" >76</td>
+						<td nowrap width="95%" >PROJETOS DE PESQUISA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=77;document.formulario.submit();">
+						<td nowrap width="5%" >77</td>
+						<td nowrap width="95%" >PROJETOS SAP/SUBPAV</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=78;document.formulario.submit();">
+						<td nowrap width="5%" >78</td>
+						<td nowrap width="95%" >SAÚDE DO TRABALHADOR E ATENÇÃO PRIMÁRIA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=79;document.formulario.submit();">
+						<td nowrap width="5%" >79</td>
+						<td nowrap width="95%" >PROFORMAR - CUSTO OPERACIONAL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=80;document.formulario.submit();">
+						<td nowrap width="5%" >80</td>
+						<td nowrap width="95%" >IPEC SVS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=81;document.formulario.submit();">
+						<td nowrap width="5%" >81</td>
+						<td nowrap width="95%" >ESTAÇÕES OTICS - RIO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=82;document.formulario.submit();">
+						<td nowrap width="5%" >82</td>
+						<td nowrap width="95%" >IPEC SUBPAV CUSTO OPERACIONAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=83;document.formulario.submit();">
+						<td nowrap width="5%" >83</td>
+						<td nowrap width="95%" >IPEC SVS - CUSTO OPERACIONAL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=84;document.formulario.submit();">
+						<td nowrap width="5%" >84</td>
+						<td nowrap width="95%" >IPEC CRIE - CUSTO OPERACIONAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=85;document.formulario.submit();">
+						<td nowrap width="5%" >85</td>
+						<td nowrap width="95%" >ICICT - SPS/SUBPAV</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=86;document.formulario.submit();">
+						<td nowrap width="5%" >86</td>
+						<td nowrap width="95%" >ICICT - CUSTO OPERACIONAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=87;document.formulario.submit();">
+						<td nowrap width="5%" >87</td>
+						<td nowrap width="95%" >CUSTO OPERACIONAL BIO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=88;document.formulario.submit();">
+						<td nowrap width="5%" >88</td>
+						<td nowrap width="95%" >PARCELA VARIÁVEL 4 (2% APOIO A GESTÃO)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=89;document.formulario.submit();">
+						<td nowrap width="5%" >89</td>
+						<td nowrap width="95%" >PARCELA VARIÁVEL 5 (3% EQUIPE PROFISSIONAL)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=90;document.formulario.submit();">
+						<td nowrap width="5%" >90</td>
+						<td nowrap width="95%" >Recursos Físicos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=91;document.formulario.submit();">
+						<td nowrap width="5%" >91</td>
+						<td nowrap width="95%" >Proformar ACS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=92;document.formulario.submit();">
+						<td nowrap width="5%" >92</td>
+						<td nowrap width="95%" >CAPSI</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=93;document.formulario.submit();">
+						<td nowrap width="5%" >93</td>
+						<td nowrap width="95%" >Despesas de Consumo - UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=94;document.formulario.submit();">
+						<td nowrap width="5%" >94</td>
+						<td nowrap width="95%" >Serviço de Terceiros - UPA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=95;document.formulario.submit();">
+						<td nowrap width="5%" >95</td>
+						<td nowrap width="95%" >RH/COPA DO MUNDO FIFA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=96;document.formulario.submit();">
+						<td nowrap width="5%" >96</td>
+						<td nowrap width="95%" >MATERIAL HOSPITALAR/COPA DO MUNDO FIFA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=97;document.formulario.submit();">
+						<td nowrap width="5%" >97</td>
+						<td nowrap width="95%" >TARIFAS (FARE E CART) COPA DO MUNDO  FIFA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=98;document.formulario.submit();">
+						<td nowrap width="5%" >98</td>
+						<td nowrap width="95%" >GÁS MEDICINAL/COPA DO MUNDO FIFA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=99;document.formulario.submit();">
+						<td nowrap width="5%" >99</td>
+						<td nowrap width="95%" >LOCAÇÃO DE EQUIPAMENTOS/COPA DO MUNDO FIFA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=100;document.formulario.submit();">
+						<td nowrap width="5%" >100</td>
+						<td nowrap width="95%" >REFEIÇÕES/COPA DO MUNDO FIFA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=101;document.formulario.submit();">
+						<td nowrap width="5%" >101</td>
+						<td nowrap width="95%" >Serviços de Terceiros - PADI</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=102;document.formulario.submit();">
+						<td nowrap width="5%" >102</td>
+						<td nowrap width="95%" >Material de Consumo - PADI</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=103;document.formulario.submit();">
+						<td nowrap width="5%" >103</td>
+						<td nowrap width="95%" >RH - CAPS III</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=104;document.formulario.submit();">
+						<td nowrap width="5%" >104</td>
+						<td nowrap width="95%" >APOIO A GESTÃO CAPS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=105;document.formulario.submit();">
+						<td nowrap width="5%" >105</td>
+						<td nowrap width="95%" >RH - SERVIÇO DE APOIO ESPECIALIZADO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=106;document.formulario.submit();">
+						<td nowrap width="5%" >106</td>
+						<td nowrap width="95%" >GESTÃO RUE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=107;document.formulario.submit();">
+						<td nowrap width="5%" >107</td>
+						<td nowrap width="95%" >CONTRATO DE CONSUMO - UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=108;document.formulario.submit();">
+						<td nowrap width="5%" >108</td>
+						<td nowrap width="95%" >SERVIÇO DE LABORATÓRIO - UPA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=109;document.formulario.submit();">
+						<td nowrap width="5%" >109</td>
+						<td nowrap width="95%" >SISTEMA DE INFORMAÇÃO - UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=110;document.formulario.submit();">
+						<td nowrap width="5%" >110</td>
+						<td nowrap width="95%" >SERVIÇO DE RAIO X - UPA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=111;document.formulario.submit();">
+						<td nowrap width="5%" >111</td>
+						<td nowrap width="95%" >Serviços de Oftalmologia Básica, Raio X eÂ Â Ultrassom e prótese dentaria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=112;document.formulario.submit();">
+						<td nowrap width="5%" >112</td>
+						<td nowrap width="95%" >Sistemas de Informação / prontuário eletrônico e Telefonia Saúde da Família</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=113;document.formulario.submit();">
+						<td nowrap width="5%" >113</td>
+						<td nowrap width="95%" >Sistemas de Informação / prontuário eletrônico e Telefonia - NASF</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=114;document.formulario.submit();">
+						<td nowrap width="5%" >114</td>
+						<td nowrap width="95%" >Consumo - CAPS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=115;document.formulario.submit();">
+						<td nowrap width="5%" >115</td>
+						<td nowrap width="95%" >Rh - Unidade de Pronto Atendimento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=116;document.formulario.submit();">
+						<td nowrap width="5%" >116</td>
+						<td nowrap width="95%" >Medicamento - Unidade de Pronto Atendimento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=117;document.formulario.submit();">
+						<td nowrap width="5%" >117</td>
+						<td nowrap width="95%" >Implantação e Avaliação de Modelos de Educação Permanente em Saúde</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=118;document.formulario.submit();">
+						<td nowrap width="5%" >118</td>
+						<td nowrap width="95%" >Apoio às Linhas de Cuidado e Projetos Especiais - SAP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=119;document.formulario.submit();">
+						<td nowrap width="5%" >119</td>
+						<td nowrap width="95%" >Apoio às Ações da Regulação Ambulatorial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=120;document.formulario.submit();">
+						<td nowrap width="5%" >120</td>
+						<td nowrap width="95%" >Apoio ao Monitoramento e Análise de Qualidade de Ações</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=121;document.formulario.submit();">
+						<td nowrap width="5%" >121</td>
+						<td nowrap width="95%" >Monitoramento de Vacância nas Equipes</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=122;document.formulario.submit();">
+						<td nowrap width="5%" >122</td>
+						<td nowrap width="95%" >Qualificação das Ações e Informações de Vigilância em Saúde</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=123;document.formulario.submit();">
+						<td nowrap width="5%" >123</td>
+						<td nowrap width="95%" >Cursos Técnico de Agentes de Vigilância em Saúde</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=124;document.formulario.submit();">
+						<td nowrap width="5%" >124</td>
+						<td nowrap width="95%" >Ações Contingenciais para o Enfrentamento da Tuberculose</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=125;document.formulario.submit();">
+						<td nowrap width="5%" >125</td>
+						<td nowrap width="95%" >Qualificação das Ações de Vigilância no Controle das DST AIDS e Hepatites Virais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=126;document.formulario.submit();">
+						<td nowrap width="5%" >126</td>
+						<td nowrap width="95%" >Residência de Medicina de Família e Comunidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=127;document.formulario.submit();">
+						<td nowrap width="5%" >127</td>
+						<td nowrap width="95%" >Especialização em Vigilância em Saúde na Atenção Primária</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=128;document.formulario.submit();">
+						<td nowrap width="5%" >128</td>
+						<td nowrap width="95%" >Apoio à Manutenção das Estações OTICS-RIO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=129;document.formulario.submit();">
+						<td nowrap width="5%" >129</td>
+						<td nowrap width="95%" >Gerenciamento, Operacionalização e ExecuçãoÂ Â das Ações de Promoção da Saúde para o ServiÃ</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=130;document.formulario.submit();">
+						<td nowrap width="5%" >130</td>
+						<td nowrap width="95%" >Pesquisas Clínicas de Imunobiológicos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=131;document.formulario.submit();">
+						<td nowrap width="5%" >131</td>
+						<td nowrap width="95%" >Parte Variável 1 - UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=132;document.formulario.submit();">
+						<td nowrap width="5%" >132</td>
+						<td nowrap width="95%" >Parte Variável 2 - UPA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=133;document.formulario.submit();">
+						<td nowrap width="5%" >133</td>
+						<td nowrap width="95%" >Parte Variável 3 - UPA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=134;document.formulario.submit();">
+						<td nowrap width="5%" >134</td>
+						<td nowrap width="95%" >Rh Equipes de Saúde da Família</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=135;document.formulario.submit();">
+						<td nowrap width="5%" >135</td>
+						<td nowrap width="95%" >Contratos, consumo e promoção - Unidades de Atenção Primária</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=136;document.formulario.submit();">
+						<td nowrap width="5%" >136</td>
+						<td nowrap width="95%" >APOIO A GESTÃO da RAS/SUS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=137;document.formulario.submit();">
+						<td nowrap width="5%" >137</td>
+						<td nowrap width="95%" >RH CENTRO DE APOIO HOSPITALAR URGÊNCIA E EMERGÊNCIA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=138;document.formulario.submit();">
+						<td nowrap width="5%" >138</td>
+						<td nowrap width="95%" >RH CENTRO DE APOIO AMBULATORIAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=139;document.formulario.submit();">
+						<td nowrap width="5%" >139</td>
+						<td nowrap width="95%" >Contrato e Consumo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=140;document.formulario.submit();">
+						<td nowrap width="5%" >140</td>
+						<td nowrap width="95%" >RH EQUIPE DE MONITORAMENTO DE OCUPAÇÃO DE LEITOS HOSPITALARES</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=141;document.formulario.submit();">
+						<td nowrap width="5%" >141</td>
+						<td nowrap width="95%" >APOIO AOS EVENTOS DE NATAL E REVEILLON</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=142;document.formulario.submit();">
+						<td nowrap width="5%" >142</td>
+						<td nowrap width="95%" >APOIO AOS EVENTOS CARNAVAL, ENSAIOS TÉCNICOS, TERREIRÃO, SAMBÓDROMO E BLOCOS DE RUA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=143;document.formulario.submit();">
+						<td nowrap width="5%" >143</td>
+						<td nowrap width="95%" >Custos Gerais / Concessionárias / Investimento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=144;document.formulario.submit();">
+						<td nowrap width="5%" >144</td>
+						<td nowrap width="95%" >Rede de Urgência e Emergência (RUE)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=145;document.formulario.submit();">
+						<td nowrap width="5%" >145</td>
+						<td nowrap width="95%" >Pessoal / Encargos / Provisão</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=146;document.formulario.submit();">
+						<td nowrap width="5%" >146</td>
+						<td nowrap width="95%" >Custo Operacional Fiotec</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=147;document.formulario.submit();">
+						<td nowrap width="5%" >147</td>
+						<td nowrap width="95%" >ENFERMEIRO/NR</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=148;document.formulario.submit();">
+						<td nowrap width="5%" >148</td>
+						<td nowrap width="95%" >RH - Unidade de Parto de Puerpério</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=149;document.formulario.submit();">
+						<td nowrap width="5%" >149</td>
+						<td nowrap width="95%" >Custeio - Unidade de Parto e Puerpério</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=150;document.formulario.submit();">
+						<td nowrap width="5%" >150</td>
+						<td nowrap width="95%" >RH - Leitos Alto Risco Obstétrico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=151;document.formulario.submit();">
+						<td nowrap width="5%" >151</td>
+						<td nowrap width="95%" >Custeio - Leitos Alto Risco Obstétrico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=152;document.formulario.submit();">
+						<td nowrap width="5%" >152</td>
+						<td nowrap width="95%" >RH- Emergência Obstétrica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=153;document.formulario.submit();">
+						<td nowrap width="5%" >153</td>
+						<td nowrap width="95%" >Custeio - Emergência Obstétrica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=154;document.formulario.submit();">
+						<td nowrap width="5%" >154</td>
+						<td nowrap width="95%" >RH- Ambulatório Pré-natal</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=155;document.formulario.submit();">
+						<td nowrap width="5%" >155</td>
+						<td nowrap width="95%" >Custeio- Ambulatório Pré-natal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=156;document.formulario.submit();">
+						<td nowrap width="5%" >156</td>
+						<td nowrap width="95%" >RH- UTIN</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=157;document.formulario.submit();">
+						<td nowrap width="5%" >157</td>
+						<td nowrap width="95%" >Custeio - UTIN</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=158;document.formulario.submit();">
+						<td nowrap width="5%" >158</td>
+						<td nowrap width="95%" >RH -  Nco/UCI Nca e Cirurgia Neonatal</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=159;document.formulario.submit();">
+						<td nowrap width="5%" >159</td>
+						<td nowrap width="95%" >Custeio -Nco/UCI Nca e Cirurgia Neonatal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=160;document.formulario.submit();">
+						<td nowrap width="5%" >160</td>
+						<td nowrap width="95%" >RH - NAIRR</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=161;document.formulario.submit();">
+						<td nowrap width="5%" >161</td>
+						<td nowrap width="95%" >Custeio - NAIRR</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=162;document.formulario.submit();">
+						<td nowrap width="5%" >162</td>
+						<td nowrap width="95%" >RH - UTIP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=163;document.formulario.submit();">
+						<td nowrap width="5%" >163</td>
+						<td nowrap width="95%" >Custeio - UTIP</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=164;document.formulario.submit();">
+						<td nowrap width="5%" >164</td>
+						<td nowrap width="95%" >Serviços de Laboratório</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=165;document.formulario.submit();">
+						<td nowrap width="5%" >165</td>
+						<td nowrap width="95%" >Sistemas de Informação/Prontuário Eletrônico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=166;document.formulario.submit();">
+						<td nowrap width="5%" >166</td>
+						<td nowrap width="95%" >Serviços de Raio X</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=167;document.formulario.submit();">
+						<td nowrap width="5%" >167</td>
+						<td nowrap width="95%" >PAGAMENTOS INDEVIDOS A SEREM  ESTORNADOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=168;document.formulario.submit();">
+						<td nowrap width="5%" >168</td>
+						<td nowrap width="95%" >SMEL - Despesas Gerais da Unidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=169;document.formulario.submit();">
+						<td nowrap width="5%" >169</td>
+						<td nowrap width="95%" >SMEL - Despesas com Pessoal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=170;document.formulario.submit();">
+						<td nowrap width="5%" >170</td>
+						<td nowrap width="95%" >SMEL - Demais Despesas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=171;document.formulario.submit();">
+						<td nowrap width="5%" >171</td>
+						<td nowrap width="95%" >SMEL - Custo Operacional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=172;document.formulario.submit();">
+						<td nowrap width="5%" >172</td>
+						<td nowrap width="95%" >SMEL - Despesas com Empregados e Dirigentes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=173;document.formulario.submit();">
+						<td nowrap width="5%" >173</td>
+						<td nowrap width="95%" >APOIO A GESTÃO DA RUE/SUS (HMRG)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=174;document.formulario.submit();">
+						<td nowrap width="5%" >174</td>
+						<td nowrap width="95%" >APOIO A GESTÃO DO HOSPITAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=175;document.formulario.submit();">
+						<td nowrap width="5%" >175</td>
+						<td nowrap width="95%" >RH DIREÇÃO DA UNIDADE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=176;document.formulario.submit();">
+						<td nowrap width="5%" >176</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DA DIREÇÃO DA UNIDADE)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=177;document.formulario.submit();">
+						<td nowrap width="5%" >177</td>
+						<td nowrap width="95%" >RH - EQUIPE DA UTI ADULTO (EQUIPE DE COORDENAÇÃO DA UTI ADULTO)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=178;document.formulario.submit();">
+						<td nowrap width="5%" >178</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DE COORDENAÇÃO DA UTI ADULTO)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=179;document.formulario.submit();">
+						<td nowrap width="5%" >179</td>
+						<td nowrap width="95%" >RH - EQUIPE DA UTI ADULTO (EQUIPE DA UTI ADULTO)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=180;document.formulario.submit();">
+						<td nowrap width="5%" >180</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DA UTI ADULTO)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=181;document.formulario.submit();">
+						<td nowrap width="5%" >181</td>
+						<td nowrap width="95%" >RH - EQUIPE DA UTI NEONATAL (EQUIPE DE COORDENAÇÃO DA UTI NEONATAL)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=182;document.formulario.submit();">
+						<td nowrap width="5%" >182</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DE COORDENAÇÃO DA UTI NEONATAL)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=183;document.formulario.submit();">
+						<td nowrap width="5%" >183</td>
+						<td nowrap width="95%" >RH DE EQUIPE DA UTI NEONATAL (EQUIPE DA UTI NEONATAL)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=184;document.formulario.submit();">
+						<td nowrap width="5%" >184</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DA UTI NEONATAL)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=185;document.formulario.submit();">
+						<td nowrap width="5%" >185</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DA MATERNIDADE)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=186;document.formulario.submit();">
+						<td nowrap width="5%" >186</td>
+						<td nowrap width="95%" >CONTRATOS E CONSUMO (EQUIPE DE LEITOS CLINICOS)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=187;document.formulario.submit();">
+						<td nowrap width="5%" >187</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DA FARMÁCIA)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=188;document.formulario.submit();">
+						<td nowrap width="5%" >188</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DO AMBULATÓRIO MÉDICO)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=189;document.formulario.submit();">
+						<td nowrap width="5%" >189</td>
+						<td nowrap width="95%" >EXAMES CONTRATADOS DISPONIBILIZADOS AO SISREG AMBULATORIAL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=190;document.formulario.submit();">
+						<td nowrap width="5%" >190</td>
+						<td nowrap width="95%" >Serviço de Apoio Diagnóstico e Terapêutico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=191;document.formulario.submit();">
+						<td nowrap width="5%" >191</td>
+						<td nowrap width="95%" >Gestão do Complexo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=192;document.formulario.submit();">
+						<td nowrap width="5%" >192</td>
+						<td nowrap width="95%" >Coordenação UTI Infantil</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=193;document.formulario.submit();">
+						<td nowrap width="5%" >193</td>
+						<td nowrap width="95%" >Unidades Complementares</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=194;document.formulario.submit();">
+						<td nowrap width="5%" >194</td>
+						<td nowrap width="95%" >Módulo transporte</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=195;document.formulario.submit();">
+						<td nowrap width="5%" >195</td>
+						<td nowrap width="95%" >RH DA EQUIPE DE COORDENAÇÃO DA RADIOLOGIA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=196;document.formulario.submit();">
+						<td nowrap width="5%" >196</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (COORDENAÇÃ‚O DE RADIOLOGIA)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=197;document.formulario.submit();">
+						<td nowrap width="5%" >197</td>
+						<td nowrap width="95%" >CONTRATO E CONSUMO (EQUIPE DE RADIOLOGIA)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=198;document.formulario.submit();">
+						<td nowrap width="5%" >198</td>
+						<td nowrap width="95%" >RH - Equipe das Salas Amarela e Vermelha</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=199;document.formulario.submit();">
+						<td nowrap width="5%" >199</td>
+						<td nowrap width="95%" >Contrato e Consumo (Salas Amarela e Vermelha)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=200;document.formulario.submit();">
+						<td nowrap width="5%" >200</td>
+						<td nowrap width="95%" >RH - Equipe Centro Cirúrgico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=201;document.formulario.submit();">
+						<td nowrap width="5%" >201</td>
+						<td nowrap width="95%" >Contrato e Consumo (Equipe do Centro Cirúrgico)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=202;document.formulario.submit();">
+						<td nowrap width="5%" >202</td>
+						<td nowrap width="95%" >RH da Equipe de Saúde Mental</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=203;document.formulario.submit();">
+						<td nowrap width="5%" >203</td>
+						<td nowrap width="95%" >Contrato e Consumo (Equipe de Saúde Mental)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=204;document.formulario.submit();">
+						<td nowrap width="5%" >204</td>
+						<td nowrap width="95%" >RH - Equipe Acolhimento Maternidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=205;document.formulario.submit();">
+						<td nowrap width="5%" >205</td>
+						<td nowrap width="95%" >Contrato e Consumo (Equipe de Acolhimento Maternidade)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=206;document.formulario.submit();">
+						<td nowrap width="5%" >206</td>
+						<td nowrap width="95%" >Contrato e Consumo (Equipe de Coordenação dos Leitos)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=207;document.formulario.submit();">
+						<td nowrap width="5%" >207</td>
+						<td nowrap width="95%" >RH da Equipe de Leitos Cirúrgicos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=208;document.formulario.submit();">
+						<td nowrap width="5%" >208</td>
+						<td nowrap width="95%" >Contrato e Consumo (Equipe de Leitos Cirúrgicos)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=209;document.formulario.submit();">
+						<td nowrap width="5%" >209</td>
+						<td nowrap width="95%" >RH DA EQUIPE DE LEITOS (COORDENAÇÃO DOS LEITOS)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=210;document.formulario.submit();">
+						<td nowrap width="5%" >210</td>
+						<td nowrap width="95%" >Projeto Olimpíadas 2016</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=211;document.formulario.submit();">
+						<td nowrap width="5%" >211</td>
+						<td nowrap width="95%" >Unidade de Terapia Intensiva</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=212;document.formulario.submit();">
+						<td nowrap width="5%" >212</td>
+						<td nowrap width="95%" >Leitos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=213;document.formulario.submit();">
+						<td nowrap width="5%" >213</td>
+						<td nowrap width="95%" >SERVIÇOS DE APOIO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=214;document.formulario.submit();">
+						<td nowrap width="5%" >214</td>
+						<td nowrap width="95%" >Não aplicável</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=215;document.formulario.submit();">
+						<td nowrap width="5%" >215</td>
+						<td nowrap width="95%" >RH - CAP</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=216;document.formulario.submit();">
+						<td nowrap width="5%" >216</td>
+						<td nowrap width="95%" >Serviços e insumos - CAP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=217;document.formulario.submit();">
+						<td nowrap width="5%" >217</td>
+						<td nowrap width="95%" >RH - TEIAS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=218;document.formulario.submit();">
+						<td nowrap width="5%" >218</td>
+						<td nowrap width="95%" >Serviços e Insumos - TEIAS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=219;document.formulario.submit();">
+						<td nowrap width="5%" >219</td>
+						<td nowrap width="95%" >RH Equipes de Saúde Bucal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=220;document.formulario.submit();">
+						<td nowrap width="5%" >220</td>
+						<td nowrap width="95%" >RG Equipe de Gestão</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=221;document.formulario.submit();">
+						<td nowrap width="5%" >221</td>
+						<td nowrap width="95%" >RH Equipe de Farmácia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=222;document.formulario.submit();">
+						<td nowrap width="5%" >222</td>
+						<td nowrap width="95%" >RH Equipe de Apoio Técnico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=223;document.formulario.submit();">
+						<td nowrap width="5%" >223</td>
+						<td nowrap width="95%" >RH Equipe Consultório na Rua</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=224;document.formulario.submit();">
+						<td nowrap width="5%" >224</td>
+						<td nowrap width="95%" >RH Equipes de Serv ApoioÂ Especializado/ NASF</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=225;document.formulario.submit();">
+						<td nowrap width="5%" >225</td>
+						<td nowrap width="95%" >RH - CAPS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=226;document.formulario.submit();">
+						<td nowrap width="5%" >226</td>
+						<td nowrap width="95%" >RH -SPA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=227;document.formulario.submit();">
+						<td nowrap width="5%" >227</td>
+						<td nowrap width="95%" >RH - SAISP</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=228;document.formulario.submit();">
+						<td nowrap width="5%" >228</td>
+						<td nowrap width="95%" >Contratos, consumo e promoção - UBS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=229;document.formulario.submit();">
+						<td nowrap width="5%" >229</td>
+						<td nowrap width="95%" >Contratos, consumo e promoção - CAPS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=230;document.formulario.submit();">
+						<td nowrap width="5%" >230</td>
+						<td nowrap width="95%" >Serviços especializados em saúde</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=231;document.formulario.submit();">
+						<td nowrap width="5%" >231</td>
+						<td nowrap width="95%" >Sistemas de Informação / prontuário eletrônico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=232;document.formulario.submit();">
+						<td nowrap width="5%" >232</td>
+						<td nowrap width="95%" >Adaptação de instalações / Aquisição de Equipamentos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=233;document.formulario.submit();">
+						<td nowrap width="5%" >233</td>
+						<td nowrap width="95%" >Recursos Humanos (RH)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=234;document.formulario.submit();">
+						<td nowrap width="5%" >234</td>
+						<td nowrap width="95%" >Apoio à gestão da CGE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=235;document.formulario.submit();">
+						<td nowrap width="5%" >235</td>
+						<td nowrap width="95%" >RH da Equipe de Leitos Clinicos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=236;document.formulario.submit();">
+						<td nowrap width="5%" >236</td>
+						<td nowrap width="95%" >RH - Equipe da UTI Neonatal e Ped</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=237;document.formulario.submit();">
+						<td nowrap width="5%" >237</td>
+						<td nowrap width="95%" >RH da Equipe da CTI Pediátrico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=238;document.formulario.submit();">
+						<td nowrap width="5%" >238</td>
+						<td nowrap width="95%" >RH da Equipe da UCINCo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=239;document.formulario.submit();">
+						<td nowrap width="5%" >239</td>
+						<td nowrap width="95%" >RH da Eq de Acolhimento Obstétrico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=240;document.formulario.submit();">
+						<td nowrap width="5%" >240</td>
+						<td nowrap width="95%" >RH da Equipe Centros Obstétricos ppp</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=241;document.formulario.submit();">
+						<td nowrap width="5%" >241</td>
+						<td nowrap width="95%" >RH da Equipe da Radiologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=242;document.formulario.submit();">
+						<td nowrap width="5%" >242</td>
+						<td nowrap width="95%" >RH DA EQUIPE DO AMBULATÓRIO MÉDICO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=243;document.formulario.submit();">
+						<td nowrap width="5%" >243</td>
+						<td nowrap width="95%" >RH da Equipe do Núcleo Interno de Regulação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=244;document.formulario.submit();">
+						<td nowrap width="5%" >244</td>
+						<td nowrap width="95%" >RH Direção CER</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=245;document.formulario.submit();">
+						<td nowrap width="5%" >245</td>
+						<td nowrap width="95%" >RH DA EQUIPE MÉDICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=246;document.formulario.submit();">
+						<td nowrap width="5%" >246</td>
+						<td nowrap width="95%" >RH da Sala de Medicação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=247;document.formulario.submit();">
+						<td nowrap width="5%" >247</td>
+						<td nowrap width="95%" >RH da Equipe de Acolhimento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=248;document.formulario.submit();">
+						<td nowrap width="5%" >248</td>
+						<td nowrap width="95%" >RH da Equipe do Centro Obstétrico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=249;document.formulario.submit();">
+						<td nowrap width="5%" >249</td>
+						<td nowrap width="95%" >Apoio à Gestão da RUE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=250;document.formulario.submit();">
+						<td nowrap width="5%" >250</td>
+						<td nowrap width="95%" >RH - Equipe da Sala Amarela/Vermelha</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=251;document.formulario.submit();">
+						<td nowrap width="5%" >251</td>
+						<td nowrap width="95%" >RH - Equipe Psiquiatria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=252;document.formulario.submit();">
+						<td nowrap width="5%" >252</td>
+						<td nowrap width="95%" >Equipe da Maternidade</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=253;document.formulario.submit();">
+						<td nowrap width="5%" >253</td>
+						<td nowrap width="95%" >Equipe do Ambulatório</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=254;document.formulario.submit();">
+						<td nowrap width="5%" >254</td>
+						<td nowrap width="95%" >Equipe do Posto de Coleta de Leite</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=255;document.formulario.submit();">
+						<td nowrap width="5%" >255</td>
+						<td nowrap width="95%" >Residência de Enfermagem em Saúde da Família e Comunidade</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=256;document.formulario.submit();">
+						<td nowrap width="5%" >256</td>
+						<td nowrap width="95%" >Rh Equipes de Saúde da Família e Consultório na Rua</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=257;document.formulario.submit();">
+						<td nowrap width="5%" >257</td>
+						<td nowrap width="95%" >RH - Equipe de Especialistas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=258;document.formulario.submit();">
+						<td nowrap width="5%" >258</td>
+						<td nowrap width="95%" >Consumo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=259;document.formulario.submit();">
+						<td nowrap width="5%" >259</td>
+						<td nowrap width="95%" >Rh Apoio e Gestão das Unidades de Atenção Primária - ESF</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=260;document.formulario.submit();">
+						<td nowrap width="5%" >260</td>
+						<td nowrap width="95%" >Administrador / Coordenador</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=261;document.formulario.submit();">
+						<td nowrap width="5%" >261</td>
+						<td nowrap width="95%" >Apoio Administrativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=262;document.formulario.submit();">
+						<td nowrap width="5%" >262</td>
+						<td nowrap width="95%" >Assessoria Contábil / Contador</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=263;document.formulario.submit();">
+						<td nowrap width="5%" >263</td>
+						<td nowrap width="95%" >Assistente Administrativo / Produção / Coordenação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=264;document.formulario.submit();">
+						<td nowrap width="5%" >264</td>
+						<td nowrap width="95%" >Auxiliar Administrativo / Produção / Coordenação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=265;document.formulario.submit();">
+						<td nowrap width="5%" >265</td>
+						<td nowrap width="95%" >Auxiliar de Serviços Gerais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=266;document.formulario.submit();">
+						<td nowrap width="5%" >266</td>
+						<td nowrap width="95%" >Bibliotecário</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=267;document.formulario.submit();">
+						<td nowrap width="5%" >267</td>
+						<td nowrap width="95%" >Despesas administrativas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=268;document.formulario.submit();">
+						<td nowrap width="5%" >268</td>
+						<td nowrap width="95%" >Despesas com Divulgação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=269;document.formulario.submit();">
+						<td nowrap width="5%" >269</td>
+						<td nowrap width="95%" >Despesas com equipamentos e serviços</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=270;document.formulario.submit();">
+						<td nowrap width="5%" >270</td>
+						<td nowrap width="95%" >Despesas com manutenção</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=271;document.formulario.submit();">
+						<td nowrap width="5%" >271</td>
+						<td nowrap width="95%" >Despesas com materiais de consumo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=272;document.formulario.submit();">
+						<td nowrap width="5%" >272</td>
+						<td nowrap width="95%" >Despesas com Programação e eventos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=273;document.formulario.submit();">
+						<td nowrap width="5%" >273</td>
+						<td nowrap width="95%" >Despesas com Projetos Culturais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=274;document.formulario.submit();">
+						<td nowrap width="5%" >274</td>
+						<td nowrap width="95%" >Despesas com telefonia / internet</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=275;document.formulario.submit();">
+						<td nowrap width="5%" >275</td>
+						<td nowrap width="95%" >Despesas com transporte (pessoas ou equipamentos)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=276;document.formulario.submit();">
+						<td nowrap width="5%" >276</td>
+						<td nowrap width="95%" >Assessoria de Comunicação / Diretor de Comunicação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=277;document.formulario.submit();">
+						<td nowrap width="5%" >277</td>
+						<td nowrap width="95%" >Gestor Cultural</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=278;document.formulario.submit();">
+						<td nowrap width="5%" >278</td>
+						<td nowrap width="95%" >Locação de equipamentos de sonorização e iluminação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=279;document.formulario.submit();">
+						<td nowrap width="5%" >279</td>
+						<td nowrap width="95%" >Locação de equipamentos de sonorização</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=280;document.formulario.submit();">
+						<td nowrap width="5%" >280</td>
+						<td nowrap width="95%" >Locação de equipamentos de iluminação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=281;document.formulario.submit();">
+						<td nowrap width="5%" >281</td>
+						<td nowrap width="95%" >Oficineiro</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=282;document.formulario.submit();">
+						<td nowrap width="5%" >282</td>
+						<td nowrap width="95%" >Produtor Cultural</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=283;document.formulario.submit();">
+						<td nowrap width="5%" >283</td>
+						<td nowrap width="95%" >Técnico de Som e Luz</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=284;document.formulario.submit();">
+						<td nowrap width="5%" >284</td>
+						<td nowrap width="95%" >Técnico de Som</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=285;document.formulario.submit();">
+						<td nowrap width="5%" >285</td>
+						<td nowrap width="95%" >Técnico de Luz</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=286;document.formulario.submit();">
+						<td nowrap width="5%" >286</td>
+						<td nowrap width="95%" >Vigia Diurno</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=287;document.formulario.submit();">
+						<td nowrap width="5%" >287</td>
+						<td nowrap width="95%" >Vigia noturno</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=288;document.formulario.submit();">
+						<td nowrap width="5%" >288</td>
+						<td nowrap width="95%" >Devolução / Estorno de Receitas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=289;document.formulario.submit();">
+						<td nowrap width="5%" >289</td>
+						<td nowrap width="95%" >Serviços de Transporte Utilitário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=290;document.formulario.submit();">
+						<td nowrap width="5%" >290</td>
+						<td nowrap width="95%" >Sistema</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=291;document.formulario.submit();">
+						<td nowrap width="5%" >291</td>
+						<td nowrap width="95%" >Coongresso de Genética Hibrido</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=292;document.formulario.submit();">
+						<td nowrap width="5%" >292</td>
+						<td nowrap width="95%" >Congresso de Genética</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=293;document.formulario.submit();">
+						<td nowrap width="5%" >293</td>
+						<td nowrap width="95%" >Oficina de Dança</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=294;document.formulario.submit();">
+						<td nowrap width="5%" >294</td>
+						<td nowrap width="95%" >Oficina de Música</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=295;document.formulario.submit();">
+						<td nowrap width="5%" >295</td>
+						<td nowrap width="95%" >Evento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=296;document.formulario.submit();">
+						<td nowrap width="5%" >296</td>
+						<td nowrap width="95%" >Salários</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=297;document.formulario.submit();">
+						<td nowrap width="5%" >297</td>
+						<td nowrap width="95%" >Encargos Trabalhistas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=298;document.formulario.submit();">
+						<td nowrap width="5%" >298</td>
+						<td nowrap width="95%" >Encargos para Provisão</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=299;document.formulario.submit();">
+						<td nowrap width="5%" >299</td>
+						<td nowrap width="95%" >Verbas Rescisórias</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=300;document.formulario.submit();">
+						<td nowrap width="5%" >300</td>
+						<td nowrap width="95%" >Vale Transporte</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=301;document.formulario.submit();">
+						<td nowrap width="5%" >301</td>
+						<td nowrap width="95%" >Vale Refeição</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=302;document.formulario.submit();">
+						<td nowrap width="5%" >302</td>
+						<td nowrap width="95%" >Telefone e  Internet</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=303;document.formulario.submit();">
+						<td nowrap width="5%" >303</td>
+						<td nowrap width="95%" >Serviços de Transporte doblo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=304;document.formulario.submit();">
+						<td nowrap width="5%" >304</td>
+						<td nowrap width="95%" >Serviço de Utilitário Eventos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=305;document.formulario.submit();">
+						<td nowrap width="5%" >305</td>
+						<td nowrap width="95%" >Apoio Nutricional_Casas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=306;document.formulario.submit();">
+						<td nowrap width="5%" >306</td>
+						<td nowrap width="95%" >Materiais Permanentes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=307;document.formulario.submit();">
+						<td nowrap width="5%" >307</td>
+						<td nowrap width="95%" >Materiais de Consumo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=308;document.formulario.submit();">
+						<td nowrap width="5%" >308</td>
+						<td nowrap width="95%" >.</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=309;document.formulario.submit();">
+						<td nowrap width="5%" >309</td>
+						<td nowrap width="95%" >Materiais de Limpeza e Higiene Pessoal</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=310;document.formulario.submit();">
+						<td nowrap width="5%" >310</td>
+						<td nowrap width="95%" >Materiais de Expediente</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=311;document.formulario.submit();">
+						<td nowrap width="5%" >311</td>
+						<td nowrap width="95%" >Uniformes</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=312;document.formulario.submit();">
+						<td nowrap width="5%" >312</td>
+						<td nowrap width="95%" >Pronto Pagamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=313;document.formulario.submit();">
+						<td nowrap width="5%" >313</td>
+						<td nowrap width="95%" >Verbas Rescisórias</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=314;document.formulario.submit();">
+						<td nowrap width="5%" >314</td>
+						<td nowrap width="95%" >Material Permanente e Equipamentos em Geral_Vila Isabel</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=315;document.formulario.submit();">
+						<td nowrap width="5%" >315</td>
+						<td nowrap width="95%" >Material Permanente e Equipamentos em Geral_São Conrado</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=316;document.formulario.submit();">
+						<td nowrap width="5%" >316</td>
+						<td nowrap width="95%" >Despesas com Oficinas Terapêuticas Vila Isabel</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=317;document.formulario.submit();">
+						<td nowrap width="5%" >317</td>
+						<td nowrap width="95%" >Despesas com Oficinas Terapêuticas São Conrado</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=318;document.formulario.submit();">
+						<td nowrap width="5%" >318</td>
+						<td nowrap width="95%" >Material de Consumo Vila Isabel</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=319;document.formulario.submit();">
+						<td nowrap width="5%" >319</td>
+						<td nowrap width="95%" >Material de Consumo_São Conrado</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=320;document.formulario.submit();">
+						<td nowrap width="5%" >320</td>
+						<td nowrap width="95%" >Manutenção e Obtenção de novas "Aquisições Pontuais"</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=321;document.formulario.submit();">
+						<td nowrap width="5%" >321</td>
+						<td nowrap width="95%" >Cozinha Experimental Vila Isabel</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=322;document.formulario.submit();">
+						<td nowrap width="5%" >322</td>
+						<td nowrap width="95%" >Artesanato Vila Isabel</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=323;document.formulario.submit();">
+						<td nowrap width="5%" >323</td>
+						<td nowrap width="95%" >Jardinagem Vila Isabel</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=324;document.formulario.submit();">
+						<td nowrap width="5%" >324</td>
+						<td nowrap width="95%" >Eventos Educativos e Inclusivos ( 02 eventos por ano)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=325;document.formulario.submit();">
+						<td nowrap width="5%" >325</td>
+						<td nowrap width="95%" >Manutenção</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=326;document.formulario.submit();">
+						<td nowrap width="5%" >326</td>
+						<td nowrap width="95%" >Despesas com Oficinas Terapêuticas e Pedagógicas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=327;document.formulario.submit();">
+						<td nowrap width="5%" >327</td>
+						<td nowrap width="95%" >Material de Consumo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=328;document.formulario.submit();">
+						<td nowrap width="5%" >328</td>
+						<td nowrap width="95%" >Material de Artesanato</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=329;document.formulario.submit();">
+						<td nowrap width="5%" >329</td>
+						<td nowrap width="95%" >Kit Lanche</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=330;document.formulario.submit();">
+						<td nowrap width="5%" >330</td>
+						<td nowrap width="95%" >Treinamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=331;document.formulario.submit();">
+						<td nowrap width="5%" >331</td>
+						<td nowrap width="95%" >Locação de Impressora</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=332;document.formulario.submit();">
+						<td nowrap width="5%" >332</td>
+						<td nowrap width="95%" >Locação Central Telefonica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=333;document.formulario.submit();">
+						<td nowrap width="5%" >333</td>
+						<td nowrap width="95%" >Material Permanente e Equipamentos em Geral</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=334;document.formulario.submit();">
+						<td nowrap width="5%" >334</td>
+						<td nowrap width="95%" >Despesas com Oficinas Terapêuticas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=335;document.formulario.submit();">
+						<td nowrap width="5%" >335</td>
+						<td nowrap width="95%" >Artesanato</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=336;document.formulario.submit();">
+						<td nowrap width="5%" >336</td>
+						<td nowrap width="95%" >Serviço de Guardião de Piscina</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=337;document.formulario.submit();">
+						<td nowrap width="5%" >337</td>
+						<td nowrap width="95%" >Jardinagem</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=338;document.formulario.submit();">
+						<td nowrap width="5%" >338</td>
+						<td nowrap width="95%" >Oficina de Cozinha Experimental</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=339;document.formulario.submit();">
+						<td nowrap width="5%" >339</td>
+						<td nowrap width="95%" >Serviços de PABX</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=340;document.formulario.submit();">
+						<td nowrap width="5%" >340</td>
+						<td nowrap width="95%" >Serviço de Telefonia Movel e Fixa</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=341;document.formulario.submit();">
+						<td nowrap width="5%" >341</td>
+						<td nowrap width="95%" >Serviço de Locação de Impressora</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=342;document.formulario.submit();">
+						<td nowrap width="5%" >342</td>
+						<td nowrap width="95%" >Internet</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=343;document.formulario.submit();">
+						<td nowrap width="5%" >343</td>
+						<td nowrap width="95%" >Material Informática</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=344;document.formulario.submit();">
+						<td nowrap width="5%" >344</td>
+						<td nowrap width="95%" >Pessoal</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=345;document.formulario.submit();">
+						<td nowrap width="5%" >345</td>
+						<td nowrap width="95%" >Encargos Patronais Sociais e Trabalhistas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=346;document.formulario.submit();">
+						<td nowrap width="5%" >346</td>
+						<td nowrap width="95%" >Provisionamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=347;document.formulario.submit();">
+						<td nowrap width="5%" >347</td>
+						<td nowrap width="95%" >Alimentação - Gêneros</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=348;document.formulario.submit();">
+						<td nowrap width="5%" >348</td>
+						<td nowrap width="95%" >Alimentação- lanches tipo 1</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=349;document.formulario.submit();">
+						<td nowrap width="5%" >349</td>
+						<td nowrap width="95%" >Alimentação- lanches tipo 2</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=350;document.formulario.submit();">
+						<td nowrap width="5%" >350</td>
+						<td nowrap width="95%" >Veículos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=351;document.formulario.submit();">
+						<td nowrap width="5%" >351</td>
+						<td nowrap width="95%" >Combustível</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=352;document.formulario.submit();">
+						<td nowrap width="5%" >352</td>
+						<td nowrap width="95%" >Atividades Integrativas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=353;document.formulario.submit();">
+						<td nowrap width="5%" >353</td>
+						<td nowrap width="95%" >Uniformes - Integrador</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=354;document.formulario.submit();">
+						<td nowrap width="5%" >354</td>
+						<td nowrap width="95%" >Uniformes - Professor de Educação Física</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=355;document.formulario.submit();">
+						<td nowrap width="5%" >355</td>
+						<td nowrap width="95%" >Uniformes - Supervisor Técnico de Área</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=356;document.formulario.submit();">
+						<td nowrap width="5%" >356</td>
+						<td nowrap width="95%" >Uniformes - Técnico de Enfermagem</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=357;document.formulario.submit();">
+						<td nowrap width="5%" >357</td>
+						<td nowrap width="95%" >Uniformes - Usuários</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=358;document.formulario.submit();">
+						<td nowrap width="5%" >358</td>
+						<td nowrap width="95%" >Serviços</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=359;document.formulario.submit();">
+						<td nowrap width="5%" >359</td>
+						<td nowrap width="95%" >Material Operacional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=360;document.formulario.submit();">
+						<td nowrap width="5%" >360</td>
+						<td nowrap width="95%" >Material Pedagógico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=361;document.formulario.submit();">
+						<td nowrap width="5%" >361</td>
+						<td nowrap width="95%" >Material Escritório</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=362;document.formulario.submit();">
+						<td nowrap width="5%" >362</td>
+						<td nowrap width="95%" >Locação de Bens Imóveis</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=363;document.formulario.submit();">
+						<td nowrap width="5%" >363</td>
+						<td nowrap width="95%" >Locação de Bens Móveis</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=364;document.formulario.submit();">
+						<td nowrap width="5%" >364</td>
+						<td nowrap width="95%" >Prestação de Serviços de Terceiros(RPA)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=365;document.formulario.submit();">
+						<td nowrap width="5%" >365</td>
+						<td nowrap width="95%" >Prestação de Serviços de Terceiros (MEI)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=366;document.formulario.submit();">
+						<td nowrap width="5%" >366</td>
+						<td nowrap width="95%" >Eventos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=367;document.formulario.submit();">
+						<td nowrap width="5%" >367</td>
+						<td nowrap width="95%" >Divulgações</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=368;document.formulario.submit();">
+						<td nowrap width="5%" >368</td>
+						<td nowrap width="95%" >Locação Eventual de Ônibus</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=369;document.formulario.submit();">
+						<td nowrap width="5%" >369</td>
+						<td nowrap width="95%" >Manutenções</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=370;document.formulario.submit();">
+						<td nowrap width="5%" >370</td>
+						<td nowrap width="95%" >Locação de Iluminação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=371;document.formulario.submit();">
+						<td nowrap width="5%" >371</td>
+						<td nowrap width="95%" >Locação de Palco</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=372;document.formulario.submit();">
+						<td nowrap width="5%" >372</td>
+						<td nowrap width="95%" >Locação de Equipamento de Som</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=373;document.formulario.submit();">
+						<td nowrap width="5%" >373</td>
+						<td nowrap width="95%" >Locação de Mesas/Cadeiras</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=374;document.formulario.submit();">
+						<td nowrap width="5%" >374</td>
+						<td nowrap width="95%" >Consumo de água(copos de 200ml)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=375;document.formulario.submit();">
+						<td nowrap width="5%" >375</td>
+						<td nowrap width="95%" >Banda ou DJ</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=376;document.formulario.submit();">
+						<td nowrap width="5%" >376</td>
+						<td nowrap width="95%" >Despesas com Comunicação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=377;document.formulario.submit();">
+						<td nowrap width="5%" >377</td>
+						<td nowrap width="95%" >Custeio Operacional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=378;document.formulario.submit();">
+						<td nowrap width="5%" >378</td>
+						<td nowrap width="95%" >Custos Indiretos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=379;document.formulario.submit();">
+						<td nowrap width="5%" >379</td>
+						<td nowrap width="95%" >Multas e JurosÂ </td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=380;document.formulario.submit();">
+						<td nowrap width="5%" >380</td>
+						<td nowrap width="95%" >Apoio a Gestão da CAP - Estratégia Saúde da Família (ESF)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=381;document.formulario.submit();">
+						<td nowrap width="5%" >381</td>
+						<td nowrap width="95%" >Contratos, consumo, promoção e vigilância em saúde das Unidades de Atenção Primária - ESF</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=382;document.formulario.submit();">
+						<td nowrap width="5%" >382</td>
+						<td nowrap width="95%" >Sistemas de Informação / Conectividade / Telefonia - ESF</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=383;document.formulario.submit();">
+						<td nowrap width="5%" >383</td>
+						<td nowrap width="95%" >RH Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB) / Serviço de Apoio Especial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=384;document.formulario.submit();">
+						<td nowrap width="5%" >384</td>
+						<td nowrap width="95%" >Sistemas de Informação / Conectividade / Telefonia - NASF-AB / SAE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=385;document.formulario.submit();">
+						<td nowrap width="5%" >385</td>
+						<td nowrap width="95%" >Contratos e Consumo - CAPS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=386;document.formulario.submit();">
+						<td nowrap width="5%" >386</td>
+						<td nowrap width="95%" >Adaptações de instalações / Aquisição de Equipamentos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=387;document.formulario.submit();">
+						<td nowrap width="5%" >387</td>
+						<td nowrap width="95%" >Parte Variável 2</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=388;document.formulario.submit();">
+						<td nowrap width="5%" >388</td>
+						<td nowrap width="95%" >Parte Variável 3</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=389;document.formulario.submit();">
+						<td nowrap width="5%" >389</td>
+						<td nowrap width="95%" >Apoio a Gestão da Coordenação de Atenção Especializada (CAE) - Oftalmologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=390;document.formulario.submit();">
+						<td nowrap width="5%" >390</td>
+						<td nowrap width="95%" >Apoio a Gestão do Centro do Olho Carioca (COC) - OSS - Oftalmologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=391;document.formulario.submit();">
+						<td nowrap width="5%" >391</td>
+						<td nowrap width="95%" >RH Equipe COC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=392;document.formulario.submit();">
+						<td nowrap width="5%" >392</td>
+						<td nowrap width="95%" >Contratos, consumo, serviços e promoção em saúde - Oftalmologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=393;document.formulario.submit();">
+						<td nowrap width="5%" >393</td>
+						<td nowrap width="95%" >Sistemas de Informação / Conectividade / Telefonia - COC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=394;document.formulario.submit();">
+						<td nowrap width="5%" >394</td>
+						<td nowrap width="95%" >Parte Variável - Oftalmologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=395;document.formulario.submit();">
+						<td nowrap width="5%" >395</td>
+						<td nowrap width="95%" >RH da Equipe da Ginecologia Cirúrgica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=396;document.formulario.submit();">
+						<td nowrap width="5%" >396</td>
+						<td nowrap width="95%" >CUSTEIO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=397;document.formulario.submit();">
+						<td nowrap width="5%" >397</td>
+						<td nowrap width="95%" >Custeio Serviço Ginecologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=398;document.formulario.submit();">
+						<td nowrap width="5%" >398</td>
+						<td nowrap width="95%" >Custeio Infraestrutura</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=399;document.formulario.submit();">
+						<td nowrap width="5%" >399</td>
+						<td nowrap width="95%" >RH equipes CDC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=400;document.formulario.submit();">
+						<td nowrap width="5%" >400</td>
+						<td nowrap width="95%" >Contratos, consumo, serviços e promoção em saúde - Diagnóstico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=401;document.formulario.submit();">
+						<td nowrap width="5%" >401</td>
+						<td nowrap width="95%" >Sistemas de Informação / Conectividade / Telefonia - CDC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=402;document.formulario.submit();">
+						<td nowrap width="5%" >402</td>
+						<td nowrap width="95%" >Variável 1 - Desempenho da Gestão</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=403;document.formulario.submit();">
+						<td nowrap width="5%" >403</td>
+						<td nowrap width="95%" >Variável 2 - Desempenho Assistencial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=404;document.formulario.submit();">
+						<td nowrap width="5%" >404</td>
+						<td nowrap width="95%" >Variável 3 - Satisfação do Usuário</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=405;document.formulario.submit();">
+						<td nowrap width="5%" >405</td>
+						<td nowrap width="95%" >Manutenção de ar condicionado</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=406;document.formulario.submit();">
+						<td nowrap width="5%" >406</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=407;document.formulario.submit();">
+						<td nowrap width="5%" >407</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=408;document.formulario.submit();">
+						<td nowrap width="5%" >408</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=409;document.formulario.submit();">
+						<td nowrap width="5%" >409</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=410;document.formulario.submit();">
+						<td nowrap width="5%" >410</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=411;document.formulario.submit();">
+						<td nowrap width="5%" >411</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=412;document.formulario.submit();">
+						<td nowrap width="5%" >412</td>
+						<td nowrap width="95%" >Conserto do drywall da rampa</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=413;document.formulario.submit();">
+						<td nowrap width="5%" >413</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=414;document.formulario.submit();">
+						<td nowrap width="5%" >414</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=415;document.formulario.submit();">
+						<td nowrap width="5%" >415</td>
+						<td nowrap width="95%" >Conserto do quadro elétrico da bomba d'água</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=416;document.formulario.submit();">
+						<td nowrap width="5%" >416</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=417;document.formulario.submit();">
+						<td nowrap width="5%" >417</td>
+						<td nowrap width="95%" >Reparo do vazamento da caixa d'água</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=418;document.formulario.submit();">
+						<td nowrap width="5%" >418</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=419;document.formulario.submit();">
+						<td nowrap width="5%" >419</td>
+						<td nowrap width="95%" >inativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=420;document.formulario.submit();">
+						<td nowrap width="5%" >420</td>
+						<td nowrap width="95%" >Apoio a Gestão da Coordenação de Atenção Especializada (CAE) - Diagnóstico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=421;document.formulario.submit();">
+						<td nowrap width="5%" >421</td>
+						<td nowrap width="95%" >Apoio a Gestão do Centro Diagnóstico Carioca (CDC) - OSC (Diagnóstico)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=422;document.formulario.submit();">
+						<td nowrap width="5%" >422</td>
+						<td nowrap width="95%" >Formatura</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=423;document.formulario.submit();">
+						<td nowrap width="5%" >423</td>
+						<td nowrap width="95%" >Apoio a Gestão da Coordenação de Atenção Especializada - Especialidades</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=424;document.formulario.submit();">
+						<td nowrap width="5%" >424</td>
+						<td nowrap width="95%" >Apoio a Gestão do Centro de Especialidades Carioca (CEC) - OSC</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=425;document.formulario.submit();">
+						<td nowrap width="5%" >425</td>
+						<td nowrap width="95%" >RH equipe CEC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=426;document.formulario.submit();">
+						<td nowrap width="5%" >426</td>
+						<td nowrap width="95%" >Contratos, consumo, serviços e promoção em saúde - Especialidades</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=427;document.formulario.submit();">
+						<td nowrap width="5%" >427</td>
+						<td nowrap width="95%" >Sistema de Informação / Conectividade / Telefonia - CEC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=428;document.formulario.submit();">
+						<td nowrap width="5%" >428</td>
+						<td nowrap width="95%" >Ambulatório de Ginecologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=429;document.formulario.submit();">
+						<td nowrap width="5%" >429</td>
+						<td nowrap width="95%" >Equipe do Ambulatório de Ginecologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=430;document.formulario.submit();">
+						<td nowrap width="5%" >430</td>
+						<td nowrap width="95%" >Ambulatório de Proctologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=431;document.formulario.submit();">
+						<td nowrap width="5%" >431</td>
+						<td nowrap width="95%" >Cardiologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=432;document.formulario.submit();">
+						<td nowrap width="5%" >432</td>
+						<td nowrap width="95%" >Equipe de Cardiologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=433;document.formulario.submit();">
+						<td nowrap width="5%" >433</td>
+						<td nowrap width="95%" >Anatomia Patológica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=434;document.formulario.submit();">
+						<td nowrap width="5%" >434</td>
+						<td nowrap width="95%" >Equipe de Anatomia Patológica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=435;document.formulario.submit();">
+						<td nowrap width="5%" >435</td>
+						<td nowrap width="95%" >Núcleo Interno de Regulação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=436;document.formulario.submit();">
+						<td nowrap width="5%" >436</td>
+						<td nowrap width="95%" >Cirurgia Ginecológica e Proctológica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=437;document.formulario.submit();">
+						<td nowrap width="5%" >437</td>
+						<td nowrap width="95%" >Equipe de Cirurgia Ginecológica e Proctológica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=438;document.formulario.submit();">
+						<td nowrap width="5%" >438</td>
+						<td nowrap width="95%" >Internação Ginecológica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=439;document.formulario.submit();">
+						<td nowrap width="5%" >439</td>
+						<td nowrap width="95%" >Equipe de Internação Ginecológica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=440;document.formulario.submit();">
+						<td nowrap width="5%" >440</td>
+						<td nowrap width="95%" >Internação Proctológica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=441;document.formulario.submit();">
+						<td nowrap width="5%" >441</td>
+						<td nowrap width="95%" >Equipe de Internação Proctológica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=442;document.formulario.submit();">
+						<td nowrap width="5%" >442</td>
+						<td nowrap width="95%" >Centro diagnostico - Endoscopia e Colonoscopia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=443;document.formulario.submit();">
+						<td nowrap width="5%" >443</td>
+						<td nowrap width="95%" >Equipe Centro diagnostico - Endoscopia e Colonoscopia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=444;document.formulario.submit();">
+						<td nowrap width="5%" >444</td>
+						<td nowrap width="95%" >Investimento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=445;document.formulario.submit();">
+						<td nowrap width="5%" >445</td>
+						<td nowrap width="95%" >Equipe do Ambulatório de Proctologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=446;document.formulario.submit();">
+						<td nowrap width="5%" >446</td>
+						<td nowrap width="95%" >Equipe do Centro Cirúrgico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=447;document.formulario.submit();">
+						<td nowrap width="5%" >447</td>
+						<td nowrap width="95%" >Equipe da Recuperação Pós-anestésica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=448;document.formulario.submit();">
+						<td nowrap width="5%" >448</td>
+						<td nowrap width="95%" >Equipe Central de Esterilização de Material</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=449;document.formulario.submit();">
+						<td nowrap width="5%" >449</td>
+						<td nowrap width="95%" >Equipe de Enfermaria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=450;document.formulario.submit();">
+						<td nowrap width="5%" >450</td>
+						<td nowrap width="95%" >Equipe de Telemedicina</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=451;document.formulario.submit();">
+						<td nowrap width="5%" >451</td>
+						<td nowrap width="95%" >Apoio a Gestão da SAP - Atenção Primária Prisional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=452;document.formulario.submit();">
+						<td nowrap width="5%" >452</td>
+						<td nowrap width="95%" >Apoio a Gestão APP - OSS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=453;document.formulario.submit();">
+						<td nowrap width="5%" >453</td>
+						<td nowrap width="95%" >Rh Apoio e Gestão das Unidades Ambulatoriais de Atenção Primária Prisional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=454;document.formulario.submit();">
+						<td nowrap width="5%" >454</td>
+						<td nowrap width="95%" >Rh equipes de Atenção Primária Prisional e Complementar Psicossocial - APP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=455;document.formulario.submit();">
+						<td nowrap width="5%" >455</td>
+						<td nowrap width="95%" >Contratos, consumo, promoção e vigilância em saúde - APP</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=456;document.formulario.submit();">
+						<td nowrap width="5%" >456</td>
+						<td nowrap width="95%" >Sistemas de Informação / Conectividade / Telefonia - APP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=457;document.formulario.submit();">
+						<td nowrap width="5%" >457</td>
+						<td nowrap width="95%" >Adaptações / Aquisições de Equipamentos - unidades ambulatorias prisionais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=458;document.formulario.submit();">
+						<td nowrap width="5%" >458</td>
+						<td nowrap width="95%" >Diversos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=459;document.formulario.submit();">
+						<td nowrap width="5%" >459</td>
+						<td nowrap width="95%" >Operacional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=460;document.formulario.submit();">
+						<td nowrap width="5%" >460</td>
+						<td nowrap width="95%" >Custos Indiretos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=461;document.formulario.submit();">
+						<td nowrap width="5%" >461</td>
+						<td nowrap width="95%" >Equipe do Ambulatório do Risco Cirúrgico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=462;document.formulario.submit();">
+						<td nowrap width="5%" >462</td>
+						<td nowrap width="95%" >Equipe de Anestesiologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=463;document.formulario.submit();">
+						<td nowrap width="5%" >463</td>
+						<td nowrap width="95%" >Equipe de Internação Pós Operatório</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=464;document.formulario.submit();">
+						<td nowrap width="5%" >464</td>
+						<td nowrap width="95%" >Equipe de Internação Ortopédica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=465;document.formulario.submit();">
+						<td nowrap width="5%" >465</td>
+						<td nowrap width="95%" >Contrato e consumo - Pronto Atendimento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=466;document.formulario.submit();">
+						<td nowrap width="5%" >466</td>
+						<td nowrap width="95%" >RH - Leitos de Emergência</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=467;document.formulario.submit();">
+						<td nowrap width="5%" >467</td>
+						<td nowrap width="95%" >Contrato e consumo - Leitos Emergência</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=468;document.formulario.submit();">
+						<td nowrap width="5%" >468</td>
+						<td nowrap width="95%" >RH - CTI Geral</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=469;document.formulario.submit();">
+						<td nowrap width="5%" >469</td>
+						<td nowrap width="95%" >Contrato e consumo - CTI Geral</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=470;document.formulario.submit();">
+						<td nowrap width="5%" >470</td>
+						<td nowrap width="95%" >RH - Unidade neurointensiva</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=471;document.formulario.submit();">
+						<td nowrap width="5%" >471</td>
+						<td nowrap width="95%" >Contratos e consumo - Unidade neurointensiva</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=472;document.formulario.submit();">
+						<td nowrap width="5%" >472</td>
+						<td nowrap width="95%" >RH - Unidade cardiointensiva</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=473;document.formulario.submit();">
+						<td nowrap width="5%" >473</td>
+						<td nowrap width="95%" >Contratos e consumo - Unidade cardiointensiva</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=474;document.formulario.submit();">
+						<td nowrap width="5%" >474</td>
+						<td nowrap width="95%" >RH - Ambulatório de neurologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=475;document.formulario.submit();">
+						<td nowrap width="5%" >475</td>
+						<td nowrap width="95%" >Contrato e consumo - Ambulatório de neurologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=476;document.formulario.submit();">
+						<td nowrap width="5%" >476</td>
+						<td nowrap width="95%" >RH - Unidade de internação Neurológica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=477;document.formulario.submit();">
+						<td nowrap width="5%" >477</td>
+						<td nowrap width="95%" >Contratos e consumo - Unidade de internação Neurológica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=478;document.formulario.submit();">
+						<td nowrap width="5%" >478</td>
+						<td nowrap width="95%" >RH - Ambulatório de cardiologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=479;document.formulario.submit();">
+						<td nowrap width="5%" >479</td>
+						<td nowrap width="95%" >Contrato e consumo - Ambulatório de cardiologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=480;document.formulario.submit();">
+						<td nowrap width="5%" >480</td>
+						<td nowrap width="95%" >RH - Unidade de internação Cardio</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=481;document.formulario.submit();">
+						<td nowrap width="5%" >481</td>
+						<td nowrap width="95%" >Contratos e consumo - Unidade de internação Cardio</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=482;document.formulario.submit();">
+						<td nowrap width="5%" >482</td>
+						<td nowrap width="95%" >RH - Hemodinâmica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=483;document.formulario.submit();">
+						<td nowrap width="5%" >483</td>
+						<td nowrap width="95%" >Contratos e consumo - Hemodinâmica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=484;document.formulario.submit();">
+						<td nowrap width="5%" >484</td>
+						<td nowrap width="95%" >RH - Telemedicina</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=485;document.formulario.submit();">
+						<td nowrap width="5%" >485</td>
+						<td nowrap width="95%" >Contrato e consumo - Telemedicina</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=486;document.formulario.submit();">
+						<td nowrap width="5%" >486</td>
+						<td nowrap width="95%" >Guiamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=487;document.formulario.submit();">
+						<td nowrap width="5%" >487</td>
+						<td nowrap width="95%" >Material Gráfico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=488;document.formulario.submit();">
+						<td nowrap width="5%" >488</td>
+						<td nowrap width="95%" >Ingresso</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=489;document.formulario.submit();">
+						<td nowrap width="5%" >489</td>
+						<td nowrap width="95%" >Curso de espanhol</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=490;document.formulario.submit();">
+						<td nowrap width="5%" >490</td>
+						<td nowrap width="95%" >Curso de inglês</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=491;document.formulario.submit();">
+						<td nowrap width="5%" >491</td>
+						<td nowrap width="95%" >Material didático</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=492;document.formulario.submit();">
+						<td nowrap width="5%" >492</td>
+						<td nowrap width="95%" >Vivência cultural</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=493;document.formulario.submit();">
+						<td nowrap width="5%" >493</td>
+						<td nowrap width="95%" >Acompanhamento pedagógico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=494;document.formulario.submit();">
+						<td nowrap width="5%" >494</td>
+						<td nowrap width="95%" >Gestão projeto</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=495;document.formulario.submit();">
+						<td nowrap width="5%" >495</td>
+						<td nowrap width="95%" >Processo seletivo das cursistas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=496;document.formulario.submit();">
+						<td nowrap width="5%" >496</td>
+						<td nowrap width="95%" >Impostos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=497;document.formulario.submit();">
+						<td nowrap width="5%" >497</td>
+						<td nowrap width="95%" >Certificação das cursistas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=498;document.formulario.submit();">
+						<td nowrap width="5%" >498</td>
+						<td nowrap width="95%" >Avaliação de impacto</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=499;document.formulario.submit();">
+						<td nowrap width="5%" >499</td>
+						<td nowrap width="95%" >Transporte</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=500;document.formulario.submit();">
+						<td nowrap width="5%" >500</td>
+						<td nowrap width="95%" >Equipe do Núcleo Interno de Regulação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=501;document.formulario.submit();">
+						<td nowrap width="5%" >501</td>
+						<td nowrap width="95%" >Equipe do Ambulatório de Cirurgia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=502;document.formulario.submit();">
+						<td nowrap width="5%" >502</td>
+						<td nowrap width="95%" >Equipe de Clínica Cirúrgica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=503;document.formulario.submit();">
+						<td nowrap width="5%" >503</td>
+						<td nowrap width="95%" >Equipe de Internação Infectologia Adulto</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=504;document.formulario.submit();">
+						<td nowrap width="5%" >504</td>
+						<td nowrap width="95%" >Equipe de Internação Pneumologia Adulto</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=505;document.formulario.submit();">
+						<td nowrap width="5%" >505</td>
+						<td nowrap width="95%" >Equipe internação Pneumologia Infanto-Juvenil</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=506;document.formulario.submit();">
+						<td nowrap width="5%" >506</td>
+						<td nowrap width="95%" >Equipe Multidisciplinar para Internação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=507;document.formulario.submit();">
+						<td nowrap width="5%" >507</td>
+						<td nowrap width="95%" >Equipe de Ambulatório</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=508;document.formulario.submit();">
+						<td nowrap width="5%" >508</td>
+						<td nowrap width="95%" >Equipe Centro de Imagem</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=509;document.formulario.submit();">
+						<td nowrap width="5%" >509</td>
+						<td nowrap width="95%" >Equipe de Internação Pneumologia Infanto-Juvenil</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=510;document.formulario.submit();">
+						<td nowrap width="5%" >510</td>
+						<td nowrap width="95%" >Benefício auxílio vale transporte para alunas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=511;document.formulario.submit();">
+						<td nowrap width="5%" >511</td>
+						<td nowrap width="95%" >Benefício bolsa auxílio para alunas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=512;document.formulario.submit();">
+						<td nowrap width="5%" >512</td>
+						<td nowrap width="95%" >Prestação de serviços eventuais (monitoria e palestrante)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=513;document.formulario.submit();">
+						<td nowrap width="5%" >513</td>
+						<td nowrap width="95%" >Material de Fisioterapia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=514;document.formulario.submit();">
+						<td nowrap width="5%" >514</td>
+						<td nowrap width="95%" >Reuniões</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=515;document.formulario.submit();">
+						<td nowrap width="5%" >515</td>
+						<td nowrap width="95%" >Bens Permanentes</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=516;document.formulario.submit();">
+						<td nowrap width="5%" >516</td>
+						<td nowrap width="95%" >Concessionária</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=517;document.formulario.submit();">
+						<td nowrap width="5%" >517</td>
+						<td nowrap width="95%" >Apoio à gestão da OSC - RAPS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=518;document.formulario.submit();">
+						<td nowrap width="5%" >518</td>
+						<td nowrap width="95%" >RH - Centro de Atenção Psicossocial AD III</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=519;document.formulario.submit();">
+						<td nowrap width="5%" >519</td>
+						<td nowrap width="95%" >RH - Centro de Atenção Psicossocial II</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=520;document.formulario.submit();">
+						<td nowrap width="5%" >520</td>
+						<td nowrap width="95%" >RH - Centro de Atenção Psicossocial III</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=521;document.formulario.submit();">
+						<td nowrap width="5%" >521</td>
+						<td nowrap width="95%" >RH - Centro de Atenção Psicossocial CAPSi III</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=522;document.formulario.submit();">
+						<td nowrap width="5%" >522</td>
+						<td nowrap width="95%" >RH - Centro de Atenção Psicossocial CAPSi II</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=523;document.formulario.submit();">
+						<td nowrap width="5%" >523</td>
+						<td nowrap width="95%" >RH - Equipe Multiprofissional de Saúde Mental - EMSM</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=524;document.formulario.submit();">
+						<td nowrap width="5%" >524</td>
+						<td nowrap width="95%" >RH - Enfermarias de Saúde Mental</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=525;document.formulario.submit();">
+						<td nowrap width="5%" >525</td>
+						<td nowrap width="95%" >RH - Centro de Convivencia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=526;document.formulario.submit();">
+						<td nowrap width="5%" >526</td>
+						<td nowrap width="95%" >Investimento (material permanente e adaptação da estrutura)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=527;document.formulario.submit();">
+						<td nowrap width="5%" >527</td>
+						<td nowrap width="95%" >Apoio a Gestão Tecnica - SSM</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=528;document.formulario.submit();">
+						<td nowrap width="5%" >528</td>
+						<td nowrap width="95%" >Contrato e Consumo Centro de Atenção Psicossocial AD III</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=529;document.formulario.submit();">
+						<td nowrap width="5%" >529</td>
+						<td nowrap width="95%" >Contrato e Consumo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=530;document.formulario.submit();">
+						<td nowrap width="5%" >530</td>
+						<td nowrap width="95%" >Contrato e Consumo - Centro de Atenção Psicossocial III</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=531;document.formulario.submit();">
+						<td nowrap width="5%" >531</td>
+						<td nowrap width="95%" >Contrato e Consumo - Centro de Atenção Psicossocial CAPSi III</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=532;document.formulario.submit();">
+						<td nowrap width="5%" >532</td>
+						<td nowrap width="95%" >Contrato e Consumo - Centro de Atenção Psicossocial Capsi II</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=533;document.formulario.submit();">
+						<td nowrap width="5%" >533</td>
+						<td nowrap width="95%" >Contrato e Consumo - Equipe Multiprofissional de Saúde Mental - EMSM</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=534;document.formulario.submit();">
+						<td nowrap width="5%" >534</td>
+						<td nowrap width="95%" >Contrato e Consumo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=535;document.formulario.submit();">
+						<td nowrap width="5%" >535</td>
+						<td nowrap width="95%" >Contrato e Consumo - Centro de Convivência</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=536;document.formulario.submit();">
+						<td nowrap width="5%" >536</td>
+						<td nowrap width="95%" >Curso de formação de Jovens Promotores da saúde - Rede de acolhimento e Jovens Promotores da saúde (</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=537;document.formulario.submit();">
+						<td nowrap width="5%" >537</td>
+						<td nowrap width="95%" >Adaptações de Instalações / Aquisição de Equipamentos - CENTRO CARIOCA DE FORMAÇÃO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=538;document.formulario.submit();">
+						<td nowrap width="5%" >538</td>
+						<td nowrap width="95%" >RH - Equipe de Reabilitação Psicossocial</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=539;document.formulario.submit();">
+						<td nowrap width="5%" >539</td>
+						<td nowrap width="95%" >Contrato e Consumo - Equipe de Reabilitação Psicossocial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=540;document.formulario.submit();">
+						<td nowrap width="5%" >540</td>
+						<td nowrap width="95%" >RH - Unidade de Acolhimento Adulto</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=541;document.formulario.submit();">
+						<td nowrap width="5%" >541</td>
+						<td nowrap width="95%" >Contrato e Consumo - Unidade de Acolhimento Adulto</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=542;document.formulario.submit();">
+						<td nowrap width="5%" >542</td>
+						<td nowrap width="95%" >Material Esportivo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=543;document.formulario.submit();">
+						<td nowrap width="5%" >543</td>
+						<td nowrap width="95%" >Serviço de Vigilância</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=544;document.formulario.submit();">
+						<td nowrap width="5%" >544</td>
+						<td nowrap width="95%" >Prestação de Serviço de T.I</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=545;document.formulario.submit();">
+						<td nowrap width="5%" >545</td>
+						<td nowrap width="95%" >Locação de Ônibus</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=546;document.formulario.submit();">
+						<td nowrap width="5%" >546</td>
+						<td nowrap width="95%" >Vale Alimentação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=547;document.formulario.submit();">
+						<td nowrap width="5%" >547</td>
+						<td nowrap width="95%" >Serviço de Limpeza</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=548;document.formulario.submit();">
+						<td nowrap width="5%" >548</td>
+						<td nowrap width="95%" >Serviço de Manutenção Predial</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=549;document.formulario.submit();">
+						<td nowrap width="5%" >549</td>
+						<td nowrap width="95%" >Seguros de Vida</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=550;document.formulario.submit();">
+						<td nowrap width="5%" >550</td>
+						<td nowrap width="95%" >Módulo Tecnológico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=551;document.formulario.submit();">
+						<td nowrap width="5%" >551</td>
+						<td nowrap width="95%" >Serviços Gráficos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=552;document.formulario.submit();">
+						<td nowrap width="5%" >552</td>
+						<td nowrap width="95%" >Serviço de impressão</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=553;document.formulario.submit();">
+						<td nowrap width="5%" >553</td>
+						<td nowrap width="95%" >Serviço limpeza e manutenção de piscinas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=554;document.formulario.submit();">
+						<td nowrap width="5%" >554</td>
+						<td nowrap width="95%" >Auxílio Incentivo ao Usuário</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=555;document.formulario.submit();">
+						<td nowrap width="5%" >555</td>
+						<td nowrap width="95%" >Auxílio Transporte para Deslocamento no Trabalho da Equipe Técnica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=556;document.formulario.submit();">
+						<td nowrap width="5%" >556</td>
+						<td nowrap width="95%" >Certificação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=557;document.formulario.submit();">
+						<td nowrap width="5%" >557</td>
+						<td nowrap width="95%" >Confecção de Camisas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=558;document.formulario.submit();">
+						<td nowrap width="5%" >558</td>
+						<td nowrap width="95%" >Material de Guarda Vida</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=559;document.formulario.submit();">
+						<td nowrap width="5%" >559</td>
+						<td nowrap width="95%" >Rh - Centro De Atenção Psicossocial Iii Rubens Correia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=560;document.formulario.submit();">
+						<td nowrap width="5%" >560</td>
+						<td nowrap width="95%" >Contrato E Consumo - Centro De Atenção Psicossocial III Rubens Correia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=561;document.formulario.submit();">
+						<td nowrap width="5%" >561</td>
+						<td nowrap width="95%" >Rh - Centro De Atenção Psicossocial Iii Clarice  Lispector</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=562;document.formulario.submit();">
+						<td nowrap width="5%" >562</td>
+						<td nowrap width="95%" >Contrato E Consumo -  Centro De Atenção Psicossocial III Clarice  Lispector</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=563;document.formulario.submit();">
+						<td nowrap width="5%" >563</td>
+						<td nowrap width="95%" >Rh - Unidade De Acolhimento Infanto-Juvenil</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=564;document.formulario.submit();">
+						<td nowrap width="5%" >564</td>
+						<td nowrap width="95%" >Contrato E Consumo -  Rh - Unidade De Acolhimento Infanto-Juvenil</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=565;document.formulario.submit();">
+						<td nowrap width="5%" >565</td>
+						<td nowrap width="95%" >Rh - Nise Da Silveira</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=566;document.formulario.submit();">
+						<td nowrap width="5%" >566</td>
+						<td nowrap width="95%" >Contrato E Consumo -  Rh - Nise Da Silveira</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=567;document.formulario.submit();">
+						<td nowrap width="5%" >567</td>
+						<td nowrap width="95%" >Apoio  Gestão Técnica - Nise Da Silveira</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=568;document.formulario.submit();">
+						<td nowrap width="5%" >568</td>
+						<td nowrap width="95%" >Aquisição de Bens Móveis</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=569;document.formulario.submit();">
+						<td nowrap width="5%" >569</td>
+						<td nowrap width="95%" >Prestação de Serviços de Terceiros Lavanderia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=570;document.formulario.submit();">
+						<td nowrap width="5%" >570</td>
+						<td nowrap width="95%" >ENCARGOS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=571;document.formulario.submit();">
+						<td nowrap width="5%" >571</td>
+						<td nowrap width="95%" >CONCESSIONÁRIAS DE SERVIÇOS ESSENCIAIS (ÁGUA/LUZ/TV/INTERNET/TELEFONE)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=572;document.formulario.submit();">
+						<td nowrap width="5%" >572</td>
+						<td nowrap width="95%" >GÁS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=573;document.formulario.submit();">
+						<td nowrap width="5%" >573</td>
+						<td nowrap width="95%" >ALIMENTAÇÃO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=574;document.formulario.submit();">
+						<td nowrap width="5%" >574</td>
+						<td nowrap width="95%" >Material de expediente/escritório</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=575;document.formulario.submit();">
+						<td nowrap width="5%" >575</td>
+						<td nowrap width="95%" >MATERIAL DE HIGIENE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=576;document.formulario.submit();">
+						<td nowrap width="5%" >576</td>
+						<td nowrap width="95%" >MATERIAL DE LIMPEZA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=577;document.formulario.submit();">
+						<td nowrap width="5%" >577</td>
+						<td nowrap width="95%" >ALUGUEL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=578;document.formulario.submit();">
+						<td nowrap width="5%" >578</td>
+						<td nowrap width="95%" >PRESTADORES DE SERVIÇOS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=579;document.formulario.submit();">
+						<td nowrap width="5%" >579</td>
+						<td nowrap width="95%" >AUTÔNOMOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=580;document.formulario.submit();">
+						<td nowrap width="5%" >580</td>
+						<td nowrap width="95%" >HONORÁRIO CONTÁBIL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=581;document.formulario.submit();">
+						<td nowrap width="5%" >581</td>
+						<td nowrap width="95%" >ENERGIA ELÉTRICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=582;document.formulario.submit();">
+						<td nowrap width="5%" >582</td>
+						<td nowrap width="95%" >AGUÁ E ESGOTO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=583;document.formulario.submit();">
+						<td nowrap width="5%" >583</td>
+						<td nowrap width="95%" >MEDICAMENTOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=584;document.formulario.submit();">
+						<td nowrap width="5%" >584</td>
+						<td nowrap width="95%" >Pagamento de profissionais especializados</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=585;document.formulario.submit();">
+						<td nowrap width="5%" >585</td>
+						<td nowrap width="95%" >MEDICAÇÃO NÃO DISPONÍVEL NAS UNIDADES E PROGRAMAS DA SAÚDE DO IDOSO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=586;document.formulario.submit();">
+						<td nowrap width="5%" >586</td>
+						<td nowrap width="95%" >FRALDAS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=587;document.formulario.submit();">
+						<td nowrap width="5%" >587</td>
+						<td nowrap width="95%" >MANUTENÇÃO GERAL</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=588;document.formulario.submit();">
+						<td nowrap width="5%" >588</td>
+						<td nowrap width="95%" >MATERIAL DE LIMPEZA E HIGIENE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=589;document.formulario.submit();">
+						<td nowrap width="5%" >589</td>
+						<td nowrap width="95%" >LAVANDERIA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=590;document.formulario.submit();">
+						<td nowrap width="5%" >590</td>
+						<td nowrap width="95%" >FOLHA DE PAGAMENTO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=591;document.formulario.submit();">
+						<td nowrap width="5%" >591</td>
+						<td nowrap width="95%" >RESCISÃO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=592;document.formulario.submit();">
+						<td nowrap width="5%" >592</td>
+						<td nowrap width="95%" >FÉRIAS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=593;document.formulario.submit();">
+						<td nowrap width="5%" >593</td>
+						<td nowrap width="95%" >13º. Salário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=594;document.formulario.submit();">
+						<td nowrap width="5%" >594</td>
+						<td nowrap width="95%" >GRF FÉRIAS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=595;document.formulario.submit();">
+						<td nowrap width="5%" >595</td>
+						<td nowrap width="95%" >GRF 13º. SALÁRIO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=596;document.formulario.submit();">
+						<td nowrap width="5%" >596</td>
+						<td nowrap width="95%" >INSS E IRRF</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=597;document.formulario.submit();">
+						<td nowrap width="5%" >597</td>
+						<td nowrap width="95%" >PIS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=598;document.formulario.submit();">
+						<td nowrap width="5%" >598</td>
+						<td nowrap width="95%" >IRRF</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=599;document.formulario.submit();">
+						<td nowrap width="5%" >599</td>
+						<td nowrap width="95%" >CONTA ÁGUA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=600;document.formulario.submit();">
+						<td nowrap width="5%" >600</td>
+						<td nowrap width="95%" >CONTA TELEFONE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=601;document.formulario.submit();">
+						<td nowrap width="5%" >601</td>
+						<td nowrap width="95%" >DESPESAS MATERIAL DE HIGIENE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=602;document.formulario.submit();">
+						<td nowrap width="5%" >602</td>
+						<td nowrap width="95%" >DESPESA GÁS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=603;document.formulario.submit();">
+						<td nowrap width="5%" >603</td>
+						<td nowrap width="95%" >DESPESAS CONSUMO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=604;document.formulario.submit();">
+						<td nowrap width="5%" >604</td>
+						<td nowrap width="95%" >DESPESAS COM COMBUSTÍVEL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=605;document.formulario.submit();">
+						<td nowrap width="5%" >605</td>
+						<td nowrap width="95%" >MATERIAL DE EXPEDIENTE</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=606;document.formulario.submit();">
+						<td nowrap width="5%" >606</td>
+						<td nowrap width="95%" >MATERIAL DE HIGIENE PESSOAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=607;document.formulario.submit();">
+						<td nowrap width="5%" >607</td>
+						<td nowrap width="95%" >DESPESAS DE INFORMÁTICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=608;document.formulario.submit();">
+						<td nowrap width="5%" >608</td>
+						<td nowrap width="95%" >CONTA DE LUZ</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=609;document.formulario.submit();">
+						<td nowrap width="5%" >609</td>
+						<td nowrap width="95%" >JOVEM APRENDIZ (FOLHA DE PAGAMENTO)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=610;document.formulario.submit();">
+						<td nowrap width="5%" >610</td>
+						<td nowrap width="95%" >CONTRIBUIÇÃO SINDICAL (TAXA DE CUSTEIO)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=611;document.formulario.submit();">
+						<td nowrap width="5%" >611</td>
+						<td nowrap width="95%" >DESPESAS ALIMENTAÇÃO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=612;document.formulario.submit();">
+						<td nowrap width="5%" >612</td>
+						<td nowrap width="95%" >DESPESAS HIGIENE PESSOAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=613;document.formulario.submit();">
+						<td nowrap width="5%" >613</td>
+						<td nowrap width="95%" >DESPESAS INTERNET</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=614;document.formulario.submit();">
+						<td nowrap width="5%" >614</td>
+						<td nowrap width="95%" >DESPESA CORREIOS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=615;document.formulario.submit();">
+						<td nowrap width="5%" >615</td>
+						<td nowrap width="95%" >PRODUTOS DE LIMPEZA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=616;document.formulario.submit();">
+						<td nowrap width="5%" >616</td>
+						<td nowrap width="95%" >DESPESAS GÁS DE COZINHA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=617;document.formulario.submit();">
+						<td nowrap width="5%" >617</td>
+						<td nowrap width="95%" >DESPESAS MANUTENÇÃO E REPAROS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=618;document.formulario.submit();">
+						<td nowrap width="5%" >618</td>
+						<td nowrap width="95%" >DESPESAS COMLURB</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=619;document.formulario.submit();">
+						<td nowrap width="5%" >619</td>
+						<td nowrap width="95%" >DESPESAS UTENSÍLIOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=620;document.formulario.submit();">
+						<td nowrap width="5%" >620</td>
+						<td nowrap width="95%" >DESPESAS TRANSPORTE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=621;document.formulario.submit();">
+						<td nowrap width="5%" >621</td>
+						<td nowrap width="95%" >MATERIAL DE CONSTRUÇÃO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=622;document.formulario.submit();">
+						<td nowrap width="5%" >622</td>
+						<td nowrap width="95%" >DESPESAS GÁS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=623;document.formulario.submit();">
+						<td nowrap width="5%" >623</td>
+						<td nowrap width="95%" >SERVIÇOS CONTÁBEIS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=624;document.formulario.submit();">
+						<td nowrap width="5%" >624</td>
+						<td nowrap width="95%" >PRODUTOS HIGIENE PESSOAL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=625;document.formulario.submit();">
+						<td nowrap width="5%" >625</td>
+						<td nowrap width="95%" >PRESTAÇÃO DE SERVIÇOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=626;document.formulario.submit();">
+						<td nowrap width="5%" >626</td>
+						<td nowrap width="95%" >DESPESAS COMBUSTÍVEL</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=627;document.formulario.submit();">
+						<td nowrap width="5%" >627</td>
+						<td nowrap width="95%" >DESPESAS SUPRIMENTOS (MEDICAMENTOS)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=628;document.formulario.submit();">
+						<td nowrap width="5%" >628</td>
+						<td nowrap width="95%" >MOTORISTA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=629;document.formulario.submit();">
+						<td nowrap width="5%" >629</td>
+						<td nowrap width="95%" >REMUNERAÇÃO DA EQUIPE DIMENSIONADA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=630;document.formulario.submit();">
+						<td nowrap width="5%" >630</td>
+						<td nowrap width="95%" >AQUISIÇÃO DE MATERIAL DE CONSUMO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=631;document.formulario.submit();">
+						<td nowrap width="5%" >631</td>
+						<td nowrap width="95%" >CONTRATAÇÃO DE SERVIÇOS ADEQUAÇÃO/MANUTENÇÃO DA INFRAESTRUTURA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=632;document.formulario.submit();">
+						<td nowrap width="5%" >632</td>
+						<td nowrap width="95%" >CONTRATAÇÃO DE SERVIÇOS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=633;document.formulario.submit();">
+						<td nowrap width="5%" >633</td>
+						<td nowrap width="95%" >MANUTENÇÃO DO ESPAÇO</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=634;document.formulario.submit();">
+						<td nowrap width="5%" >634</td>
+						<td nowrap width="95%" >MANUTENÇÃO DE VEÍCULO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=635;document.formulario.submit();">
+						<td nowrap width="5%" >635</td>
+						<td nowrap width="95%" >ÁGUA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=636;document.formulario.submit();">
+						<td nowrap width="5%" >636</td>
+						<td nowrap width="95%" >TELEFONIA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=637;document.formulario.submit();">
+						<td nowrap width="5%" >637</td>
+						<td nowrap width="95%" >INTERNET</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=638;document.formulario.submit();">
+						<td nowrap width="5%" >638</td>
+						<td nowrap width="95%" >TELEVISÃO POR ASSINATURA</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=639;document.formulario.submit();">
+						<td nowrap width="5%" >639</td>
+						<td nowrap width="95%" >SERVIÇO DE CONTROLE DE PRAGAS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=640;document.formulario.submit();">
+						<td nowrap width="5%" >640</td>
+						<td nowrap width="95%" >COLETA DE LIXO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=641;document.formulario.submit();">
+						<td nowrap width="5%" >641</td>
+						<td nowrap width="95%" >ASSESSORIA JURÍDICA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=642;document.formulario.submit();">
+						<td nowrap width="5%" >642</td>
+						<td nowrap width="95%" >Assistência financeira complementar da União - Novo Piso Salarial da cat. profissional de Enfermagem</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=643;document.formulario.submit();">
+						<td nowrap width="5%" >643</td>
+						<td nowrap width="95%" >GÊNEROS ALIMENTÍCIOS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=644;document.formulario.submit();">
+						<td nowrap width="5%" >644</td>
+						<td nowrap width="95%" >CONTRATAÇÃO DE PRESTADORES DE SERVIÇOS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=645;document.formulario.submit();">
+						<td nowrap width="5%" >645</td>
+						<td nowrap width="95%" >LAZER</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=646;document.formulario.submit();">
+						<td nowrap width="5%" >646</td>
+						<td nowrap width="95%" >OUTRAS DESPESAS</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=647;document.formulario.submit();">
+						<td nowrap width="5%" >647</td>
+						<td nowrap width="95%" >Ajuda de custos de voluntários</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=648;document.formulario.submit();">
+						<td nowrap width="5%" >648</td>
+						<td nowrap width="95%" >Aluguel de transporte</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=649;document.formulario.submit();">
+						<td nowrap width="5%" >649</td>
+						<td nowrap width="95%" >Aluguel e Taxas Imobiliárias</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=650;document.formulario.submit();">
+						<td nowrap width="5%" >650</td>
+						<td nowrap width="95%" >Aquisição de materiais</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=651;document.formulario.submit();">
+						<td nowrap width="5%" >651</td>
+						<td nowrap width="95%" >Atividades Extramuros</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=652;document.formulario.submit();">
+						<td nowrap width="5%" >652</td>
+						<td nowrap width="95%" >Capacitação de equipe</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=653;document.formulario.submit();">
+						<td nowrap width="5%" >653</td>
+						<td nowrap width="95%" >Compra de Equipamentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=654;document.formulario.submit();">
+						<td nowrap width="5%" >654</td>
+						<td nowrap width="95%" >Concessionárias</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=655;document.formulario.submit();">
+						<td nowrap width="5%" >655</td>
+						<td nowrap width="95%" >Alimentação/Kit Lanche</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=656;document.formulario.submit();">
+						<td nowrap width="5%" >656</td>
+						<td nowrap width="95%" >Confecção de uniformes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=657;document.formulario.submit();">
+						<td nowrap width="5%" >657</td>
+						<td nowrap width="95%" >Conservação de adaptação do espaço físico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=658;document.formulario.submit();">
+						<td nowrap width="5%" >658</td>
+						<td nowrap width="95%" >Contratação para oficinas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=659;document.formulario.submit();">
+						<td nowrap width="5%" >659</td>
+						<td nowrap width="95%" >Dedetização</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=660;document.formulario.submit();">
+						<td nowrap width="5%" >660</td>
+						<td nowrap width="95%" >Descupinização</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=661;document.formulario.submit();">
+						<td nowrap width="5%" >661</td>
+						<td nowrap width="95%" >Desinfecção do espaço</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=662;document.formulario.submit();">
+						<td nowrap width="5%" >662</td>
+						<td nowrap width="95%" >Deslocamento de equipe</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=663;document.formulario.submit();">
+						<td nowrap width="5%" >663</td>
+						<td nowrap width="95%" >Deslocamento de usuários</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=664;document.formulario.submit();">
+						<td nowrap width="5%" >664</td>
+						<td nowrap width="95%" >Deslocamento de usuários e equipe</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=665;document.formulario.submit();">
+						<td nowrap width="5%" >665</td>
+						<td nowrap width="95%" >Despesas com Cartório</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=666;document.formulario.submit();">
+						<td nowrap width="5%" >666</td>
+						<td nowrap width="95%" >Despesas com Correios</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=667;document.formulario.submit();">
+						<td nowrap width="5%" >667</td>
+						<td nowrap width="95%" >Desratização</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=668;document.formulario.submit();">
+						<td nowrap width="5%" >668</td>
+						<td nowrap width="95%" >Diárias a colaboradores eventuais no país</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=669;document.formulario.submit();">
+						<td nowrap width="5%" >669</td>
+						<td nowrap width="95%" >Equipamentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=670;document.formulario.submit();">
+						<td nowrap width="5%" >670</td>
+						<td nowrap width="95%" >Equipamentos de proteção, segurança e socorro</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=671;document.formulario.submit();">
+						<td nowrap width="5%" >671</td>
+						<td nowrap width="95%" >Exposições, congressos e conferências</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=672;document.formulario.submit();">
+						<td nowrap width="5%" >672</td>
+						<td nowrap width="95%" >fornecedores</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=673;document.formulario.submit();">
+						<td nowrap width="5%" >673</td>
+						<td nowrap width="95%" >Higiene</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=674;document.formulario.submit();">
+						<td nowrap width="5%" >674</td>
+						<td nowrap width="95%" >Higienização de caixa d'água e cisternas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=675;document.formulario.submit();">
+						<td nowrap width="5%" >675</td>
+						<td nowrap width="95%" >Hospedagem de site</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=676;document.formulario.submit();">
+						<td nowrap width="5%" >676</td>
+						<td nowrap width="95%" >Instrumentos musicais e artísticos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=677;document.formulario.submit();">
+						<td nowrap width="5%" >677</td>
+						<td nowrap width="95%" >IPTU</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=678;document.formulario.submit();">
+						<td nowrap width="5%" >678</td>
+						<td nowrap width="95%" >Lanche</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=679;document.formulario.submit();">
+						<td nowrap width="5%" >679</td>
+						<td nowrap width="95%" >Limpeza</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=680;document.formulario.submit();">
+						<td nowrap width="5%" >680</td>
+						<td nowrap width="95%" >Limpeza de Caixa D'Água</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=681;document.formulario.submit();">
+						<td nowrap width="5%" >681</td>
+						<td nowrap width="95%" >Limpeza de desentupimento de esgoto</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=682;document.formulario.submit();">
+						<td nowrap width="5%" >682</td>
+						<td nowrap width="95%" >Limpeza de Reservatórios de Água</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=683;document.formulario.submit();">
+						<td nowrap width="5%" >683</td>
+						<td nowrap width="95%" >Limpeza e Manutenção de Caixa d'água</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=684;document.formulario.submit();">
+						<td nowrap width="5%" >684</td>
+						<td nowrap width="95%" >Locação de Materiais Permanentes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=685;document.formulario.submit();">
+						<td nowrap width="5%" >685</td>
+						<td nowrap width="95%" >Locação de material permanente</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=686;document.formulario.submit();">
+						<td nowrap width="5%" >686</td>
+						<td nowrap width="95%" >Locação de transportes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=687;document.formulario.submit();">
+						<td nowrap width="5%" >687</td>
+						<td nowrap width="95%" >Locação de Veículos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=688;document.formulario.submit();">
+						<td nowrap width="5%" >688</td>
+						<td nowrap width="95%" >Manutenção da estrutura</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=689;document.formulario.submit();">
+						<td nowrap width="5%" >689</td>
+						<td nowrap width="95%" >Manutenção de Bens Móveis</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=690;document.formulario.submit();">
+						<td nowrap width="5%" >690</td>
+						<td nowrap width="95%" >Manutenção de Computadores</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=691;document.formulario.submit();">
+						<td nowrap width="5%" >691</td>
+						<td nowrap width="95%" >Manutenção de Equipamentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=692;document.formulario.submit();">
+						<td nowrap width="5%" >692</td>
+						<td nowrap width="95%" >Manutenção de Equipamentos de Incêndio</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=693;document.formulario.submit();">
+						<td nowrap width="5%" >693</td>
+						<td nowrap width="95%" >Manutenção de Espaço Físico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=694;document.formulario.submit();">
+						<td nowrap width="5%" >694</td>
+						<td nowrap width="95%" >Manutenção de Geladeiras e Freezer</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=695;document.formulario.submit();">
+						<td nowrap width="5%" >695</td>
+						<td nowrap width="95%" >Manutenção de Informática</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=696;document.formulario.submit();">
+						<td nowrap width="5%" >696</td>
+						<td nowrap width="95%" >Manutenção de software e equipamentos de informática e eletrônicos em geral</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=697;document.formulario.submit();">
+						<td nowrap width="5%" >697</td>
+						<td nowrap width="95%" >manutenção e recarga de extintores</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=698;document.formulario.submit();">
+						<td nowrap width="5%" >698</td>
+						<td nowrap width="95%" >Manutenção e Reparo do Espaço Físico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=699;document.formulario.submit();">
+						<td nowrap width="5%" >699</td>
+						<td nowrap width="95%" >Materiais de Gêneros Alimentícios</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=700;document.formulario.submit();">
+						<td nowrap width="5%" >700</td>
+						<td nowrap width="95%" >Materiais de Gráficas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=701;document.formulario.submit();">
+						<td nowrap width="5%" >701</td>
+						<td nowrap width="95%" >Materiais de Limpeza/Higienização</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=702;document.formulario.submit();">
+						<td nowrap width="5%" >702</td>
+						<td nowrap width="95%" >Materiais de Papelaria</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=703;document.formulario.submit();">
+						<td nowrap width="5%" >703</td>
+						<td nowrap width="95%" >Materiais de Processamento de Dados</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=704;document.formulario.submit();">
+						<td nowrap width="5%" >704</td>
+						<td nowrap width="95%" >Materiais Didáticos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=705;document.formulario.submit();">
+						<td nowrap width="5%" >705</td>
+						<td nowrap width="95%" >Materiais e Manutenção de Luz, Água, Predial e Veículos da Instituição</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=706;document.formulario.submit();">
+						<td nowrap width="5%" >706</td>
+						<td nowrap width="95%" >Materiais e Serviços para Piscina</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=707;document.formulario.submit();">
+						<td nowrap width="5%" >707</td>
+						<td nowrap width="95%" >Materiais Gráficos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=708;document.formulario.submit();">
+						<td nowrap width="5%" >708</td>
+						<td nowrap width="95%" >Materiais para Oficinas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=709;document.formulario.submit();">
+						<td nowrap width="5%" >709</td>
+						<td nowrap width="95%" >Material de Áudio, Vídeo e Foto</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=710;document.formulario.submit();">
+						<td nowrap width="5%" >710</td>
+						<td nowrap width="95%" >Material de Escritório</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=711;document.formulario.submit();">
+						<td nowrap width="5%" >711</td>
+						<td nowrap width="95%" >Material de Escritório e Papelaria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=712;document.formulario.submit();">
+						<td nowrap width="5%" >712</td>
+						<td nowrap width="95%" >Material de Esporte</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=713;document.formulario.submit();">
+						<td nowrap width="5%" >713</td>
+						<td nowrap width="95%" >Material de Esporte e Oficina Pedagógica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=714;document.formulario.submit();">
+						<td nowrap width="5%" >714</td>
+						<td nowrap width="95%" >Material de Higiene e Limpeza</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=715;document.formulario.submit();">
+						<td nowrap width="5%" >715</td>
+						<td nowrap width="95%" >Material de Informática</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=716;document.formulario.submit();">
+						<td nowrap width="5%" >716</td>
+						<td nowrap width="95%" >Material de Livraria</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=717;document.formulario.submit();">
+						<td nowrap width="5%" >717</td>
+						<td nowrap width="95%" >Material de Manutenção e Reparos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=718;document.formulario.submit();">
+						<td nowrap width="5%" >718</td>
+						<td nowrap width="95%" >Material de Manutenção Predial e Reparos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=719;document.formulario.submit();">
+						<td nowrap width="5%" >719</td>
+						<td nowrap width="95%" >Material de Oficinas Pedagógicas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=720;document.formulario.submit();">
+						<td nowrap width="5%" >720</td>
+						<td nowrap width="95%" >Material de Papelaria</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=721;document.formulario.submit();">
+						<td nowrap width="5%" >721</td>
+						<td nowrap width="95%" >material de reparo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=722;document.formulario.submit();">
+						<td nowrap width="5%" >722</td>
+						<td nowrap width="95%" >Material Educacional e Cultural</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=723;document.formulario.submit();">
+						<td nowrap width="5%" >723</td>
+						<td nowrap width="95%" >Material Educativo e Esportivo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=724;document.formulario.submit();">
+						<td nowrap width="5%" >724</td>
+						<td nowrap width="95%" >Material Elétrico e Eletrônico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=725;document.formulario.submit();">
+						<td nowrap width="5%" >725</td>
+						<td nowrap width="95%" >material lúdico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=726;document.formulario.submit();">
+						<td nowrap width="5%" >726</td>
+						<td nowrap width="95%" >Material lúdico, didático e pedagógico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=727;document.formulario.submit();">
+						<td nowrap width="5%" >727</td>
+						<td nowrap width="95%" >Material para Copa e Cozinha</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=728;document.formulario.submit();">
+						<td nowrap width="5%" >728</td>
+						<td nowrap width="95%" >Material para divulgação</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=729;document.formulario.submit();">
+						<td nowrap width="5%" >729</td>
+						<td nowrap width="95%" >Material para Oficinas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=730;document.formulario.submit();">
+						<td nowrap width="5%" >730</td>
+						<td nowrap width="95%" >Material para Oficinas (Artes, informática e raciocínio lógico)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=731;document.formulario.submit();">
+						<td nowrap width="5%" >731</td>
+						<td nowrap width="95%" >material para reparos e manutenção</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=732;document.formulario.submit();">
+						<td nowrap width="5%" >732</td>
+						<td nowrap width="95%" >Material Pedagógico e Oficinas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=733;document.formulario.submit();">
+						<td nowrap width="5%" >733</td>
+						<td nowrap width="95%" >Medicina do Trabalho</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=734;document.formulario.submit();">
+						<td nowrap width="5%" >734</td>
+						<td nowrap width="95%" >Medicina Ocupacional</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=735;document.formulario.submit();">
+						<td nowrap width="5%" >735</td>
+						<td nowrap width="95%" >Mobiliário (exige autorização prévia)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=736;document.formulario.submit();">
+						<td nowrap width="5%" >736</td>
+						<td nowrap width="95%" >Oficinas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=737;document.formulario.submit();">
+						<td nowrap width="5%" >737</td>
+						<td nowrap width="95%" >Oficinas para mães e crianças</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=738;document.formulario.submit();">
+						<td nowrap width="5%" >738</td>
+						<td nowrap width="95%" >Programa de informática</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=739;document.formulario.submit();">
+						<td nowrap width="5%" >739</td>
+						<td nowrap width="95%" >Recarga e Manutenção de Extintores</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=740;document.formulario.submit();">
+						<td nowrap width="5%" >740</td>
+						<td nowrap width="95%" >Seguro de veículo (Van)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=741;document.formulario.submit();">
+						<td nowrap width="5%" >741</td>
+						<td nowrap width="95%" >Seguro Social</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=742;document.formulario.submit();">
+						<td nowrap width="5%" >742</td>
+						<td nowrap width="95%" >Serviço de áudio, vídeo, foto e filmagem</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=743;document.formulario.submit();">
+						<td nowrap width="5%" >743</td>
+						<td nowrap width="95%" >Serviço de Comunicação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=744;document.formulario.submit();">
+						<td nowrap width="5%" >744</td>
+						<td nowrap width="95%" >Serviço de Informática</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=745;document.formulario.submit();">
+						<td nowrap width="5%" >745</td>
+						<td nowrap width="95%" >Serviço de limpeza de caixa d'água e potabilidade</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=746;document.formulario.submit();">
+						<td nowrap width="5%" >746</td>
+						<td nowrap width="95%" >Serviço de Manutenção do Local</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=747;document.formulario.submit();">
+						<td nowrap width="5%" >747</td>
+						<td nowrap width="95%" >serviço de manutenção e conservação das instalações</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=748;document.formulario.submit();">
+						<td nowrap width="5%" >748</td>
+						<td nowrap width="95%" >Serviço de Marketing</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=749;document.formulario.submit();">
+						<td nowrap width="5%" >749</td>
+						<td nowrap width="95%" >Serviço de Pintura</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=750;document.formulario.submit();">
+						<td nowrap width="5%" >750</td>
+						<td nowrap width="95%" >Serviço de seleção e treinamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=751;document.formulario.submit();">
+						<td nowrap width="5%" >751</td>
+						<td nowrap width="95%" >Serviços Advocatícios</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=752;document.formulario.submit();">
+						<td nowrap width="5%" >752</td>
+						<td nowrap width="95%" >Serviços Contábeis e Jurídicos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=753;document.formulario.submit();">
+						<td nowrap width="5%" >753</td>
+						<td nowrap width="95%" >Serviços de apoio administrativo</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=754;document.formulario.submit();">
+						<td nowrap width="5%" >754</td>
+						<td nowrap width="95%" >Serviços de brigada de incêndio</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=755;document.formulario.submit();">
+						<td nowrap width="5%" >755</td>
+						<td nowrap width="95%" >Serviços de comunicação em geral</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=756;document.formulario.submit();">
+						<td nowrap width="5%" >756</td>
+						<td nowrap width="95%" >Serviços de conservação e manutenção</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=757;document.formulario.submit();">
+						<td nowrap width="5%" >757</td>
+						<td nowrap width="95%" >Serviços de Contabilidade</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=758;document.formulario.submit();">
+						<td nowrap width="5%" >758</td>
+						<td nowrap width="95%" >Serviços de Dedetização</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=759;document.formulario.submit();">
+						<td nowrap width="5%" >759</td>
+						<td nowrap width="95%" >Serviços de Gráfica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=760;document.formulario.submit();">
+						<td nowrap width="5%" >760</td>
+						<td nowrap width="95%" >Serviços de higienização de reservatórios de água</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=761;document.formulario.submit();">
+						<td nowrap width="5%" >761</td>
+						<td nowrap width="95%" >Serviços de Limpeza</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=762;document.formulario.submit();">
+						<td nowrap width="5%" >762</td>
+						<td nowrap width="95%" >Serviços de limpeza de caixa d'água</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=763;document.formulario.submit();">
+						<td nowrap width="5%" >763</td>
+						<td nowrap width="95%" >Serviços de limpeza e conservação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=764;document.formulario.submit();">
+						<td nowrap width="5%" >764</td>
+						<td nowrap width="95%" >Serviços de Manutenção de Ar Condicionado</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=765;document.formulario.submit();">
+						<td nowrap width="5%" >765</td>
+						<td nowrap width="95%" >Serviços de manutenção e reparos com refrigeração, marcenaria, serralheria e equipamentos eletrônico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=766;document.formulario.submit();">
+						<td nowrap width="5%" >766</td>
+						<td nowrap width="95%" >Serviços de manutenção, conservação e desinfecção de espaço físico e imobiliário</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=767;document.formulario.submit();">
+						<td nowrap width="5%" >767</td>
+						<td nowrap width="95%" >Serviços de Pessoas Jurídicas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=768;document.formulario.submit();">
+						<td nowrap width="5%" >768</td>
+						<td nowrap width="95%" >Serviços de publicidade de utilidade pública</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=769;document.formulario.submit();">
+						<td nowrap width="5%" >769</td>
+						<td nowrap width="95%" >Serviços de purificador de água/bebedouro</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=770;document.formulario.submit();">
+						<td nowrap width="5%" >770</td>
+						<td nowrap width="95%" >Serviços de Reparos de Elétrica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=771;document.formulario.submit();">
+						<td nowrap width="5%" >771</td>
+						<td nowrap width="95%" >Serviços de Reparos de Hidráulica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=772;document.formulario.submit();">
+						<td nowrap width="5%" >772</td>
+						<td nowrap width="95%" >Serviços de Reparos de Informática</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=773;document.formulario.submit();">
+						<td nowrap width="5%" >773</td>
+						<td nowrap width="95%" >Serviços de Reparos de Marcenaria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=774;document.formulario.submit();">
+						<td nowrap width="5%" >774</td>
+						<td nowrap width="95%" >Serviços de Reparos de Pintura</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=775;document.formulario.submit();">
+						<td nowrap width="5%" >775</td>
+						<td nowrap width="95%" >Serviços de Reparos de Serralheria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=776;document.formulario.submit();">
+						<td nowrap width="5%" >776</td>
+						<td nowrap width="95%" >Serviços de Reparos Elétricos</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=777;document.formulario.submit();">
+						<td nowrap width="5%" >777</td>
+						<td nowrap width="95%" >Serviços de Reparos Hidráulicos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=778;document.formulario.submit();">
+						<td nowrap width="5%" >778</td>
+						<td nowrap width="95%" >Serviços de reparos, pinturas, adaptações e reformas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=779;document.formulario.submit();">
+						<td nowrap width="5%" >779</td>
+						<td nowrap width="95%" >Serviços Jurídicos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=780;document.formulario.submit();">
+						<td nowrap width="5%" >780</td>
+						<td nowrap width="95%" >Serviços Terceirizados</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=781;document.formulario.submit();">
+						<td nowrap width="5%" >781</td>
+						<td nowrap width="95%" >Software</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=782;document.formulario.submit();">
+						<td nowrap width="5%" >782</td>
+						<td nowrap width="95%" >Taxa Anual da Vigilância Sanitária</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=783;document.formulario.submit();">
+						<td nowrap width="5%" >783</td>
+						<td nowrap width="95%" >Taxa de Incêndio</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=784;document.formulario.submit();">
+						<td nowrap width="5%" >784</td>
+						<td nowrap width="95%" >Taxa de Inspeção Sanitária</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=785;document.formulario.submit();">
+						<td nowrap width="5%" >785</td>
+						<td nowrap width="95%" >Taxa de vigilância sanitária</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=786;document.formulario.submit();">
+						<td nowrap width="5%" >786</td>
+						<td nowrap width="95%" >Taxas federais, estaduais e municipais</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=787;document.formulario.submit();">
+						<td nowrap width="5%" >787</td>
+						<td nowrap width="95%" >Tecnologias Assistivas</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=788;document.formulario.submit();">
+						<td nowrap width="5%" >788</td>
+						<td nowrap width="95%" >Telefone</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=789;document.formulario.submit();">
+						<td nowrap width="5%" >789</td>
+						<td nowrap width="95%" >Transporte e alimentação dos usuários</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=790;document.formulario.submit();">
+						<td nowrap width="5%" >790</td>
+						<td nowrap width="95%" >Utensílios de cozinha</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=791;document.formulario.submit();">
+						<td nowrap width="5%" >791</td>
+						<td nowrap width="95%" >RH - Juliano Moreira</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=792;document.formulario.submit();">
+						<td nowrap width="5%" >792</td>
+						<td nowrap width="95%" >GRF</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=793;document.formulario.submit();">
+						<td nowrap width="5%" >793</td>
+						<td nowrap width="95%" >AQUISIÇÃO DE BENS MÓVEIS E PRESTAÇÃO DE SERVIÇOS DE TERCEIROS</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=794;document.formulario.submit();">
+						<td nowrap width="5%" >794</td>
+						<td nowrap width="95%" >RH - Centro Especializado de Estímulo do Desenvolvimento Infantil (CEEDI)</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=795;document.formulario.submit();">
+						<td nowrap width="5%" >795</td>
+						<td nowrap width="95%" >Custeio - Centro Especializado de Estímulo do Desenvolvimento Infantil (CEEDI)</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=796;document.formulario.submit();">
+						<td nowrap width="5%" >796</td>
+						<td nowrap width="95%" >SERVIÇO RESIDENCIAL TERAPÊUTICO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=797;document.formulario.submit();">
+						<td nowrap width="5%" >797</td>
+						<td nowrap width="95%" >RH SRT</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=798;document.formulario.submit();">
+						<td nowrap width="5%" >798</td>
+						<td nowrap width="95%" >Total</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=799;document.formulario.submit();">
+						<td nowrap width="5%" >799</td>
+						<td nowrap width="95%" >Apoio à Gestão</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=800;document.formulario.submit();">
+						<td nowrap width="5%" >800</td>
+						<td nowrap width="95%" >RH - Supervisão e Gerência PADI</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=801;document.formulario.submit();">
+						<td nowrap width="5%" >801</td>
+						<td nowrap width="95%" >RH - Equipe EMAD</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=802;document.formulario.submit();">
+						<td nowrap width="5%" >802</td>
+						<td nowrap width="95%" >RH - Equipe EMAP</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=803;document.formulario.submit();">
+						<td nowrap width="5%" >803</td>
+						<td nowrap width="95%" >RH - Equipe AID</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=804;document.formulario.submit();">
+						<td nowrap width="5%" >804</td>
+						<td nowrap width="95%" >Contratos e Consumo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=805;document.formulario.submit();">
+						<td nowrap width="5%" >805</td>
+						<td nowrap width="95%" >Investimentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=806;document.formulario.submit();">
+						<td nowrap width="5%" >806</td>
+						<td nowrap width="95%" >Total Fixa</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=807;document.formulario.submit();">
+						<td nowrap width="5%" >807</td>
+						<td nowrap width="95%" >Total Variável</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=808;document.formulario.submit();">
+						<td nowrap width="5%" >808</td>
+						<td nowrap width="95%" >Total Padi</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=809;document.formulario.submit();">
+						<td nowrap width="5%" >809</td>
+						<td nowrap width="95%" >Apoioa Gestão OSC</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=810;document.formulario.submit();">
+						<td nowrap width="5%" >810</td>
+						<td nowrap width="95%" >Apoio à Gestão IVISA-Rio</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=811;document.formulario.submit();">
+						<td nowrap width="5%" >811</td>
+						<td nowrap width="95%" >Equipe Administrativa</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=812;document.formulario.submit();">
+						<td nowrap width="5%" >812</td>
+						<td nowrap width="95%" >RH Administrativo</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=813;document.formulario.submit();">
+						<td nowrap width="5%" >813</td>
+						<td nowrap width="95%" >RH - Centro Cirúrgico</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=814;document.formulario.submit();">
+						<td nowrap width="5%" >814</td>
+						<td nowrap width="95%" >Equipe UPAV</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=815;document.formulario.submit();">
+						<td nowrap width="5%" >815</td>
+						<td nowrap width="95%" >RH - Equipe UPAV</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=816;document.formulario.submit();">
+						<td nowrap width="5%" >816</td>
+						<td nowrap width="95%" >Equipe dos Ambulatórios</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=817;document.formulario.submit();">
+						<td nowrap width="5%" >817</td>
+						<td nowrap width="95%" >Contratos e Serviços</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=818;document.formulario.submit();">
+						<td nowrap width="5%" >818</td>
+						<td nowrap width="95%" >Adaptações</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=819;document.formulario.submit();">
+						<td nowrap width="5%" >819</td>
+						<td nowrap width="95%" >Investimento, adaptações e equipamentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=820;document.formulario.submit();">
+						<td nowrap width="5%" >820</td>
+						<td nowrap width="95%" >RH Equipe dos Ambulatórios</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=821;document.formulario.submit();">
+						<td nowrap width="5%" >821</td>
+						<td nowrap width="95%" >Diretoria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=822;document.formulario.submit();">
+						<td nowrap width="5%" >822</td>
+						<td nowrap width="95%" >Unidade de Neonatologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=823;document.formulario.submit();">
+						<td nowrap width="5%" >823</td>
+						<td nowrap width="95%" >Alojamento conjunto</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=824;document.formulario.submit();">
+						<td nowrap width="5%" >824</td>
+						<td nowrap width="95%" >Centro Cirurgico</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=825;document.formulario.submit();">
+						<td nowrap width="5%" >825</td>
+						<td nowrap width="95%" >Emergência Obstétrica</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=826;document.formulario.submit();">
+						<td nowrap width="5%" >826</td>
+						<td nowrap width="95%" >NIR e Faturamento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=827;document.formulario.submit();">
+						<td nowrap width="5%" >827</td>
+						<td nowrap width="95%" >Central de Material de Especialização - CME</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=828;document.formulario.submit();">
+						<td nowrap width="5%" >828</td>
+						<td nowrap width="95%" >Hematoterapia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=829;document.formulario.submit();">
+						<td nowrap width="5%" >829</td>
+						<td nowrap width="95%" >Ultrassonografia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=830;document.formulario.submit();">
+						<td nowrap width="5%" >830</td>
+						<td nowrap width="95%" >Radiologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=831;document.formulario.submit();">
+						<td nowrap width="5%" >831</td>
+						<td nowrap width="95%" >Banco Lactário</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=832;document.formulario.submit();">
+						<td nowrap width="5%" >832</td>
+						<td nowrap width="95%" >SERVIÇO DE APOIO ESPECIALIZADO</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=833;document.formulario.submit();">
+						<td nowrap width="5%" >833</td>
+						<td nowrap width="95%" >FARMÁCIA</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=834;document.formulario.submit();">
+						<td nowrap width="5%" >834</td>
+						<td nowrap width="95%" >manutenção preventiva e corretiva de elevadores</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=835;document.formulario.submit();">
+						<td nowrap width="5%" >835</td>
+						<td nowrap width="95%" >Núcleo téc. de assessoramento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=836;document.formulario.submit();">
+						<td nowrap width="5%" >836</td>
+						<td nowrap width="95%" >Coordenação Módulos Acolhimento/Transporte</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=837;document.formulario.submit();">
+						<td nowrap width="5%" >837</td>
+						<td nowrap width="95%" >Módulo Acolhimento</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=838;document.formulario.submit();">
+						<td nowrap width="5%" >838</td>
+						<td nowrap width="95%" >Equipe Módulo Acolhimento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=839;document.formulario.submit();">
+						<td nowrap width="5%" >839</td>
+						<td nowrap width="95%" >Equipe Módulo Transporte</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=840;document.formulario.submit();">
+						<td nowrap width="5%" >840</td>
+						<td nowrap width="95%" >Locação de Ambulância</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=841;document.formulario.submit();">
+						<td nowrap width="5%" >841</td>
+						<td nowrap width="95%" >Apoio a Shows</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=842;document.formulario.submit();">
+						<td nowrap width="5%" >842</td>
+						<td nowrap width="95%" >Equipe de Gestão</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=843;document.formulario.submit();">
+						<td nowrap width="5%" >843</td>
+						<td nowrap width="95%" >Equipe Fixa</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=844;document.formulario.submit();">
+						<td nowrap width="5%" >844</td>
+						<td nowrap width="95%" >Equipe Itinerantes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=845;document.formulario.submit();">
+						<td nowrap width="5%" >845</td>
+						<td nowrap width="95%" >Custo de Implantação</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=846;document.formulario.submit();">
+						<td nowrap width="5%" >846</td>
+						<td nowrap width="95%" >Locação de Espaços</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=847;document.formulario.submit();">
+						<td nowrap width="5%" >847</td>
+						<td nowrap width="95%" >Custos Operacionais</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=848;document.formulario.submit();">
+						<td nowrap width="5%" >848</td>
+						<td nowrap width="95%" >Locação de Automóveis</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=849;document.formulario.submit();">
+						<td nowrap width="5%" >849</td>
+						<td nowrap width="95%" >Locação de Mobiliario e Equipamentos</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=850;document.formulario.submit();">
+						<td nowrap width="5%" >850</td>
+						<td nowrap width="95%" >Curso de Formação de Lideranças Comunitária e Terceiro Setor</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=851;document.formulario.submit();">
+						<td nowrap width="5%" >851</td>
+						<td nowrap width="95%" >Oficinas de Atividades Recreativas, Culturais e Artísticas, com fornecimento de mão de obra, materia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=852;document.formulario.submit();">
+						<td nowrap width="5%" >852</td>
+						<td nowrap width="95%" >Demais Despesas</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=853;document.formulario.submit();">
+						<td nowrap width="5%" >853</td>
+						<td nowrap width="95%" >Custo Operacional</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=854;document.formulario.submit();">
+						<td nowrap width="5%" >854</td>
+						<td nowrap width="95%" >Empregados e Dirigentes</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=855;document.formulario.submit();">
+						<td nowrap width="5%" >855</td>
+						<td nowrap width="95%" >RH - Equipe Multidisciplinar e Assistencial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=856;document.formulario.submit();">
+						<td nowrap width="5%" >856</td>
+						<td nowrap width="95%" >RH - Pronto Atendimento</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=857;document.formulario.submit();">
+						<td nowrap width="5%" >857</td>
+						<td nowrap width="95%" >RH - CTI Geral</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=858;document.formulario.submit();">
+						<td nowrap width="5%" >858</td>
+						<td nowrap width="95%" >RH - Unidade Pediatria</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=859;document.formulario.submit();">
+						<td nowrap width="5%" >859</td>
+						<td nowrap width="95%" >RH - Unidade de Psiquiatria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=860;document.formulario.submit();">
+						<td nowrap width="5%" >860</td>
+						<td nowrap width="95%" >RH - CTQ</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=861;document.formulario.submit();">
+						<td nowrap width="5%" >861</td>
+						<td nowrap width="95%" >Telemedicina</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=862;document.formulario.submit();">
+						<td nowrap width="5%" >862</td>
+						<td nowrap width="95%" >CPRE</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=863;document.formulario.submit();">
+						<td nowrap width="5%" >863</td>
+						<td nowrap width="95%" >RH Equipe DA UTI</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=864;document.formulario.submit();">
+						<td nowrap width="5%" >864</td>
+						<td nowrap width="95%" >RH da Equipe da UTI Ped</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=865;document.formulario.submit();">
+						<td nowrap width="5%" >865</td>
+						<td nowrap width="95%" >RH da Equipe Cirurgia Geral</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=866;document.formulario.submit();">
+						<td nowrap width="5%" >866</td>
+						<td nowrap width="95%" >RH da Equipe Cirurgia Pediátrica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=867;document.formulario.submit();">
+						<td nowrap width="5%" >867</td>
+						<td nowrap width="95%" >RH da Equipe de Ginecologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=868;document.formulario.submit();">
+						<td nowrap width="5%" >868</td>
+						<td nowrap width="95%" >RH da Equipe Clínica Médica</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=869;document.formulario.submit();">
+						<td nowrap width="5%" >869</td>
+						<td nowrap width="95%" >RH da Equipe  Pediatria</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=870;document.formulario.submit();">
+						<td nowrap width="5%" >870</td>
+						<td nowrap width="95%" >RH da Equipe do Hospital Dia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=871;document.formulario.submit();">
+						<td nowrap width="5%" >871</td>
+						<td nowrap width="95%" >RH da Equipe da Pneumologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=872;document.formulario.submit();">
+						<td nowrap width="5%" >872</td>
+						<td nowrap width="95%" >RH da Equipe Nefrologia/urologia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=873;document.formulario.submit();">
+						<td nowrap width="5%" >873</td>
+						<td nowrap width="95%" >RH da Equipe Emergência</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=874;document.formulario.submit();">
+						<td nowrap width="5%" >874</td>
+						<td nowrap width="95%" >RH da Equipe Multiprofissional</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=875;document.formulario.submit();">
+						<td nowrap width="5%" >875</td>
+						<td nowrap width="95%" >RH da Equipe Multiespecial</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=876;document.formulario.submit();">
+						<td nowrap width="5%" >876</td>
+						<td nowrap width="95%" >RH da Equipe Colonoscopia/Endoscopia</td>
+					</tr><tr class="linha_escuro" onclick="document.formulario.hdd_acao.value=877;document.formulario.submit();">
+						<td nowrap width="5%" >877</td>
+						<td nowrap width="95%" >Equipe servilo Oncologia</td>
+					</tr><tr class="linha_claro" onclick="document.formulario.hdd_acao.value=878;document.formulario.submit();">
+						<td nowrap width="5%" >878</td>
+						<td nowrap width="95%" >RH da Equipe de diálise</td>
+					</tr></table>
