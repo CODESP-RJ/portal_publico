@@ -1,58 +1,128 @@
 import streamlit as st
-from utils import utils as util
-from models.modulos import Modulos
 from io import StringIO
 import pandas as pd
 import datetime
-from web.components.instrucoes import instrucoes_validar_alteracoes
+from models.validators.base_validator import BaseValidator
+from models.contratos_de_terceiros.contratos_terceiros_validator import ContratosTerceirosValidator
+from models.despesas.despesas_validator import DespesasValidator
+from models.saldos.saldos_validator import SaldosValidator
+from models.bens_patrimoniados.bens_patrimoniados_validator import BensPatrimoniadosValidator
+from models.itens_de_nota_fiscal.itens_de_nota_fiscal_validator import ItensDeNotaFiscalValidator
+from models.receitas.receitas_validator import ReceitasValidator
+from models.common import (
+    LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS,
+    LISTA_ATRIBUTOS_DESPESAS,
+    LISTA_ATRIBUTOS_BENS_PATRIMONIADOS,
+    LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL,
+    LISTA_ATRIBUTOS_RECEITAS,
+    LISTA_ATRIBUTOS_SALDOS
+)
+from web.components.instrucoes import instrucoes_validar_alteracoes_exclusoes
+from utils.tratamentos import limpar_dados
 
-st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alteração</h1>",
-            unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
 
-secretarias = util.obter_instituicoes()
-instituicoes = util.carrega_instituicoes()
-contratos = util.carrega_contratos()
-validou = False
+tipo_arquivo_options = [
+    'Contratos de Terceiros',
+    'Despesas',
+    'Saldos',
+    'Bens Patrimoniados',
+    'Itens de Nota Fiscal',
+    'Receitas'
+]
 
-with st.form('Valida Importação', clear_on_submit=False):
-    instituicaoEscolhida = st.selectbox('Instituição', instituicoes, index=None, placeholder="Selecione a Instituição")
-    arquivo = st.file_uploader("Arquivo da ser verificado", type=['csv', 'xls', 'xlsx'], help="Envie um arquivo de cada vez")
-    processou = st.form_submit_button("Processar")
+def main():
+    with st.form('main_form'):
+        tipo_arquivo = st.selectbox('Tipo de Arquivo', tipo_arquivo_options, index=None, placeholder="Selecione o Tipo de Arquivo")
+        tipo_acao = st.selectbox('Tipo de Ação', ['Alteração', 'Exclusão'], index=None, placeholder="Selecione o Tipo de Ação")
+        arquivo = st.file_uploader("Arquivo CSV", type="csv")
+        submitted = st.form_submit_button("Processar")
 
-    if processou:
-        if instituicaoEscolhida and arquivo:
-            with st.spinner('Processando...'):
-                cod_os = instituicaoEscolhida.split(" ")[0]
-                if arquivo.name.endswith('.xlsx') or arquivo.name.endswith('.xls') or arquivo.name.endswith('.XLS') or arquivo.name.endswith('.XLSX'):
-                    df = pd.read_excel(arquivo)
-                else:
-                    string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
-                    df = pd.read_csv(string_data, sep=';', header=0, index_col=False, dtype=str)
-                    df.columns = df.columns.str.upper().str.strip()
-                    string_data.close()
+    if submitted:
+        if not all([tipo_arquivo, tipo_acao, arquivo]):
+            st.error("Preencha todos os campos!")
+            return
 
-                if 'ATRIBUTO' in df.columns and 'NOVO_VALOR' in df.columns:
-                    df = df.dropna(how='all')
-                    st.write("Prévia do arquivo original: ")
-                    st.dataframe(df)
-                    
-                    modelos = Modulos()
-                    df_filtrado = df[df["ATRIBUTO"].str.lower().isin([x.lower() for x in modelos.documentosPDF])]
-                    if not df_filtrado.empty:
-                        validou = True
-                        st.write("Arquivo processado:")
-                        st.dataframe(df_filtrado)
-                        st.success('Processamento concluído!')
-                    else:
-                        st.error('O arquivo não tem imagens a serem alteradas!')
-                else:
-                    st.error('O arquivo não tem as colunas necessárias ("ATRIBUTO" e "NOVO_VALOR")!')
-        else:
-            st.error('Todos os campos devem ser preenchidos!')
+        try:
+            st.divider()
+            st.markdown("<h3 style='text-align: center;'>EXIBIÇÃO DO ARQUIVO</h3>", unsafe_allow_html=True)
+            df = processar_arquivo(arquivo)
+            st.dataframe(df)
 
-if validou:
-    nomeArquivo = f"VALIDADO_{cod_os[0]}_{datetime.datetime.now().strftime('%d-%m-%Y-%H-%M')}.csv"
-    st.download_button(label="Download do arquivo CSV", data=df_filtrado.to_csv(sep=';', index=False), mime='text/csv', file_name=nomeArquivo)
-    arquivo.close()
+            if tipo_acao == "Alteração":
+                df = df[df['ACAO'] == 'ALTERACAO']
+            elif tipo_acao == "Exclusão":
+                df = df[df['ACAO'] == 'EXCLUSAO']
+            df = df[df['TIPO_MODULO'] == tipo_arquivo.upper()]
 
-instrucoes_validar_alteracoes()
+            if (df.empty):
+                st.warning("Nenhum registro encontrado neste arquivo para o tipo de módulo e ação selecionados.")
+                return
+
+            validado = processar_validacao(tipo_arquivo, df, tipo_acao)
+
+            if validado is not None:
+                exibir_resultados(validado)
+                st.info("Seu arquivo foi filtrado para o módulo e ação selecionados.")
+                oferecer_download(validado)
+
+        except Exception as e:
+            st.error(f"Erro na validação: {str(e)}")
+
+
+def processar_arquivo(arquivo):
+    string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
+    df = pd.read_csv(string_data, sep=';', dtype=str)
+    df.columns = df.columns.str.strip().str.upper()
+    return limpar_dados(df)
+
+
+def processar_validacao(tipo_arquivo, df, tipo_acao):
+    validator_map = {
+        'Contratos de Terceiros': ContratosTerceirosValidator,
+        'Despesas': DespesasValidator,
+        'Saldos': SaldosValidator,
+        'Bens Patrimoniados': BensPatrimoniadosValidator,
+        'Itens de Nota Fiscal': ItensDeNotaFiscalValidator,
+        'Receitas': ReceitasValidator
+    }
+
+    if tipo_arquivo not in validator_map:
+        st.error("Validador não implementado para este tipo de arquivo")
+        return None
+
+    validator_class = validator_map[tipo_arquivo]
+    validator = validator_class(df, tipo_acao)
+    try:
+        validator.check_header()
+        validator.check_ano_mes_ref()
+        if tipo_acao != "Exclusão":
+            validator.check_atributos()
+        return validator.validate_data()
+    except Exception as e:
+        st.error(f"Erro na validação: {str(e)}")
+        st.stop()
+
+def exibir_resultados(df):
+    st.divider()
+    st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)
+    st.dataframe(df.style.applymap(color_rows, subset=['VALIDACAO']))
+
+
+def color_rows(val):
+    color = 'green' if val == 'OK' else 'yellow' if 'Aviso' in val else 'red'
+    return f'color: {color}'
+
+
+def oferecer_download(df):
+    csv = df.to_csv(index=False, sep=';').encode('utf-8')
+    filename = f"validado_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.csv"
+    st.download_button(
+        label="Baixar arquivo validado",
+        data=csv,
+        file_name=filename,
+        mime='text/csv'
+    )
+
+main()
+instrucoes_validar_alteracoes_exclusoes()

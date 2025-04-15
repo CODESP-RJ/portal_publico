@@ -29,6 +29,7 @@ def local_css():
     .warning {
         color: #d6336c;
         font-weight: bold;
+        font-size: 1.1em;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -36,11 +37,8 @@ def local_css():
 
 local_css()
 
-st.title("✏️ MODELOS DE ALTERAÇÃO")
-
-# Seção de instruções
 with st.container():
-    st.header("📌 Instruções Gerais", divider="blue")
+    st.header("📌 INSTRUÇÕES GERAIS", divider="blue")
     with st.expander("requisitos de formatação", expanded=True):
         st.markdown("""
         <div class="instruction-box">
@@ -51,11 +49,8 @@ with st.container():
             🟡 Separador de milhares opcional (usar ponto)
         </div>
         """, unsafe_allow_html=True)
-
-with st.container():
     st.header("🔍 OBSERVAÇÕES POR MÓDULO", divider="orange")
     col1, col2 = st.columns(2)
-
     with col1:
         st.subheader("📑 Documentos Financeiros")
         st.markdown("""
@@ -72,39 +67,82 @@ with st.container():
         - **Bens Patrimoniados**: O TIPO deve ser o ID (Consulte nas tabelas auxiliares)
         """)
 
+st.divider()
+
+with st.container():
+    st.title("✏️ MODELOS DE ALTERAÇÃO")
     st.markdown("""
     <div class="warning">
         ⚠️ ATENÇÃO: O nome do ATRIBUTO deve corresponder ao módulo escolhido. 
     </div>
     """, unsafe_allow_html=True)
 
-st.header("⬇️ Download de Modelos", divider="green")
+st.header("⬇️ Download dos Arquivos Modelo", divider="green")
 st.info("Clique no botão correspondente para baixar o modelo desejado")
 
-files_dir = "download/modelos_alteracao"
-try:
-    files = os.listdir(files_dir)
+files_dir_alt = "download/modelos_alteracao"
+files_dir_exc = "download/modelos_exclusao"
+files_exc = os.listdir(files_dir_exc)
+files_alt = os.listdir(files_dir_alt)
 
-    categories = {
+try:
+    categories_alt = {
         'Financeiros': ['SALDOS', 'RECEITAS', 'DESPESAS'],
         'Cadastros': ['CONTRATOS_DE_TERCEIROS', 'BENS_PATRIMONIADOS'],
         'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL'],
     }
 
-    for category, patterns in categories.items():
+    for category, patterns in categories_alt.items():
         with st.expander(f"📂 {category}", expanded=True):
             cols = st.columns(3)
             col_idx = 0
-            for file in files:
+            for file in files_alt:
                 if any(p in file for p in patterns):
                     with cols[col_idx % 3]:
-                        with open(os.path.join(files_dir, file), "rb") as fp:
+                        with open(os.path.join(files_dir_alt, file), "rb") as fp:
                             st.download_button(
                                 label=f"📄 {file.split('.')[0].replace('_', ' ').title()}",
                                 data=fp,
                                 file_name=file,
                                 mime="text/csv",
-                                use_container_width=True
+                                use_container_width=True,
+                                key=f"alt_{file}"
+                            )
+                            col_idx += 1
+
+    st.divider()
+    st.title("🗑️ MODELOS DE EXCLUSÃO")
+
+    st.markdown("""
+    <div class="warning">
+        ⚠️ ATENÇÃO: Não preenchar as colunas ATRIBUTO e NOVO_VALOR. 
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.header("⬇️ Download dos Arquivos Modelo", divider="green")
+    st.info("Clique no botão correspondente para baixar o modelo desejado")
+
+    categories_exc = {
+        'Financeiros': ['SALDOS', 'RECEITAS', 'DESPESAS'],
+        'Cadastros': ['CONTRATOS_DE_TERCEIROS', 'BENS_PATRIMONIADOS'],
+        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL'],
+    }
+
+    for category, patterns in categories_exc.items():
+        with st.expander(f"📂 {category}", expanded=True):
+            cols = st.columns(3)
+            col_idx = 0
+            for file in files_exc:
+                if any(p in file for p in patterns):
+                    with cols[col_idx % 3]:
+                        with open(os.path.join(files_dir_exc, file), "rb") as fp:
+                            st.download_button(
+                                label=f"📄 {file.split('.')[0].replace('_', ' ').title()}",
+                                data=fp,
+                                file_name=file,
+                                mime="text/csv",
+                                use_container_width=True,
+                                key=f"exc_{file}"
                             )
                             col_idx += 1
 

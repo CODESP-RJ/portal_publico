@@ -41,7 +41,18 @@ def obter_instituicoes():
         resposta = json.load(arqInstituicoes)
         return [item.get('unidade_fantasia', 'Instituição não disponível') for item in resposta]
 
-def obter_contratos(cod_os):
+def obter_tipos_bens():
+    """
+    Requisita e retorna uma lista de tipos de bens.
+
+    Returns:
+        list: Tipos de bens ou "Tipo não disponível".
+    """
+    with open("data/getAssetTypes.json", encoding='utf-8') as arqTiposBens:
+        resposta = json.load(arqTiposBens)
+        return resposta
+
+def obter_contratos():
     """
     Requisita e retorna uma lista de contratos para uma instituição.
 

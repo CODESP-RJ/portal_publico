@@ -36,11 +36,8 @@ def local_css():
 
 local_css()
 
-st.title("📥 MODELOS DE IMPORTAÇÃO")
-
-# Seção de instruções
 with st.container():
-    st.header("📌 Instruções Gerais", divider="blue")
+    st.header("📌 INSTRUÇÕES GERAIS", divider="blue")
     with st.expander("requisitos de formatação", expanded=True):
         st.markdown("""
         <div class="instruction-box">
@@ -83,7 +80,9 @@ with st.container():
     </div>
     """, unsafe_allow_html=True)
 
-st.header("⬇️ Download de Modelos", divider="green")
+st.divider()
+st.title("📥 MODELOS DE INSERÇÃO")
+st.header("⬇️ Download dos Arquivos Modelo", divider="green")
 st.info("Clique no botão correspondente para baixar o modelo desejado")
 
 files_dir = "download/modelos_importacao"

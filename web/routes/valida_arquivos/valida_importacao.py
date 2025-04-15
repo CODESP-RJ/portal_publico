@@ -13,10 +13,10 @@ from models.itens_de_nota_fiscal.itens_nota_fiscal_df import ItensNotaFiscalDFIm
 from models.receitas.receitas_df import ReceitasDFImportacao
 from web.components.instrucoes import instrucoes_validar_importacoes
 
-st.markdown("<h1 style='text-align: center;'>Valida arquivos de Importação</h1>",
+st.markdown("<h1 style='text-align: center;'>Valida arquivos de Inserção</h1>",
             unsafe_allow_html=True)
 
-tipoArquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores']
+tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores']
 
 secretarias = util.obter_instituicoes()
 instituicoes = util.carrega_instituicoes()
@@ -30,20 +30,20 @@ def check_columns(columns):
             matched_columns.append(column)
     return matched_columns
 
-with st.form('Valida Importação', clear_on_submit=False):
-    tipoarquivoEscolhido = st.selectbox('Tipo de Arquivo', tipoArquivo, index=None, placeholder="Selecione o Tipo de Arquivo")
+with st.form('Valida Inserção', clear_on_submit=False):
+    tipoarquivo_escolhido = st.selectbox('Tipo de Arquivo', tipo_arquivo, index=None, placeholder="Selecione o Tipo de Arquivo")
     arquivo = st.file_uploader("Arquivo a ser verificado", type="csv", help="Envie um arquivo de cada vez")
     processou = st.form_submit_button("Processar")
 
     if processou:
-        if arquivo and tipoarquivoEscolhido:
+        if arquivo and tipoarquivo_escolhido:
             pBar = st.progress(0)
             try:                        
                 string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
-                cabecalhoArquivo = string_data.readline().strip()
+                cabecalho_arquivo = string_data.readline().strip()
                 string_data.seek(0)
                 
-                cabecalhoArquivo = Cabecalho.trata_cabecalho(cabecalhoArquivo)
+                cabecalho_arquivo = Cabecalho.trata_cabecalho(cabecalho_arquivo)
 
                 df = pd.read_csv(string_data, sep=';', header=0, index_col=False, dtype=str)
                 tamanho = len(df)                        
@@ -56,7 +56,7 @@ with st.form('Valida Importação', clear_on_submit=False):
                 if not len(listaOS) > 0:
                     raise Exception("Não foi possível identificar o código da instituição no arquivo enviado")
                 if len(listaOS) > 0:
-                    if tipoarquivoEscolhido == "Despesas":
+                    if tipoarquivo_escolhido == "Despesas":
                         despesas = DespesasDFImportacao(df, 'removerparam', listaOS, pBar, 'despesas', 'importacao')
                         despesas.check_header()
                         st.info('O cabeçalho é compatível com o modelo DESPESAS.')
@@ -64,7 +64,7 @@ with st.form('Valida Importação', clear_on_submit=False):
                             validou = 1
                         st.dataframe(df)
 
-                    elif tipoarquivoEscolhido == "Contratos de Terceiros":
+                    elif tipoarquivo_escolhido == "Contratos de Terceiros":
                         contratos = ContratosTerceirosDFImportacao(df, 'removerparam', listaOS, pBar, 'contratos_terceiros', 'importacao')
                         contratos.check_header()
                         st.info('O cabeçalho é compatível com o modelo CONTRATOS DE TERCEIROS.')
@@ -72,7 +72,7 @@ with st.form('Valida Importação', clear_on_submit=False):
                             validou = 1
                         st.dataframe(df)
 
-                    elif tipoarquivoEscolhido == "Saldos":
+                    elif tipoarquivo_escolhido == "Saldos":
                         saldos = SaldosDFImportacao(df, 'removerparam', listaOS, pBar, 'saldos', 'importacao')
                         saldos.check_header()
                         st.info('O cabeçalho é compatível com o modelo SALDOS.')
@@ -80,7 +80,7 @@ with st.form('Valida Importação', clear_on_submit=False):
                             validou = 1
                         st.dataframe(df)
 
-                    elif tipoarquivoEscolhido == "Bens Patrimoniados":
+                    elif tipoarquivo_escolhido == "Bens Patrimoniados":
                         bens = BensPatrimoniadosDFImportacao(df, 'removerparam', listaOS, pBar, 'bens_patrimoniados', 'importacao')
                         bens.check_header()
                         st.info('O cabeçalho é compatível com o modelo BENS PATRIMONIADOS.')
@@ -88,15 +88,15 @@ with st.form('Valida Importação', clear_on_submit=False):
                             validou = 1
                         st.dataframe(df)
 
-                    elif tipoarquivoEscolhido == "Fornecedores":
+                    elif tipoarquivo_escolhido == "Fornecedores":
                         fornecedores = FornecedoresDFImportacao(df, 'removerparam', listaOS, pBar, 'fornecedores', 'importacao')
                         fornecedores.check_header()
                         st.info('O cabeçalho é compatível com o modelo FORNECEDORES.')
-                        if fornecedores.check_df_data(tipoarquivoEscolhido):
+                        if fornecedores.check_df_data(tipoarquivo_escolhido):
                             validou = 1
                         st.dataframe(df)
                     
-                    elif tipoarquivoEscolhido == "Itens de Nota Fiscal":
+                    elif tipoarquivo_escolhido == "Itens de Nota Fiscal":
                         itens_nf = ItensNotaFiscalDFImportacao(df, 'removerparam', listaOS, pBar, 'itens_nota_fiscal', 'importacao')
                         itens_nf.check_header()
                         st.info('O cabeçalho é compatível com o modelo ITENS NOTA FISCAL.')
@@ -104,7 +104,7 @@ with st.form('Valida Importação', clear_on_submit=False):
                             validou = 1
                         st.dataframe(df)
 
-                    elif tipoarquivoEscolhido == "Receitas":
+                    elif tipoarquivo_escolhido == "Receitas":
                         receitas = ReceitasDFImportacao(df, 'removerparam', listaOS, pBar, 'receitas', 'importacao')
                         receitas.check_header()
                         st.info('O cabeçalho é compatível com o modelo RECEITAS.')

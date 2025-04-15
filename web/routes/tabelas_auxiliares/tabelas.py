@@ -36,24 +36,20 @@ def local_css():
 
 local_css()
 
-st.title("ℹ️ TABELAS AUXILIARES")
-
-# Seção de instruções
 with st.container():
-    st.header("📌 Instruções Gerais", divider="blue")
-    with st.expander("requisitos de formatação", expanded=True):
-        st.markdown("""
-        <div class="instruction-box">
-            <strong>Formatação obrigatória dos arquivos:</strong><br>
-            🟢 Codificação: UTF-8<br>
-            🟢 Formato: .csv ou .txt<br>
-            🟢 Estrutura: Cabeçalho + Corpo<br>
-            🟢 Cabeçalho na 1ª linha (sem acentos/espaços)<br>
-            🟢 Dados a partir da 2ª linha<br>
-            🟢 Decimais com vírgula (ex: 1.234,56)<br>
-            🟡 Separador de milhares opcional (usar ponto)
-        </div>
-        """, unsafe_allow_html=True)
+    st.header("📌 INSTRUÇÕES GERAIS", divider="blue")
+    with st.expander("sobre as tabelas auxiliares", expanded=True):
+        st.markdown(
+            """
+            <div class="instruction-box">
+                <p>As tabelas auxiliares são utilizadas para auxiliar o preenchimento dos arquivos modelo. Elas servem como referência para os campos obrigatórios e formatos esperados.</p>
+                <p>Certifique-se de que os arquivos estejam no formato correto antes de realizar a importação.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+st.title("ℹ️ TABELAS AUXILIARES")
 
 st.header("⬇️ Download de Modelos", divider="green")
 st.info("Clique no botão correspondente para baixar o modelo desejado")

@@ -22,16 +22,15 @@ def main():
     try:
         st.markdown("""<style> .big-font { font-size: 24px !important; font-weight: bold !important; } </style>""", unsafe_allow_html=True)
         pages_app = {
-            "VALIDAR ARQUIVOS": [
-                st.Page("web/routes/valida_arquivos/valida_importacao.py", title="Importações"),
-                st.Page("web/routes/valida_arquivos/valida_alteracao.py", title="Alterações"),
+            "VALIDADOR DE ARQUIVOS": [
+                st.Page("web/routes/valida_arquivos/valida_importacao.py", title="Arquivos para Inserção de Dados"),
+                st.Page("web/routes/valida_arquivos/valida_alteracao.py", title="Arquivos de Alteração e Exclusão de Dados"),
             ],
-            "MODELOS": [
-                st.Page("web/routes/modelos/modelos_importacao.py", title="Arquivos de Importação"),
-                st.Page("web/routes/modelos/modelos_alteracao.py", title="Arquivos de Alteração"),
-                st.Page("web/routes/modelos/modelos_exclusao.py", title="Arquivos de Exclusão"),
+            "ARQUIVOS MODELO": [
+                st.Page("web/routes/modelos/modelos_importacao.py", title="Arquivos para Inserção de Dados"),
+                st.Page("web/routes/modelos/modelos_alteracao-exclusao.py", title="Arquivos de Alteração e Exclusão de Dados"),
             ],
-            "TABELAS AUXILIARES": [
+            "CATÁLOGOS DE TABELAS": [
                 st.Page("web/routes/tabelas_auxiliares/tabelas.py", title="Tabelas Auxiliares"),
             ],
             "TUTORIAIS": [

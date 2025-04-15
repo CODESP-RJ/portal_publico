@@ -29,7 +29,6 @@ class BaseDFImportacao:
         self.dfContasBancarias = pd.DataFrame()
         self.session = requests.Session()
         self.nome_classe = 'DEFINIR CLASSE'
-        
 
     def check_header(self) -> bool:
         cabecalho = self.modelo.retorna_cabecalho()
@@ -77,8 +76,6 @@ class BaseDFImportacao:
         return []
 
     def check_df_data(self, tipoarquivoEscolhido = None):
-        if tipoarquivoEscolhido != "Fornecedores":
-            self.load_contract_list()
         qtdLinhas = self.df.shape[0]
         try:
             for index, line in self.df.iterrows():
@@ -413,3 +410,96 @@ class BaseError(Exception):
         self.message = message.strip()
         self.id = id
         super().__init__(f"Erro ao carregar despesa: ID {id} - {message}" if id else message)
+
+
+class BaseDFAlteracao:
+    def __init__(self, dataframe=None, progress_bar=None, modulo=None, tipo_arquivo=None):
+        self.df = pd.DataFrame()
+        if len(dataframe):
+            self.df = dataframe
+
+        self.df.columns = self.df.columns.str.upper()
+        self.modelo = Cabecalho(modulo, tipo_arquivo)
+        self.url_pdf_formatada = ""
+        self.arquivos = {}
+        self.pBar = progress_bar
+        self.nome_classe = 'DEFINIR CLASSE'
+
+    def check_header(self) -> bool:
+        cabecalho = self.modelo.retorna_cabecalho()
+        for col in cabecalho:
+            if not col in self.df.columns:
+                raise Exception(
+                    f"Coluna ({col}) não foi encontrada no cabeçalho do arquivo de importação de {self.nome_classe}")
+        return True
+
+    def check_df_data_subclasse(self, index):
+        # sobrescrever nas classes filhas
+        return []
+
+    def check_df_data(self, tipoarquivoEscolhido=None):
+        qtdLinhas = self.df.shape[0]
+        try:
+            for index, line in self.df.iterrows():
+                if self.pBar:
+                    self.pBar.progress(int(((index + 1) / qtdLinhas) * 100))
+
+                problemas = self.check_df_data_subclasse(index)
+                problemas_validos = [p for p in problemas if p is not None]
+                problemas_validos = re.sub('^[^a-zA-Z]*', '', (', '.join(problemas_validos)))
+                problemas_validos = re.sub('( ,)+ ?', '', problemas_validos)
+                self.df.at[index, 'PROBLEMAS'] = problemas_validos
+
+            return (len(problemas) == 0)
+        except Exception as e:
+            msg = f"check_df_data verificação das linhas: {e}"
+            logging.error(msg)
+            raise Exception(msg)
+
+    def check_mandatory_fields(self, index):
+        problemas = []
+        print(f"self.df.columns {self.df.columns}")
+        for col in self.modelo.camposObrigatorios:
+            if not col in self.df.columns:
+                raise Exception(
+                    f"Coluna ({col}) não foi encontrada na no cabeçalho do arquivo")
+            if pd.isnull(self.df.at[index, col]):
+                problemas.append('Valor ausente em ' + col)
+        for col in self.df.columns:
+            if col not in self.modelo.camposObrigatorios:
+                raise Exception(f"Seu cabeçalho não é compatível com o modelo de arquivo {self.nome_classe}")
+        return ', '.join(problemas) if problemas else None
+
+    def load_contract_list(self):
+        self.dfContratos = pd.DataFrame()
+        with open('./data/getContractsList.json', encoding='utf-8') as arqContratos:
+            self.dfContratos = pd.DataFrame(json.load(arqContratos))
+            if 'num_contrato' not in self.dfContratos.columns:
+                raise Exception("A coluna 'num_contrato' não foi encontrada na resposta da API.")
+
+    def load_expense_type_list(self):
+        self.dfCodigosDespesas = pd.DataFrame()
+        with open('./data/getExpenseTypesList.json', encoding='utf-8') as getExpenseTypesList:
+            self.dfCodigosDespesas = pd.DataFrame(json.load(getExpenseTypesList))
+
+    def load_expenditures_list(self):
+        self.dfRubricas = pd.DataFrame()
+        with open('./data/getExpendituresList.json', encoding='utf-8') as getExpendituresList:
+            self.dfRubricas = pd.DataFrame(json.load(getExpendituresList))
+
+    def load_document_type_list(self):
+        self.dfTiposDocumentos = pd.DataFrame()
+        with open('./data/getDocumentTypesList.json', encoding='utf-8') as getDocumentTypesList:
+            self.dfTiposDocumentos = pd.DataFrame(json.load(getDocumentTypesList))
+
+
+    class BaseError(Exception):
+        """Exceção personalizada para erros na classe Despesa."""
+
+        def __init__(self, message, id=None):
+            if '<title>' in message:
+                match = re.search(r'<title>(.*?)</title>', message, re.IGNORECASE)
+                message = match.group(1)
+            self.message = message.strip()
+            self.id = id
+            super().__init__(f"Erro ao carregar despesa: ID {id} - {message}" if id else message)

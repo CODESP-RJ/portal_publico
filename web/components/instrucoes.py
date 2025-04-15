@@ -15,7 +15,7 @@ def instrucoes_validar_importacoes():
     4️⃣ **Aguarde** o processamento.
     """)
 
-def instrucoes_validar_alteracoes():
+def instrucoes_validar_alteracoes_exclusoes():
     st.markdown("---")
     st.info("""
 
@@ -25,7 +25,7 @@ def instrucoes_validar_alteracoes():
 
     2️⃣ **Selecione** a instituição.
 
-    3️⃣ **Faça o upload** de um arquivo nos formatos **CSV, XLS ou XLSX**.
+    3️⃣ **Faça o upload** de um arquivo no formato **CSV**.
 
     4️⃣ **Clique em "Processar".**
 

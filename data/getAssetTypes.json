@@ -1,0 +1,65 @@
+[
+    {
+        "id_bem_tipo": 1,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "1 - Veículos"
+    },
+    {
+        "id_bem_tipo": 2,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "2 - Mobiliário"
+    },
+    {
+        "id_bem_tipo": 3,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "3 - Equipamentos Médicos/Hospitalares"
+    },
+    {
+        "id_bem_tipo": 4,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "4 - Equipamentos Odontológicos"
+    },
+    {
+        "id_bem_tipo": 5,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "5 - Equipamentos em Geral"
+    },
+    {
+        "id_bem_tipo": 6,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "6 - Outros Bens Duráveis"
+    },
+    {
+        "id_bem_tipo": 7,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "7 - Eletrodomésticos"
+    },
+    {
+        "id_bem_tipo": 8,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "8 - Equipamentos de informática"
+    },
+    {
+        "id_bem_tipo": 9,
+        "bem_tipo": null,
+        "flg_ativo": null,
+        "ordem": 0,
+        "assetTypeDescription": "9 - Não foram adquiridos novos bens no mês"
+    }
+]
