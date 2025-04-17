@@ -358,6 +358,32 @@ class BaseDFImportacao:
         
         return razao.strip()#.upper()
 
+    def load_bank_account_by_contract_id(self):
+        self.dfContasBancarias = pd.DataFrame()
+        url = self.base_url + '/bankAccount/server/bankAccountServices/getBankAccountByContractId'
+        try:
+            requisicao = requests.post(url, json=str(self.id_contrato), cookies={"osinfo":f"{st.secrets['cookie']}"})
+            requisicao.raise_for_status()
+            self.dfContasBancarias = pd.DataFrame(data=requisicao.json())
+            self.dfContasBancarias['conta_e_digito'] = [f"{x}{y}" for x,y in zip(self.dfContasBancarias['codigo_cc'], self.dfContasBancarias['digito_cc']) ]
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"Erro ao obter lista de tipos de documentos: {e}")  
+
+    def load_unit_list_by_os_contract_unit_type(self):
+        self.dfUnidades = pd.DataFrame()
+        url = self.base_url + '/common/unit/server/unitServicesOld/getUnitsListByOsContractUnitType'
+        try:
+            requisicao = requests.post(url, json={"cod_unidade":"","id_contrato":str(self.id_contrato),"sigla_tipo":""}, cookies={"osinfo":f"{st.secrets['cookie']}"})
+            requisicao.raise_for_status()
+            self.dfUnidades = pd.DataFrame(data=requisicao.json())
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"Erro ao obter lista de tipos de documentos: {e}")
+
+    def load_providers_list(self):
+        self.dfFornecedores = pd.DataFrame()
+        with open('./data/providersList.json', encoding='utf-8') as arqFornecedores:
+            self.dfFornecedores = pd.DataFrame(json.load(arqFornecedores))
+
     def load_contract_list(self):
         self.dfContratos = pd.DataFrame()
         with open('./data/getContractsList.json', encoding='utf-8') as arqContratos:
@@ -379,37 +405,6 @@ class BaseDFImportacao:
         self.dfTiposDocumentos = pd.DataFrame()
         with open('./data/getDocumentTypesList.json', encoding='utf-8') as getDocumentTypesList:
             self.dfTiposDocumentos = pd.DataFrame(json.load(getDocumentTypesList))
-
-    def load_bank_account_by_contract_id(self):
-        self.dfContasBancarias = pd.DataFrame()
-        url = self.base_url + '/bankAccount/server/bankAccountServices/getBankAccountByContractId'
-        try:
-            requisicao = requests.post(url, json=str(self.id_contrato), cookies={"osinfo":f"{st.secrets['cookie']}"})
-            requisicao.raise_for_status()
-            self.dfContasBancarias = pd.DataFrame(data=requisicao.json())
-            self.dfContasBancarias['conta_e_digito'] = [f"{x}{y}" for x,y in zip(self.dfContasBancarias['codigo_cc'], self.dfContasBancarias['digito_cc']) ]
-        except requests.exceptions.RequestException as e:
-            raise Exception(f"Erro ao obter lista de tipos de documentos: {e}")  
-
-    def load_unit_list_by_os_contract_unit_type(self):
-        self.dfUnidades = pd.DataFrame()
-        url = self.base_url + '/common/unit/server/unitServicesOld/getUnitsListByOsContractUnitType'
-        try:
-            requisicao = requests.post(url, json={"cod_unidade":"","id_contrato":str(self.id_contrato),"sigla_tipo":""}, cookies={"osinfo":f"{st.secrets['cookie']}"})
-            requisicao.raise_for_status()
-            self.dfUnidades = pd.DataFrame(data=requisicao.json())
-        except requests.exceptions.RequestException as e:
-            raise Exception(f"Erro ao obter lista de tipos de documentos: {e}")
-        
-class BaseError(Exception):
-    """Exceção personalizada para erros na classe Despesa."""
-    def __init__(self, message, id=None):
-        if '<title>' in message:
-            match = re.search(r'<title>(.*?)</title>', message, re.IGNORECASE)
-            message = match.group(1)
-        self.message = message.strip()
-        self.id = id
-        super().__init__(f"Erro ao carregar despesa: ID {id} - {message}" if id else message)
 
 
 class BaseDFAlteracao:
@@ -470,6 +465,11 @@ class BaseDFAlteracao:
                 raise Exception(f"Seu cabeçalho não é compatível com o modelo de arquivo {self.nome_classe}")
         return ', '.join(problemas) if problemas else None
 
+    def load_providers_list(self):
+        self.dfFornecedores = pd.DataFrame()
+        with open('./data/providersList.json', encoding='utf-8') as arqFornecedores:
+            self.dfFornecedores = pd.DataFrame(json.load(arqFornecedores))
+
     def load_contract_list(self):
         self.dfContratos = pd.DataFrame()
         with open('./data/getContractsList.json', encoding='utf-8') as arqContratos:
@@ -493,13 +493,13 @@ class BaseDFAlteracao:
             self.dfTiposDocumentos = pd.DataFrame(json.load(getDocumentTypesList))
 
 
-    class BaseError(Exception):
-        """Exceção personalizada para erros na classe Despesa."""
+class BaseError(Exception):
+    """Exceção personalizada para erros na classe Despesa."""
 
-        def __init__(self, message, id=None):
-            if '<title>' in message:
-                match = re.search(r'<title>(.*?)</title>', message, re.IGNORECASE)
-                message = match.group(1)
-            self.message = message.strip()
-            self.id = id
-            super().__init__(f"Erro ao carregar despesa: ID {id} - {message}" if id else message)
+    def __init__(self, message, id=None):
+        if '<title>' in message:
+            match = re.search(r'<title>(.*?)</title>', message, re.IGNORECASE)
+            message = match.group(1)
+        self.message = message.strip()
+        self.id = id
+        super().__init__(f"Erro ao carregar despesa: ID {id} - {message}" if id else message)
