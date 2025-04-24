@@ -98,7 +98,8 @@ def processar_validacao(tipo_arquivo, df, tipo_acao):
         validator.check_ano_mes_ref()
         if tipo_acao != "Exclusão":
             validator.check_atributos()
-        return validator.validate_data()
+            return validator.validate_data()
+        return
     except Exception as e:
         st.error(f"Erro na validação: {str(e)}")
         st.stop()

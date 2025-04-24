@@ -9,7 +9,6 @@ from utils.tratamentos import limpar_dados, padronizar_texto
 class ReceitasValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
         super().__init__(df, tipo_de_acao)
-        self.required_columns = ['TIPO_MODULO', 'ANO_MES_REF', 'ACAO', 'ID', 'ATRIBUTO', 'NOVO_VALOR']
         self.valid_attributes = LISTA_ATRIBUTOS_RECEITAS
 
     def validate_data(self):

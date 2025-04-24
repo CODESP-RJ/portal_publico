@@ -112,13 +112,6 @@ try:
 
     st.divider()
     st.title("🗑️ MODELOS DE EXCLUSÃO")
-
-    st.markdown("""
-    <div class="warning">
-        ⚠️ ATENÇÃO: Não preenchar as colunas ATRIBUTO e NOVO_VALOR. 
-    </div>
-    """, unsafe_allow_html=True)
-
     st.header("⬇️ Download dos Arquivos Modelo", divider="green")
     st.info("Clique no botão correspondente para baixar o modelo desejado")
 

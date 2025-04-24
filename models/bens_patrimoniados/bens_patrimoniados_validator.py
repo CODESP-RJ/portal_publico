@@ -9,7 +9,6 @@ from utils.tratamentos import limpar_dados, padronizar_texto
 class BensPatrimoniadosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
         super().__init__(df, tipo_de_acao)
-        self.required_columns = ['TIPO_MODULO', 'ANO_MES_REF', 'ACAO', 'ID', 'ATRIBUTO', 'NOVO_VALOR']
         self.valid_attributes = LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 
     def validate_data(self):
@@ -46,7 +45,7 @@ class BensPatrimoniadosValidator(BaseValidator):
                             if not re.fullmatch(r'[a-zA-Z0-9\sà-üÀ-ÜçÇéÉãÃõÕôÔîÎûÛ\.,\-_&/\()\?%]+', valor):
                                 validacoes.append('RAZAO SOCIAL CONTEM CARACTERES INVALIDOS, ')
 
-                    if not (atributos.get('CNPJ') or atributos.get('RAZAO SOCIAL')):
+                    if not (atributos.get('CNPJ') and atributos.get('RAZAO SOCIAL')):
                         validacoes.append('Dados incompletos para Pessoa Jurídica, ')
                 if attr in ['CONTRATO']:
                     req = obter_contratos()

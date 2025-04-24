@@ -12,6 +12,11 @@ class BaseValidator(ABC):
         self.valid_attributes = []
 
     def check_header(self):
+        if self.tipo_de_acao == "Alteração":
+            self.required_columns = ['TIPO_MODULO', 'ANO_MES_REF', 'ACAO', 'ID', 'ATRIBUTO', 'NOVO_VALOR']
+        elif self.tipo_de_acao == "Exclusão":
+            self.required_columns = ['TIPO_MODULO', 'ANO_MES_REF', 'ACAO', 'ID']
+
         df_cols = set(self.df.columns.str.strip().str.upper())
         required_cols = set(col.strip().upper() for col in self.required_columns)
 

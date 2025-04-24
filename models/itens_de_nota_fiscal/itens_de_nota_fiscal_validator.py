@@ -10,7 +10,6 @@ from utils.tratamentos import string_to_float, formata_cnpj
 class ItensDeNotaFiscalValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
         super().__init__(df, tipo_de_acao)
-        self.required_columns = ['TIPO_MODULO', 'ANO_MES_REF', 'ACAO', 'ID', 'ATRIBUTO', 'NOVO_VALOR']
         self.valid_attributes = LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 
     def validate_data(self):
@@ -23,6 +22,9 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                 validacoes = []
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
+                if attr in ['CODIGO DO SERVICO', 'CODIGO DO MATERIAL']:
+                    if atributos.get('CODIGO DO SERVICO') and atributos.get('CODIGO DO MATERIAL'):
+                        validacoes.append('Dados de serviço e material (um deles precisa estar vazio para realizarmos a troca), ')
                 if attr in ['NUMERO DA NOTA FISCAL', 'CODIGO DO SERVICO', 'CODIGO DO MATERIAL',
                             'QUANTIDADE']:
                     if isinstance(valor, str):
