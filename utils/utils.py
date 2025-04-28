@@ -20,6 +20,25 @@ def reset_session_state_and_rerun(exclude_keys=None):
     pyautogui.hotkey("ctrl","F5")
     #st.rerun(scope="app")
 
+def exibir_resultados(df):
+    st.divider()
+    st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)
+    st.dataframe(df.style.applymap(color_rows, subset=['VALIDACAO']))
+
+def color_rows(val):
+    color = 'green' if val == 'OK' else 'yellow' if 'Aviso' in val else 'red'
+    return f'color: {color}'
+
+def oferecer_download(df):
+    csv = df.to_csv(index=False, sep=';').encode('utf-8')
+    filename = f"validado_{datetime.now().strftime('%Y%m%d%H%M%S')}.csv"
+    st.download_button(
+        label="Baixar arquivo validado",
+        data=csv,
+        file_name=filename,
+        mime='text/csv'
+    )
+
 erros = {
     "01": "Todos os campos devem ser preenchidos!",
     "02": "O arquivo NÃO está no formato UTF-8!",

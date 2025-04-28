@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 from abc import ABC, abstractmethod
 from models.common import LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS, LISTA_ATRIBUTOS_DESPESAS
+from utils.utils import oferecer_download, exibir_resultados, color_rows
 
 class BaseValidator(ABC):
     def __init__(self, df, tipo_de_acao):
@@ -35,12 +36,16 @@ class BaseValidator(ABC):
             st.error("Coluna ANO_MES_REF não encontrada")
             st.stop()
 
-        if not all(self.df['ANO_MES_REF'].astype(str).str.match(r'^\d{4}-\d{2}$')):
-            st.error("Formato inválido para ANO_MES_REF (deve ser AAAA-MM)")
-            st.stop()
-
         if len(self.df['ANO_MES_REF'].unique()) > 1:
             st.error("Múltiplos períodos de referência na coluna ANO_MES_REF")
+            self.df['VALIDACAO'] = 'Múltiplos períodos de referência na coluna ANO_MES_REF'
+            st.dataframe(self.df.style.applymap(color_rows, subset=['VALIDACAO']))
+            st.stop()
+
+        if not all(self.df['ANO_MES_REF'].astype(str).str.match(r'^\d{4}-\d{2}$')):
+            st.error("Formato inválido para ANO_MES_REF (deve ser AAAA-MM)")
+            self.df['VALIDACAO'] = 'Formato inválido para ANO_MES_REF (deve ser AAAA-MM)'
+            st.dataframe(self.df.style.applymap(color_rows, subset=['VALIDACAO']))
             st.stop()
 
     def check_atributos(self):
@@ -48,10 +53,19 @@ class BaseValidator(ABC):
             st.error("Coluna ATRIBUTO não encontrada")
             st.stop()
 
-        atributos_invalidos = self.df[~self.df['ATRIBUTO'].isin(self.valid_attributes)]['ATRIBUTO'].unique()
+        if 'VALIDACAO' not in self.df.columns:
+            self.df['VALIDACAO'] = ''
+
+        mask = ~self.df['ATRIBUTO'].isin(self.valid_attributes)
+        atributos_invalidos = self.df[mask]['ATRIBUTO'].unique()
+
         if len(atributos_invalidos) > 0:
-            st.error(f"Seu arquivo contém atributos não reconhecidos para o módulo selecionado: {', '.join(atributos_invalidos)}")
-            st.success(f"Os atributos válidos para o módulo de {self.df['TIPO_MODULO'].unique()[0]} são: {', '.join(self.valid_attributes)}")
+            self.df.loc[mask, 'VALIDACAO'] = f'Atributo não reconhecido para o módulo selecionado'
+            st.warning(
+                f"Seu arquivo contém atributos não reconhecidos para o módulo selecionado")
+            st.dataframe(self.df.style.applymap(color_rows, subset=['VALIDACAO']))
+            st.success(
+                f"Os atributos válidos para o módulo de {self.df['TIPO_MODULO'].unique()[0]} são: {', '.join(self.valid_attributes)}")
             st.stop()
 
     def formatar_cpf(self, cpf):

@@ -49,6 +49,28 @@ def main():
             df = processar_arquivo(arquivo)
             st.dataframe(df)
 
+            validator_map = {
+                'Contratos de Terceiros': ContratosTerceirosValidator,
+                'Despesas': DespesasValidator,
+                'Saldos': SaldosValidator,
+                'Bens Patrimoniados': BensPatrimoniadosValidator,
+                'Itens de Nota Fiscal': ItensDeNotaFiscalValidator,
+                'Receitas': ReceitasValidator
+            }
+
+            if tipo_arquivo not in validator_map:
+                st.error("Validador não implementado para este tipo de arquivo")
+                return None
+
+            validator_class = validator_map[tipo_arquivo]
+            validator = validator_class(df, tipo_acao)
+            try:
+                validator.check_header()
+                validator.check_ano_mes_ref()
+            except Exception as e:
+                st.error(f"Erro na validação: {str(e)}")
+                st.stop()
+
             if tipo_acao == "Alteração":
                 df = df[df['ACAO'] == 'ALTERACAO']
             elif tipo_acao == "Exclusão":
@@ -59,7 +81,7 @@ def main():
                 st.warning("Nenhum registro encontrado neste arquivo para o tipo de módulo e ação selecionados.")
                 return
 
-            validado = processar_validacao(tipo_arquivo, df, tipo_acao)
+            validado = processar_validacao(tipo_arquivo, df, tipo_acao, validator)
 
             if validado is not None:
                 exibir_resultados(validado)
@@ -77,25 +99,8 @@ def processar_arquivo(arquivo):
     return limpar_dados(df)
 
 
-def processar_validacao(tipo_arquivo, df, tipo_acao):
-    validator_map = {
-        'Contratos de Terceiros': ContratosTerceirosValidator,
-        'Despesas': DespesasValidator,
-        'Saldos': SaldosValidator,
-        'Bens Patrimoniados': BensPatrimoniadosValidator,
-        'Itens de Nota Fiscal': ItensDeNotaFiscalValidator,
-        'Receitas': ReceitasValidator
-    }
-
-    if tipo_arquivo not in validator_map:
-        st.error("Validador não implementado para este tipo de arquivo")
-        return None
-
-    validator_class = validator_map[tipo_arquivo]
-    validator = validator_class(df, tipo_acao)
+def processar_validacao(tipo_arquivo, df, tipo_acao, validator):
     try:
-        validator.check_header()
-        validator.check_ano_mes_ref()
         if tipo_acao != "Exclusão":
             validator.check_atributos()
             return validator.validate_data()
