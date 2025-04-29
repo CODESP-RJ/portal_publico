@@ -33,7 +33,7 @@ def oferecer_download(df):
     csv = df.to_csv(index=False, sep=';').encode('utf-8')
     filename = f"validado_{datetime.now().strftime('%Y%m%d%H%M%S')}.csv"
     st.download_button(
-        label="Baixar arquivo validado",
+        label="Baixar arquivo",
         data=csv,
         file_name=filename,
         mime='text/csv'
@@ -49,52 +49,41 @@ erros = {
 }
 
 def obter_instituicoes():
-    """
-    Requisita e retorna uma lista de nomes das instituições do OSINFO.
-
-    Returns:
-        list: Nomes das instituições ou "Instituição não disponível".
-    """
-
     with open("data/getOSUnitsListBySecretary.json", encoding='utf-8') as arqInstituicoes:
         resposta = json.load(arqInstituicoes)
         return [item.get('unidade_fantasia', 'Instituição não disponível') for item in resposta]
 
 def obter_tipos_bens():
-    """
-    Requisita e retorna uma lista de tipos de bens.
-
-    Returns:
-        list: Tipos de bens ou "Tipo não disponível".
-    """
     with open("data/getAssetTypes.json", encoding='utf-8') as arqTiposBens:
         resposta = json.load(arqTiposBens)
         return resposta
 
+def obter_tipos_rubricas():
+    with open("data/getExpendituresList.json", encoding='utf-8') as arqTiposRubricas:
+        resposta = json.load(arqTiposRubricas)
+        return resposta
+
+def obter_tipos_despesas():
+    with open("data/getExpenseTypesList.json", encoding='utf-8') as arqTiposDespesas:
+        resposta = json.load(arqTiposDespesas)
+        return resposta
+
+def obter_tipos_documentos():
+    with open("data/getDocumentTypesList.json", encoding='utf-8') as arqTiposDocumentos:
+        resposta = json.load(arqTiposDocumentos)
+        return resposta
+
+def obter_contas_bancarias():
+    with open("data/osinfo.conta_bancaria.json", encoding='utf-8') as arqContasBancarias:
+        resposta = json.load(arqContasBancarias)
+        return resposta["rows"]
+
 def obter_contratos():
-    """
-    Requisita e retorna uma lista de contratos para uma instituição.
-
-    Args:
-        cod_os (str): Código da instituição.
-
-    Returns:
-        list: Números dos contratos ou "Contrato não disponível".
-    """
     with open("data/getContractsList.json", encoding='utf-8') as arqContratos:
         resposta = json.load(arqContratos)
         return [item.get('num_contrato', 'Contrato não disponível') for item in resposta]
 
 def criar_dicionario_instituicoes(nomes_instituicoes):
-    """
-    Converte uma lista de instituições em um dicionário.
-
-    Args:
-        nomes_instituicoes (list): Lista no formato "código - nome".
-
-    Returns:
-        dict: Nome da instituição como chave e código como valor.
-    """
     return {nome: codigo for codigo, nome in (item.split(' - ', 1) for item in nomes_instituicoes if ' - ' in item)}
 
 def carrega_secretarias():
@@ -133,15 +122,6 @@ def carrega_instrumentos():
         dadosContratos = json.load(arqContratos)
 
     return dadosContratos
-
-def get_response_data(response):
-    """Tenta decodificar o JSON da resposta e emite warning em caso de erro."""
-    try:
-        return response.json()
-    except Exception as ex:
-        print("Erro ao decodificar resposta JSON:", ex)
-        st.warning("Erro ao processar JSON da resposta")
-        return None
 
 def detectar_codificacao(arquivo):
     conteudo = arquivo.read()

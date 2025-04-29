@@ -24,7 +24,7 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                 valor = row['NOVO_VALOR']
                 if attr in ['CODIGO DO SERVICO', 'CODIGO DO MATERIAL']:
                     if atributos.get('CODIGO DO SERVICO') and atributos.get('CODIGO DO MATERIAL'):
-                        validacoes.append('Dados de serviço e material (um deles precisa estar vazio para realizarmos a troca), ')
+                        validacoes.append('DADOS DE SERVIÇO E MATERIAL (UM DELES PRECISA ESTAR VAZIO PARA REALIZARMOS A TROCA), ')
                 if attr in ['NUMERO DA NOTA FISCAL', 'CODIGO DO SERVICO', 'CODIGO DO MATERIAL',
                             'QUANTIDADE']:
                     if isinstance(valor, str):

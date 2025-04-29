@@ -4,6 +4,42 @@ import pandas as pd
 from pycpfcnpj import cpfcnpj
 from datetime import datetime
 
+def verificar_formato_brasileiro(valor):
+    """
+    Verifica se o valor está no formato brasileiro correto:
+    - Decimal com vírgula
+    - Milhar com ponto (opcional)
+    Exemplos válidos: 1.234,56 ou 1234,56 ou 0,50
+    """
+    if pd.isna(valor) or valor is None:
+        return True  # Considera válido se for vazio
+
+    valor_str = str(valor).strip()
+
+    # Padrão para formato brasileiro
+    padrao_br = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d+)?$')
+
+    # Padrão para número simples sem separador de milhar
+    padrao_simples = re.compile(r'^-?\d+(?:,\d+)?$')
+
+    return bool(padrao_br.match(valor_str)) or bool(padrao_simples.match(valor_str))
+
+def validar_data_brasileira(valor):
+    """
+    Verifica se a data está no formato DD/MM/YYYY
+    """
+    if pd.isna(valor) or valor is None:
+        return True  # Considera válido se for vazio
+
+    valor_str = str(valor).strip()
+
+    try:
+        # Tenta converter a string para datetime
+        datetime.strptime(valor_str, '%d/%m/%Y')
+        return True
+    except ValueError:
+        return False
+
 def normalizar_atributos(df_original, df_atributos):
     print("Iniciando a normalização dos atributos...")
 

@@ -46,11 +46,8 @@ class BensPatrimoniadosValidator(BaseValidator):
                                 validacoes.append('RAZAO SOCIAL CONTEM CARACTERES INVALIDOS, ')
 
                     if not (atributos.get('CNPJ') and atributos.get('RAZAO SOCIAL')):
-                        validacoes.append('Dados incompletos para Pessoa Jurídica, ')
-                if attr in ['CONTRATO']:
-                    req = obter_contratos()
-                    if not any(item == atributos.get('CONTRATO') for item in req):
-                        validacoes.append('CONTRATO NAO ENCONTRADO NÃO ENCONTRADO, ')
+                        validacoes.append('DADOS INCOMPLETOS PARA PESSOA JURÍDICA, ')
+
                 if attr in ['TIPO']:
                     req = obter_tipos_bens()
                     encontrou = False

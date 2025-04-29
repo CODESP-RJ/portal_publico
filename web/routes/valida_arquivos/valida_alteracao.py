@@ -19,6 +19,7 @@ from models.common import (
 )
 from web.components.instrucoes import instrucoes_validar_alteracoes_exclusoes
 from utils.tratamentos import limpar_dados
+from utils.utils import color_rows, exibir_resultados, oferecer_download
 
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
 
@@ -68,7 +69,7 @@ def main():
                 validator.check_header()
                 validator.check_ano_mes_ref()
             except Exception as e:
-                st.error(f"Erro na validação: {str(e)}")
+                st.error(f"Erro na validação 1: {str(e)}")
                 st.stop()
 
             if tipo_acao == "Alteração":
@@ -89,7 +90,7 @@ def main():
                 oferecer_download(validado)
 
         except Exception as e:
-            st.error(f"Erro na validação: {str(e)}")
+            st.error(f"Erro na validação 2: {str(e)}")
 
 
 def processar_arquivo(arquivo):
@@ -106,29 +107,8 @@ def processar_validacao(tipo_arquivo, df, tipo_acao, validator):
             return validator.validate_data()
         return
     except Exception as e:
-        st.error(f"Erro na validação: {str(e)}")
+        st.error(f"Erro na validação 3: {str(e)}")
         st.stop()
-
-def exibir_resultados(df):
-    st.divider()
-    st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)
-    st.dataframe(df.style.applymap(color_rows, subset=['VALIDACAO']))
-
-
-def color_rows(val):
-    color = 'green' if val == 'OK' else 'yellow' if 'Aviso' in val else 'red'
-    return f'color: {color}'
-
-
-def oferecer_download(df):
-    csv = df.to_csv(index=False, sep=';').encode('utf-8')
-    filename = f"validado_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.csv"
-    st.download_button(
-        label="Baixar arquivo validado",
-        data=csv,
-        file_name=filename,
-        mime='text/csv'
-    )
 
 main()
 instrucoes_validar_alteracoes_exclusoes()

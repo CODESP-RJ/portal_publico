@@ -22,7 +22,7 @@ class ContratosTerceirosValidator(BaseValidator):
                 if attr in ['CPF', 'NOME', 'CNPJ', 'RAZAO SOCIAL']:
                     if (atributos.get('CPF') or atributos.get('NOME')) and (
                             atributos.get('CNPJ') or atributos.get('RAZAO SOCIAL')):
-                        validacoes.append('Dados de pessoa física e jurídica (um deles precisa estar vazio para realizarmos a troca), ')
+                        validacoes.append('DADOS DE PESSOA FÍSICA E JURÍDICA (UM DELES PRECISA ESTAR VAZIO PARA REALIZARMOS A TROCA), ')
                 if attr in ['CPF', 'NOME']:
                     if (atributos.get('CPF')):
                         valor_split = atributos.get('CPF').split(' ')[0]
@@ -38,7 +38,7 @@ class ContratosTerceirosValidator(BaseValidator):
                             validacoes.append('NOME CONTEM CARACTERES INVALIDOS, ')
                     if not (atributos.get('CPF') and atributos.get('NOME')):
                         if attr in ['CNPJ', 'RAZAO SOCIAL']:
-                            validacoes.append('Dados incompletos para Pessoa Física, ')
+                            validacoes.append('DADOS INCOMPLETOS PARA PESSOA FÍSICA, ')
                 if attr in ['CNPJ', 'RAZAO SOCIAL']:
                     if (atributos.get('CNPJ')):
                         valor_split = atributos.get('CNPJ').split(' ')[0]
@@ -54,7 +54,7 @@ class ContratosTerceirosValidator(BaseValidator):
                                 validacoes.append('RAZAO SOCIAL CONTEM CARACTERES INVALIDOS, ')
                     if not (atributos.get('CNPJ') and atributos.get('RAZAO SOCIAL')):
                         if attr in ['CPF', 'NOME']:
-                            validacoes.append('Dados incompletos para Pessoa Jurídica, ')
+                            validacoes.append('DADOS INCOMPLETOS PARA PESSOA JURÍDICA, ')
 
                 if attr in ['ANO INICIO', 'ANO FIM']:
                     if atributos.get('ANO INICIO') > atributos.get('ANO FIM'):

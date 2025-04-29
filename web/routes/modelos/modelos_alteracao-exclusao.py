@@ -49,25 +49,6 @@ with st.container():
             🟡 Separador de milhares opcional (usar ponto)
         </div>
         """, unsafe_allow_html=True)
-    st.header("🔍 OBSERVAÇÕES POR MÓDULO", divider="orange")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("📑 Documentos Financeiros")
-        st.markdown("""
-        - **Saldos**: O ID deve ser o número da conta corrente, um dos ids da lista ou a lista completa de ids
-        - **Receitas**: O ID deve ser o número da conta corrente, um dos ids da lista ou a lista completa de ids
-        - **Despesas**: EM DESENVOLVIMENTO
-        - **Itens de Nota Fiscal**: Só pode haver CODIGO DO SERVIÇO ou CODIGO DO MATERIAL (Consulte nas tabelas auxiliares), não os dois juntos;
-        """)
-
-    with col2:
-        st.subheader("📦 Cadastros Gerais")
-        st.markdown("""
-        - **Contratos de Terceiros**: Só pode haver CNPJ e RAZAO SOCIAL ou CPF e NOME, não os dois juntos; Sempre que houver NOME e CPF ou RAZÃO SOCIAL e CNPJ, o campo do outro tipo de pessoa deve ser enviado vazio.
-        - **Bens Patrimoniados**: O TIPO deve ser o ID (Consulte nas tabelas auxiliares)
-        """)
-
-st.divider()
 
 with st.container():
     st.title("✏️ MODELOS DE ALTERAÇÃO")
