@@ -2,9 +2,8 @@ from models.validators.base_validator import BaseValidator
 from models.common import LISTA_ATRIBUTOS_RECEITAS
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float
 from utils.utils import erros, obter_contratos
-from utils.tratamentos import limpar_dados, padronizar_texto
+from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
 
 class ReceitasValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -19,14 +18,27 @@ class ReceitasValidator(BaseValidator):
                 validacoes = []
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
+
+                if pd.isna(valor) or valor is None or str(valor).strip() == '':
+                    self.df.at[idx, 'VALIDACAO'] = 'OK'
+                    continue
+
                 if isinstance(valor, str):
+                    if not verificar_formato_brasileiro(valor):
+                        validacoes.append('FORMATO INVÁLIDO (USE . PARA MILHARES E , DECIMAL COM 2 CASAS)')
+                        self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes)
+                        continue
+
                     try:
                         valor = float(string_to_float(str(valor)))
                     except ValueError:
-                        validacoes.append('VALOR INVÁLIDO (NÃO NUMÉRICO), ')
-                if attr != 'RESULTADO DE APLICACAO FINANCEIRA' and valor < 0:
-                    validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
+                        validacoes.append('VALOR INVÁLIDO (NÃO NUMÉRICO)')
+                        self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes)
+                        continue
 
-                self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes) if validacoes else 'OK'
+                if attr != 'RESULTADO DE APLICACAO FINANCEIRA' and float(valor) < 0:
+                    validacoes.append('VALOR NÃO PODE SER NEGATIVO')
+
+                self.df.at[idx, 'VALIDACAO'] = '\n'.join(validacoes) if validacoes else 'OK'
 
         return self.df

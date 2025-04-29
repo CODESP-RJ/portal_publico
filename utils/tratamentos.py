@@ -7,22 +7,29 @@ from datetime import datetime
 def verificar_formato_brasileiro(valor):
     """
     Verifica se o valor está no formato brasileiro correto:
-    - Decimal com vírgula
+    - Decimal com vírgula (opcional, mas se tiver deve ter exatamente 2 casas)
     - Milhar com ponto (opcional)
-    Exemplos válidos: 1.234,56 ou 1234,56 ou 0,50
+    Exemplos válidos:
+      1.234,56 ou 1234,56 ou 0,50 (com decimais)
+      100 ou 1.234 ou 2500 (sem decimais)
     """
     if pd.isna(valor) or valor is None:
         return True  # Considera válido se for vazio
 
     valor_str = str(valor).strip()
 
-    # Padrão para formato brasileiro
-    padrao_br = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d+)?$')
+    # Padrão para formato brasileiro com decimais opcionais (mas exatos 2 se tiver)
+    padrao_br_com_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d{2})$')
+    padrao_br_sem_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*$')
 
     # Padrão para número simples sem separador de milhar
-    padrao_simples = re.compile(r'^-?\d+(?:,\d+)?$')
+    padrao_simples_com_decimal = re.compile(r'^-?\d+(?:,\d{2})$')
+    padrao_simples_sem_decimal = re.compile(r'^-?\d+$')
 
-    return bool(padrao_br.match(valor_str)) or bool(padrao_simples.match(valor_str))
+    return (bool(padrao_br_com_decimal.match(valor_str)) or
+            bool(padrao_br_sem_decimal.match(valor_str)) or
+            bool(padrao_simples_com_decimal.match(valor_str)) or
+            bool(padrao_simples_sem_decimal.match(valor_str)))
 
 def validar_data_brasileira(valor):
     """

@@ -106,14 +106,17 @@ class DespesasValidator(BaseValidator):
                 if attr in ['NUMERO DO DOCUMENTO']:
                     if isinstance(valor, str) and len(valor) > 20:
                         validacoes.append('NUMERO DO DOCUMENTO MAIOR QUE 20 CARACTERES, ')
+
                 if attr in ['SERIE']:
                     if isinstance(valor, str) and len(valor) > 3:
                         validacoes.append('SERIE MAIOR QUE 3 CARACTERES, ')
                     if not re.fullmatch(r'[a-zA-Z0-9]+', valor):
                         validacoes.append('SERIE CONTEM CARACTERES INVALIDOS, ')
+
                 if attr in ['CODIGO FISCAL']:
                     if isinstance(valor, str) and len(valor) > 30:
                         validacoes.append('CODIGO FISCAL MAIOR QUE 20 CARACTERES, ')
+
                 if attr in ['IDENTIFICADOR BANCARIO']:
                     if isinstance(valor, str) and len(valor) > 100:
                         validacoes.append('IDENTIFICADOR BANCÁRIO MAIOR QUE 100 CARACTERES, ')
@@ -122,7 +125,7 @@ class DespesasValidator(BaseValidator):
 
                 if attr in ['VALOR DO DOCUMENTO', 'VALOR PAGO']:
                     if isinstance(valor, str) and not verificar_formato_brasileiro(valor):
-                        validacoes.append('FORMATO NUMÉRICO INVÁLIDO (USE PONTO PARA MILHAR E VÍRGULA PARA DECIMAL), ')
+                        validacoes.append('FORMATO INVÁLIDO (USE . PARA MILHARES E , DECIMAL COM 2 CASAS)')
                     try:
                         valor = float(string_to_float(str(valor)))
                     except ValueError:
