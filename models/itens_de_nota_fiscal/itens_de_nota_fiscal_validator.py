@@ -2,10 +2,9 @@ from models.validators.base_validator import BaseValidator
 from models.common import LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float
 from utils.utils import erros, obter_contratos
-from utils.tratamentos import limpar_dados, padronizar_texto
-from utils.tratamentos import string_to_float, formata_cnpj
+from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float, formata_cnpj
+from models.validator_registry import ValidatorRegistry
 
 class ItensDeNotaFiscalValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -13,7 +12,6 @@ class ItensDeNotaFiscalValidator(BaseValidator):
         self.valid_attributes = LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 
     def validate_data(self):
-        self.df['VALIDACAO'] = ''
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()
@@ -42,13 +40,29 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                             validacoes.append('FORNECEDOR INVALIDO, ')
                 if attr in ['VALOR UNITARIO', 'VALOR TOTAL']:
                     if isinstance(valor, str):
+                        # Verifica formato específico para cada tipo de valor
+                        if attr == 'VALOR UNITARIO':
+                            if not verificar_formato_brasileiro(valor, casas_decimais=4):
+                                validacoes.append(
+                                    'FORMATO INVÁLIDO PARA VALOR UNITÁRIO (USE . PARA MILHARES E , DECIMAL COM 4 CASAS)')
+                                continue
+                        else:  # VALOR TOTAL
+                            if not verificar_formato_brasileiro(valor, casas_decimais=2):
+                                validacoes.append(
+                                    'FORMATO INVÁLIDO PARA VALOR TOTAL (USE . PARA MILHARES E , DECIMAL COM 2 CASAS)')
+                                continue
+
                         try:
                             valor = float(string_to_float(str(valor)))
                         except ValueError:
-                            validacoes.append('VALOR INVÁLIDO (NÃO NUMÉRICO), ')
-                    if isinstance(valor, float) and valor < 0:
-                        validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
+                            validacoes.append('VALOR INVÁLIDO (NÃO NUMÉRICO)')
+                            self.df.at[idx, 'VALIDACAO'] = '\n'.join(validacoes) if validacoes else 'OK'
+                            continue
 
-                self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes) if validacoes else 'OK'
+                    if float(valor) < 0:
+                        validacoes.append('VALOR NÃO PODE SER NEGATIVO')
 
+                self.preencher_validacao(idx, validacoes)
         return self.df
+
+ValidatorRegistry.register('ITENS DE NOTA FISCAL', ItensDeNotaFiscalValidator)

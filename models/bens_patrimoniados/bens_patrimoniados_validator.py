@@ -5,6 +5,7 @@ import pandas as pd
 from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos, obter_tipos_bens
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
+from models.validator_registry import ValidatorRegistry
 
 class BensPatrimoniadosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -12,7 +13,7 @@ class BensPatrimoniadosValidator(BaseValidator):
         self.valid_attributes = LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 
     def validate_data(self):
-        self.df['VALIDACAO'] = ''
+        print(f"DATAFRAME APÓS:\n{self.df}")
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()
@@ -22,11 +23,11 @@ class BensPatrimoniadosValidator(BaseValidator):
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
 
-                if attr in ['VALOR']:
-                    if pd.isna(valor) or valor is None or str(valor).strip() == '':
-                        self.df.at[idx, 'VALIDACAO'] = 'OK'
-                        continue
+                if pd.isna(valor) or valor is None or str(valor).strip() == '':
+                    self.df.at[idx, 'VALIDACAO'] = 'OK'
+                    continue
 
+                if attr in ['VALOR']:
                     if isinstance(valor, str):
                         if not verificar_formato_brasileiro(valor):
                             validacoes.append('FORMATO INVÁLIDO (USE . PARA MILHARES E , DECIMAL COM 2 CASAS)')
@@ -121,12 +122,12 @@ class BensPatrimoniadosValidator(BaseValidator):
                     req = obter_tipos_bens()
                     encontrou = False
                     for tipos in req:
-                        print(f"Comparando {tipos['id_bem_tipo']} com {atributos.get('TIPO')}")
                         if int(tipos["id_bem_tipo"]) == int(atributos.get('TIPO')):
                             encontrou = True
                     if encontrou == False:
                         validacoes.append('TIPO DE BEM NÃO EXISTE, ')
 
-                self.df.at[idx, 'VALIDACAO'] = '\n'.join(validacoes) if validacoes else 'OK'
-
+                self.preencher_validacao(idx, validacoes)
         return self.df
+
+ValidatorRegistry.register('BENS PATRIMONIADOS', BensPatrimoniadosValidator)

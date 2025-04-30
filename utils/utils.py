@@ -21,7 +21,6 @@ def reset_session_state_and_rerun(exclude_keys=None):
     #st.rerun(scope="app")
 
 def exibir_resultados(df):
-    st.divider()
     st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)
     st.dataframe(df.style.applymap(color_rows, subset=['VALIDACAO']))
 

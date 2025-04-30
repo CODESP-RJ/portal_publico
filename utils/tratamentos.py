@@ -4,26 +4,22 @@ import pandas as pd
 from pycpfcnpj import cpfcnpj
 from datetime import datetime
 
-def verificar_formato_brasileiro(valor):
+def verificar_formato_brasileiro(valor, casas_decimais=2):
     """
-    Verifica se o valor está no formato brasileiro correto:
-    - Decimal com vírgula (opcional, mas se tiver deve ter exatamente 2 casas)
-    - Milhar com ponto (opcional)
-    Exemplos válidos:
-      1.234,56 ou 1234,56 ou 0,50 (com decimais)
-      100 ou 1.234 ou 2500 (sem decimais)
+    Verifica se o valor está no formato brasileiro correto com casas decimais específicas
+    - casas_decimais: 2 para VALOR TOTAL, 4 para VALOR UNITARIO
     """
     if pd.isna(valor) or valor is None:
         return True  # Considera válido se for vazio
 
     valor_str = str(valor).strip()
 
-    # Padrão para formato brasileiro com decimais opcionais (mas exatos 2 se tiver)
-    padrao_br_com_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d{2})$')
+    # Padrão para formato brasileiro com decimais
+    padrao_br_com_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d{' + str(casas_decimais) + '})$')
     padrao_br_sem_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*$')
 
     # Padrão para número simples sem separador de milhar
-    padrao_simples_com_decimal = re.compile(r'^-?\d+(?:,\d{2})$')
+    padrao_simples_com_decimal = re.compile(r'^-?\d+(?:,\d{' + str(casas_decimais) + '})$')
     padrao_simples_sem_decimal = re.compile(r'^-?\d+$')
 
     return (bool(padrao_br_com_decimal.match(valor_str)) or

@@ -4,6 +4,8 @@ import re
 import pandas as pd
 from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos
+from models.validators.base_validator import BaseValidator
+from models.validator_registry import ValidatorRegistry
 
 class ContratosTerceirosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -11,7 +13,6 @@ class ContratosTerceirosValidator(BaseValidator):
         self.valid_attributes = LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS
 
     def validate_data(self):
-        self.df['VALIDACAO'] = ''
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()
@@ -75,6 +76,7 @@ class ContratosTerceirosValidator(BaseValidator):
                     if not any(item == atributos.get('CONTRATO') for item in req):
                         validacoes.append('CONTRATO NAO ENCONTRADO NÃO ENCONTRADO, ')
 
-                self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes) if validacoes else 'OK'
-
+                self.preencher_validacao(idx, validacoes)
         return self.df
+
+ValidatorRegistry.register('CONTRATOS DE TERCEIROS', ContratosTerceirosValidator)

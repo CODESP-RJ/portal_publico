@@ -1,4 +1,4 @@
-from models.base_df import BaseDFImportacao, BaseDFAlteracao
+from models.base_df import BaseDFImportacao
 
 class ContratosTerceirosDFImportacao (BaseDFImportacao):
     def __init__(self, dataframe = None, base_url=None, listaOS=None, progress_bar = None, modulo = None, tipo_arquivo = None):
@@ -17,14 +17,4 @@ class ContratosTerceirosDFImportacao (BaseDFImportacao):
         problemas.append(self.check_cnpj(index))
         problemas.append(self.check_currency_values_br(index))
         problemas.append(self.check_chars_len(index))
-        return problemas
-
-class ContratosTerceirosDFAlteracao (BaseDFAlteracao):
-    def __init__(self, dataframe = None, progress_bar = None, modulo = None):
-        super().__init__(dataframe, progress_bar, modulo)
-        self.nome_classe = 'CONTRATOS DE TERCEIROS'
-
-    def check_df_data_subclasse(self, index):
-        problemas = []
-        problemas.append(self.check_mandatory_fields(index))
         return problemas

@@ -4,6 +4,7 @@ import re
 import pandas as pd
 from utils.utils import erros, obter_contratos
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
+from models.validator_registry import ValidatorRegistry
 
 class ReceitasValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -11,7 +12,6 @@ class ReceitasValidator(BaseValidator):
         self.valid_attributes = LISTA_ATRIBUTOS_RECEITAS
 
     def validate_data(self):
-        self.df['VALIDACAO'] = ''
 
         for id, grupo in self.df.groupby('ID'):
             for idx, row in grupo.iterrows():
@@ -39,6 +39,7 @@ class ReceitasValidator(BaseValidator):
                 if attr != 'RESULTADO DE APLICACAO FINANCEIRA' and float(valor) < 0:
                     validacoes.append('VALOR NÃO PODE SER NEGATIVO')
 
-                self.df.at[idx, 'VALIDACAO'] = '\n'.join(validacoes) if validacoes else 'OK'
-
+                self.preencher_validacao(idx, validacoes)
         return self.df
+
+ValidatorRegistry.register('Receitas', ReceitasValidator)
