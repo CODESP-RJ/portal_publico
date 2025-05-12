@@ -46,14 +46,14 @@ class BaseValidatorIns(ABC):
                         except ValueError:
                             print(f"Erro de conversão em {campo} com valor {valor} idx {idx}")
                             self._registrar_erro(idx,
-                                                 f"Formato de data inválido em {campo}. Esperado dd-mm-yyyy ou yyyy-mm-dd")
+                                                 f"Formato de data inválido em {campo}. Esperado AAAA-MM-DD")
 
         # Valida datas abreviadas (AAAAMM)
         for campo in self.datas_abreviadas:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor) and not re.match(r'^\d{6}$', str(valor)):
-                        self._registrar_erro(idx, f"Formato de data abreviada inválido em {campo}. Esperado AAAAMM")
+                        self._registrar_erro(idx, f"Formato de data abreviada inválido em {campo}. Esperado AAAA-MM")
 
     def validar_campos_obrigatorios(self):
         """Verifica se os campos obrigatórios estão preenchidos"""

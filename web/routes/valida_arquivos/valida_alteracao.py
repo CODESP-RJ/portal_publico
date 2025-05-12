@@ -73,9 +73,9 @@ def main():
 
                     validator = validator_class(df_filtrado,
                                                 "Alteração" if acao_normalizada == "ALTERACAO" else "Exclusão")
-
+                    print(f"Validando {modulo_normalizado} - {acao_normalizada}")
                     try:
-                        validator.validar_cabecalho()
+                        validator.check_header()
                         validator.check_ano_mes_ref()
 
                         if acao_normalizada == "ALTERACAO":

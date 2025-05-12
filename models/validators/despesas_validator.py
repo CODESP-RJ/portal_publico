@@ -20,5 +20,6 @@ class DespesasValidator(BaseValidatorIns):
         self.validar_valores_monetarios()
         self.validar_tamanho_campos()
         self.validar_datas()
+        self.validar_tamanho_campos()
 
 RegistryValidators.register_ins('modulo_despesas', DespesasValidator)
