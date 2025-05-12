@@ -5,7 +5,7 @@ import pandas as pd
 from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos, obter_tipos_bens
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
-from models.validator_registry import ValidatorRegistry
+from models.registry import RegistryValidators
 
 class BensPatrimoniadosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -130,4 +130,4 @@ class BensPatrimoniadosValidator(BaseValidator):
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-ValidatorRegistry.register('BENS PATRIMONIADOS', BensPatrimoniadosValidator)
+RegistryValidators.register_alt_exc('BENS PATRIMONIADOS', BensPatrimoniadosValidator)

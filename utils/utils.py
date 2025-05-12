@@ -2,27 +2,33 @@ import pyautogui
 import requests
 import json
 import streamlit as st
-from datetime import datetime
 import random
 import string
 import requests
-import streamlit as st
 import pandas as pd
 from datetime import datetime
 from charset_normalizer import from_bytes
+from io import StringIO
+from utils.tratamentos import limpar_dados
 
-def reset_session_state_and_rerun(exclude_keys=None):
-    if exclude_keys is None:
-        exclude_keys = []
-    for key in list(st.session_state.keys()):
-        if key not in exclude_keys:
-            del st.session_state[key]
-    pyautogui.hotkey("ctrl","F5")
-    #st.rerun(scope="app")
+def processar_arquivo(arquivo, func=None):
+    string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
+    df = pd.read_csv(string_data, sep=';', dtype=str)
+    st.dataframe(df)
+    df.columns = df.columns.str.strip().str.upper()
+    return limpar_dados(df) if func is None else df
 
 def exibir_resultados(df):
     st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)
-    st.dataframe(df.style.applymap(color_rows, subset=['VALIDACAO']))
+
+    if 'VALIDACAO' in df.columns:
+        df['VALIDACAO'] = df['VALIDACAO'].astype(str)
+
+    # Aplica a formatação condicional
+    styled_df = df.style.applymap(lambda x: color_rows(x), subset=['VALIDACAO']) \
+        .set_properties(**{'text-align': 'left'})
+
+    st.dataframe(styled_df, use_container_width=True)
 
 def color_rows(val):
     color = 'green' if val == 'OK' else 'yellow' if 'Aviso' in val else 'red'

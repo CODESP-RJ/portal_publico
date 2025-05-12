@@ -1,138 +1,96 @@
 import streamlit as st
-from utils import utils as util
-from io import StringIO
 import pandas as pd
 import datetime
-from models.modelos_arquivos import Cabecalho
-from models.despesas.despesas_df import DespesasDFImportacao
-from models.contratos_de_terceiros.contratos_terceiros_df import ContratosTerceirosDFImportacao
-from models.saldos.saldos_df import SaldosDFImportacao
-from models.bens_patrimoniados.bens_patrimoniados_df import BensPatrimoniadosDFImportacao
-from models.fornecedores.fornecedores_df import FornecedoresDFImportacao
-from models.itens_de_nota_fiscal.itens_nota_fiscal_df import ItensNotaFiscalDFImportacao
-from models.receitas.receitas_df import ReceitasDFImportacao
 from web.components.instrucoes import instrucoes_validar_importacoes
+from utils.tratamentos import limpar_dados
+from utils.utils import color_rows, exibir_resultados, oferecer_download, processar_arquivo
+from models.validators.base_validator import BaseValidatorIns
+from models.validators import despesas_validator
+from models.registry import RegistryValidators
+from io import StringIO
 
-st.markdown("<h1 style='text-align: center;'>Valida arquivos de Inserção</h1>",
-            unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Valida arquivos de Inserção</h1>", unsafe_allow_html=True)
+st.divider()
 
 tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores']
+tipo_arquivo_modelo = {
+    'Despesas': 'DESPESAS GNOSIS',
+    'Contratos de Terceiros': 'MODELO ANEXO',
+    'Saldos': 'SALDO IPCEP',
+    'Bens Patrimoniados': 'BENS CEP28',
+    'Itens de Nota Fiscal': 'ITENS DE NOTA FISCAL',
+    'Receitas': 'IPCEP',
+    'Fornecedores': 'FORNECEDOR GNOSIS'
+}
 
-secretarias = util.obter_instituicoes()
-instituicoes = util.carrega_instituicoes()
-contratos = util.carrega_contratos()
-validou = ""
+tipo_arquivo_mapping = {
+    'Despesas': 'modulo_despesas',
+    'Contratos de Terceiros': 'modulo_contratos_terceiros',
+    'Saldos': 'modulo_saldos',
+    'Bens Patrimoniados': 'modulo_bens_patrimoniados',
+    'Itens de Nota Fiscal': 'modulo_itens_nota_fiscal',
+    'Receitas': 'modulo_receitas',
+    'Fornecedores': 'modulo_fornecedores'
+}
 
-def check_columns(columns):
-    matched_columns = []
-    for column in df.columns:
-        if column in columns:
-            matched_columns.append(column)
-    return matched_columns
+tipoarquivo_escolhido = st.selectbox(
+    'Tipo de Arquivo',
+    tipo_arquivo,
+    index=None,
+    placeholder="Selecione o Tipo de Arquivo",
+    key='tipoarquivo_escolhido'
+)
 
-with st.form('Valida Inserção', clear_on_submit=False):
-    tipoarquivo_escolhido = st.selectbox('Tipo de Arquivo', tipo_arquivo, index=None, placeholder="Selecione o Tipo de Arquivo")
-    arquivo = st.file_uploader("Arquivo a ser verificado", type="csv", help="Envie um arquivo de cada vez")
-    processou = st.form_submit_button("Processar")
+if st.session_state.tipoarquivo_escolhido:
+    st.info(f"Modelo: {tipo_arquivo_modelo[st.session_state.tipoarquivo_escolhido]}")
 
-    if processou:
-        if arquivo and tipoarquivo_escolhido:
-            pBar = st.progress(0)
-            try:                        
-                string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
-                cabecalho_arquivo = string_data.readline().strip()
-                string_data.seek(0)
-                
-                cabecalho_arquivo = Cabecalho.trata_cabecalho(cabecalho_arquivo)
+def main():
+    with st.form('main_form'):
+        arquivo = st.file_uploader("Arquivo CSV", type="csv")
+        submitted = st.form_submit_button("Processar")
 
-                df = pd.read_csv(string_data, sep=';', header=0, index_col=False, dtype=str)
-                tamanho = len(df)                        
-                st.info("Quantidade de linhas do arquivo: " +str(tamanho))
-                st.write("Arquivo original:")
-                st.dataframe(df)                        
-                los = Cabecalho.get_os_list_type()
-                df.columns = df.columns.str.strip().str.upper()
-                listaOS = check_columns(los)
-                if not len(listaOS) > 0:
-                    raise Exception("Não foi possível identificar o código da instituição no arquivo enviado")
-                if len(listaOS) > 0:
-                    if tipoarquivo_escolhido == "Despesas":
-                        despesas = DespesasDFImportacao(df, 'removerparam', listaOS, pBar, 'despesas', 'importacao')
-                        despesas.check_header()
-                        st.info('O cabeçalho é compatível com o modelo DESPESAS.')
-                        if despesas.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
+    if submitted:
+        if not arquivo:
+            st.error("Selecione um arquivo!")
+            return
 
-                    elif tipoarquivo_escolhido == "Contratos de Terceiros":
-                        contratos = ContratosTerceirosDFImportacao(df, 'removerparam', listaOS, pBar, 'contratos_terceiros', 'importacao')
-                        contratos.check_header()
-                        st.info('O cabeçalho é compatível com o modelo CONTRATOS DE TERCEIROS.')
-                        if contratos.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
+        try:
+            st.divider()
 
-                    elif tipoarquivo_escolhido == "Saldos":
-                        saldos = SaldosDFImportacao(df, 'removerparam', listaOS, pBar, 'saldos', 'importacao')
-                        saldos.check_header()
-                        st.info('O cabeçalho é compatível com o modelo SALDOS.')
-                        if saldos.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
+            df = processar_arquivo(arquivo, 1)
+            selected_type = st.session_state.tipoarquivo_escolhido
 
-                    elif tipoarquivo_escolhido == "Bens Patrimoniados":
-                        bens = BensPatrimoniadosDFImportacao(df, 'removerparam', listaOS, pBar, 'bens_patrimoniados', 'importacao')
-                        bens.check_header()
-                        st.info('O cabeçalho é compatível com o modelo BENS PATRIMONIADOS.')
-                        if bens.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
+            if selected_type not in tipo_arquivo_mapping:
+                st.error("Tipo de arquivo não suportado.")
+                return
 
-                    elif tipoarquivo_escolhido == "Fornecedores":
-                        fornecedores = FornecedoresDFImportacao(df, 'removerparam', listaOS, pBar, 'fornecedores', 'importacao')
-                        fornecedores.check_header()
-                        st.info('O cabeçalho é compatível com o modelo FORNECEDORES.')
-                        if fornecedores.check_df_data(tipoarquivo_escolhido):
-                            validou = 1
-                        st.dataframe(df)
-                    
-                    elif tipoarquivo_escolhido == "Itens de Nota Fiscal":
-                        itens_nf = ItensNotaFiscalDFImportacao(df, 'removerparam', listaOS, pBar, 'itens_nota_fiscal', 'importacao')
-                        itens_nf.check_header()
-                        st.info('O cabeçalho é compatível com o modelo ITENS NOTA FISCAL.')
-                        if itens_nf.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
+            selected_module = tipo_arquivo_mapping[selected_type]
+            validator_class = RegistryValidators.get_validator_ins(selected_module)
 
-                    elif tipoarquivo_escolhido == "Receitas":
-                        receitas = ReceitasDFImportacao(df, 'removerparam', listaOS, pBar, 'receitas', 'importacao')
-                        receitas.check_header()
-                        st.info('O cabeçalho é compatível com o modelo RECEITAS.')
-                        if receitas.check_df_data():
-                            validou = 1
-                        st.dataframe(df)
-                    else:
-                        st.warning("Não foi possível identificar qual a verificação deve ser realizada.")
-                    
-                    filtroProblemas = df[df['PROBLEMAS'] != '' ]
-                    if filtroProblemas.shape[0] > 0 :
-                        st.warning(f"O arquivo possui {filtroProblemas.shape[0]} linhas com problemas")
-                        st.warning(f"Verifique a coluna PROBLEMAS na planilha acima ou baixe o arquivo")
-                    else:
-                        st.success(f"Arquivo processado sem linhas com problemas")
+            if not validator_class:
+                st.error(f"Validador para {selected_type} não encontrado.")
+                return
 
-            except UnicodeDecodeError:
-                st.error(util.erros["02"])
-            except Exception as e:
-                st.error(f"Operação abortada: {e}")
+            validator = validator_class(df)
+            validator.configurar_modulo(selected_module)
 
-        else:
-            st.error('Todos os campos devem ser preenchidos!')
+            validator.validar_tudo()
+            resultados = validator.obter_resultados()
 
-if validou:
-    st.write("Arquivo processado:")
-    st.dataframe(df)
-    nomeArquivo = f"VALIDADO_{str(df.iloc[0,0])}_{datetime.datetime.now().strftime('%d-%m-%Y-%H-%M')}.csv"
-    st.download_button(label="Download do arquivo CSV", data=df.to_csv(sep=';', index=False), mime='text/csv', file_name=nomeArquivo)
+            if not resultados.empty:
+                exibir_resultados(resultados)
 
+                if (resultados['VALIDACAO'] == 'OK').all():
+                    st.success("Validação concluída e sem erros encontrados.")
+                else:
+                    st.error("Validação concluída, e com erros encontrados.")
+
+                oferecer_download(resultados)
+            else:
+                st.warning("Nenhum registro válido encontrado no arquivo.")
+
+
+        except Exception as e:
+            st.error(f"Erro na validação: {str(e)}")
+main()
 instrucoes_validar_importacoes()

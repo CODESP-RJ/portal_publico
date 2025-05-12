@@ -4,7 +4,7 @@ import re
 import pandas as pd
 from utils.utils import erros, obter_contratos
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float, formata_cnpj
-from models.validator_registry import ValidatorRegistry
+from models.registry import RegistryValidators
 
 class ItensDeNotaFiscalValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -65,4 +65,4 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-ValidatorRegistry.register('ITENS DE NOTA FISCAL', ItensDeNotaFiscalValidator)
+RegistryValidators.register_alt_exc('ITENS DE NOTA FISCAL', ItensDeNotaFiscalValidator)

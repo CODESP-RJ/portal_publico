@@ -6,7 +6,7 @@ from utils.tratamentos import string_to_float
 from utils.utils import erros, obter_contratos
 from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira
 from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias
-from models.validator_registry import ValidatorRegistry
+from models.registry import RegistryValidators
 
 class DespesasValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -184,4 +184,4 @@ class DespesasValidator(BaseValidator):
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-ValidatorRegistry.register('DESPESAS', DespesasValidator)
+RegistryValidators.register_alt_exc('DESPESAS', DespesasValidator)

@@ -24,7 +24,7 @@ def main():
         pages_app = {
             "VALIDADOR DE ARQUIVOS": [
                 st.Page("web/routes/valida_arquivos/valida_importacao.py", title="Arquivos para Inserção de Dados"),
-                st.Page("web/routes/valida_arquivos/valida_alteracao.py", title="Arquivos de Alteração e Exclusão de Dados"),
+                st.Page("web/routes/valida_arquivos/valida_alteracao.py", title="Arquivos para Alteração e Exclusão de Dados"),
             ],
             "ARQUIVOS MODELO": [
                 st.Page("web/routes/modelos/modelos_importacao.py", title="Arquivos para Inserção de Dados"),
@@ -40,7 +40,7 @@ def main():
                 st.Page("web/routes/sobre/sobre.py", title="Sobre a Ferramenta"),
             ]
         }
-        st.logo(image="images/CGM_SAUDE.png")
+        st.logo(image="images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png")
         pg = st.navigation(pages_app)
         pg.run()
 

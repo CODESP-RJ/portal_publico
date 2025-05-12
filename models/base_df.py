@@ -47,24 +47,24 @@ class BaseDFImportacao:
             if not self.df.at[index, nome_coluna]:
                 raise Exception(f"O preenchimento da coluna ({nome_coluna}) é obrigatório")
 
-            if self.dfContratos.empty:
-                raise Exception("O DataFrame dfContratos está vazio")
-
-            if 'num_contrato' not in self.dfContratos.columns:
-                raise Exception("A coluna 'num_contrato' não foi encontrada no DataFrame dfContratos")
-
-            contract_row = self.dfContratos.loc[self.dfContratos['num_contrato'] == self.df.at[index, nome_coluna]]
-            if contract_row.empty:
-                raise Exception(f"Contrato {self.df.at[index, nome_coluna]} não encontrado")
-
-            current_contract_id = contract_row['id_contrato'].values[0]
-            if self.df.at[index, nome_coluna] == '' or self.id_contrato != current_contract_id:
-                self.id_contrato = current_contract_id
-
-                if self.id_contrato is None:
-                    raise Exception(f"Contrato {self.df.at[0, nome_coluna]} não encontrado")
-
-                self.load_lists_from_osinfo_subclasse()
+            # if self.dfContratos.empty:
+            #     raise Exception("O DataFrame dfContratos está vazio")
+            #
+            # if 'num_contrato' not in self.dfContratos.columns:
+            #     raise Exception("A coluna 'num_contrato' não foi encontrada no DataFrame dfContratos")
+            #
+            # contract_row = self.dfContratos.loc[self.dfContratos['num_contrato'] == self.df.at[index, nome_coluna]]
+            # if contract_row.empty:
+            #     raise Exception(f"Contrato {self.df.at[index, nome_coluna]} não encontrado")
+            #
+            # current_contract_id = contract_row['id_contrato'].values[0]
+            # if self.df.at[index, nome_coluna] == '' or self.id_contrato != current_contract_id:
+            #     self.id_contrato = current_contract_id
+            #
+            #     if self.id_contrato is None:
+            #         raise Exception(f"Contrato {self.df.at[0, nome_coluna]} não encontrado")
+            #
+            #     self.load_lists_from_osinfo_subclasse()
 
         except Exception as e:
             msg = f"check_df_data carregamento das listagens: {e}"
@@ -98,7 +98,7 @@ class BaseDFImportacao:
 
     def check_mandatory_fields(self, index):
         problemas = []
-        for col in self.modelo.camposObrigatorios:
+        for col in self.modelo.campos_obrigatorios:
             if not col in self.df.columns:
                 raise Exception(f"Coluna ({col}) não foi encontrada na no cabeçalho do arquivo de importação de despesas")
             if pd.isnull(self.df.at[index, col]): 
@@ -184,7 +184,7 @@ class BaseDFImportacao:
 
     def check_full_dates(self, index):
         resultado = ''
-        for campo in self.modelo.datasCompletas:
+        for campo in self.modelo.datas_completas:
             if campo in self.df.columns:
                 valor = self.df.at[index, campo]
                 if not pd.isnull(valor):
@@ -195,7 +195,7 @@ class BaseDFImportacao:
 
     def check_short_dates(self, index):
         resultado = ''
-        for campo in self.modelo.datasAbreviadas:
+        for campo in self.modelo.datas_abreviadas:
             if campo in self.df.columns:
                 valor = self.df.at[index, campo]
                 if not pd.isnull(valor):
@@ -247,7 +247,7 @@ class BaseDFImportacao:
 
     def check_currency_values_br(self, index):
         resultado = ''
-        for campo in self.modelo.camposMonetarios:
+        for campo in self.modelo.campos_monetarios:
             if campo in self.df.columns:
                 valor = self.df.at[index, campo]
                 if not pd.isnull(valor):
@@ -258,7 +258,7 @@ class BaseDFImportacao:
         
     def check_chars_len(self, index):
         resultado = ''
-        for key, value in self.modelo.limitesTamanho.items():
+        for key, value in self.modelo.limites_tamanho.items():
             if key in self.df.columns:
                 valor = self.df.at[index, key]
                 if not pd.isnull(valor):
@@ -393,7 +393,9 @@ class BaseDFImportacao:
 
     def load_expense_type_list(self):
         self.dfCodigosDespesas = pd.DataFrame()
-        with open('./data/getExpenseTypesList.json', encoding='utf-8') as getExpenseTypesList:
+        print(f"DEBUG: {dfCodigosDespesas}")
+        with open("data/getExpenseTypesList.json", encoding='utf-8') as getExpenseTypesList:
+            print(f"DEBUG: {getExpenseTypesList}")
             self.dfCodigosDespesas = pd.DataFrame(json.load(getExpenseTypesList))
 
     def load_expenditures_list(self):

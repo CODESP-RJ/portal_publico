@@ -5,7 +5,7 @@ import pandas as pd
 from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos
 from models.validators.base_validator import BaseValidator
-from models.validator_registry import ValidatorRegistry
+from models.registry import RegistryValidators
 
 class ContratosTerceirosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -79,4 +79,4 @@ class ContratosTerceirosValidator(BaseValidator):
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-ValidatorRegistry.register('CONTRATOS DE TERCEIROS', ContratosTerceirosValidator)
+RegistryValidators.register_alt_exc('CONTRATOS DE TERCEIROS', ContratosTerceirosValidator)

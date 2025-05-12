@@ -208,16 +208,6 @@ def padronizar_texto(df, fun=None):
         return df
 
 def limpar_dados(df, fun=None):
-    """
-    Limpa o DataFrame removendo linhas e colunas completamente vazias.
-
-    Args:
-        df (pd.DataFrame): DataFrame a ser limpo.
-
-    Returns:
-        pd.DataFrame: DataFrame sem linhas e colunas completamente vazias.
-    """
-
     if fun is None:
         df = df.replace('nan', None)
 

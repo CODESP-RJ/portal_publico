@@ -39,3 +39,84 @@ LISTA_ATRIBUTOS_RECEITAS = [
     'EMPRESTIMO TOMADO DE OUTRO CONTRATO', 'TRANSFERENCIAS ENTRE CONTAS DE PROVISIONAMENTO E EXECUCAO',
     'TRANSFERENCIA DE PROVISIONAMENTO DE COLABORADORES ORIUNDOS DE OUTRO CONTRATO E OU UNIDADE'
 ]
+
+CONFIGURACOES_MODULOS = {
+    'modulo_despesas': {
+        'cabecalho_str': 'D;COD_OS;COD_UNIDADE;COD_CONTRATO;ANO_MES_REF;TIPO;CODIGO;CNPJ;RAZAO;CPF;NOME;NUM_DOCUMENTO;SERIE;DESCRICAO;DATA_EMISSAO;DATA_VENCIMENTO;DATA_PAGAMENTO;DATA_APURACAO;VALOR_DOCUMENTO;VALOR_PAGO;DESPESA;RUBRICA;BANCO;AGENCIA;CONTA_CORRENTE;PMT_PAGA;QTDE_PMT;IDENT_BANCARIO;FLAG_JUSTIFICATIVA',
+        'datas_abreviadas': ['ANO_MES_REF'],
+        'datas_completas': ['DATA_EMISSAO', 'DATA_VENCIMENTO', 'DATA_PAGAMENTO', 'DATA_APURACAO'],
+        'campos_obrigatorios': ["COD_OS", "COD_UNIDADE", "COD_CONTRATO", "ANO_MES_REF", "TIPO", "DESCRICAO", "DATA_VENCIMENTO", "DATA_PAGAMENTO", "DATA_APURACAO", "VALOR_DOCUMENTO", "VALOR_PAGO", "DESPESA", "RUBRICA", "BANCO", "AGENCIA", "CONTA_CORRENTE", "PMT_PAGA", "QTDE_PMT", "IDENT_BANCARIO", "FLAG_JUSTIFICATIVA"],
+        'campos_monetarios': ['VALOR_DOCUMENTO', 'VALOR_PAGO'],
+        'limites_tamanho': {
+            "RAZAO": 100,
+            "NOME": 100,
+            "DESCRICAO": 150,
+            "NUM_DOCUMENTO": 20,
+            "SERIE": 3,
+            "DESPESA": 50,
+            "IDENT_BANCARIO": 100
+        }
+    },
+    'modulo_bens_patrimoniados': {
+        'cabecalho_str': 'COD_OS;COD_UNIDADE;COD_CONTRATO;ANO_MES_REF;NUM_CONTROLE_OS;NUM_CONTROLE_GOV;COD_TIPO;BEM_TIPO;DESCRICAO_NF;CNPJ;FORNECEDOR;QUANTIDADE;NF;DATA_AQUISICAO;VIDA_UTIL;VALOR;VINCULACAO;SETOR_DESTINO;IMG_NF',
+        'datas_abreviadas': ['ANO_MES_REF'],
+        'datas_completas': ['DATA_AQUISICAO'],
+        'campos_obrigatorios': ["COD_OS", "COD_UNIDADE", "COD_CONTRATO", "ANO_MES_REF", "NUM_CONTROLE_OS", "COD_TIPO", "BEM_TIPO", "DESCRICAO_NF", "CNPJ", "FORNECEDOR", "QUANTIDADE", "NF", "DATA_AQUISICAO", "VIDA_UTIL", "VALOR", "VINCULACAO", "IMG_NF"],
+        'campos_monetarios': ['VALOR'],
+        'limites_tamanho': {
+            "DESCRICAO_NF": 255,
+            "FORNECEDOR": 255,
+            "NF": 20,
+            "VINCULACAO": 255,
+            "SETOR_DESTINO": 100
+        }
+    },
+    'modulo_saldos': {
+        'cabecalho_str': 'COD_OS;COD_UNIDADE;COD_CONTRATO;ANO_MES_REF;BANCO;AGENCIA;CONTA_CORRENTE;VL_CONTA_CORRENTE;VL_APL_FINANCEIRA;VL_CONTA_PROVISAO;VL_EM_ESPECIE;EXTRATO',
+        'datas_abreviadas': ['ANO_MES_REF'],
+        'datas_completas': [],
+        'campos_obrigatorios': ["COD_OS", "COD_UNIDADE", "COD_CONTRATO", "ANO_MES_REF", "BANCO", "AGENCIA", "CONTA_CORRENTE", "VL_CONTA_CORRENTE", "VL_APL_FINANCEIRA", "VL_CONTA_PROVISAO", "VL_EM_ESPECIE", "EXTRATO"],
+        'campos_monetarios': ['VL_CONTA_CORRENTE', 'VL_APL_FINANCEIRA', 'VL_CONTA_PROVISAO', 'VL_EM_ESPECIE'],
+        'limites_tamanho': {}
+    },
+    'modulo_contratos_terceiros': {
+        'cabecalho_str': 'D;COD_OS;COD_UNIDADE;COD_CONTRATO;RAZAO_SOCIAL;CNPJ;SERVICO;VALOR_MES;VIGENCIA;CONTRATO_ANO_MES_INICIO;CONTRATO_ANO_MES_FIM;REF_TRI;REF_ANO_MES;IMG_CONTRATO',
+        'datas_abreviadas': ['CONTRATO_ANO_MES_INICIO', 'CONTRATO_ANO_MES_FIM', 'REF_TRI'],
+        'datas_completas': ['REF_ANO_MES'],
+        'campos_obrigatorios': ["COD_OS", "COD_UNIDADE", "COD_CONTRATO", "RAZAO_SOCIAL", "CNPJ", "SERVICO", "VALOR_MES", "VIGENCIA", "CONTRATO_ANO_MES_INICIO", "CONTRATO_ANO_MES_FIM", "REF_TRI", "REF_ANO_MES", "IMG_CONTRATO"],
+        'campos_monetarios': ['VALOR_MES'],
+        'limites_tamanho': {
+            "RAZAO_SOCIAL": 100
+        }
+    },
+    'modulo_fornecedores': {
+        'cabecalho_str': 'CNPJ_CPF;NOME_FORNECEDOR;TIPO;CONTATO;ENDERECO;NUMERO;COMPLEMENTO;CEP;BAIRRO;MUNICIPIO;UF;REFERENCIA;FONE_1;RAMAL_1;FONE_2;RAMAL_2;FAX;EMAIL',
+        'datas_abreviadas': [],
+        'datas_completas': [],
+        'campos_obrigatorios': ["CNPJ_CPF", "NOME_FORNECEDOR", "TIPO", "ENDERECO", "NUMERO", "CEP", "BAIRRO"],
+        'campos_monetarios': [],
+        'limites_tamanho': {}
+    },
+    'modulo_itens_nota_fiscal': {
+        'cabecalho_str': 'NUM_OS;COD_MAT_SERV;DESC_MAT_SERV;UNID_MED;PREC_UNIT;QTD;VLR_TOT_ITEM;NF;CNPJ_FORN;MAT_OU_SERV;MES_ANO;OBS',
+        'datas_abreviadas': ["MES_ANO"],
+        'datas_completas': [],
+        'campos_obrigatorios': ["NUM_OS", "COD_MAT_SERV", "DESC_MAT_SERV", "UNID_MED", "PREC_UNIT", "QTD", "VLR_TOT_ITEM", "NF", "CNPJ_FORN", "MAT_OU_SERV", "MES_ANO"],
+        'campos_monetarios': ["PREC_UNIT", "VLR_TOT_ITEM"],
+        'limites_tamanho': {
+            "DESC_MAT_SERV": 700,
+            "UNID_MED": 50,
+            "NF": 20,
+            "OBS": 250,
+            "COD_MAT_SERV": 12
+        }
+    },
+    'modulo_receitas': {
+        'cabecalho_str': 'D;COD_OS;COD_UNIDADE;COD_CONTRATO;ANO_MES_REF;BANCO;AGENCIA;CONTA_CORRENTE;REC_CONT_GES_FIXA;REC_CONT_GES_VARIAVEL;REC_TA_ADIC_CUSTEIO;REC_TA_ADIC_INVEST;REC_APLIC_FINANCEIRA;REC_REEMB_DESPESAS;REC_RECURSOS_EXTERNOS;REC_REC_EXTRAS;REC_OUTRAS_RECEITAS;REC_CONT_GES_VARIAVEL_2;REC_CONT_GES_VARIAVEL_3;REC_REP_SUS_AIH;REC_REP_SUS_AMB;REC_REP_SUS_INTEGRASUS',
+        'datas_abreviadas': ['ANO_MES_REF'],
+        'datas_completas': [],
+        'campos_obrigatorios': ["D", "COD_OS", "COD_UNIDADE", "COD_CONTRATO", "ANO_MES_REF", "BANCO", "AGENCIA", "CONTA_CORRENTE", "REC_CONT_GES_FIXA", "REC_CONT_GES_VARIAVEL", "REC_TA_ADIC_CUSTEIO", "REC_TA_ADIC_INVEST", "REC_APLIC_FINANCEIRA", "REC_REEMB_DESPESAS", "REC_RECURSOS_EXTERNOS", "REC_REC_EXTRAS", "REC_OUTRAS_RECEITAS", "REC_CONT_GES_VARIAVEL_2", "REC_CONT_GES_VARIAVEL_3", "REC_REP_SUS_AIH", "REC_REP_SUS_AMB", "REC_REP_SUS_INTEGRASUS"],
+        'campos_monetarios': ['REC_CONT_GES_FIXA', 'REC_CONT_GES_VARIAVEL', 'REC_TA_ADIC_CUSTEIO', 'REC_TA_ADIC_INVEST', 'REC_APLIC_FINANCEIRA', 'REC_REEMB_DESPESAS', 'REC_RECURSOS_EXTERNOS', 'REC_REC_EXTRAS', 'REC_OUTRAS_RECEITAS', 'REC_CONT_GES_VARIAVEL_2', 'REC_CONT_GES_VARIAVEL_3', 'REC_REP_SUS_AIH', 'REC_REP_SUS_AMB', 'REC_REP_SUS_INTEGRASUS'],
+        'limites_tamanho': {}
+    }
+}

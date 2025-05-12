@@ -12,16 +12,17 @@ from models.common import (
 )
 from web.components.instrucoes import instrucoes_validar_alteracoes_exclusoes
 from utils.tratamentos import limpar_dados
-from utils.utils import color_rows, exibir_resultados, oferecer_download
-from models.validator_registry import ValidatorRegistry
+from utils.utils import color_rows, exibir_resultados, oferecer_download, processar_arquivo
 from models.contratos_de_terceiros.contratos_terceiros_validator import ContratosTerceirosValidator
 from models.despesas.despesas_validator import DespesasValidator
 from models.saldos.saldos_validator import SaldosValidator
 from models.bens_patrimoniados.bens_patrimoniados_validator import BensPatrimoniadosValidator
 from models.itens_de_nota_fiscal.itens_de_nota_fiscal_validator import ItensDeNotaFiscalValidator
 from models.receitas.receitas_validator import ReceitasValidator
+from models.registry import RegistryValidators
 
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
+st.divider()
 
 def main():
     with st.form('main_form'):
@@ -37,12 +38,10 @@ def main():
             st.divider()
             df = processar_arquivo(arquivo)
 
-            # Verificar se o arquivo contém a coluna TIPO_MODULO
             if 'TIPO_MODULO' not in df.columns:
                 st.error("O arquivo não contém a coluna 'TIPO_MODULO' necessária para a validação.")
                 return
 
-            # Verificar se o arquivo contém a coluna ACAO
             if 'ACAO' not in df.columns:
                 st.error("O arquivo não contém a coluna 'ACAO' necessária para a validação.")
                 return
@@ -51,7 +50,7 @@ def main():
             for modulo in df['TIPO_MODULO'].unique():
                 modulo_normalizado = modulo.strip().upper()
 
-                validator_class = ValidatorRegistry.get_validator(modulo_normalizado)
+                validator_class = RegistryValidators.get_validator_alt_exc(modulo_normalizado)
 
                 if validator_class is None:
                     st.warning(f"Módulo '{modulo}' não é suportado. Será ignorado.")
@@ -64,7 +63,6 @@ def main():
                         st.warning(f"Ação '{acao}' não é suportada para o módulo '{modulo}'. Será ignorada.")
                         continue
 
-                    # Filtrar dados para este módulo e ação
                     df_filtrado = df[
                         (df['TIPO_MODULO'].str.strip().str.upper() == modulo_normalizado) &
                         (df['ACAO'].str.strip().str.upper() == acao_normalizada)
@@ -73,12 +71,11 @@ def main():
                     if df_filtrado.empty:
                         continue
 
-                    # Validar os dados
                     validator = validator_class(df_filtrado,
                                                 "Alteração" if acao_normalizada == "ALTERACAO" else "Exclusão")
 
                     try:
-                        validator.check_header()
+                        validator.validar_cabecalho()
                         validator.check_ano_mes_ref()
 
                         if acao_normalizada == "ALTERACAO":
@@ -108,14 +105,6 @@ def main():
 
         except Exception as e:
             st.error(f"Erro na validação: {str(e)}")
-
-
-def processar_arquivo(arquivo):
-    string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
-    df = pd.read_csv(string_data, sep=';', dtype=str)
-    df.columns = df.columns.str.strip().str.upper()
-    return limpar_dados(df)
-
 
 main()
 instrucoes_validar_alteracoes_exclusoes()

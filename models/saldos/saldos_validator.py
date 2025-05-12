@@ -4,7 +4,7 @@ import re
 import pandas as pd
 from utils.utils import erros, obter_contratos
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
-from models.validator_registry import ValidatorRegistry
+from models.registry import RegistryValidators
 
 class SaldosValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
@@ -42,4 +42,4 @@ class SaldosValidator(BaseValidator):
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-ValidatorRegistry.register('SALDOS', SaldosValidator)
+RegistryValidators.register_alt_exc('SALDOS', SaldosValidator)
