@@ -32,53 +32,36 @@ def validar_data_brasileira(valor):
     Verifica se a data está no formato DD/MM/YYYY
     """
     if pd.isna(valor) or valor is None:
-        return True  # Considera válido se for vazio
+        return True
 
     valor_str = str(valor).strip()
 
     try:
-        # Tenta converter a string para datetime
         datetime.strptime(valor_str, '%d/%m/%Y')
         return True
     except ValueError:
         return False
 
 def normalizar_atributos(df_original, df_atributos):
-    print("Iniciando a normalização dos atributos...")
-
-    # Padronizar colunas no df_original: remover espaços extras, preencher NaN, converter para minúsculas
     df_original['TIPO_MODULO'] = df_original['TIPO_MODULO'].fillna('').str.lower().str.replace(' ', '')
     df_original['ATRIBUTO'] = df_original['ATRIBUTO'].fillna('').str.lower().str.strip()
 
     for index, row in df_atributos.iterrows():
 
-        # Remover espaços antes de comparar
         modulo_lower = row['MODULO'].lower().replace(' ', '')
         atributo_lower = row['ATRIBUTO'].lower().strip()
         similaridade_lower = row['SIMILARIDADE'].lower().strip()
 
-        # Criar máscara booleana corrigida
         mask = (
             (df_original['TIPO_MODULO'] == modulo_lower)
         ) & (df_original['ATRIBUTO'] == atributo_lower)
 
-        # Debugging: verificar valores do DataFrame original antes da alteração
-        print("\nValores correspondentes antes da alteração:")
-        print(df_original.loc[mask, ['TIPO_MODULO', 'ATRIBUTO']])
-
-        # Aplicar alteração apenas se houver correspondências
         if not mask.any():
             print("⚠️ Nenhuma correspondência encontrada para essa linha! Verifique se os nomes batem exatamente.")
             continue
 
-        # Substituir valores
         df_original.loc[mask, 'ATRIBUTO'] = similaridade_lower
 
-        # Debugging: verificar valores do DataFrame após a alteração
-        print("\nValores correspondentes após a alteração:")
-        print(df_original.loc[mask, ['TIPO_MODULO', 'ATRIBUTO']])
-
-    print("\n✅ Normalização concluída.")
     return df_original
 
 def remover_acentos(texto):
@@ -126,15 +109,19 @@ def adicionar_extensao_pdf(nome_arquivo):
         nome_arquivo += ".pdf"
     return nome_arquivo
 
+def formata_cnpj(cnpj):
+    try:
+        cnpj_limpo = re.sub(r'[^0-9]', '', cnpj)
 
-def formata_cnpj(cnpj: str) -> str:
-    cnpj = cnpj.strip()
-    if cpfcnpj.validate(cnpj):
-        cnpj_numerico = re.sub(r'\D', '', cnpj)
-        return f"{cnpj_numerico[:2]}.{cnpj_numerico[2:5]}.{cnpj_numerico[5:8]}/{cnpj_numerico[8:12]}-{cnpj_numerico[12:]}"
-    else:
-        return "inválido"
+        if len(cnpj_limpo) != 14:
+            return 'invalido'
 
+        if len(set(cnpj_limpo)) == 1:
+            return 'invalido'
+
+        return f"{cnpj_limpo[:2]}.{cnpj_limpo[2:5]}.{cnpj_limpo[5:8]}/{cnpj_limpo[8:12]}-{cnpj_limpo[12:]}"
+    except:
+        return 'invalido'
 
 def formata_cpf(cpf: str) -> str:
     if isinstance(cpf, list):
