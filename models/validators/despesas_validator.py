@@ -35,28 +35,35 @@ class DespesasValidator(BaseValidatorIns):
         if 'RUBRICA' in self.df.columns:
             for idx, valor in self.df['RUBRICA'].items():
                 if pd.notna(valor) and str(valor) not in self.rubricas_validas:
-                    self._registrar_erro(idx, "RUBRICA: Código não encontrado na lista de rubricas válidas")
+                    self._registrar_erro(idx, "RUBRICA: Código não encontrado na lista de rubricas válidas.")
 
     def validar_conta_corrente(self):
         if 'CONTA_CORRENTE' in self.df.columns:
             for idx, valor in self.df['CONTA_CORRENTE'].items():
                 if pd.notna(valor) and str(valor) not in self.contas_validas:
-                    self._registrar_erro(idx, "CONTA_CORRENTE: Conta bancária não cadastrada")
+                    self._registrar_erro(idx, "CONTA_CORRENTE: Conta não cadastrada.")
 
     def validar_tipo_de_despesa(self):
         if 'DESPESA' in self.df.columns:
             for idx, valor in self.df['DESPESA'].items():
                 if pd.notna(valor) and str(valor) not in self.tipos_despesa_validos:
-                    self._registrar_erro(idx, "DESPESA: Código não encontrado na lista de tipos válidos")
+                    self._registrar_erro(idx, "DESPESA: Código não encontrado na lista de tipos válidos.")
 
     def validar_tipo_de_documento(self):
         if 'TIPO' in self.df.columns:
             for idx, valor in self.df['TIPO'].items():
                 if pd.notna(valor):
                     if str(valor) not in self.tipos_documento_validos:
-                        self._registrar_erro(idx, "TIPO: Código não encontrado na lista de tipos válidos")
+                        self._registrar_erro(idx, "TIPO: Código não encontrado na lista de tipos válidos.")
                     elif str(valor) == 'NF':
                         self._validar_campos_nf(idx)
+
+    def validar_parcelas(self):
+        if 'PMT_PAGA' in self.df.columns and 'QTDE_PMT' in self.df.columns:
+            for idx, (pmt_paga, qtde_pmt) in enumerate(zip(self.df['PMT_PAGA'], self.df['QTDE_PMT'])):
+                if pd.notna(pmt_paga) and pd.notna(qtde_pmt):
+                    if pmt_paga > qtde_pmt:
+                        self._registrar_erro(idx, "PMT_PAGA: O valor não pode ser maior que QTDE_PMT.")
 
     def _validar_campos_nf(self, idx):
         campos_necessarios = ['SERIE', 'NUM_DOCUMENTO', 'CODIGO']
@@ -69,6 +76,13 @@ class DespesasValidator(BaseValidatorIns):
         if faltantes:
             self._registrar_erro(idx,
                                  f"TIPO: Colunas obrigatórias faltantes se for o TIPO for NF: {', '.join(faltantes)}")
+
+    def validar_justificativa(self):
+        if 'FLAG_JUSTIFICATIVA' in self.df.columns:
+            for idx, valor in self.df['FLAG_JUSTIFICATIVA'].items():
+                if pd.notna(valor) and str(valor) not in ['N']:
+                    self._registrar_erro(idx, "FLAG_JUSTIFICATIVA: O valor deve sempre ser N.")
+
 
     def validar_especifico(self):
         self.validar_valores_monetarios()
@@ -83,5 +97,7 @@ class DespesasValidator(BaseValidatorIns):
         self.validar_cnpj()
         self.validar_razao_social()
         self.validar_nome()
+        self.validar_inteiros()
+        self.validar_justificativa()
 
 RegistryValidators.register_ins('modulo_despesas', DespesasValidator)

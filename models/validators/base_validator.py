@@ -41,7 +41,6 @@ class BaseValidatorIns(ABC):
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor):
                         try:
-                            # Tenta converter para datetime com inferência automática
                             pd.to_datetime(valor, errors='raise')
                             print(pd.to_datetime(valor, errors='raise'))
                         except ValueError:
@@ -60,11 +59,10 @@ class BaseValidatorIns(ABC):
         for campo in self.campos_obrigatorios:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
-                    # Verifica se é NaN (nulo) ou string vazia
                     if pd.isna(valor) or (isinstance(valor, str) and not valor.strip()):
                         self._registrar_erro(idx, f"{campo}: Campo obrigatório não preenchido.\n")
             else:
-                st.error(f"Campo obrigatório '{campo}' não encontrado no arquivo")
+                st.error(f"Campo obrigatório '{campo}' não encontrado no arquivo.")
                 st.stop()
 
     def validar_tamanho_campos(self):
@@ -80,26 +78,17 @@ class BaseValidatorIns(ABC):
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor):
                         try:
-                            valor_str = str(valor).strip()
-
-                            padrao_valido = (
-                                    re.match(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?$',
-                                             valor_str) or
-                                    re.match(r'^-?\d+(?:,\d{1,2})?$', valor_str)
-                            )
-
-                            if not padrao_valido:
-                                self._registrar_erro(idx,
-                                                     f"{campo}: Formato inválido, use 1.234,56 ou 1234,56 ou 123")
-                                continue
-
-                            valor_convertido = float(valor_str.replace('.', '').replace(',', '.'))
-
-                            if valor_convertido < 0:
-                                self._registrar_erro(idx, f"{campo}: Valor negativo")
+                            if campo == 'PREC_UNIT':
+                                print(f"Campo: {campo}, Valor: {valor}")
+                                if not verificar_formato_brasileiro(valor, 4):
+                                    self._registrar_erro(idx,
+                                                         f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
+                            else:
+                                if not verificar_formato_brasileiro(valor, 2):
+                                    self._registrar_erro(idx, f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
 
                         except (ValueError, TypeError):
-                            self._registrar_erro(idx, f"{campo}: Valor monetário inválido")
+                            self._registrar_erro(idx, f"{campo}: Valor monetário inválido.")
 
     def validar_tamanho(self):
         pass
@@ -112,14 +101,12 @@ class BaseValidatorIns(ABC):
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor):
                         try:
-                            # Tenta converter para inteiro
                             int(valor)
-                            # Verifica se há decimais em valores float
                             if isinstance(valor, float) and not valor.is_integer():
                                 raise ValueError
                         except (ValueError, TypeError):
                             self._registrar_erro(idx,
-                                                 f"{campo}: Deve ser um número inteiro válido")
+                                                 f"{campo}: Deve ser um número inteiro válido.")
 
     def validar_positivo(self):
         """Valida se os campos configurados contêm valores não negativos"""
@@ -132,10 +119,10 @@ class BaseValidatorIns(ABC):
                             valor_num = float(valor)
                             if valor_num < 0:
                                 self._registrar_erro(idx,
-                                                     f"{campo}: Não pode ser negativo")
+                                                     f"{campo}: Não pode ser negativo.")
                         except (ValueError, TypeError):
                             self._registrar_erro(idx,
-                                                 f"{campo}: Valor numérico inválido")
+                                                 f"{campo}: Valor numérico inválido.")
 
     def validar_cpf(self):
         self.campos_cpf = getattr(self, 'campos_cpf', [])
@@ -146,7 +133,7 @@ class BaseValidatorIns(ABC):
                         try:
                             valor_split = str(valor).split(' ')[0]
                             if formata_cpf(valor_split) == 'invalido':
-                                self._registrar_erro(idx, f"{campo}: CPF inválido")
+                                self._registrar_erro(idx, f"{campo}: CPF inválido.")
                         except Exception as e:
                             self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
 
@@ -155,12 +142,11 @@ class BaseValidatorIns(ABC):
         for campo in self.campos_cnpj:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
-                    print(f"Campo: {campo}, Valor: {valor}")
                     if pd.notna(valor):
                         try:
                             valor_split = str(valor).split(' ')[0]
                             if formata_cnpj(valor_split) == 'invalido':
-                                self._registrar_erro(idx, f"{campo}: CNPJ inválido")
+                                self._registrar_erro(idx, f"{campo}: CNPJ inválido.")
                         except Exception as e:
                             self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
 
@@ -172,13 +158,13 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         validacoes = []
                         if not isinstance(valor, str):
-                            validacoes.append(f"{campo}: Deve ser texto")
+                            validacoes.append(f"{campo}: Deve ser texto.")
                         else:
                             valor_clean = valor.strip()
                             if len(valor_clean) > 100:
-                                validacoes.append(f"{campo}: Máximo 100 caracteres")
+                                validacoes.append(f"{campo}: Máximo 100 caracteres.")
                             if not re.fullmatch(r'[a-zA-Z0-9\sà-üÀ-ÜçÇéÉãÃõÕôÔîÎûÛ]+', valor_clean):
-                                validacoes.append(f"{campo}: Caracteres inválidos")
+                                validacoes.append(f"{campo}: Caracteres inválidos.")
 
                         if validacoes:
                             self._registrar_erro(idx, "\n".join(validacoes))
@@ -191,13 +177,13 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         validacoes = []
                         if not isinstance(valor, str):
-                            validacoes.append(f"{campo}: Deve ser texto")
+                            validacoes.append(f"{campo}: Deve ser texto.")
                         else:
                             valor_clean = valor.strip()
                             if len(valor_clean) > 100:
-                                validacoes.append(f"{campo}: Máximo 100 caracteres")
+                                validacoes.append(f"{campo}: Máximo 100 caracteres.")
                             if not re.fullmatch(r'[a-zA-Z0-9\sà-üÀ-ÜçÇéÉãÃõÕôÔîÎûÛ\.,\-_&/\()\?%]+', valor_clean):
-                                validacoes.append(f"{campo}: Caracteres inválidos")
+                                validacoes.append(f"{campo}: Caracteres inválidos.")
 
                         if validacoes:
                             self._registrar_erro(idx, "\n".join(validacoes))
@@ -213,20 +199,20 @@ class BaseValidatorIns(ABC):
                         valor = str(valor).strip()
 
                         if not isinstance(self.df.at[idx, campo], str):
-                            validacoes.append(f'{campo}: Deve ser uma string')
+                            validacoes.append(f'{campo}: Deve ser uma string.')
 
                         if not valor.lower().endswith('.pdf'):
-                            validacoes.append(f'{campo}: Deve terminar com .pdf')
+                            validacoes.append(f'{campo}: Deve terminar com .pdf.')
                         else:
                             if not valor.endswith('.pdf'):
-                                validacoes.append(f'{campo}: Extensão .pdf deve ser minúscula')
+                                validacoes.append(f'{campo}: Extensão .pdf deve ser minúscula.')
 
                         if len(valor) > 150:
-                            validacoes.append(f'{campo}: Tamanho máximo excedido (150 caracteres)')
+                            validacoes.append(f'{campo}: Tamanho máximo excedido (150 caracteres).')
 
                         nome_base = valor[:-4] if valor.lower().endswith('.pdf') else valor
                         if not re.fullmatch(r'^[A-Z0-9_]+$', nome_base):
-                            validacoes.append(f'{campo}: Deve conter apenas letras maiúsculas, números e underline (_)')
+                            validacoes.append(f'{campo}: Deve conter apenas letras maiúsculas, números e underline (_).')
 
                         if validacoes:
                             self._registrar_erro(idx, '\n'.join(validacoes))
