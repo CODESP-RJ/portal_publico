@@ -4,8 +4,12 @@ import datetime
 from web.components.instrucoes import instrucoes_validar_importacoes
 from utils.tratamentos import limpar_dados
 from utils.utils import color_rows, exibir_resultados, oferecer_download, processar_arquivo
-from models.validators.base_validator import BaseValidatorIns
-from models.validators import despesas_validator, itens_de_nota_fiscal_validator
+from models.base_validador import BaseValidatorIns
+from models.receitas import receitas_insercao_validador
+from models.itens_de_nota_fiscal import itens_de_nota_fiscal_insercao_validador
+from models.despesas import despesas_insercao_validador
+from models.contratos_de_terceiros import contratos_de_terceiros_insercao_validador
+from models.bens_patrimoniados import bens_patrimoniados_insercao_validador
 from models.registry import RegistryValidators
 from io import StringIO
 
@@ -25,7 +29,7 @@ tipo_arquivo_modelo = {
 
 tipo_arquivo_mapping = {
     'Despesas': 'modulo_despesas',
-    'Contratos de Terceiros': 'modulo_contratos_terceiros',
+    'Contratos de Terceiros': 'modulo_contratos_de_terceiros',
     'Saldos': 'modulo_saldos',
     'Bens Patrimoniados': 'modulo_bens_patrimoniados',
     'Itens de Nota Fiscal': 'modulo_itens_nota_fiscal',

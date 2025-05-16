@@ -1,4 +1,4 @@
-from models.validators.base_validator import BaseValidator
+from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 import re
 import pandas as pd
@@ -12,7 +12,7 @@ class BensPatrimoniadosValidator(BaseValidator):
         super().__init__(df, tipo_de_acao)
         self.valid_attributes = LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 
-    def validate_data(self):
+    def validar_alteracao(self):
         print(f"DATAFRAME APÓS:\n{self.df}")
 
         for id, grupo in self.df.groupby('ID'):

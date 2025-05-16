@@ -1,10 +1,10 @@
-from models.validators.base_validator import BaseValidator
+from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS
 import re
 import pandas as pd
 from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos
-from models.validators.base_validator import BaseValidator
+from models.base_validador import BaseValidator
 from models.registry import RegistryValidators
 
 class ContratosTerceirosValidator(BaseValidator):
@@ -12,7 +12,7 @@ class ContratosTerceirosValidator(BaseValidator):
         super().__init__(df, tipo_de_acao)
         self.valid_attributes = LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS
 
-    def validate_data(self):
+    def validar_alteracao(self):
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()

@@ -1,4 +1,4 @@
-from models.validators.base_validator import BaseValidator
+from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 import re
 import pandas as pd
@@ -11,7 +11,7 @@ class ItensDeNotaFiscalValidator(BaseValidator):
         super().__init__(df, tipo_de_acao)
         self.valid_attributes = LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 
-    def validate_data(self):
+    def validar_alteracao(self):
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()

@@ -73,6 +73,7 @@ class BaseValidatorIns(ABC):
                         self._registrar_erro(idx, f"{campo}: Tamanho máximo excedido, (max {tamanho_max} caracteres).")
 
     def validar_valores_monetarios(self):
+        self.campos_monetarios = getattr(self, 'campos_monetarios', [])
         for campo in self.campos_monetarios:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
@@ -85,13 +86,11 @@ class BaseValidatorIns(ABC):
                                                          f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
                             else:
                                 if not verificar_formato_brasileiro(valor, 2):
-                                    self._registrar_erro(idx, f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
-
+                                    self._registrar_erro(idx,
+                                                         f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
                         except (ValueError, TypeError):
                             self._registrar_erro(idx, f"{campo}: Valor monetário inválido.")
-
-    def validar_tamanho(self):
-        pass
+        self.validar_positivo(self.campos_monetarios)
 
     def validar_inteiros(self):
         """Valida se os campos configurados contêm valores inteiros"""
@@ -105,24 +104,31 @@ class BaseValidatorIns(ABC):
                             if isinstance(valor, float) and not valor.is_integer():
                                 raise ValueError
                         except (ValueError, TypeError):
-                            self._registrar_erro(idx,
-                                                 f"{campo}: Deve ser um número inteiro válido.")
+                            self._registrar_erro(idx, f"{campo}: Deve ser um número inteiro válido.")
+        self.validar_positivo(self.campos_inteiros)
 
-    def validar_positivo(self):
-        """Valida se os campos configurados contêm valores não negativos"""
-        self.campos_positivos = getattr(self, 'campos_positivos', [])
-        for campo in self.campos_positivos:
+    def validar_positivo(self, campos):
+        """Valida se os campos fornecidos contêm valores não negativos, exceto os em campos_negativos."""
+        campos_negativos = getattr(self, 'campos_negativos', [])
+        for campo in campos:
             if campo in self.df.columns:
+                if campo in campos_negativos:
+                    continue
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor):
                         try:
-                            valor_num = float(valor)
+                            if isinstance(valor, str):
+                                valor_convertido = valor.replace(".", "").replace(",", ".")
+                            else:
+                                valor_convertido = str(valor).replace(",", ".")
+
+                            valor_num = float(valor_convertido)
+
                             if valor_num < 0:
-                                self._registrar_erro(idx,
-                                                     f"{campo}: Não pode ser negativo.")
+                                self._registrar_erro(idx, f"{campo}: Não pode ser negativo.")
+
                         except (ValueError, TypeError):
-                            self._registrar_erro(idx,
-                                                 f"{campo}: Valor numérico inválido.")
+                            self._registrar_erro(idx, f"{campo}: Valor numérico inválido.")
 
     def validar_cpf(self):
         self.campos_cpf = getattr(self, 'campos_cpf', [])
@@ -216,6 +222,13 @@ class BaseValidatorIns(ABC):
 
                         if validacoes:
                             self._registrar_erro(idx, '\n'.join(validacoes))
+
+    def validar_coluna_d(self):
+        if 'D' in self.df.columns:
+            for idx, valor in self.df['D'].items():
+                if pd.notna(valor):
+                    if valor != 'D':
+                        self._registrar_erro(idx, "Coluna D deve conter apenas o valor 'D'.")
 
     def validar_cabecalho(self):
         uploaded_columns = [col.strip().replace(" ", "").upper() for col in self.df.columns.tolist()]
@@ -371,5 +384,23 @@ class BaseValidator(ABC):
             self.df.at[idx, 'VALIDACAO'] = 'OK'
 
     @abstractmethod
-    def validate_data(self):
+    def validar_alteracao(self):
         pass
+
+    def validar_exclusao(self):
+        """Valida se as colunas ATRIBUTO e NOVO_VALOR contêm 'EXCLUSAO' para operações de exclusão."""
+        if 'VALIDACAO' not in self.df.columns:
+            self.df['VALIDACAO'] = ''
+
+        for idx, row in self.df.iterrows():
+            atributo = row['ATRIBUTO']
+            novo_valor = row['NOVO_VALOR']
+
+            atributo_str = str(atributo).strip().upper() if pd.notna(atributo) else ''
+            novo_valor_str = str(novo_valor).strip().upper() if pd.notna(novo_valor) else ''
+
+            if atributo_str == 'EXCLUSAO' and novo_valor_str == 'EXCLUSAO':
+                self.preencher_validacao(idx, [])
+            else:
+                self.preencher_validacao(idx, ["ATRIBUTO e NOVO_VALOR devem ser 'EXCLUSAO' para ACAO de EXCLUSAO."])
+        return self.df

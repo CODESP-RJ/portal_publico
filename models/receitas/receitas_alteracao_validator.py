@@ -1,17 +1,17 @@
-from models.validators.base_validator import BaseValidator
-from models.common import LISTA_ATRIBUTOS_SALDOS
+from models.base_validador import BaseValidator
+from models.common import LISTA_ATRIBUTOS_RECEITAS
 import re
 import pandas as pd
 from utils.utils import erros, obter_contratos
 from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
 from models.registry import RegistryValidators
 
-class SaldosValidator(BaseValidator):
+class ReceitasValidator(BaseValidator):
     def __init__(self, df, tipo_de_acao):
         super().__init__(df, tipo_de_acao)
-        self.valid_attributes = LISTA_ATRIBUTOS_SALDOS
+        self.valid_attributes = LISTA_ATRIBUTOS_RECEITAS
 
-    def validate_data(self):
+    def validar_alteracao(self):
 
         for id, grupo in self.df.groupby('ID'):
             for idx, row in grupo.iterrows():
@@ -36,10 +36,10 @@ class SaldosValidator(BaseValidator):
                         self.df.at[idx, 'VALIDACAO'] = ', '.join(validacoes)
                         continue
 
-                if attr != 'VALOR EM CONTA CORRENTE' and float(valor) < 0:
+                if attr != 'RESULTADO DE APLICACAO FINANCEIRA' and float(valor) < 0:
                     validacoes.append('VALOR NÃO PODE SER NEGATIVO')
 
                 self.preencher_validacao(idx, validacoes)
         return self.df
 
-RegistryValidators.register_alt_exc('SALDOS', SaldosValidator)
+RegistryValidators.register_alt_exc('Receitas', ReceitasValidator)

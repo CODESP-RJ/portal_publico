@@ -1,4 +1,4 @@
-from models.validators.base_validator import BaseValidatorIns
+from models.base_validador import BaseValidatorIns
 from models.registry import RegistryValidators
 import datetime
 from models.common import CONFIGURACOES_MODULOS

@@ -13,12 +13,12 @@ from models.common import (
 from web.components.instrucoes import instrucoes_validar_alteracoes_exclusoes
 from utils.tratamentos import limpar_dados
 from utils.utils import color_rows, exibir_resultados, oferecer_download, processar_arquivo
-from models.contratos_de_terceiros.contratos_terceiros_validator import ContratosTerceirosValidator
-from models.despesas.despesas_validator import DespesasValidator
-from models.saldos.saldos_validator import SaldosValidator
-from models.bens_patrimoniados.bens_patrimoniados_validator import BensPatrimoniadosValidator
-from models.itens_de_nota_fiscal.itens_de_nota_fiscal_validator import ItensDeNotaFiscalValidator
-from models.receitas.receitas_validator import ReceitasValidator
+from models.contratos_de_terceiros.contratos_terceiros_alteracao_validador import ContratosTerceirosValidator
+from models.despesas.despesas_alteracao_validador import DespesasValidator
+from models.saldos.saldos_alteracao_validator import SaldosValidator
+from models.bens_patrimoniados.bens_patrimoniados_alteracao_validador import BensPatrimoniadosValidator
+from models.itens_de_nota_fiscal.itens_de_nota_fiscal_alteracao_validador import ItensDeNotaFiscalValidator
+from models.receitas.receitas_alteracao_validator import ReceitasValidator
 from models.registry import RegistryValidators
 
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
@@ -53,14 +53,14 @@ def main():
                 validator_class = RegistryValidators.get_validator_alt_exc(modulo_normalizado)
 
                 if validator_class is None:
-                    st.warning(f"Módulo '{modulo}' não é suportado. Será ignorado.")
+                    st.warning(f"Módulo {modulo} não é reconhecido. Será ignorado. Os modulos reconhecidos são: DESPESAS, CONTRATOS DE TERCEIROS, SALDOS, BENS PATRIMONIADOS, ITENS DE NOTA FISCAL e RECEITAS.")
                     continue
 
                 for acao in df['ACAO'].unique():
                     acao_normalizada = acao.strip().upper()
 
                     if acao_normalizada not in ['ALTERACAO', 'EXCLUSAO']:
-                        st.warning(f"Ação '{acao}' não é suportada para o módulo '{modulo}'. Será ignorada.")
+                        st.warning(f"Ação {acao} não é suportada. Será ignorado. As ações suportadas são: ALTERACAO e EXCLUSAO.")
                         continue
 
                     df_filtrado = df[
@@ -71,17 +71,18 @@ def main():
                     if df_filtrado.empty:
                         continue
 
-                    validator = validator_class(df_filtrado,
+                    validador = validator_class(df_filtrado,
                                                 "Alteração" if acao_normalizada == "ALTERACAO" else "Exclusão")
-                    print(f"Validando {modulo_normalizado} - {acao_normalizada}")
                     try:
-                        validator.check_header()
-                        validator.check_ano_mes_ref()
+                        validador.check_header()
+                        validador.check_ano_mes_ref()
 
                         if acao_normalizada == "ALTERACAO":
-                            validator.check_atributos()
-                            validator.check_id()
-                            resultado = validator.validate_data()
+                            validador.check_atributos()
+                            validador.check_id()
+                            resultado = validador.validar_alteracao()
+                        elif acao_normalizada == "EXCLUSAO":
+                            resultado = validador.validar_exclusao()
                         else:
                             resultado = df_filtrado
 

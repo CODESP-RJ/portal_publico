@@ -79,7 +79,7 @@ CONFIGURACOES_MODULOS = {
         'campos_monetarios': ['VL_CONTA_CORRENTE', 'VL_APL_FINANCEIRA', 'VL_CONTA_PROVISAO', 'VL_EM_ESPECIE'],
         'limites_tamanho': {}
     },
-    'modulo_contratos_terceiros': {
+    'modulo_contratos_de_terceiros': {
         'cabecalho_str': 'D;COD_OS;COD_UNIDADE;COD_CONTRATO;RAZAO_SOCIAL;CNPJ;SERVICO;VALOR_MES;VIGENCIA;CONTRATO_ANO_MES_INICIO;CONTRATO_ANO_MES_FIM;REF_TRI;REF_ANO_MES;IMG_CONTRATO',
         'datas_abreviadas': ['CONTRATO_ANO_MES_INICIO', 'CONTRATO_ANO_MES_FIM', 'REF_TRI'],
         'datas_completas': ['REF_ANO_MES'],
