@@ -82,7 +82,7 @@ class BaseValidatorIns(ABC):
                             if campo == 'PREC_UNIT':
                                 if not verificar_formato_brasileiro(valor, 4):
                                     self._registrar_erro(idx,
-                                                         f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
+                                                         f"{campo}: Formato monetário inválido (use 4 casas decimais), ex: 1.234,5600 ou 1234,5600 ou 123.")
                             else:
                                 if not verificar_formato_brasileiro(valor, 2):
                                     self._registrar_erro(idx,

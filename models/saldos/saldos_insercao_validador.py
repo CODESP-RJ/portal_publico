@@ -18,12 +18,14 @@ class SaldosValidator(BaseValidatorIns):
         self.limites_tamanho = self.config['limites_tamanho']
 
         self.campo_contrato = ['COD_CONTRATO']
+        self.campos_pdf = ['EXTRATO']
         self.campos_inteiros = ['COD_OS', 'COD_UNIDADE', 'BANCO', 'AGENCIA', 'CONTA_CORRENTE']
         self.campos_negativos = ['VL_CONTA_CORRENTE']
 
     def validar_especifico(self):
         self.validar_inteiros()
         self.validar_datas()
+        self.validar_documentos_pdf()
         self.validar_tamanho_campos()
         self.validar_valores_monetarios()
         self.validar_contrato()
