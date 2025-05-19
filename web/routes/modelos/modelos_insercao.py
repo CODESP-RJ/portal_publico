@@ -121,16 +121,16 @@ try:
     files_imp = os.listdir(files_dir_imp)
 
     categories = {
-        'Tudo em um': ['INSTRUÇÕES PARA INSERÇÃO COMPLETO'],
+        'Tudo em um': ['INSTRUÇÕES PARA IMPORTAÇÃO COMPLETO'],
         'Por módulo': [
             'INSTRUÇÕES BASICAS DE FORMATAÇÃO DOS ARQUIVOS',
-            'INSTRUÇÕES PARA INSERÇÃO DE DESPESAS',
-            'INSTRUÇÕES PARA INSERÇÃO DE RECEITAS',
-            'INSTRUÇÕES PARA INSERÇÃO DE SALDOS',
-            'INSTRUÇÕES PARA INSERÇÃO DE FORNECEDORES',
-            'INSTRUÇÕES PARA INSERÇÃO DE CONTRATOS DE TERCEIROS',
-            'INSTRUÇÕES PARA INSERÇÃO DE BENS PATRIMONIADOSL',
-            'INSTRUÇÕES PARA INSERÇÃO DE ITENS DE NOTA FISCAL'
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE DESPESAS',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE RECEITAS',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE SALDOS',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE FORNECEDORES',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE CONTRATOS DE TERCEIROS',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE BENS PATRIMONIADOSL',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE ITENS DE NOTA FISCAL'
 
         ],
     }
