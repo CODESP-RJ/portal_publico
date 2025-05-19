@@ -11,6 +11,17 @@ from charset_normalizer import from_bytes
 from io import StringIO
 from utils.tratamentos import limpar_dados
 
+def footer():
+    st.divider()
+
+    with st.container():
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image("images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png", use_column_width=True)
+            st.markdown(
+                "<p style='text-align: center;'><strong>APOIO:</strong> SMS/SUBG/CTGOS</p>",
+                unsafe_allow_html=True
+            )
 
 def processar_arquivo(arquivo, func=None):
     try:

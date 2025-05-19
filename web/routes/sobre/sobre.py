@@ -1,4 +1,5 @@
 import streamlit as st
+from utils.utils import footer
 
 st.markdown("""
     <style>
@@ -91,7 +92,4 @@ for i, step in enumerate(steps):
 
 st.divider()
 
-with st.container():
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)
+footer()

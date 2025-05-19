@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+from utils.utils import footer
 
 def local_css():
     st.markdown("""
@@ -124,9 +125,4 @@ try:
 except Exception as e:
     st.error(f"🚨 Erro ao carregar arquivos: {str(e)}")
 
-st.divider()
-
-with st.container():
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)
+footer()

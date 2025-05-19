@@ -20,6 +20,7 @@ from models.bens_patrimoniados.bens_patrimoniados_alteracao_validador import Ben
 from models.itens_de_nota_fiscal.itens_de_nota_fiscal_alteracao_validador import ItensDeNotaFiscalValidator
 from models.receitas.receitas_alteracao_validator import ReceitasValidator
 from models.registry import RegistryValidators
+from utils.utils import footer
 
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
 st.divider()
@@ -110,9 +111,4 @@ def main():
 main()
 instrucoes_validar_alteracoes_exclusoes()
 
-st.divider()
-
-with st.container():
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)
+footer()
