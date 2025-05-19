@@ -42,7 +42,6 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         try:
                             pd.to_datetime(valor, errors='raise')
-                            print(pd.to_datetime(valor, errors='raise'))
                         except ValueError:
                             print(f"Erro de conversão em {campo} com valor {valor} idx {idx}")
                             self._registrar_erro(idx,

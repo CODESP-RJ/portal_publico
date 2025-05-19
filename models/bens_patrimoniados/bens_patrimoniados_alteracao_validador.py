@@ -13,7 +13,6 @@ class BensPatrimoniadosValidator(BaseValidator):
         self.valid_attributes = LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 
     def validar_alteracao(self):
-        print(f"DATAFRAME APÓS:\n{self.df}")
 
         for id, grupo in self.df.groupby('ID'):
             atributos = grupo.set_index('ATRIBUTO')['NOVO_VALOR'].to_dict()
