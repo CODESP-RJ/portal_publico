@@ -28,7 +28,7 @@ def main():
             ],
             "ARQUIVOS MODELO": [
                 st.Page("web/routes/modelos/modelos_insercao.py", title="Arquivos para Inserção de Dados"),
-                st.Page("web/routes/modelos/modelos_alteracao-exclusao.py", title="Arquivos de Alteração e Exclusão de Dados"),
+                st.Page("web/routes/modelos/modelos_alteracao-exclusao.py", title="Arquivos para Alteração e Exclusão de Dados"),
             ],
             "CATÁLOGOS DE TABELAS": [
                 st.Page("web/routes/tabelas_auxiliares/tabelas.py", title="Tabelas Auxiliares"),
