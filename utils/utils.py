@@ -24,8 +24,7 @@ def exibir_resultados(df):
     if 'VALIDACAO' in df.columns:
         df['VALIDACAO'] = df['VALIDACAO'].astype(str)
 
-    # Aplica a formatação condicional
-    styled_df = df.style.applymap(lambda x: color_rows(x), subset=['VALIDACAO']) \
+    styled_df = df.style.map(color_rows, subset=['VALIDACAO']) \
         .set_properties(**{'text-align': 'left'})
 
     st.dataframe(styled_df, use_container_width=True)

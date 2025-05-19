@@ -17,6 +17,7 @@ class DespesasValidator(BaseValidatorIns):
         self.campos_monetarios = self.config['campos_monetarios']
         self.limites_tamanho = self.config['limites_tamanho']
 
+        self.campo_contrato = ['COD_CONTRATO']
         self.campos_pdf = ['DESCRICAO']
         self.campos_cpf = ['CPF']
         self.campos_cnpj = ['CNPJ']
@@ -83,21 +84,21 @@ class DespesasValidator(BaseValidatorIns):
                 if pd.notna(valor) and str(valor) not in ['N']:
                     self._registrar_erro(idx, "FLAG_JUSTIFICATIVA: O valor deve sempre ser N.")
 
-
     def validar_especifico(self):
-        self.validar_valores_monetarios()
-        self.validar_tamanho_campos()
+        self.validar_inteiros()
         self.validar_datas()
+        self.validar_tamanho_campos()
+        self.validar_valores_monetarios()
+        self.validar_contrato()
         self.validar_documentos_pdf()
-        self.validar_rubrica()
-        self.validar_conta_corrente()
-        self.validar_tipo_de_despesa()
-        self.validar_tipo_de_documento()
         self.validar_cpf()
         self.validar_cnpj()
         self.validar_razao_social()
         self.validar_nome()
-        self.validar_inteiros()
+        self.validar_rubrica()
+        self.validar_conta_corrente()
+        self.validar_tipo_de_despesa()
+        self.validar_tipo_de_documento()
         self.validar_justificativa()
 
 RegistryValidators.register_ins('modulo_despesas', DespesasValidator)

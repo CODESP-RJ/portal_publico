@@ -95,12 +95,12 @@ class ItensNotaFiscalValidator(BaseValidatorIns):
                     self._registrar_erro(idx, "MAT_OU_SERV: Campo inválido. Deve ser 'M' ou 'S'.")
 
     def validar_especifico(self):
-        self.validar_valores_monetarios()
-        self.validar_tamanho_campos()
+        self.validar_inteiros()
         self.validar_datas()
+        self.validar_tamanho_campos()
+        self.validar_valores_monetarios()
         self.validar_documentos_pdf()
         self.validar_cnpj()
-        self.validar_inteiros()
         self.validar_campos_cod()
 
 RegistryValidators.register_ins('modulo_itens_nota_fiscal', ItensNotaFiscalValidator)

@@ -4,21 +4,27 @@ import pandas as pd
 from pycpfcnpj import cpfcnpj
 from datetime import datetime
 
+def validar_formato_contrato(valor):
+    if not isinstance(valor, str):
+        return False
+
+    padrao1 = re.compile(r'^[0-9]+/[0-9]+$')
+    padrao2 = re.compile(r'^[0-9]+/[0-9]+-TC$')
+    return bool(padrao1.match(valor)) or bool(padrao2.match(valor))
+
 def verificar_formato_brasileiro(valor, casas_decimais=2):
     """
     Verifica se o valor está no formato brasileiro correto com casas decimais específicas
     - casas_decimais: 2 para VALOR TOTAL, 4 para VALOR UNITARIO
     """
     if pd.isna(valor) or valor is None:
-        return True  # Considera válido se for vazio
+        return True
 
     valor_str = str(valor).strip()
 
-    # Padrão para formato brasileiro com decimais
     padrao_br_com_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*(?:,\d{' + str(casas_decimais) + '})$')
     padrao_br_sem_decimal = re.compile(r'^-?\d{1,3}(?:\.\d{3})*$')
 
-    # Padrão para número simples sem separador de milhar
     padrao_simples_com_decimal = re.compile(r'^-?\d+(?:,\d{' + str(casas_decimais) + '})$')
     padrao_simples_sem_decimal = re.compile(r'^-?\d+$')
 

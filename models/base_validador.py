@@ -4,7 +4,7 @@ import streamlit as st
 from abc import ABC, abstractmethod
 from utils.utils import oferecer_download, exibir_resultados, color_rows
 from models.common import CONFIGURACOES_MODULOS
-from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira
+from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira, validar_formato_contrato
 
 class BaseValidatorIns(ABC):
     def __init__(self, df):
@@ -80,7 +80,6 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         try:
                             if campo == 'PREC_UNIT':
-                                print(f"Campo: {campo}, Valor: {valor}")
                                 if not verificar_formato_brasileiro(valor, 4):
                                     self._registrar_erro(idx,
                                                          f"{campo}: Formato monetário inválido, use 1.234,56 ou 1234,56 ou 123.")
@@ -193,6 +192,15 @@ class BaseValidatorIns(ABC):
 
                         if validacoes:
                             self._registrar_erro(idx, "\n".join(validacoes))
+
+    def validar_contrato(self):
+        self.campo_contrato = getattr(self, 'campo_contrato', [])
+        for campo in self.campo_contrato:
+            if campo in self.df.columns:
+                for idx, valor in self.df[campo].items():
+                    if pd.notna(valor):
+                        if not validar_formato_contrato(str(valor)):
+                            self._registrar_erro(idx, f"{campo}: Formato inválido. Use XXXX/XXXX ou XXXX/XXX-TC.")
 
     def validar_documentos_pdf(self):
         """Valida colunas que contêm nomes de arquivos PDF"""
