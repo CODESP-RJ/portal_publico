@@ -174,6 +174,55 @@ class BaseValidatorIns(ABC):
                         if validacoes:
                             self._registrar_erro(idx, "\n".join(validacoes))
 
+    def validar_tipo_fornecedor(self):
+        self.campo_tipo_fornecedor = ['TIPO']
+        campo_documento = 'CNPJ_CPF'
+
+        for campo in self.campo_tipo_fornecedor:
+            if campo in self.df.columns and campo_documento in self.df.columns:
+                for idx, row in self.df.iterrows():
+                    tipo = row[campo]
+                    documento = row[campo_documento]
+                    validacoes = []
+
+                    if pd.isna(tipo):
+                        validacoes.append(f"{campo}: Campo obrigatório não preenchido.")
+                    else:
+                        tipo_clean = str(tipo).strip().upper()
+                        if tipo_clean not in ['J', 'F']:
+                            validacoes.append(f"{campo}: Valor inválido. Deve ser 'J' (Jurídica) ou 'F' (Física).")
+                        else:
+                            if pd.isna(documento) or str(documento).strip() == '':
+                                validacoes.append(f"{campo_documento}: Campo obrigatório não preenchido.")
+                            else:
+                                doc_str = str(documento).strip()
+                                if tipo_clean == 'J':
+                                    if formata_cnpj(doc_str) == 'invalido':
+                                        validacoes.append(f"{campo_documento}: CNPJ inválido.")
+                                elif tipo_clean == 'F':
+                                    if formata_cpf(doc_str) == 'invalido':
+                                        validacoes.append(f"{campo_documento}: CPF inválido.")
+
+                    if validacoes:
+                        self._registrar_erro(idx, "\n".join(validacoes))
+
+    def validar_email(self):
+        self.campos_email = getattr(self, 'campos_email', [])
+        for campo in self.campos_email:
+            if campo in self.df.columns:
+                for idx, valor in self.df[campo].items():
+                    if pd.notna(valor):
+                        validacoes = []
+                        if not isinstance(valor, str):
+                            validacoes.append(f"{campo}: Deve ser texto.")
+                        else:
+                            valor_clean = valor.strip()
+                            if not re.fullmatch(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', valor_clean):
+                                validacoes.append(f"{campo}: Formato de e-mail inválido.")
+
+                        if validacoes:
+                            self._registrar_erro(idx, "\n".join(validacoes))
+
     def validar_razao_social(self):
         self.campos_razao_social = getattr(self, 'campos_razao_social', [])
         for campo in self.campos_razao_social:

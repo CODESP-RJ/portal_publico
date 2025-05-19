@@ -79,4 +79,10 @@ with st.container():
             col_idx = (col_idx + 1) % 2
 
     st.info("Confira nossas gravações de treinamentos ao vivo realizados anteriormente")
-st.markdown("---")
+
+st.divider()
+
+with st.container():
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)

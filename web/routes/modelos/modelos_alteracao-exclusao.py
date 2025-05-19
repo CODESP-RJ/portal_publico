@@ -44,7 +44,8 @@ with st.container():
         <div class="instruction-box">
             <strong>Formatação obrigatória dos arquivos:</strong><br>
             🟢 Codificação: UTF-8<br>
-            🟢 Formato: .csv, .xls ou .xlsx<br>
+            🟢 Formato: .csv<br>
+            🟢 Separador: ponto e vírgula <strong>;</strong><br>
             🟢 Decimais com vírgula (ex: 1.234,56)<br>
             🟡 Separador de milhares opcional (usar ponto)
         </div>
@@ -68,9 +69,9 @@ files_alt = os.listdir(files_dir_alt)
 
 try:
     categories_alt = {
-        'Financeiros': ['SALDOS', 'RECEITAS', 'DESPESAS'],
-        'Cadastros': ['CONTRATOS_DE_TERCEIROS', 'BENS_PATRIMONIADOS'],
-        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL'],
+        'Financeiros': ['SALDOS_ALTERACAO', 'RECEITAS_ALTERACAO', 'DESPESAS_ALTERACAO'],
+        'Cadastros': ['CONTRATOS_DE_TERCEIROS_ALTERACAO', 'BENS_PATRIMONIADOS_ALTERACAO'],
+        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_ALTERACAO'],
     }
 
     for category, patterns in categories_alt.items():
@@ -97,9 +98,9 @@ try:
     st.info("Clique no botão correspondente para baixar o modelo desejado")
 
     categories_exc = {
-        'Financeiros': ['SALDOS', 'RECEITAS', 'DESPESAS'],
-        'Cadastros': ['CONTRATOS_DE_TERCEIROS', 'BENS_PATRIMONIADOS'],
-        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL'],
+        'Financeiros': ['SALDOS_EXCLUSAO', 'RECEITAS_EXCLUSAO', 'DESPESAS_EXCLUSAO'],
+        'Cadastros': ['CONTRATOS_DE_TERCEIROS_EXCLUSAO', 'BENS_PATRIMONIADOS_EXCLUSAO'],
+        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_EXCLUSAO'],
     }
 
     for category, patterns in categories_exc.items():
@@ -122,3 +123,10 @@ try:
 
 except Exception as e:
     st.error(f"🚨 Erro ao carregar arquivos: {str(e)}")
+
+st.divider()
+
+with st.container():
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)

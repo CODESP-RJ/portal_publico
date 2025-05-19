@@ -21,27 +21,19 @@ st.markdown("""
 
 st.markdown("""
     <div style='border-radius: 10px; text-align: center;'>
-        <h1>Ferramenta de Validação</h1>
+        <h1>Sobre a Ferramenta</h1>
     </div>
 """, unsafe_allow_html=True)
 st.divider()
 
 with st.expander("📌 Introdução", expanded=True):
     st.write("""
-    **Solução desenvolvida para otimizar o processo** do Painel OSINFO, proporcionando:
-    - Automação inteligente das verificações
-    - Padronização dos fluxos de trabalho
+    **Solução desenvolvida para otimizar o processo de desbloqueio** do Painel OSINFO, proporcionando:
+    - Verificação inteligente e automática dos arquivos
     - Redução de retrabalho
-    - Maior transparência nas operações
+    - Aumento da eficiência
+    - Redução de erros humanos
     """)
-
-st.header("📋 Contexto Operacional", divider="blue")
-st.write("""
-**Painel OSINFO** - Instrumento oficial para acompanhamento de parcerias entre:
-- Secretaria Municipal da Saúde
-- Organizações Sociais
-- Entidades da Sociedade Civil
-""")
 
 with st.container(border=True):
     tab1, tab2 = st.tabs(["🔙 Situação Anterior", "🚀 Nova Realidade"])
@@ -82,7 +74,6 @@ for i, feature in enumerate(features):
             </div>
             """, unsafe_allow_html=True)
 
-# Fluxo de Trabalho
 st.header("🔧 Como funciona a validação?", divider="blue")
 workflow = st.columns(3)
 steps = [
@@ -98,11 +89,9 @@ for i, step in enumerate(steps):
             st.markdown(f"<p style='text-align: center'><strong>{step['title']}</strong><br>{step['desc']}</p>",
                         unsafe_allow_html=True)
 
-# Rodapé profissional
 st.divider()
 
-st.markdown("""
-<div style='text-align: center; color: #666; margin-top: 1rem;'>
-    Controladoria Geral do Município | Secretaria Municipal da Saúde<br>
-</div>
-""", unsafe_allow_html=True)
+with st.container():
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)

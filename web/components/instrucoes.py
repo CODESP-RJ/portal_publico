@@ -1,6 +1,6 @@
 import streamlit as st
 
-def instrucoes_validar_importacoes():
+def instrucoes_validar_insercao():
     st.markdown("---")
     st.info("""
 
@@ -8,11 +8,11 @@ def instrucoes_validar_importacoes():
 
     1️⃣ **Selecione** o tipo de arquivo/módulo.
 
-    2️⃣ **Faça o upload** de um arquivo no formato **CSV**.
+    2️⃣ **Faça o upload** de um arquivo **CSV** no formato **UTF-8** com separador "**;**".
 
-    3️⃣ **Clique em "Processar".**
-
-    4️⃣ **Aguarde** o processamento.
+    3️⃣ **Clique em "Processar"** e aguarde.
+    
+    4️⃣ **Clique em "Baixar arquivo".**
     """)
 
 def instrucoes_validar_alteracoes_exclusoes():
@@ -21,13 +21,9 @@ def instrucoes_validar_alteracoes_exclusoes():
 
     ### **✅ Passo a Passo**
 
-    1️⃣ **Verifique** se o **ATRIBUTO** está de acordo com os padrões definidos para o **TIPO_MODULO**.  
+    1️⃣ **Faça o upload** de um arquivo **CSV** no formato **UTF-8** com separador "**;**".
 
-    2️⃣ **Selecione** a instituição.
+    3️⃣ **Clique em "Processar"** e aguarde.
 
-    3️⃣ **Faça o upload** de um arquivo no formato **CSV**.
-
-    4️⃣ **Clique em "Processar".**
-
-    5️⃣ **Aguarde** o processamento.
+    4️⃣ **Clique em "Baixar arquivo".**
     """)

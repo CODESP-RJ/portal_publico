@@ -23,11 +23,11 @@ def main():
         st.markdown("""<style> .big-font { font-size: 24px !important; font-weight: bold !important; } </style>""", unsafe_allow_html=True)
         pages_app = {
             "VALIDADOR DE ARQUIVOS": [
-                st.Page("web/routes/valida_arquivos/valida_importacao.py", title="Arquivos para Inserção de Dados"),
+                st.Page("web/routes/valida_arquivos/valida_insercao.py", title="Arquivos para Inserção de Dados"),
                 st.Page("web/routes/valida_arquivos/valida_alteracao.py", title="Arquivos para Alteração e Exclusão de Dados"),
             ],
             "ARQUIVOS MODELO": [
-                st.Page("web/routes/modelos/modelos_importacao.py", title="Arquivos para Inserção de Dados"),
+                st.Page("web/routes/modelos/modelos_insercao.py", title="Arquivos para Inserção de Dados"),
                 st.Page("web/routes/modelos/modelos_alteracao-exclusao.py", title="Arquivos de Alteração e Exclusão de Dados"),
             ],
             "CATÁLOGOS DE TABELAS": [

@@ -11,12 +11,25 @@ from charset_normalizer import from_bytes
 from io import StringIO
 from utils.tratamentos import limpar_dados
 
+
 def processar_arquivo(arquivo, func=None):
-    string_data = StringIO(arquivo.getvalue().decode("utf-8-sig"))
-    df = pd.read_csv(string_data, sep=';', dtype=str)
-    st.dataframe(df)
-    df.columns = df.columns.str.strip().str.upper()
-    return limpar_dados(df) if func is None else df
+    try:
+        conteudo_decodificado = arquivo.getvalue().decode("utf-8-sig")
+        string_data = StringIO(conteudo_decodificado)
+
+        df = pd.read_csv(string_data, sep=';', dtype=str)
+        st.dataframe(df)
+        df.columns = df.columns.str.strip().str.upper()
+
+        return limpar_dados(df) if func is None else df
+
+    except UnicodeDecodeError:
+        st.error(erros["02"])
+        st.stop()
+        return None
+    except Exception as e:
+        st.error(f"Erro ao processar arquivo: {str(e)}")
+        return None
 
 def exibir_resultados(df):
     st.markdown("<h3 style='text-align: center;'>RESULTADO DA VALIDAÇÃO</h3>", unsafe_allow_html=True)

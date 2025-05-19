@@ -44,6 +44,7 @@ with st.container():
             <strong>Formatação obrigatória dos arquivos:</strong><br>
             🟢 Codificação: UTF-8<br>
             🟢 Formato: .csv ou .txt<br>
+            🟢 Separador: ponto e vírgula <strong>;</strong><br>
             🟢 Estrutura: Cabeçalho + Corpo<br>
             🟢 Cabeçalho na 1ª linha (sem acentos/espaços)<br>
             🟢 Dados a partir da 2ª linha<br>
@@ -85,14 +86,14 @@ st.title("📥 MODELOS DE INSERÇÃO")
 st.header("⬇️ Download dos Arquivos Modelo", divider="green")
 st.info("Clique no botão correspondente para baixar o modelo desejado")
 
-files_dir = "download/modelos_importacao"
+files_dir = "download/modelos_insercao"
 try:
     files = os.listdir(files_dir)
 
     categories = {
-        'Financeiros': ['SALDOS', 'RECEITAS', 'DESPESAS'],
-        'Cadastros': ['FORNECEDORES', 'CONTRATOS_DE_TERCEIROS', 'BENS_PATRIMONIADOS'],
-        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL'],
+        'Financeiros': ['SALDOS_INSERCAO', 'RECEITAS_INSERCAO', 'DESPESAS_INSERCAO'],
+        'Cadastros': ['FORNECEDORES_INSERCAO', 'CONTRATOS_DE_TERCEIROS_INSERCAO', 'BENS_PATRIMONIADOS_INSERCAO'],
+        'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_INSERCAO'],
     }
 
     for category, patterns in categories.items():
@@ -120,16 +121,16 @@ try:
     files_imp = os.listdir(files_dir_imp)
 
     categories = {
-        'Tudo em um': ['INSTRUÇÕES PARA IMPORTAÇÃO COMPLETO'],
+        'Tudo em um': ['INSTRUÇÕES PARA INSERÇÃO COMPLETO'],
         'Por módulo': [
             'INSTRUÇÕES BASICAS DE FORMATAÇÃO DOS ARQUIVOS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE DESPESAS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE RECEITAS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE SALDOS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE FORNECEDORES',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE CONTRATOS DE TERCEIROS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE BENS PATRIMONIADOSL',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE ITENS DE NOTA FISCAL'
+            'INSTRUÇÕES PARA INSERÇÃO DE DESPESAS',
+            'INSTRUÇÕES PARA INSERÇÃO DE RECEITAS',
+            'INSTRUÇÕES PARA INSERÇÃO DE SALDOS',
+            'INSTRUÇÕES PARA INSERÇÃO DE FORNECEDORES',
+            'INSTRUÇÕES PARA INSERÇÃO DE CONTRATOS DE TERCEIROS',
+            'INSTRUÇÕES PARA INSERÇÃO DE BENS PATRIMONIADOSL',
+            'INSTRUÇÕES PARA INSERÇÃO DE ITENS DE NOTA FISCAL'
 
         ],
     }
@@ -152,3 +153,10 @@ try:
                             col_idx += 1
 except Exception as e:
     st.error(f"🚨 Erro ao carregar arquivos: {str(e)}")
+
+st.divider()
+
+with st.container():
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)

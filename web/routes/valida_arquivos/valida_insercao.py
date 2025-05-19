@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-from web.components.instrucoes import instrucoes_validar_importacoes
+from web.components.instrucoes import instrucoes_validar_insercao
 from utils.tratamentos import limpar_dados
 from utils.utils import color_rows, exibir_resultados, oferecer_download, processar_arquivo
 from models.base_validador import BaseValidatorIns
@@ -10,6 +10,7 @@ from models.itens_de_nota_fiscal import itens_de_nota_fiscal_insercao_validador
 from models.despesas import despesas_insercao_validador
 from models.contratos_de_terceiros import contratos_de_terceiros_insercao_validador
 from models.bens_patrimoniados import bens_patrimoniados_insercao_validador
+from models.fornecedores import fornecedores_insercao_validador
 from models.registry import RegistryValidators
 from io import StringIO
 
@@ -97,4 +98,11 @@ def main():
         except Exception as e:
             st.error(f"Erro na validação: {str(e)}")
 main()
-instrucoes_validar_importacoes()
+instrucoes_validar_insercao()
+
+st.divider()
+
+with st.container():
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("images/CGM_SAUDE.png", width=600, use_column_width=True)
