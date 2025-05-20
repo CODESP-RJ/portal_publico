@@ -41,8 +41,10 @@ local_css()
 
 with st.container():
     st.markdown('<div><h1>📚 Módulos de Treinamento</h1></div>', unsafe_allow_html=True)
+    st.divider()
+    st.markdown('<div><h2>📌Conceitos</h2></div>', unsafe_allow_html=True)
 
-    videos = {
+    videos_conceitos = {
         "01 Introdução": "https://www.youtube.com/watch?v=R7dHPHMr4U0",
         "02 Módulo de Saldos": "https://www.youtube.com/watch?v=6Jlw00YKSqE",
         "03 Módulo de Receitas": "https://www.youtube.com/watch?v=vqcSG_cJIGc&t=6s",
@@ -54,21 +56,42 @@ with st.container():
         "09 Entrega Negativa Bens Patrimoniados": "https://www.youtube.com/watch?v=dgspl05EYO4",
     }
 
+    videos_importacao = {
+        "01 Informações necessárias para Importação": "https://www.youtube.com/watch?v=ljUUZ_V-noA",
+        "02 Importação Módulo de Saldos": "https://www.youtube.com/watch?v=aK9O-oiPQyI",
+        "03 Importação Módulo de Receitas": "https://www.youtube.com/watch?v=fL5qO_QPLBk",
+        "04 Importação Módulo de Despesas": "https://www.youtube.com/watch?v=Mce1RNBUAX0",
+        "05 Importação Módulo de Itens de Nota Fiscal": "https://www.youtube.com/watch?v=5FF1ypj5CZw",
+        "06 Importação Módulo de Contratos de Terceiros": "https://www.youtube.com/watch?v=IFhSJGGThJo",
+        "07 Importação Módulo de Bens Patrimoniados": "https://www.youtube.com/watch?v=TFjLZvsrEmI",
+    }
+
     cols = st.columns(2)
     col_idx = 0
-    for title, url in videos.items():
+    for title, url in videos_conceitos.items():
         with cols[col_idx]:
             st.markdown(f'<div class="section-title"><h4>{title}</h4></div>', unsafe_allow_html=True)
             st.video(url)
             col_idx = (col_idx + 1) % 2
+
+    st.divider()
+    st.markdown('<div><h2>📌Importação</h2></div>', unsafe_allow_html=True)
+
+    cols2 = st.columns(2)
+    col_idx2 = 0
+    for title, url in videos_importacao.items():
+        with cols2[col_idx2]:
+            st.markdown(f'<div class="section-title"><h4>{title}</h4></div>', unsafe_allow_html=True)
+            st.video(url)
+            col_idx2 = (col_idx2 + 1) % 2
 
 st.markdown("---")
 with st.container():
     st.markdown('<div><h1>🎥 Lives de Treinamento</h1></div>', unsafe_allow_html=True)
 
     live_videos = {
-        "PARTE 1": "https://www.youtube.com/watch?v=6I0UbwRrp3M",
-        "PARTE 2": "https://youtu.be/U1h0fmWYNnc"
+        "PARTE 1": "https://www.youtube.com/watch?v=-TAIM3S6EzA",
+        "PARTE 2": "https://www.youtube.com/watch?v=U1h0fmWYNnc"
     }
 
     cols = st.columns(2)
