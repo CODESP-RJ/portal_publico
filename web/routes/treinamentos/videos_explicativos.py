@@ -90,8 +90,9 @@ with st.container():
     st.markdown('<div><h1>🎥 Lives de Treinamento</h1></div>', unsafe_allow_html=True)
 
     live_videos = {
-        "PARTE 1": "https://www.youtube.com/watch?v=-TAIM3S6EzA",
-        "PARTE 2": "https://www.youtube.com/watch?v=U1h0fmWYNnc"
+        "PRESTAÇÃO DE CONTAS PARTE 1": "https://www.youtube.com/watch?v=-TAIM3S6EzA",
+        "PRESTAÇÃO DE CONTAS PARTE 2": "https://www.youtube.com/watch?v=U1h0fmWYNnc",
+        "DESBLOQUEIO": "https://www.youtube.com/watch?v=NkDSlh8DzV0?si=ykEkyrIld0aPiYlI",
     }
 
     cols = st.columns(2)

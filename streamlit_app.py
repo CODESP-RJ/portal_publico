@@ -33,8 +33,8 @@ def main():
             "CATÁLOGOS DE TABELAS": [
                 st.Page("web/routes/tabelas_auxiliares/tabelas.py", title="Tabelas Auxiliares"),
             ],
-            "TUTORIAIS": [
-                st.Page("web/routes/tutoriais/videos_explicativos.py", title="Vídeos Explicativos"),
+            "TREINAMENTOS": [
+                st.Page("web/routes/treinamentos/videos_explicativos.py", title="Vídeos Explicativos"),
             ],
             "SOBRE": [
                 st.Page("web/routes/sobre/sobre.py", title="Sobre a Ferramenta"),
