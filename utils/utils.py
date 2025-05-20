@@ -29,7 +29,6 @@ def processar_arquivo(arquivo, func=None):
         string_data = StringIO(conteudo_decodificado)
 
         df = pd.read_csv(string_data, sep=';', dtype=str)
-        st.dataframe(df)
         df.columns = df.columns.str.strip().str.upper()
 
         return limpar_dados(df) if func is None else df
