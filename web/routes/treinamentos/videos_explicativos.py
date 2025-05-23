@@ -40,9 +40,10 @@ def local_css():
 local_css()
 
 with st.container():
-    st.markdown('<div><h1>📚 Módulos de Treinamento</h1></div>', unsafe_allow_html=True)
-    st.divider()
-    st.markdown('<div><h2>📌Conceitos</h2></div>', unsafe_allow_html=True)
+
+    videos_ferramenta = {
+        "01 Ferramenta de Validação de Arquivos": "https://www.youtube.com/watch?v=EFbB9zHx0Y8"
+    }
 
     videos_conceitos = {
         "01 Introdução": "https://www.youtube.com/watch?v=R7dHPHMr4U0",
@@ -66,6 +67,23 @@ with st.container():
         "07 Importação Módulo de Bens Patrimoniados": "https://www.youtube.com/watch?v=TFjLZvsrEmI",
     }
 
+    st.markdown('<div><h1>📚 Módulos de Treinamento</h1></div>', unsafe_allow_html=True)
+    st.divider()
+
+    st.markdown('<div><h2>📌Ferramenta</h2></div>', unsafe_allow_html=True)
+
+    cols3 = st.columns(2)
+    col_idx = 0
+    for title, url in videos_ferramenta.items():
+        with cols3[col_idx]:
+            st.markdown(f'<div class="section-title"><h4>{title}</h4></div>', unsafe_allow_html=True)
+            st.video(url)
+            col_idx = (col_idx + 1) % 2
+
+    st.divider()
+
+    st.markdown('<div><h2>📌Conceitos - OSINFO</h2></div>', unsafe_allow_html=True)
+
     cols = st.columns(2)
     col_idx = 0
     for title, url in videos_conceitos.items():
@@ -75,7 +93,7 @@ with st.container():
             col_idx = (col_idx + 1) % 2
 
     st.divider()
-    st.markdown('<div><h2>📌Importação</h2></div>', unsafe_allow_html=True)
+    st.markdown('<div><h2>📌Importação - OSINFO</h2></div>', unsafe_allow_html=True)
 
     cols2 = st.columns(2)
     col_idx2 = 0
@@ -87,7 +105,7 @@ with st.container():
 
 st.markdown("---")
 with st.container():
-    st.markdown('<div><h1>🎥 Lives de Treinamento</h1></div>', unsafe_allow_html=True)
+    st.markdown('<div><h1>🎥 Lives de Treinamento - OSINFO</h1></div>', unsafe_allow_html=True)
 
     live_videos = {
         "PRESTAÇÃO DE CONTAS PARTE 1": "https://www.youtube.com/watch?v=-TAIM3S6EzA",

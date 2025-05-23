@@ -90,6 +90,4 @@ for i, step in enumerate(steps):
             st.markdown(f"<p style='text-align: center'><strong>{step['title']}</strong><br>{step['desc']}</p>",
                         unsafe_allow_html=True)
 
-st.divider()
-
 footer()

@@ -23,7 +23,7 @@ def instrucoes_validar_alteracoes_exclusoes():
 
     1️⃣ **Faça o upload** de um arquivo **CSV** no formato **UTF-8** com separador "**;**".
 
-    3️⃣ **Clique em "Processar"** e aguarde.
+    2️⃣ **Clique em "Processar"** e aguarde.
 
-    4️⃣ **Clique em "Baixar arquivo".**
+    3️⃣ **Clique em "Baixar arquivo".**
     """)
