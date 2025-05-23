@@ -16,7 +16,7 @@ def footer():
     with st.container():
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
-            st.image("images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png", use_column_width=True)
+            st.image("images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png", use_container_width=True)
             st.markdown(
                 "<p style='text-align: center; font-size: 10px;'><strong>APOIO:</strong> SMS/SUBG/CTGOS</p>",
                 unsafe_allow_html=True
