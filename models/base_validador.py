@@ -25,6 +25,8 @@ class BaseValidatorIns(ABC):
     def validar_comum(self):
         """Validações comuns a todos os módulos"""
         self.validar_cabecalho()
+        self.validar_periodo_referencia_unico()
+        self.validar_contrato_unico()
         if 'VALIDACAO' in self.df.columns:
             self.df['VALIDACAO'] = 'OK'
         else:
@@ -33,6 +35,32 @@ class BaseValidatorIns(ABC):
 
     def validar_especifico(self):
         pass
+
+    def validar_periodo_referencia_unico(self):
+        """Verifica se as colunas de datas_abreviadas possuem apenas um único valor em todas as linhas"""
+        for campo in self.datas_abreviadas:
+            if campo in self.df.columns:
+                valores_unicos = self.df[campo].unique()
+                if len(valores_unicos) > 1:
+                    valores_str = ", ".join([str(v) for v in valores_unicos])
+                    st.error(
+                        f"Erro: A coluna '{campo}' possui múltiplos valores diferentes: [{valores_str}]. "
+                        f"Todos os registros devem ter exatamente o mesmo período de referência."
+                    )
+                    st.stop()
+
+    def validar_contrato_unico(self):
+        """Verifica se a coluna de contrato possui apenas um único valor em todas as linhas"""
+        for campo in self.campo_contrato:
+            if campo in self.df.columns:
+                valores_unicos = self.df[campo].unique()
+                if len(valores_unicos) > 1:
+                    valores_str = ", ".join([str(v) for v in valores_unicos])
+                    st.error(
+                        f"Erro: A coluna '{campo}' possui múltiplos contratos diferentes: [{valores_str}]. "
+                        f"Todos os registros devem pertencer ao mesmo contrato."
+                    )
+                    st.stop()
 
     def validar_datas(self):
         """Valida o formato das datas para todos os campos de data"""
