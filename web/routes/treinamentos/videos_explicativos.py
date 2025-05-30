@@ -62,7 +62,7 @@ with st.container():
         "02 Anexo II": "https://www.youtube.com/watch?v=u-EPrMBlms0",
         "03 Anexo III": "https://www.youtube.com/watch?v=LmtUrJiXtow",
         "04 Anexo IV": "https://www.youtube.com/watch?v=FSiKSf-hhIE",
-        "05 Anexo V e V 1": "https://www.youtube.com/watch?v=9BCWlNxXR24",
+        "05 Anexos V e V 1": "https://www.youtube.com/watch?v=9BCWlNxXR24",
         "06 Anexo VII 1": "https://www.youtube.com/watch?v=fmpv05NRmas",
         "07 Anexo VII 2": "https://www.youtube.com/watch?v=3FJIJU36gS8"
     }
