@@ -57,6 +57,16 @@ with st.container():
         "09 Entrega Negativa Bens Patrimoniados": "https://www.youtube.com/watch?v=dgspl05EYO4",
     }
 
+    videos_anexos = {
+        "01 Anexo I": "https://www.youtube.com/watch?v=-lhXeZMD6mM",
+        "02 Anexo II": "https://www.youtube.com/watch?v=u-EPrMBlms0",
+        "03 Anexo III": "https://www.youtube.com/watch?v=LmtUrJiXtow",
+        "04 Anexo IV": "https://www.youtube.com/watch?v=FSiKSf-hhIE",
+        "05 Anexo V": "https://www.youtube.com/watch?v=9BCWlNxXR24",
+        "06 Anexo VII 1": "https://www.youtube.com/watch?v=fmpv05NRmas",
+        "07 Anexo VII 2": "https://www.youtube.com/watch?v=3FJIJU36gS8"
+    }
+
     videos_importacao = {
         "01 Informações necessárias para Importação": "https://www.youtube.com/watch?v=ljUUZ_V-noA",
         "02 Importação Módulo de Saldos": "https://www.youtube.com/watch?v=aK9O-oiPQyI",
@@ -82,7 +92,7 @@ with st.container():
 
     st.divider()
 
-    st.markdown('<div><h2>📌Conceitos - OSINFO</h2></div>', unsafe_allow_html=True)
+    st.markdown('<div><h2>📌Conceitos</h2></div>', unsafe_allow_html=True)
 
     cols = st.columns(2)
     col_idx = 0
@@ -93,7 +103,7 @@ with st.container():
             col_idx = (col_idx + 1) % 2
 
     st.divider()
-    st.markdown('<div><h2>📌Importação - OSINFO</h2></div>', unsafe_allow_html=True)
+    st.markdown('<div><h2>📌Importação</h2></div>', unsafe_allow_html=True)
 
     cols2 = st.columns(2)
     col_idx2 = 0
@@ -102,6 +112,18 @@ with st.container():
             st.markdown(f'<div class="section-title"><h4>{title}</h4></div>', unsafe_allow_html=True)
             st.video(url)
             col_idx2 = (col_idx2 + 1) % 2
+
+    st.divider()
+
+    st.markdown('<div><h2>📌Anexos</h2></div>', unsafe_allow_html=True)
+
+    cols4 = st.columns(2)
+    col_idx4 = 0
+    for title, url in videos_anexos.items():
+        with cols4[col_idx4]:
+            st.markdown(f'<div class="section-title"><h4>{title}</h4></div>', unsafe_allow_html=True)
+            st.video(url)
+            col_idx4 = (col_idx4 + 1) % 2
 
 st.markdown("---")
 with st.container():
