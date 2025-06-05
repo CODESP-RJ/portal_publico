@@ -41,7 +41,7 @@ tipo_arquivo_mapping = {
 }
 
 tipoarquivo_escolhido = st.selectbox(
-    'Tipo de Arquivo',
+    'Selecione o tipo de arquivo:',
     tipo_arquivo,
     index=None,
     placeholder="Selecione o Tipo de Arquivo",
@@ -53,12 +53,13 @@ if st.session_state.tipoarquivo_escolhido:
 
 def main():
     with st.form('main_form'):
-        arquivo = st.file_uploader("Arquivo CSV", type="csv")
-        submitted = st.form_submit_button("Processar")
+        arquivo = st.file_uploader("Selecione ou arraste um arquivo CSV", type="csv")
+        submitted = st.form_submit_button("Processar", use_container_width=True)
 
     if submitted:
         if not arquivo:
             st.error("Selecione um arquivo!")
+            st.toast("Nenhum arquivo selecionado!", icon="⚠️")
             return
 
         try:
@@ -89,8 +90,11 @@ def main():
 
                 if (resultados['VALIDACAO'] == 'OK').all():
                     st.success("Validação concluída e sem erros encontrados.")
+                    st.toast("Todos os registros estão válidos!", icon="✅")
+                    st.balloons()
                 else:
                     st.error("Validação concluída, e com erros encontrados.")
+                    st.toast("Alguns registros possuem erros!", icon="⚠️")
 
                 oferecer_download(resultados)
             else:

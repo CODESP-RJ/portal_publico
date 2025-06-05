@@ -402,6 +402,7 @@ class BaseValidator(ABC):
     def check_ano_mes_ref(self):
         if 'ANO_MES_REF' not in self.df.columns:
             st.error("Coluna ANO_MES_REF não encontrada")
+            st.toast("Coluna ANO_MES_REF não encontrada", icon="⚠️")
             st.stop()
 
         if 'VALIDACAO' not in self.df.columns:
@@ -409,12 +410,14 @@ class BaseValidator(ABC):
 
         if len(self.df['ANO_MES_REF'].unique()) > 1:
             st.error("Múltiplos períodos de referência na coluna ANO_MES_REF")
+            st.toast("Múltiplos períodos de referência na coluna ANO_MES_REF", icon="⚠️")
             self.df['VALIDACAO'] = self.df['VALIDACAO'].apply(
                 lambda x: x + ', ' if x else '') + 'MÚLTIPLOS PERÍODOS DE REFERÊNCIA NA COLUNA ANO_MES_REF'
             st.stop()
 
         if not all(self.df['ANO_MES_REF'].astype(str).str.match(r'^\d{4}-\d{2}$')):
             st.error("Formato inválido para ANO_MES_REF (deve ser AAAA-MM)")
+            st.toast("Formato inválido para ANO_MES_REF (deve ser AAAA-MM)", icon="⚠️")
             self.df['VALIDACAO'] = self.df['VALIDACAO'].apply(
                 lambda x: x + ', ' if x else '') + 'FORMATO INVÁLIDO PARA ANO_MES_REF (DEVE SER AAAA-MM)'
             st.stop()
@@ -422,6 +425,7 @@ class BaseValidator(ABC):
     def check_id(self):
         if 'ID' not in self.df.columns:
             st.error("Coluna ID não encontrada")
+            st.toast("Coluna ID não encontrada", icon="⚠️")
             st.stop()
 
         if 'VALIDACAO' not in self.df.columns:
@@ -444,6 +448,7 @@ class BaseValidator(ABC):
         from models.registry import RegistryValidators
         if not RegistryValidators.get_validator_alt_exc(modulo):
             st.error(f"Módulo '{modulo}' não é suportado")
+            st.toast(f"Módulo '{modulo}' não é suportado", icon="⚠️")
             st.stop()
 
         valid_attributes = self.valid_attributes

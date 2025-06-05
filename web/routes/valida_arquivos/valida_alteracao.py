@@ -27,12 +27,13 @@ st.divider()
 
 def main():
     with st.form('main_form'):
-        arquivo = st.file_uploader("Arquivo CSV", type="csv")
-        submitted = st.form_submit_button("Processar")
+        arquivo = st.file_uploader("Selecione ou arraste um arquivo CSV", type="csv")
+        submitted = st.form_submit_button("Processar", use_container_width=True)
 
     if submitted:
         if not arquivo:
             st.error("Selecione um arquivo!")
+            st.toast("Nenhum arquivo selecionado!", icon="⚠️")
             return
 
         try:
@@ -99,8 +100,12 @@ def main():
                 exibir_resultados(df_final)
                 if (df_final['VALIDACAO'] == 'OK').all():
                     st.success("Validação concluída e sem erros encontrados.")
+                    st.toast("Todos os registros estão válidos!", icon="✅")
+                    st.balloons()
                 else:
                     st.error("Validação concluída, e com erros encontrados.")
+                    st.toast("Alguns registros possuem erros!", icon="⚠️")
+
                 oferecer_download(df_final)
             else:
                 st.warning("Nenhum registro válido encontrado no arquivo.")
