@@ -94,6 +94,11 @@ class ContratosTerceirosValidator(BaseValidator):
                             validacoes.append(f'{attr.upper()} DEVE SER ENTRE 1 E 12, ')
                     except ValueError:
                         validacoes.append(f'{atributo.upper()} NÃO É UM NÚMERO VÁLIDO, ')
+                if attr in ['UNIDADE']:
+                    if not isinstance(valor, int):
+                        validacoes.append('VALOR PRECISA SER UM NÚMERO INTEIRO, ')
+                    elif valor < 0:
+                        validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
 
                 if attr in ['CONTRATO'] and attr not in ['UNIDADE']:
                     req = obter_contratos()

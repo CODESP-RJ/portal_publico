@@ -137,7 +137,9 @@ class DespesasValidator(BaseValidator):
                         validacoes.append(f'{attr} DEVE ESTAR NO FORMATO DD/MM/YYYY, ')
 
                 if attr in ['UNIDADE']:
-                    if isinstance(valor, int) and valor < 0:
+                    if not isinstance(valor, int):
+                        validacoes.append('VALOR PRECISA SER UM NÚMERO INTEIRO, ')
+                    elif valor < 0:
                         validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
 
                 if attr in ['RUBRICA']:
