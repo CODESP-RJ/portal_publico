@@ -18,7 +18,7 @@ class SaldosValidator(BaseValidator):
                 validacoes = []
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
-                if attr != 'IMAGEM DO EXTRATO':
+                if attr in ['VALOR EM CONTA CORRENTE', 'APLICACAO FINANCEIRA', 'PROVISAO', 'VALOR EM ESPECIE']:
                     if pd.isna(valor) or valor is None or str(valor).strip() == '':
                         self.df.at[idx, 'VALIDACAO'] = 'OK'
                         continue
