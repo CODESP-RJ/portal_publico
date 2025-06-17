@@ -3,7 +3,7 @@ LISTA_MODULOS = ['despesas', 'contratosdeterceiros', 'receitas', 'benspatrimonia
 LISTA_ACOES = ['alteracao', 'exclusao', 'inclusao']
 
 LISTA_ATRIBUTOS_SALDOS = [
-    'VALOR EM CONTA CORRENTE', 'APLICACAO FINANCEIRA', 'PROVISAO', 'VALOR EM ESPECIE'
+    'VALOR EM CONTA CORRENTE', 'APLICACAO FINANCEIRA', 'PROVISAO', 'VALOR EM ESPECIE', 'IMAGEM DO EXTRATO'
 ]
 
 LISTA_ATRIBUTOS_DESPESAS = [
