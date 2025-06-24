@@ -39,6 +39,8 @@ class BaseValidatorIns(ABC):
     def validar_periodo_referencia_unico(self):
         """Verifica se as colunas de datas_abreviadas possuem apenas um único valor em todas as linhas"""
         for campo in self.datas_abreviadas:
+            if campo in ['CONTRATO_ANO_MES_INICIO', 'CONTRATO_ANO_MES_FIM']:
+                pass
             if campo in self.df.columns:
                 valores_unicos = self.df[campo].unique()
                 if len(valores_unicos) > 1:
