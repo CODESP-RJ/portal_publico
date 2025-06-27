@@ -3,7 +3,6 @@ from models.registry import RegistryValidators
 import datetime
 from models.common import CONFIGURACOES_MODULOS
 import pandas as pd
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias
 
 class ItensNotaFiscalValidator(BaseValidatorIns):
     def __init__(self, df):
@@ -16,6 +15,7 @@ class ItensNotaFiscalValidator(BaseValidatorIns):
         self.campos_obrigatorios = self.config['campos_obrigatorios']
         self.campos_monetarios = self.config['campos_monetarios']
         self.limites_tamanho = self.config['limites_tamanho']
+        self.campo_contrato = []
 
         self.campos_cnpj = ['CNPJ_FORN']
         self.campos_inteiros = ['NUM_OS', 'COD_MAT_SERV']
