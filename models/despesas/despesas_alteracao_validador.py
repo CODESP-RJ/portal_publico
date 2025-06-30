@@ -23,6 +23,10 @@ class DespesasValidator(BaseValidator):
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
 
+                if not valor or pd.isna(valor) or str(valor).strip() == '':
+                    self.df.at[idx, 'VALIDACAO'] = 'INVALIDO VALOR VAZIO OU NULO, '
+                    continue
+
                 if attr in ['CNPJ']:
                     if (atributos.get('CNPJ')):
                         valor_split = atributos.get('CNPJ').split(' ')[0]
@@ -92,7 +96,7 @@ class DespesasValidator(BaseValidator):
                     if not re.fullmatch(r'^[A-Z0-9_]+$', nome_arquivo):
                         validacoes.append('DESCRICAO SÓ PODE CONTER LETRAS MAIÚSCULAS, NÚMEROS E UNDERLINE (_), ')
 
-                if attr in ['PARCELA PAGA', 'NUMERO DE PARCELAS', 'UNIDADE', 'RUBRICA', 'NUMERO DO DOCUMENTO', 'UNIDADE']:
+                if attr in ['PARCELA PAGA', 'NUMERO DE PARCELAS', 'RUBRICA', 'NUMERO DO DOCUMENTO']:
                     if isinstance(valor, str):
                         try:
                             valor = int(valor)
@@ -137,10 +141,12 @@ class DespesasValidator(BaseValidator):
                         validacoes.append(f'{attr} DEVE ESTAR NO FORMATO DD/MM/YYYY, ')
 
                 if attr in ['UNIDADE']:
-                    if not isinstance(valor, int):
+                    try:
+                        valor_int = int(valor)
+                        if valor_int < 0:
+                            validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
+                    except ValueError:
                         validacoes.append('VALOR PRECISA SER UM NÚMERO INTEIRO, ')
-                    elif valor < 0:
-                        validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
 
                 if attr in ['RUBRICA']:
                     req = obter_tipos_rubricas()

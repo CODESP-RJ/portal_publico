@@ -55,29 +55,10 @@ with st.container():
         """, unsafe_allow_html=True)
 
 with st.container():
-    st.header("🔍 MODELOS NO OSINFO POR MODULO", divider="orange")
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("📑 Documentos Financeiros")
-        st.markdown("""
-        - **Saldos**: SALDO IPCEP
-        - **Receitas**: IPCEP
-        - **Despesas**: DESPESAS GNOSIS
-        - **Itens de Nota Fiscal**: ITENS DE NOTA FISCAL
-        """)
-
-    with col2:
-        st.subheader("📦 Cadastros Gerais")
-        st.markdown("""
-        - **Fornecedores**: FORNECEDOR GNOSIS
-        - **Contratos de Terceiros**: MODELO ANEXO
-        - **Bens Patrimoniados**: BENS CEP28
-        """)
-
+    st.divider()
     st.markdown("""
     <div class="warning">
-        ⚠️ CASO A INSTITUIÇÃO PARCEIRA ESTEJA INSERINDO DOCUMENTO OU ANEXO COMPLEMENTAR A PRESTAÇÃO DE CONTAS, DEVE SEGUIR AS ORIENTAÇÕES: 
+        CASO A INSTITUIÇÃO PARCEIRA ESTEJA INSERINDO DOCUMENTO OU ANEXO COMPLEMENTAR A PRESTAÇÃO DE CONTAS, DEVE SEGUIR AS ORIENTAÇÕES: 
         <a href="https://fazenda.prefeitura.rio/nmpc/" target="_blank">Ofício Circular CVL/SUBEX 005/2019</a>
     </div>
     """, unsafe_allow_html=True)
@@ -95,6 +76,8 @@ try:
         'Financeiros': ['SALDOS_INSERCAO', 'RECEITAS_INSERCAO', 'DESPESAS_INSERCAO'],
         'Cadastros': ['FORNECEDORES_INSERCAO', 'CONTRATOS_DE_TERCEIROS_INSERCAO', 'BENS_PATRIMONIADOS_INSERCAO'],
         'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_INSERCAO'],
+        'Recursos Humanos': ['FUNCIONARIOS_INSERCAO', 'VINCULO_DE_TRABALHO_INSERCAO', 'FOLHA_DE_PAGAMENTO_INSERCAO', 'PROVISIONAMENTO_INSERCAO'],
+        'Desligamento em Lote': ['DESLIGAMENTO_EM_LOTE']
     }
 
     for category, patterns in categories.items():
@@ -122,7 +105,6 @@ try:
     files_imp = os.listdir(files_dir_imp)
 
     categories = {
-        'Tudo em um': ['INSTRUÇÕES PARA IMPORTAÇÃO COMPLETO'],
         'Por módulo': [
             'INSTRUÇÕES BASICAS DE FORMATAÇÃO DOS ARQUIVOS',
             'INSTRUÇÕES PARA IMPORTAÇÃO DE DESPESAS',
@@ -130,9 +112,10 @@ try:
             'INSTRUÇÕES PARA IMPORTAÇÃO DE SALDOS',
             'INSTRUÇÕES PARA IMPORTAÇÃO DE FORNECEDORES',
             'INSTRUÇÕES PARA IMPORTAÇÃO DE CONTRATOS DE TERCEIROS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE BENS PATRIMONIADOSL',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE ITENS DE NOTA FISCAL'
-
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE BENS PATRIMONIADOS',
+            'INSTRUÇÕES PARA IMPORTAÇÃO DE ITENS DE NOTA FISCAL',
+            'INSTRUÇÕES PARA IMPORTAÇÃO MODULO DE RH',
+            'INSTRUÇÕES PARA DESLIGAMENTO EM LOTE'
         ],
     }
 

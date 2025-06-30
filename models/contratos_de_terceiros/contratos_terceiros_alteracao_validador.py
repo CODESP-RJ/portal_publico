@@ -21,6 +21,11 @@ class ContratosTerceirosValidator(BaseValidator):
                 validacoes = []
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
+
+                if not (valor or pd.isna(valor) or str(valor).strip() == '') and attr not in ['CPF', 'NOME', 'CNPJ', 'RAZAO SOCIAL']:
+                    self.df.at[idx, 'VALIDACAO'] = 'INVALIDO VALOR VAZIO OU NULO, '
+                    continue
+
                 if attr in ['CPF', 'NOME', 'CNPJ', 'RAZAO SOCIAL']:
                     if (atributos.get('CPF') or atributos.get('NOME')) and (
                             atributos.get('CNPJ') or atributos.get('RAZAO SOCIAL')):
@@ -94,11 +99,14 @@ class ContratosTerceirosValidator(BaseValidator):
                             validacoes.append(f'{attr.upper()} DEVE SER ENTRE 1 E 12, ')
                     except ValueError:
                         validacoes.append(f'{atributo.upper()} NÃO É UM NÚMERO VÁLIDO, ')
+
                 if attr in ['UNIDADE']:
-                    if not isinstance(valor, int):
+                    try:
+                        valor_int = int(valor)
+                        if valor_int < 0:
+                            validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
+                    except ValueError:
                         validacoes.append('VALOR PRECISA SER UM NÚMERO INTEIRO, ')
-                    elif valor < 0:
-                        validacoes.append('VALOR NÃO PODE SER NEGATIVO, ')
 
                 if attr in ['CONTRATO'] and attr not in ['UNIDADE']:
                     req = obter_contratos()

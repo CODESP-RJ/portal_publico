@@ -120,6 +120,39 @@ class BaseValidatorIns(ABC):
                             self._registrar_erro(idx, f"{campo}: Valor monetário inválido.")
         self.validar_positivo(self.campos_monetarios)
 
+    def validar_numeros_com_decimais(self):
+        """Valida se os campos configurados contêm números com até duas casas decimais (formato brasileiro)"""
+        self.numeros_com_decimais = getattr(self, 'numeros_com_decimais', [])
+
+        for campo in self.numeros_com_decimais:
+            if campo in self.df.columns:
+                for idx, valor in self.df[campo].items():
+                    if pd.notna(valor):
+                        valor_str = str(valor).strip()
+
+                        # Remove qualquer espaço em branco
+                        valor_str = valor_str.replace(" ", "")
+
+                        # Verifica se tem formato válido (número com até duas casas decimais)
+                        if not re.fullmatch(r'^-?\d+(,\d{0,2})?$', valor_str):
+                            self._registrar_erro(idx,
+                                                 f"{campo}: Formato numérico inválido. Use vírgula para decimais (ex: 1234,56 ou 123,00 ou 45)")
+                            continue
+
+                        # Verifica se tem vírgula mas não tem dígitos após
+                        if valor_str.endswith(','):
+                            self._registrar_erro(idx,
+                                                 f"{campo}: Formato incompleto. Após vírgula deve ter 1 ou 2 dígitos (ex: 123,00)")
+
+        self.validar_positivo(self.numeros_com_decimais)
+
+    def validar_tipo_de_vinculo(self):
+        if 'TIPO_VINCULO' in self.df.columns:
+            for idx, valor in self.df['TIPO_VINCULO'].items():
+                if pd.notna(valor):
+                    if str(valor) not in self.tipos_de_vinculo:
+                        self._registrar_erro(idx, "TIPO_VINCULO: Não encontrado na lista de vínculos válidos.")
+
     def validar_inteiros(self):
         """Valida se os campos configurados contêm valores inteiros"""
         self.campos_inteiros = getattr(self, 'campos_inteiros', [])
@@ -462,6 +495,26 @@ class BaseValidator(ABC):
 
             self.df.loc[mask, 'VALIDACAO'] = self.df.loc[mask, 'VALIDACAO'].apply(
                 lambda x: x + ', ' if x else '') + f'ATRIBUTO NÃO RECONHECIDO PARA O MÓDULO DE {modulo} (OS ATRIBUTOS VÁLIDOS SÃO: {", ".join(valid_attributes)})'
+
+    def check_duplicatas_por_id_atributo(self):
+        """Verifica se há duplicatas de (ID, ATRIBUTO) no DataFrame."""
+        if 'VALIDACAO' not in self.df.columns:
+            self.df['VALIDACAO'] = ''
+
+        duplicatas = self.df.duplicated(subset=['ID', 'ATRIBUTO'], keep=False)
+        if duplicatas.any():
+            grupos = self.df.groupby(['ID', 'ATRIBUTO']).size().reset_index(name='count')
+            grupos_duplicatas = grupos[grupos['count'] > 1]
+
+            for _, grupo in grupos_duplicatas.iterrows():
+                id_dup = grupo['ID']
+                atributo_dup = grupo['ATRIBUTO']
+                count = grupo['count']
+
+                indices = self.df[(self.df['ID'] == id_dup) & (self.df['ATRIBUTO'] == atributo_dup)].index
+                for idx in indices:
+                    self.preencher_validacao(idx, [
+                        f"DUPLICATA ENCONTRADA PARA O MESMO ID E ATRIBUTO. EXISTEM {count} REGISTROS PARA ALTERAR O MESMO ATRIBUTO DO MESMO ID."])
 
     def preencher_validacao(self, idx, validacoes):
         validacao_existente = self.df.at[idx, 'VALIDACAO'] if 'VALIDACAO' in self.df.columns and pd.notna(

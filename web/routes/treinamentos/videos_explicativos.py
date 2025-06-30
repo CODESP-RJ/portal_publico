@@ -55,6 +55,11 @@ with st.container():
         "07 Módulo de Fornecedores": "https://www.youtube.com/watch?v=6I0UbwRrp3M",
         "08 Módulo de Bens Patrimoniados": "https://www.youtube.com/watch?v=F1rBiB0qMn0&t=8s",
         "09 Entrega Negativa Bens Patrimoniados": "https://www.youtube.com/watch?v=dgspl05EYO4",
+        "10 Módulo de Funcionários": "https://www.youtube.com/watch?v=esZ4jAnd4xE",
+        "11 Módulo de Vínculos de Trabalho": "https://www.youtube.com/watch?v=TOTqX6jwKc0",
+        "12 Módulo de Folha de Pagamento": "https://www.youtube.com/watch?v=5sRL3Sd8fJw",
+        "13 Módulo de Provisionamento": "https://www.youtube.com/watch?v=3bVvdH6JQuA",
+        "14 Desligamento em Lote": "https://www.youtube.com/watch?v=PvYlKklF1z4",
     }
 
     videos_anexos = {

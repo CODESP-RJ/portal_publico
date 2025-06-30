@@ -20,6 +20,11 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                 validacoes = []
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
+
+                if not valor or pd.isna(valor) or str(valor).strip() == '':
+                    self.df.at[idx, 'VALIDACAO'] = 'INVALIDO VALOR VAZIO OU NULO, '
+                    continue
+
                 if attr in ['CODIGO DO SERVICO', 'CODIGO DO MATERIAL']:
                     if atributos.get('CODIGO DO SERVICO') and atributos.get('CODIGO DO MATERIAL'):
                         validacoes.append('DADOS DE SERVIÇO E MATERIAL (UM DELES PRECISA ESTAR VAZIO PARA REALIZARMOS A TROCA), ')

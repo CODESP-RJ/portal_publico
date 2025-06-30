@@ -1,0 +1,42 @@
+[
+    {
+        "tpvc_cd_tipo_vinculacao": "BOL",
+        "tpvc_ds_descricao": "Bolsa",
+        "employementRelationshipTypeDescription": "BOL-Bolsa"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "CLT",
+        "tpvc_ds_descricao": "Consolidação das Leis do Trabalho",
+        "employementRelationshipTypeDescription": "CLT-Consolidação das Leis do Trabalho"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "EST",
+        "tpvc_ds_descricao": "ESTÁGIO",
+        "employementRelationshipTypeDescription": "EST-ESTÁGIO"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "ESV",
+        "tpvc_ds_descricao": "Estatutário Sem Vínculo Empregatício",
+        "employementRelationshipTypeDescription": "ESV-Estatutário Sem Vínculo Empregatício"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "JOA",
+        "tpvc_ds_descricao": "Jovem Aprendiz",
+        "employementRelationshipTypeDescription": "JOA-Jovem Aprendiz"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "MAM",
+        "tpvc_ds_descricao": "Mais Médicos",
+        "employementRelationshipTypeDescription": "MAM-Mais Médicos"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "RPA",
+        "tpvc_ds_descricao": "Recibo de Pagamento Autônomo",
+        "employementRelationshipTypeDescription": "RPA-Recibo de Pagamento Autônomo"
+    },
+    {
+        "tpvc_cd_tipo_vinculacao": "REM",
+        "tpvc_ds_descricao": "Residência Médica",
+        "employementRelationshipTypeDescription": "REM-Residência Médica"
+    }
+]

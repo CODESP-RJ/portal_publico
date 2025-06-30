@@ -102,6 +102,11 @@ def obter_tipos_documentos():
         resposta = json.load(arqTiposDocumentos)
         return resposta
 
+def obter_tipos_de_vinculo():
+    with open("data/employmentRelationshipType.json", encoding='utf-8') as arqTiposVinculo:
+        resposta = json.load(arqTiposVinculo)
+        return resposta
+
 def obter_contas_bancarias():
     with open("data/osinfo.conta_bancaria.json", encoding='utf-8') as arqContasBancarias:
         resposta = json.load(arqContasBancarias)

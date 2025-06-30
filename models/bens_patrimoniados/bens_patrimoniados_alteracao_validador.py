@@ -22,8 +22,8 @@ class BensPatrimoniadosValidator(BaseValidator):
                 attr = row['ATRIBUTO']
                 valor = row['NOVO_VALOR']
 
-                if pd.isna(valor) or valor is None or str(valor).strip() == '':
-                    self.df.at[idx, 'VALIDACAO'] = 'OK'
+                if not valor or pd.isna(valor) or str(valor).strip() == '':
+                    self.df.at[idx, 'VALIDACAO'] = 'INVALIDO VALOR VAZIO OU NULO, '
                     continue
 
                 if attr in ['VALOR']:

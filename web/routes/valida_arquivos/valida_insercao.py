@@ -12,6 +12,9 @@ from models.despesas import despesas_insercao_validador
 from models.contratos_de_terceiros import contratos_de_terceiros_insercao_validador
 from models.bens_patrimoniados import bens_patrimoniados_insercao_validador
 from models.fornecedores import fornecedores_insercao_validador
+from models.folha_de_pagamento import folha_de_pagamento_insercao_validador
+from models.provisionamento import provisionamento_insercao_validador
+from models.desligamento_em_lote import desligamento_em_lote_insercao_validador
 from models.registry import RegistryValidators
 from io import StringIO
 from utils.utils import footer
@@ -19,7 +22,8 @@ from utils.utils import footer
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Inserção</h1>", unsafe_allow_html=True)
 st.divider()
 
-tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores']
+tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores', 'Folha de Pagamento', 'Provisionamento', 'Desligamento em Lote']
+
 tipo_arquivo_modelo = {
     'Despesas': 'DESPESAS GNOSIS',
     'Contratos de Terceiros': 'MODELO ANEXO',
@@ -27,7 +31,10 @@ tipo_arquivo_modelo = {
     'Bens Patrimoniados': 'BENS CEP28',
     'Itens de Nota Fiscal': 'ITENS DE NOTA FISCAL',
     'Receitas': 'IPCEP',
-    'Fornecedores': 'FORNECEDOR GNOSIS'
+    'Fornecedores': 'FORNECEDOR GNOSIS',
+    'Folha de Pagamento': 'MODELO FOLHA DE PAGAMENTO RH EXEMPLO',
+    'Provisionamento': 'PROVISIONAMENTO RH EXEMPLO',
+    'Desligamento em Lote': 'MODELO DESLIGAMENTO EM LOTE RH EXEMPLO'
 }
 
 tipo_arquivo_mapping = {
@@ -37,7 +44,10 @@ tipo_arquivo_mapping = {
     'Bens Patrimoniados': 'modulo_bens_patrimoniados',
     'Itens de Nota Fiscal': 'modulo_itens_nota_fiscal',
     'Receitas': 'modulo_receitas',
-    'Fornecedores': 'modulo_fornecedores'
+    'Fornecedores': 'modulo_fornecedores',
+    'Folha de Pagamento': 'modulo_folha_de_pagamento',
+    'Provisionamento': 'modulo_provisionamento',
+    'Desligamento em Lote': 'modulo_desligamento_em_lote'
 }
 
 tipoarquivo_escolhido = st.selectbox(
@@ -84,10 +94,16 @@ def main():
 
             validator.validar_tudo()
             resultados = validator.obter_resultados()
+            total_rows = len(df)
+            processed_rows = 0
+            error_rows = 0
 
             if not resultados.empty:
                 exibir_resultados(resultados)
-
+                ok_count = (resultados['VALIDACAO'] == "OK").sum()
+                processed_rows += ok_count
+                error_count = len(resultados) - ok_count
+                error_rows += error_count
                 if (resultados['VALIDACAO'] == 'OK').all():
                     st.success("Validação concluída e sem erros encontrados.")
                     st.toast("Todos os registros estão válidos!", icon="✅")
@@ -97,9 +113,16 @@ def main():
                     st.toast("Alguns registros possuem erros!", icon="⚠️")
 
                 oferecer_download(resultados)
-            else:
-                st.warning("Nenhum registro válido encontrado no arquivo.")
 
+                st.divider()
+                st.subheader("Relatório de Processamento")
+                col1, col2, col3 = st.columns(3)
+                col1.metric("Total de Registros", total_rows)
+                col2.metric("Registros Válidos", processed_rows)
+                col3.metric("Registros com Problemas", error_rows)
+
+            else:
+                st.toast("Nenhum registro válido encontrado no arquivo.", icon="⚠️")
 
         except Exception as e:
             st.error(f"Erro na validação: {str(e)}")

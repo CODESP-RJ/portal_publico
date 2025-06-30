@@ -73,6 +73,7 @@ try:
         'Financeiros': ['SALDOS_ALTERACAO', 'RECEITAS_ALTERACAO', 'DESPESAS_ALTERACAO'],
         'Cadastros': ['CONTRATOS_DE_TERCEIROS_ALTERACAO', 'BENS_PATRIMONIADOS_ALTERACAO'],
         'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_ALTERACAO'],
+        'Recursos Humanos': ['FOLHA_DE_PAGAMENTO_ALTERACAO', 'PROVISIONAMENTO_ALTERACAO'],
     }
 
     for category, patterns in categories_alt.items():
@@ -102,6 +103,7 @@ try:
         'Financeiros': ['SALDOS_EXCLUSAO', 'RECEITAS_EXCLUSAO', 'DESPESAS_EXCLUSAO'],
         'Cadastros': ['CONTRATOS_DE_TERCEIROS_EXCLUSAO', 'BENS_PATRIMONIADOS_EXCLUSAO'],
         'Notas Fiscal': ['ITENS_DE_NOTA_FISCAL_EXCLUSAO'],
+        'Recursos Humanos': ['FOLHA_DE_PAGAMENTO_EXCLUSAO', 'PROVISIONAMENTO_EXCLUSAO'],
     }
 
     for category, patterns in categories_exc.items():

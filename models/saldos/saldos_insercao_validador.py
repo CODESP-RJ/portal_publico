@@ -3,7 +3,6 @@ from models.registry import RegistryValidators
 import datetime
 from models.common import CONFIGURACOES_MODULOS
 import pandas as pd
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias
 
 class SaldosValidator(BaseValidatorIns):
     def __init__(self, df):

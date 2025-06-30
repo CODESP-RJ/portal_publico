@@ -40,6 +40,41 @@ def main():
                 st.Page("web/routes/sobre/sobre.py", title="Sobre a Ferramenta"),
             ]
         }
+
+        st.markdown("""
+        <style>
+            /* Estilos para navegação */
+            [data-testid="stSidebarNav"] header.st-emotion-cache-95klgh {
+                font-size: 15px !important;
+                font-weight: 800 !important;
+                border-left: 10px solid #004a8d !important;
+                padding: 12px 16px !important;
+                margin: 5px 0 !important;
+            }
+
+            /* Esconde o botão "View more" */
+            [data-testid="stSidebarNav"] button:has(div p) {
+                display: none !important;
+            }
+
+            /* Remove a barra de rolagem se não for necessária */
+            [data-testid="stSidebarNav"] [data-testid="stSidebarNavItems"] {
+                max-height: none !important;
+                overflow: hidden !important;
+            }
+
+            /* Ajusta o espaçamento entre os itens */
+            [data-testid="stSidebarNav"] [data-testid="stSidebarNavItems"] > div {
+                padding: 8px 0 !important;
+            }
+
+            /* Remove a linha separadora (se houver) */
+            [data-testid="stSidebarNav"] hr {
+                display: none !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+
         st.logo(image="images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png")
         pg = st.navigation(pages_app)
         pg.run()
