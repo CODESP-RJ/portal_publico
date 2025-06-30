@@ -43,7 +43,22 @@ def main():
 
         st.markdown("""
         <style>
-            /* Estilos para navegação */
+            /* Remove o padding interno do sidebar */
+            [data-testid="stSidebarContent"].st-emotion-cache-jx6q2s.e1quxfqw2 {
+                padding: 0 !important;
+            }
+        
+            /* Ajusta o espaçamento dos itens de navegação */
+            [data-testid="stSidebarNavItems"] {
+                padding: 0 !important;
+            }
+        
+            /* Remove margens extras dos itens */
+            [data-testid="stSidebarNavItems"] > li {
+                margin: 0 !important;
+            }
+        
+            /* Mantém seus estilos existentes */
             [data-testid="stSidebarNav"] header.st-emotion-cache-1xlgjx2 {
                 font-size: 15px !important;
                 font-weight: 800 !important;
