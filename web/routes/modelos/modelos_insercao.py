@@ -4,7 +4,7 @@ from utils.utils import footer
 
 def local_css():
     st.markdown("""
-    <style>
+    <style>    
     .instruction-box {
         padding: 20px;
         background: #f0f2f6;
@@ -30,6 +30,34 @@ def local_css():
     .warning {
         color: #d6336c;
         font-weight: bold;
+    }
+    .drive-link-box {
+        padding: 20px;
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin: 10px 0;
+        text-align: center;
+        border: 2px solid #B0B0B0;
+    }
+    
+    .drive-button {
+        background-color: #8C8C8C;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+
+    .drive-button:hover {
+        background-color: #5A5A5A;
+        text-decoration: none;
+        color: white;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -100,42 +128,18 @@ except Exception as e:
     st.error(f"🚨 Erro ao carregar arquivos: {str(e)}")
 
 st.header("⬇️ Download das Instruções de Preenchimento", divider="red")
-files_dir_imp = "download/instrucoes_preenchimento"
-try:
-    files_imp = os.listdir(files_dir_imp)
 
-    categories = {
-        'Por módulo': [
-            'INSTRUÇÕES BASICAS DE FORMATAÇÃO DOS ARQUIVOS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE DESPESAS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE RECEITAS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE SALDOS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE FORNECEDORES',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE CONTRATOS DE TERCEIROS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE BENS PATRIMONIADOS',
-            'INSTRUÇÕES PARA IMPORTAÇÃO DE ITENS DE NOTA FISCAL',
-            'INSTRUÇÕES PARA IMPORTAÇÃO MODULO DE RH',
-            'INSTRUÇÕES PARA DESLIGAMENTO EM LOTE'
-        ],
-    }
-
-    for category, patterns in categories.items():
-        with st.expander(f"📂 {category}", expanded=True):
-            cols = st.columns(3)
-            col_idx = 0
-            for file in files_imp:
-                if any(p in file for p in patterns):
-                    with cols[col_idx % 3]:
-                        with open(os.path.join(files_dir_imp, file), "rb") as fp:
-                            st.download_button(
-                                label=f"📄 {file.split('.')[0].replace('_', ' ').title()}",
-                                data=fp,
-                                file_name=file,
-                                mime="text/csv",
-                                use_container_width=True
-                            )
-                            col_idx += 1
-except Exception as e:
-    st.error(f"🚨 Erro ao carregar arquivos: {str(e)}")
+st.markdown("""
+<div class="drive-link-box">
+    <h4>📋 Instruções de Preenchimento</h4>
+    <p>Acesse o Google Drive para baixar as instruções detalhadas de preenchimento dos modelos:</p>
+    <a href="https://drive.google.com/drive/folders/1jW34NRzbY8QzQJ2AYopapS9S4Vlxus3n?usp=drive_link" 
+       target="_blank" class="drive-button">
+    📁 Acessar Instruções no Google Drive
+    </a>
+    <br>
+    <small style="color: #666;">O link será aberto em uma nova aba</small>
+</div>
+""", unsafe_allow_html=True)
 
 footer()
