@@ -44,7 +44,7 @@ def main():
         st.markdown("""
         <style>
             /* Estilos para navegação */
-            [data-testid="stSidebarNav"] header.st-emotion-cache-95klgh {
+            [data-testid="stSidebarNav"] header.st-emotion-cache-1xlgjx2 {
                 font-size: 15px !important;
                 font-weight: 800 !important;
                 border-left: 10px solid #004a8d !important;
