@@ -67,7 +67,7 @@ class DespesasValidator(BaseValidatorIns):
                         self._registrar_erro(idx, "PMT_PAGA: O valor não pode ser maior que QTDE_PMT.")
 
     def _validar_campos_nf(self, idx):
-        campos_necessarios = ['SERIE', 'NUM_DOCUMENTO', 'CODIGO']
+        campos_necessarios = ['SERIE', 'NUM_DOCUMENTO']
         faltantes = []
 
         for campo in campos_necessarios:
