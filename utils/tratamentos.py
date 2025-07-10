@@ -147,8 +147,12 @@ def valida_cpf(cpf):
         bool: True se o CPF for válido, False caso contrário.
     """
     try:
-        resultado = cpfcnpj.validate(cpf)
-        return resultado
+        if cpfcnpj.validate(cpf) == False:
+            return False
+        padrao = re.compile(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$')
+        if bool(padrao.match(cpf)) == False:
+            return False
+        return True
     except Exception as e:
         print(f"Erro ao validar CPF: {e}")
         return False
