@@ -2,7 +2,6 @@ from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_FOLHA_DE_PAGAMENTO
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_tipos_de_vinculo
 from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira
 from models.registry import RegistryValidators

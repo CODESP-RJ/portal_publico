@@ -2,10 +2,8 @@ from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_DESPESAS
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float
-from utils.utils import erros, obter_contratos
-from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias
+from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira, valida_cnpj, valida_cpf
+from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias, erros, obter_contratos
 from models.registry import RegistryValidators
 
 class DespesasValidator(BaseValidator):
@@ -30,12 +28,12 @@ class DespesasValidator(BaseValidator):
                 if attr in ['CNPJ']:
                     if (atributos.get('CNPJ')):
                         valor_split = atributos.get('CNPJ').split(' ')[0]
-                        if formata_cnpj(valor_split) == 'invalido':
+                        if valida_cnpj(valor_split) == False:
                             validacoes.append('CNPJ INVALIDO, ')
                 if attr in ['CPF']:
                     if (atributos.get('CPF')):
                         valor_split = atributos.get('CPF').split(' ')[0]
-                        if formata_cpf(valor_split) == 'invalido':
+                        if valida_cpf(valor_split) == False:
                             validacoes.append('CPF INVALIDO, ')
                 if attr in ['RAZAO SOCIAL']:
                     if (atributos.get('RAZAO SOCIAL')):

@@ -115,6 +115,40 @@ def adicionar_extensao_pdf(nome_arquivo):
         nome_arquivo += ".pdf"
     return nome_arquivo
 
+def valida_cnpj(cnpj):
+    """
+    Valida um CNPJ (Cadastro Nacional da Pessoa Jurídica) brasileiro.
+
+    Args:
+        cnpj (str): CNPJ a ser validado.
+
+    Returns:
+        bool: True se o CNPJ for válido, False caso contrário.
+    """
+    try:
+        resultado = cpfcnpj.validate(cnpj)
+        return resultado
+    except Exception as e:
+        print(f"Erro ao validar CNPJ: {e}")
+        return False
+
+def valida_cpf(cpf):
+    """
+    Valida um CPF (Cadastro de Pessoa Física) brasileiro.
+
+    Args:
+        cpf (str): CPF a ser validado.
+
+    Returns:
+        bool: True se o CPF for válido, False caso contrário.
+    """
+    try:
+        resultado = cpfcnpj.validate(cpf)
+        return resultado
+    except Exception as e:
+        print(f"Erro ao validar CPF: {e}")
+        return False
+
 def formata_cnpj(cnpj):
     try:
         cnpj_limpo = re.sub(r'[^0-9]', '', cnpj)

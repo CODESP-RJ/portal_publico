@@ -2,7 +2,7 @@ from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_CONTRATOS_DE_TERCEIROS
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
+from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj, valida_cnpj, valida_cpf
 from utils.utils import erros, obter_contratos
 from models.base_validador import BaseValidator
 from models.registry import RegistryValidators
@@ -33,7 +33,7 @@ class ContratosTerceirosValidator(BaseValidator):
                 if attr in ['CPF', 'NOME']:
                     if (atributos.get('CPF')):
                         valor_split = atributos.get('CPF').split(' ')[0]
-                        if formata_cpf(valor_split) == 'invalido':
+                        if valida_cpf(valor_split) == False:
                             validacoes.append('CPF INVALIDO, ')
                     if (atributos.get('NOME')):
                         if not isinstance(atributos.get('NOME'), str):
@@ -49,7 +49,7 @@ class ContratosTerceirosValidator(BaseValidator):
                 if attr in ['CNPJ', 'RAZAO SOCIAL']:
                     if (atributos.get('CNPJ')):
                         valor_split = atributos.get('CNPJ').split(' ')[0]
-                        if formata_cnpj(valor_split) == 'invalido':
+                        if valida_cnpj(valor_split) == False:
                             validacoes.append('CNPJ INVALIDO, ')
                         if (atributos.get('RAZAO SOCIAL')):
                             if not isinstance(atributos.get('RAZAO SOCIAL'), str):

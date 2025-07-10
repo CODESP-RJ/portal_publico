@@ -19,6 +19,7 @@ class FornecedoresValidator(BaseValidatorIns):
         self.campo_tipo_fornecedor = ['TIPO']
         self.campos_email = ['EMAIL']
         self.campos_inteiros = ['NUMERO']
+        self.campo_contrato = []
 
     def validar_especifico(self):
         self.validar_inteiros()

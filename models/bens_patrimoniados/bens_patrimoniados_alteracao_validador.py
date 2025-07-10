@@ -2,9 +2,8 @@ from models.base_validador import BaseValidator
 from models.common import LISTA_ATRIBUTOS_BENS_PATRIMONIADOS
 import re
 import pandas as pd
-from utils.tratamentos import string_to_float, formata_cpf, formata_cnpj
 from utils.utils import erros, obter_contratos, obter_tipos_bens
-from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float
+from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float, formata_cpf, formata_cnpj, valida_cnpj
 from models.registry import RegistryValidators
 
 class BensPatrimoniadosValidator(BaseValidator):
@@ -85,7 +84,7 @@ class BensPatrimoniadosValidator(BaseValidator):
                 if attr in ['CNPJ']:
                     if (atributos.get('CNPJ')):
                         valor_split = atributos.get('CNPJ').split(' ')[0]
-                        if formata_cnpj(valor_split) == 'invalido':
+                        if valida_cnpj(valor_split) == False:
                             validacoes.append('CNPJ INVALIDO, ')
 
                 if attr in ['RAZAO SOCIAL']:

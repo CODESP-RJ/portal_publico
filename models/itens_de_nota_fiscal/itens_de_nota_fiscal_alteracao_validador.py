@@ -3,7 +3,7 @@ from models.common import LISTA_ATRIBUTOS_ITENS_DE_NOTA_FISCAL
 import re
 import pandas as pd
 from utils.utils import erros, obter_contratos
-from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float, formata_cnpj
+from utils.tratamentos import limpar_dados, padronizar_texto, verificar_formato_brasileiro, string_to_float, formata_cnpj, valida_cnpj
 from models.registry import RegistryValidators
 
 class ItensDeNotaFiscalValidator(BaseValidator):
@@ -41,7 +41,7 @@ class ItensDeNotaFiscalValidator(BaseValidator):
                 if attr in ['FORNECEDOR']:
                     if (atributos.get('FORNECEDOR')):
                         valor_split = atributos.get('FORNECEDOR').split(' ')[0]
-                        if formata_cnpj(valor_split) == 'invalido':
+                        if valida_cnpj(valor_split) == False:
                             validacoes.append('FORNECEDOR INVALIDO, ')
                 if attr in ['VALOR UNITARIO', 'VALOR TOTAL']:
                     if isinstance(valor, str):

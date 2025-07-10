@@ -4,7 +4,7 @@ import streamlit as st
 from abc import ABC, abstractmethod
 from utils.utils import oferecer_download, exibir_resultados, color_rows
 from models.common import CONFIGURACOES_MODULOS
-from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira, validar_formato_contrato
+from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira, validar_formato_contrato, valida_cnpj, valida_cpf, valida_cpf
 
 class BaseValidatorIns(ABC):
     def __init__(self, df):
@@ -199,7 +199,7 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         try:
                             valor_split = str(valor).split(' ')[0]
-                            if formata_cpf(valor_split) == 'invalido':
+                            if valida_cpf(valor_split) == False:
                                 self._registrar_erro(idx, f"{campo}: CPF inválido.")
                         except Exception as e:
                             self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
@@ -212,7 +212,7 @@ class BaseValidatorIns(ABC):
                     if pd.notna(valor):
                         try:
                             valor_split = str(valor).split(' ')[0]
-                            if formata_cnpj(valor_split) == 'invalido':
+                            if valida_cnpj(valor_split) == False:
                                 self._registrar_erro(idx, f"{campo}: CNPJ inválido.")
                         except Exception as e:
                             self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
@@ -259,10 +259,10 @@ class BaseValidatorIns(ABC):
                             else:
                                 doc_str = str(documento).strip()
                                 if tipo_clean == 'J':
-                                    if formata_cnpj(doc_str) == 'invalido':
+                                    if valida_cnpj(doc_str) == False:
                                         validacoes.append(f"{campo_documento}: CNPJ inválido.")
                                 elif tipo_clean == 'F':
-                                    if formata_cpf(doc_str) == 'invalido':
+                                    if valida_cpf(doc_str) == False:
                                         validacoes.append(f"{campo_documento}: CPF inválido.")
 
                     if validacoes:
