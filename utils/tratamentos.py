@@ -126,8 +126,12 @@ def valida_cnpj(cnpj):
         bool: True se o CNPJ for válido, False caso contrário.
     """
     try:
-        resultado = cpfcnpj.validate(cnpj)
-        return resultado
+        if cpfcnpj.validate(cnpj) == False:
+            return False
+        padrao = re.compile(r'^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$')
+        if bool(padrao.match(cnpj)) == False:
+            return False
+        return True
     except Exception as e:
         print(f"Erro ao validar CNPJ: {e}")
         return False
