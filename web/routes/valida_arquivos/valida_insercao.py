@@ -79,14 +79,26 @@ def main():
             selected_type = st.session_state.tipoarquivo_escolhido
 
             if selected_type not in tipo_arquivo_mapping:
-                st.error("Tipo de arquivo não suportado.")
+                # Obter lista de módulos válidos para inserção
+                modulos_validos_ins = list(RegistryValidators._validators_ins.keys())
+                modulos_validos_ins.sort()
+                
+                st.error(f"❌ **Tipo de arquivo não suportado:** {selected_type}")
+                st.info(f"📋 **Tipos de arquivo válidos disponíveis:** {', '.join(tipo_arquivo)}")
+                st.warning("Selecione um tipo de arquivo válido para continuar com a validação.")
                 return
 
             selected_module = tipo_arquivo_mapping[selected_type]
             validator_class = RegistryValidators.get_validator_ins(selected_module)
 
             if not validator_class:
-                st.error(f"Validador para {selected_type} não encontrado.")
+                # Obter lista de módulos válidos para inserção
+                modulos_validos_ins = list(RegistryValidators._validators_ins.keys())
+                modulos_validos_ins.sort()
+                
+                st.error(f"❌ **Validador não encontrado para:** {selected_type}")
+                st.info(f"📋 **Módulos válidos disponíveis:** {', '.join(modulos_validos_ins)}")
+                st.warning("O validador para este tipo de arquivo não está disponível.")
                 return
 
             validator = validator_class(df)

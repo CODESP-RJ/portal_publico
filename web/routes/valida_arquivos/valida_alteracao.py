@@ -120,7 +120,14 @@ def main():
                 exibir_resultados(df_final)
 
                 if modulos_nao_reconhecidos:
-                    st.warning(f"As linhas com os módulos a seguir não são reconhecidas e por isso foram ignoradas: {', '.join(modulos_nao_reconhecidos)}. ")
+                    # Obter lista de módulos válidos
+                    modulos_validos = list(RegistryValidators._validators_alt_exc.keys())
+                    modulos_validos.sort()  # Ordenar alfabeticamente
+                    
+                    st.error(f"❌ **Módulos não reconhecidos:** {', '.join(modulos_nao_reconhecidos)}")
+                    st.info(f"📋 **Módulos válidos disponíveis:** {', '.join(modulos_validos)}")
+                    st.warning("As linhas com módulos não reconhecidos foram ignoradas durante a validação.")
+                    
                 if acao_nao_reconhecida:
                     st.warning(f"As linhas com as ações a seguir não são reconhecidas e por isso foram ignoradas: {', '.join(acao_nao_reconhecida)}. ")
                 if (df_final['VALIDACAO'] == 'OK').all():
@@ -141,7 +148,15 @@ def main():
                 col3.metric("Registros com Problemas", error_rows)
 
             else:
-                st.toast("Nenhum registro válido encontrado no arquivo.", icon="⚠️")
+                # Se não há resultados mas há módulos não reconhecidos, mostrar os módulos válidos
+                if modulos_nao_reconhecidos:
+                    modulos_validos = list(RegistryValidators._validators_alt_exc.keys())
+                    modulos_validos.sort()
+                    
+                    st.error(f"❌ **Módulos não reconhecidos:** {', '.join(modulos_nao_reconhecidos)}")
+                    st.info(f"📋 **Módulos válidos disponíveis:** {', '.join(modulos_validos)}")
+                else:
+                    st.toast("Nenhum registro válido encontrado no arquivo.", icon="⚠️")
 
         except Exception as e:
             st.error(f"Erro na validação: {str(e)}")
