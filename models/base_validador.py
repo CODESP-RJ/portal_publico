@@ -70,12 +70,32 @@ class BaseValidatorIns(ABC):
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
                     if pd.notna(valor):
-                        try:
-                            pd.to_datetime(valor, errors='raise')
-                        except ValueError:
-                            print(f"Erro de conversão em {campo} com valor {valor} idx {idx}")
-                            self._registrar_erro(idx,
-                                                 f"{campo}: Formato de data inválido, é esperado AAAA-MM-DD.")
+                        str_valor = str(valor).strip()  # Garante que seja string
+                        # Passo 1: Verifica o formato com regex
+                        if not re.match(r'^\d{4}-\d{2}-\d{2}$', str_valor):
+                            self._registrar_erro(idx, f"{campo}: Formato inválido. Use AAAA-MM-DD.")
+                        else:
+                            # Passo 2: Verifica se é uma data válida
+                            try:
+                                # Conversão estrita com formato definido
+                                pd.to_datetime(str_valor, format='%Y-%m-%d', errors='raise')
+                            except ValueError:
+                                self._registrar_erro(idx, f"{campo}: Data inválida (ex: 30/02 existente?)")
+
+        for campo in self.datas_abreviadas:
+            if campo in self.df.columns:
+                for idx, valor in self.df[campo].items():
+                    if pd.notna(valor):
+                        str_valor = str(valor).strip()
+                        # Verifica formato e validade do mês
+                        if not re.match(r'^\d{4}-\d{2}$', str_valor):
+                            self._registrar_erro(idx, f"{campo}: Formato inválido. Use AAAA-MM.")
+                        else:
+                            try:
+                                # Testa se o mês é válido (adiciona um dia fictício)
+                                pd.to_datetime(str_valor + "-01", format='%Y-%m-%d', errors='raise')
+                            except ValueError:
+                                self._registrar_erro(idx, f"{campo}: Mês inválido (ex: 00 ou 13).")
 
         for campo in self.datas_abreviadas:
             if campo in self.df.columns:
