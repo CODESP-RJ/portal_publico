@@ -12,6 +12,8 @@ from models.despesas import despesas_insercao_validador
 from models.contratos_de_terceiros import contratos_de_terceiros_insercao_validador
 from models.bens_patrimoniados import bens_patrimoniados_insercao_validador
 from models.fornecedores import fornecedores_insercao_validador
+from models.funcionarios import funcionarios_insercao_validador
+from models.vinculos_de_trabalho import vinculos_de_trabalho_insercao_validador
 from models.folha_de_pagamento import folha_de_pagamento_insercao_validador
 from models.provisionamento import provisionamento_insercao_validador
 from models.desligamento_em_lote import desligamento_em_lote_insercao_validador
@@ -22,7 +24,7 @@ from utils.utils import footer
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Inserção</h1>", unsafe_allow_html=True)
 st.divider()
 
-tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores', 'Folha de Pagamento', 'Provisionamento', 'Desligamento em Lote']
+tipo_arquivo = ['Despesas', 'Contratos de Terceiros', 'Saldos', 'Bens Patrimoniados', 'Itens de Nota Fiscal', 'Receitas', 'Fornecedores', 'Folha de Pagamento', 'Provisionamento', 'Desligamento em Lote', 'Funcionarios', 'Vínculos de Trabalho']
 
 tipo_arquivo_modelo = {
     'Despesas': 'DESPESAS GNOSIS',
@@ -34,7 +36,9 @@ tipo_arquivo_modelo = {
     'Fornecedores': 'FORNECEDOR GNOSIS',
     'Folha de Pagamento': 'MODELO FOLHA DE PAGAMENTO RH EXEMPLO',
     'Provisionamento': 'PROVISIONAMENTO RH EXEMPLO',
-    'Desligamento em Lote': 'MODELO DESLIGAMENTO EM LOTE RH EXEMPLO'
+    'Desligamento em Lote': 'MODELO DESLIGAMENTO EM LOTE RH EXEMPLO',
+    'Funcionarios': 'MODELO FUNCIONARIOS RH EXEMPLO',
+    'Vínculos de Trabalho': 'MODELO VINCULO DE TRABALHO RH EXEMPLO'
 }
 
 tipo_arquivo_mapping = {
@@ -47,7 +51,9 @@ tipo_arquivo_mapping = {
     'Fornecedores': 'modulo_fornecedores',
     'Folha de Pagamento': 'modulo_folha_de_pagamento',
     'Provisionamento': 'modulo_provisionamento',
-    'Desligamento em Lote': 'modulo_desligamento_em_lote'
+    'Desligamento em Lote': 'modulo_desligamento_em_lote',
+    'Funcionarios': 'modulo_funcionarios',
+    'Vínculos de Trabalho': 'modulo_vinculos'
 }
 
 tipoarquivo_escolhido = st.selectbox(

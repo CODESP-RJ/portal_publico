@@ -286,4 +286,42 @@ CONFIGURACOES_MODULOS = {
         'campos_monetarios': [],
         'limites_tamanho': {}
     },
+    'modulo_funcionarios': {
+        'cabecalho_str': 'NOME;NOME_SOCIAL;DATA_NASC;MUN_NASC;UF_NASC;SEXO;RACA;COD_PAIS_ORIGEM;NACIONALIDADE;NOME_MAE;NOME_PAI;ESCOLARIDADE;CPF;RG;ORGAO_EMISSOR;DATA_EMISSAO;COD_OS',
+        'datas_abreviadas': [],
+        'datas_completas': ['DATA_NASC', 'DATA_EMISSAO'],
+        'campos_obrigatorios': ["NOME", "DATA_NASC", "MUN_NASC", "UF_NASC", "SEXO", "RACA", "COD_PAIS_ORIGEM", "NACIONALIDADE", "NOME_MAE", "CPF", "RG", "ORGAO_EMISSOR", "COD_OS"],
+        'campos_monetarios': [],
+        'limites_tamanho': {
+            "NOME": 100,
+            "NOME_SOCIAL": 100,
+            "MUN_NASC": 45,
+            "UF_NASC": 2,
+            "NACIONALIDADE": 45,
+            "NOME_MAE": 100,
+            "NOME_PAI": 100,
+            "RG": 20,
+            "ORGAO_EMISSOR": 45
+        }
+    },
+    'modulo_vinculos': {
+        'cabecalho_str': 'COD_OS;CNPJ;CPF;CONSELHO;NUM_REG_PROFISSIONAL;UF_CONSELHO;CBO;CATEGORIA;SETOR;VINCULACAO;CARGA_HORARIA;DATA_ADMISSAO;DATA_DEMISSAO;ATIVO;TELEFONE;CORREIO_ELETRONICO;CARGO;CNES',
+        'datas_abreviadas': [],
+        'datas_completas': ['DATA_ADMISSAO', 'DATA_DEMISSAO'],
+        'campos_obrigatorios': ["COD_OS", "CNPJ", "CPF", "CBO", "CATEGORIA", "VINCULACAO", "CARGA_HORARIA", "DATA_ADMISSAO", "ATIVO", "CARGO"],
+        'campos_monetarios': [],
+        'limites_tamanho': {
+            "CONSELHO": 15,
+            "NUM_REG_PROFISSIONAL": 20,
+            "UF_CONSELHO": 2,
+            "CBO": 7,
+            "SETOR": 45,
+            "TELEFONE": 45,
+            "CORREIO_ELETRONICO": 100,
+            "CARGO": 40,
+            "CNES": 15,
+            "CATEGORIA": 2,
+            "CARGA_HORARIA": 3
+        }
+    }
 }
