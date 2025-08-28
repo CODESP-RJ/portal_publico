@@ -34,8 +34,8 @@ tipo_arquivo_modelo = {
     'Itens de Nota Fiscal': 'ITENS DE NOTA FISCAL',
     'Receitas': 'IPCEP',
     'Fornecedores': 'FORNECEDOR GNOSIS',
-    'Folha de Pagamento': 'MODELO FOLHA DE PAGAMENTO RH EXEMPLO',
-    'Provisionamento': 'PROVISIONAMENTO RH EXEMPLO',
+    'Folha de Pagamento': 'MODELO RH EXEMPLO - v3.20.11',
+    'Provisionamento': 'MODELO PROV RH EXEMPLO - v3.20.11',
     'Desligamento em Lote': 'MODELO DESLIGAMENTO EM LOTE RH EXEMPLO',
     'Funcionarios': 'MODELO FUNCIONARIOS RH EXEMPLO',
     'Vínculos de Trabalho': 'MODELO VINCULO DE TRABALHO RH EXEMPLO'
