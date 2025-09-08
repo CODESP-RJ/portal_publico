@@ -51,7 +51,7 @@ with st.container(border=True):
     with tab2:
         st.success("**Vantagens da Solução:**")
         st.markdown("""
-        - Verificação completa e automática dos arquivos
+        - Verificação automática dos arquivos
         - Baixo risco de erros humanos
         """)
         st.caption("_Sistema atual com apoio da ferramenta_")

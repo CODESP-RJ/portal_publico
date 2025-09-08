@@ -94,7 +94,7 @@ class DespesasValidator(BaseValidator):
                     if not re.fullmatch(r'^[A-Z0-9_]+$', nome_arquivo):
                         validacoes.append('DESCRICAO SÓ PODE CONTER LETRAS MAIÚSCULAS, NÚMEROS E UNDERLINE (_), ')
 
-                if attr in ['PARCELA PAGA', 'NUMERO DE PARCELAS', 'RUBRICA', 'NUMERO DO DOCUMENTO']:
+                if attr in ['PARCELA PAGA', 'NUMERO DE PARCELAS', 'RUBRICA']:
                     if isinstance(valor, str):
                         try:
                             valor = int(valor)

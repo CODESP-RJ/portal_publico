@@ -23,7 +23,7 @@ class DespesasValidator(BaseValidatorIns):
         self.campos_cnpj = ['CNPJ']
         self.campos_razao_social = ['RAZAO']
         self.campos_nome = ['NOME']
-        self.campos_inteiros = ['COD_OS', 'COD_UNIDADE', 'CODIGO', 'NUM_DOCUMENTO', 'RUBRICA', 'BANCO', 'AGENCIA', 'PMT_PAGA', 'QTDE_PMT']
+        self.campos_inteiros = ['COD_OS', 'COD_UNIDADE', 'CODIGO', 'RUBRICA', 'BANCO', 'AGENCIA', 'PMT_PAGA', 'QTDE_PMT']
         self.rubricas_validas = [str(r["id_rubrica"]) for r in obter_tipos_rubricas()]
         self.contas_validas = self._gerar_lista_contas()
         self.tipos_despesa_validos = [str(t["cod_despesa"]) for t in obter_tipos_despesas()]
