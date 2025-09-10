@@ -130,8 +130,9 @@ class BaseValidatorIns(ABC):
         for campo in self.campos_obrigatorios:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
-                    if pd.isna(valor) or (isinstance(valor, str) and not valor.strip()):
-                        self._registrar_erro(idx, f"{campo}: Campo obrigatório não preenchido.\n")
+                    if campo not in ['CODIGO']:
+                        if pd.isna(valor) or (isinstance(valor, str) and not valor.strip()):
+                            self._registrar_erro(idx, f"{campo}: Campo obrigatório não preenchido.\n")
             else:
                 st.error(f"Campo obrigatório '{campo}' não encontrado no arquivo.")
                 st.stop()
