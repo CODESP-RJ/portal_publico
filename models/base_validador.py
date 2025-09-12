@@ -130,9 +130,8 @@ class BaseValidatorIns(ABC):
         for campo in self.campos_obrigatorios:
             if campo in self.df.columns:
                 for idx, valor in self.df[campo].items():
-                    if campo not in ['CODIGO']:
-                        if pd.isna(valor) or (isinstance(valor, str) and not valor.strip()):
-                            self._registrar_erro(idx, f"{campo}: Campo obrigatório não preenchido.\n")
+                    if pd.isna(valor) or (isinstance(valor, str) and not valor.strip()):
+                        self._registrar_erro(idx, f"{campo}: Campo obrigatório não preenchido.\n")
             else:
                 st.error(f"Campo obrigatório '{campo}' não encontrado no arquivo.")
                 st.stop()
@@ -490,18 +489,30 @@ class BaseValidatorIns(ABC):
         uploaded_columns = [col.strip().replace(" ", "").upper() for col in self.df.columns.tolist()]
         expected_columns = [col.strip().replace(" ", "").upper() for col in self.cabecalho]
 
-        missing_columns = []
+        # Verificar campos obrigatórios faltantes
+        missing_required_columns = []
         for required_col in [col.strip().replace(" ", "").upper() for col in self.campos_obrigatorios]:
             if required_col not in uploaded_columns:
-                missing_columns.append(required_col)
+                missing_required_columns.append(required_col)
 
-        if missing_columns:
-            st.error(f"❌ Colunas obrigatórias faltantes: {', '.join(missing_columns)}")
-            st.stop()
+        if missing_required_columns:
+            st.error(f"❌ Colunas obrigatórias faltantes: {', '.join(missing_required_columns)}")
 
+        # Verificar se todos os campos do cabeçalho esperado estão presentes
+        missing_all_columns = []
+        for expected_col in expected_columns:
+            if expected_col not in uploaded_columns:
+                missing_all_columns.append(expected_col)
+
+        if missing_all_columns:
+            st.error(f"❌ Colunas faltantes no arquivo: {', '.join(missing_all_columns)}")
+
+        # Verificar colunas extras
         extra_columns = [col for col in uploaded_columns if col not in expected_columns]
         if extra_columns:
             st.warning(f"⚠️ Colunas extras/não reconhecidas: {', '.join(extra_columns)}")
+
+        if missing_required_columns or missing_all_columns or extra_columns:
             st.stop()
 
     def check_columns(self, columns):
