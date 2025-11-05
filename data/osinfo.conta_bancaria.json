@@ -7617,7 +7617,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2108,
 			"DIGITO_CC": "0",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -7637,7 +7637,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2109,
 			"DIGITO_CC": "9",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -7837,7 +7837,7 @@
 			"ID_AGENCIA": 104,
 			"CODIGO_CC": 9275,
 			"DIGITO_CC": "4",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 268,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -7847,7 +7847,7 @@
 			"ID_AGENCIA": 104,
 			"CODIGO_CC": 9276,
 			"DIGITO_CC": "2",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 268,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -8307,7 +8307,7 @@
 			"ID_AGENCIA": 117,
 			"CODIGO_CC": 8406,
 			"DIGITO_CC": "9",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10957,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -9327,7 +9327,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 796133399,
 			"DIGITO_CC": "2",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -9657,7 +9657,7 @@
 			"ID_AGENCIA": 132,
 			"CODIGO_CC": 130018660,
 			"DIGITO_CC": "",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 458,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -11327,7 +11327,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2315,
 			"DIGITO_CC": "6",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -11337,7 +11337,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2316,
 			"DIGITO_CC": "4",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -11707,7 +11707,7 @@
 			"ID_AGENCIA": 120,
 			"CODIGO_CC": 11391,
 			"DIGITO_CC": "3",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10974,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12337,7 +12337,7 @@
 			"ID_AGENCIA": 126,
 			"CODIGO_CC": 99614,
 			"DIGITO_CC": "2",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10250,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12347,7 +12347,7 @@
 			"ID_AGENCIA": 126,
 			"CODIGO_CC": 99358,
 			"DIGITO_CC": "6",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10250,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12457,7 +12457,7 @@
 			"ID_AGENCIA": 189,
 			"CODIGO_CC": 8653,
 			"DIGITO_CC": "9",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10248,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12487,7 +12487,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2375,
 			"DIGITO_CC": "0",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12497,7 +12497,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2376,
 			"DIGITO_CC": "8",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -12507,7 +12507,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2377,
 			"DIGITO_CC": "6",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -12517,7 +12517,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 2378,
 			"DIGITO_CC": "4",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -12567,7 +12567,7 @@
 			"ID_AGENCIA": 120,
 			"CODIGO_CC": 11397,
 			"DIGITO_CC": "2",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10974,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -13317,7 +13317,7 @@
 			"ID_AGENCIA": 84,
 			"CODIGO_CC": 13002384,
 			"DIGITO_CC": "8",
-			"FLG_ATIVO": "S",
+			"FLG_ATIVO": "N",
 			"COD_OS": 10957,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -13777,7 +13777,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 577597739,
 			"DIGITO_CC": "0",
-			"FLG_ATIVO": "N",
+			"FLG_ATIVO": "S",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
@@ -13787,7 +13787,7 @@
 			"ID_AGENCIA": 103,
 			"CODIGO_CC": 577597784,
 			"DIGITO_CC": "6",
-			"FLG_ATIVO": "N",
+			"FLG_ATIVO": "S",
 			"COD_OS": 10254,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 3
@@ -14361,6 +14361,306 @@
 			"COD_OS": 10248,
 			"ID_IMAGEM": null,
 			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1439,
+			"ID_AGENCIA": 88,
+			"CODIGO_CC": 13006176,
+			"DIGITO_CC": "5",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10248,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1440,
+			"ID_AGENCIA": 195,
+			"CODIGO_CC": 13003210,
+			"DIGITO_CC": "4",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10974,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1441,
+			"ID_AGENCIA": 195,
+			"CODIGO_CC": 130003211,
+			"DIGITO_CC": "1",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10974,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1442,
+			"ID_AGENCIA": 84,
+			"CODIGO_CC": 13002373,
+			"DIGITO_CC": "8",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10957,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1443,
+			"ID_AGENCIA": 196,
+			"CODIGO_CC": 141745,
+			"DIGITO_CC": "2",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10899,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1444,
+			"ID_AGENCIA": 95,
+			"CODIGO_CC": 60016742,
+			"DIGITO_CC": "0",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10250,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1445,
+			"ID_AGENCIA": 95,
+			"CODIGO_CC": 60016743,
+			"DIGITO_CC": "7",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10250,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1446,
+			"ID_AGENCIA": 191,
+			"CODIGO_CC": 123,
+			"DIGITO_CC": "1",
+			"FLG_ATIVO": "S",
+			"COD_OS": 259,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1447,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 130060989,
+			"DIGITO_CC": "",
+			"FLG_ATIVO": "S",
+			"COD_OS": 11627,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1448,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 600274281,
+			"DIGITO_CC": "",
+			"FLG_ATIVO": "S",
+			"COD_OS": 11627,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1449,
+			"ID_AGENCIA": 197,
+			"CODIGO_CC": 578256339,
+			"DIGITO_CC": "3",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1450,
+			"ID_AGENCIA": 197,
+			"CODIGO_CC": 578256341,
+			"DIGITO_CC": "5",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1451,
+			"ID_AGENCIA": 77,
+			"CODIGO_CC": 43028,
+			"DIGITO_CC": "5",
+			"FLG_ATIVO": "S",
+			"COD_OS": 265,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1452,
+			"ID_AGENCIA": 77,
+			"CODIGO_CC": 43029,
+			"DIGITO_CC": "3",
+			"FLG_ATIVO": "S",
+			"COD_OS": 265,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1453,
+			"ID_AGENCIA": 193,
+			"CODIGO_CC": 2300,
+			"DIGITO_CC": "0",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 5
+		},
+		{
+			"ID_CONTA_BANCARIA": 1454,
+			"ID_AGENCIA": 193,
+			"CODIGO_CC": 2308,
+			"DIGITO_CC": "6",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 5
+		},
+		{
+			"ID_CONTA_BANCARIA": 1455,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 13006290,
+			"DIGITO_CC": "5",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10952,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1456,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 600274717,
+			"DIGITO_CC": "",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10952,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1457,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 13006292,
+			"DIGITO_CC": "9",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10952,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1458,
+			"ID_AGENCIA": 155,
+			"CODIGO_CC": 600274700,
+			"DIGITO_CC": "",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10952,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1459,
+			"ID_AGENCIA": 99,
+			"CODIGO_CC": 13007471,
+			"DIGITO_CC": "6",
+			"FLG_ATIVO": "N",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 5
+		},
+		{
+			"ID_CONTA_BANCARIA": 1460,
+			"ID_AGENCIA": 97,
+			"CODIGO_CC": 574778414,
+			"DIGITO_CC": "1",
+			"FLG_ATIVO": "N",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1461,
+			"ID_AGENCIA": 197,
+			"CODIGO_CC": 577996407,
+			"DIGITO_CC": "2",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1462,
+			"ID_AGENCIA": 197,
+			"CODIGO_CC": 577996408,
+			"DIGITO_CC": "0",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10040,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1463,
+			"ID_AGENCIA": 132,
+			"CODIGO_CC": 13001870,
+			"DIGITO_CC": "1",
+			"FLG_ATIVO": "S",
+			"COD_OS": 12100,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1464,
+			"ID_AGENCIA": 198,
+			"CODIGO_CC": 99771,
+			"DIGITO_CC": "8",
+			"FLG_ATIVO": "S",
+			"COD_OS": 10358,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1465,
+			"ID_AGENCIA": 99,
+			"CODIGO_CC": 13007508,
+			"DIGITO_CC": "5",
+			"FLG_ATIVO": "S",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 5
+		},
+		{
+			"ID_CONTA_BANCARIA": 1466,
+			"ID_AGENCIA": 99,
+			"CODIGO_CC": 574421532,
+			"DIGITO_CC": "4",
+			"FLG_ATIVO": "N",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
+		},
+		{
+			"ID_CONTA_BANCARIA": 1467,
+			"ID_AGENCIA": 97,
+			"CODIGO_CC": 574421373,
+			"DIGITO_CC": "9",
+			"FLG_ATIVO": "S",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 6
+		},
+		{
+			"ID_CONTA_BANCARIA": 1468,
+			"ID_AGENCIA": 97,
+			"CODIGO_CC": 574421532,
+			"DIGITO_CC": "4",
+			"FLG_ATIVO": "S",
+			"COD_OS": 263,
+			"ID_IMAGEM": null,
+			"ID_CONTA_BANCARIA_TIPO": 3
 		}
 	]
 }
