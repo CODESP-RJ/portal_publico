@@ -64,12 +64,10 @@ class FolhaDePagamentoValidador(BaseValidator):
                             validacoes.append(f'{attr.upper()} NÃO PODE SER NEGATIVO, ')
                         if attr == "MES DE COMPETENCIA" and (valor_int > 12 or valor_int < 1):
                             validacoes.append(f'{attr.upper()} DEVE SER ENTRE 1 E 12, ')
-                        if attr == "ANO DE COMPETENCIA" and (valor_int < 2000):
-                            validacoes.append(f'{attr.upper()} DEVE SER MAIOR QUE 2000, ')
                     except ValueError:
-                        validacoes.append(f'{atributo.upper()} NÃO É UM NÚMERO VÁLIDO, ')
+                        validacoes.append(f'{attr.upper()} NÃO É UM NÚMERO VÁLIDO, ')
 
-                if attr in LISTA_ATRIBUTOS_FOLHA_DE_PAGAMENTO and attr not in ["VINCULO", "UNIDADE", "MES DE COMPETENCIA", "ANO DE COMPETENCIA", "CARGA HORARIA EFETIVA", "PERCENTUAL DE RATEIO", "DATA LICENCA INICIO", "DATA LICENCA FIM"]:
+                if attr in LISTA_ATRIBUTOS_FOLHA_DE_PAGAMENTO and attr not in ["VINCULO", "UNIDADE", "MES DE COMPETENCIA", "ANO DE COMPETENCIA", "CARGA HORARIA EFETIVA", "PERCENTUAL DE RATEIO", "DATA LICENCA INICIO", "DATA LICENCA FIM", "OBSERVACAO"]:
                     if isinstance(valor, str):
                         if not verificar_formato_brasileiro(valor):
                             validacoes.append('FORMATO INVÁLIDO (USE . PARA MILHARES E , DECIMAL COM 2 CASAS)')
