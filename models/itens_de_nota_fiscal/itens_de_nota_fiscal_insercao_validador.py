@@ -49,7 +49,10 @@ class ItensNotaFiscalValidator(BaseValidatorIns):
                 valor = row['MAT_OU_SERV']
                 codigo = str(row['COD_MAT_SERV']).strip() if pd.notna(row['COD_MAT_SERV']) else None
 
-                if pd.notna(valor):
+                if valor and valor not in ['M', 'S']:
+                    self._registrar_erro(idx, "MAT_OU_SERV: Campo inválido. Deve ser 'M' ou 'S'.")
+
+                elif pd.notna(valor):
                     valor = str(valor).strip().upper()
                     if valor == 'M':
                         try:
@@ -91,8 +94,6 @@ class ItensNotaFiscalValidator(BaseValidatorIns):
                             f"COD_MAT_SERV: Código {codigo} não encontrado na base sigma de serviços."
                         )
                     self._validar_unidades_de_medida(servicos_df, 'UNIDADE DE MEDIDA', codigo)
-                else:
-                    self._registrar_erro(idx, "MAT_OU_SERV: Campo inválido. Deve ser 'M' ou 'S'.")
 
     def validar_especifico(self):
         self.validar_inteiros()
