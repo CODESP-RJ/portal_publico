@@ -3,3 +3,7 @@ primaryColor="#2a688f"
 backgroundColor="#eceded"
 secondaryBackgroundColor="#ffffff"
 textColor="#13335a"
+
+[server]
+headless = true
+runOnSave = true

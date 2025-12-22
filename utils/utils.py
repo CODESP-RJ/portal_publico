@@ -16,7 +16,7 @@ def footer():
     with st.container():
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
-            st.image("images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png", use_container_width=True)
+            st.image("images/RIOPREFEITURA_Controladoria_Geral_horizontal_azul.png")
             st.markdown(
                 "<p style='text-align: center; font-size: 10px;'><strong>APOIO:</strong> SMS/SUBG/CTGOS</p>",
                 unsafe_allow_html=True
@@ -46,10 +46,20 @@ def exibir_resultados(df):
     if 'VALIDACAO' in df.columns:
         df['VALIDACAO'] = df['VALIDACAO'].astype(str)
 
-    styled_df = df.style.map(color_rows, subset=['VALIDACAO']) \
-        .set_properties(**{'text-align': 'left'})
+    # Verifica quais colunas existem antes de aplicar o estilo
+    subset_cols = []
+    if 'VALIDACAO' in df.columns:
+        subset_cols.append('VALIDACAO')
+    if 'VALIDACAO_ADICIONAL' in df.columns:
+        subset_cols.append('VALIDACAO_ADICIONAL')
+    
+    if subset_cols:
+        styled_df = df.style.map(color_rows, subset=subset_cols) \
+            .set_properties(**{'text-align': 'left'})
+    else:
+        styled_df = df.style.set_properties(**{'text-align': 'left'})
 
-    st.dataframe(styled_df, use_container_width=True)
+    st.dataframe(styled_df, width='content')
 
 def color_rows(val):
     color = 'green' if val == 'OK' else 'yellow' if 'Aviso' in val else 'red'
@@ -65,7 +75,7 @@ def oferecer_download(df):
             data=csv,
             file_name=filename,
             mime='text/csv',
-            use_container_width=True
+            width='content'
         )
 
 erros = {
@@ -197,7 +207,7 @@ def upload_arquivo(arquivo):
         st.divider()
         st.markdown("<h2 style='text-align: center;'>Exibição do Arquivo</h2>", unsafe_allow_html=True)
 
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width='content')
 
         st.divider()
 

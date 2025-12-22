@@ -5,3 +5,7 @@ openpyxl
 pycpfcnpj
 SQLAlchemy
 xlrd
+google-cloud-bigquery
+toml
+st-supabase-connection
+supabase

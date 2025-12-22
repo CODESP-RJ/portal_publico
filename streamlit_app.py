@@ -1,7 +1,19 @@
 import streamlit as st
 import logging
 import sys
+import os
 import time
+from pathlib import Path
+from supabase import create_client, Client
+import toml
+
+# Adiciona o diretório raiz ao sys.path para permitir imports absolutos
+root_dir = Path(__file__).parent
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
+
+# Importa componentes de seleção de usuário
+from web.components.user_selection_modal import show_user_selection_modal, get_user_info_display
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -18,8 +30,59 @@ def handle_exception(exc_type, exc_value, exc_traceback):
 
 sys.excepthook = handle_exception
 
+@st.cache_resource
+def init_connection():
+    """
+    Inicializa conexão com Supabase
+    Para logs, use a SERVICE_ROLE_KEY se disponível (bypassa RLS)
+    Caso contrário, usa a SUPABASE_KEY normal
+    """
+    url = st.secrets["connections"]["supabase"]["SUPABASE_URL"]
+    
+    # Tenta usar SERVICE_KEY primeiro (para logs - bypassa RLS)
+    # Se não existir, usa a chave normal
+    if "SUPABASE_SERVICE_KEY" in st.secrets["connections"]["supabase"]:
+        key = st.secrets["connections"]["supabase"]["SUPABASE_SERVICE_KEY"]
+        # Usa a service key como parte do cache key para invalidar quando mudar
+        cache_key = f"service_{key[:20]}"
+    else:
+        key = st.secrets["connections"]["supabase"]["SUPABASE_KEY"]
+        cache_key = f"anon_{key[:20]}"
+    
+    # Cria cliente com a chave correta
+    client = create_client(url, key)
+    
+    return client
+
+supabase = init_connection()
+
 def main():
     try:
+        # Verifica se o usuário já selecionou o tipo (Secretaria ou Instituição)
+        # Se não, mostra o modal de seleção
+        if 'tipo_usuario' not in st.session_state or not st.session_state.tipo_usuario:
+            try:
+                supabase = init_connection()
+                if not show_user_selection_modal(supabase):
+                    # Se o usuário ainda não confirmou, não continua
+                    return
+            except Exception as e:
+                # Se houver erro ao conectar com Supabase, permite continuar sem log
+                st.warning("⚠️ Não foi possível conectar ao sistema de logs. A aplicação continuará funcionando normalmente.")
+                if 'tipo_usuario' not in st.session_state:
+                    st.session_state.tipo_usuario = "DESCONHECIDO"
+        
+        # Exibe informações do usuário no sidebar
+        user_info = get_user_info_display()
+        if user_info:
+            with st.sidebar:
+                st.info(user_info)
+                if st.button("🔄 Alterar Identificação"):
+                    st.session_state.pop('tipo_usuario', None)
+                    st.session_state.pop('secretaria_selecionada', None)
+                    st.session_state.pop('instituicao_selecionada', None)
+                    st.rerun()
+        
         st.markdown("""<style> .big-font { font-size: 24px !important; font-weight: bold !important; } </style>""", unsafe_allow_html=True)
         pages_app = {
             "VALIDADOR DE ARQUIVOS": [
@@ -34,7 +97,7 @@ def main():
                 st.Page("web/routes/tabelas_auxiliares/tabelas.py", title="Tabelas Auxiliares"),
             ],
             "TREINAMENTOS": [
-                st.Page("web/routes/treinamentos/videos_explicativos.py", title="Vídeos Explicativos"),
+                st.Page("web/routes/treinamentos/videos.py", title="Vídeos"),
             ],
             "SOBRE": [
                 st.Page("web/routes/sobre/sobre.py", title="Sobre a Ferramenta"),

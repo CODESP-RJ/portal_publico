@@ -25,6 +25,9 @@ from models.provisionamento.provisionamento_alteracao_validador import Provision
 
 from models.registry import RegistryValidators
 from utils.utils import footer
+from utils.bigquery_utils import validar_datalake
+from utils.logging_utils import save_usage_log
+from streamlit_app import init_connection
 
 st.markdown("<h1 style='text-align: center;'>Valida arquivos de Alterações/Exclusões</h1>", unsafe_allow_html=True)
 st.divider()
@@ -32,7 +35,7 @@ st.divider()
 def main():
     with st.form('main_form'):
         arquivo = st.file_uploader("Selecione ou arraste um arquivo CSV", type="csv")
-        submitted = st.form_submit_button("Processar", use_container_width=True)
+        submitted = st.form_submit_button("Processar", width='content')
 
     if submitted:
         if not arquivo:
@@ -41,7 +44,6 @@ def main():
             return
 
         try:
-            st.divider()
             df = processar_arquivo(arquivo)
 
             if 'TIPO_MODULO' not in df.columns:
@@ -117,12 +119,37 @@ def main():
 
             if resultados:
                 df_final = pd.concat(resultados, ignore_index=True)
-                exibir_resultados(df_final)
+                
+                # Coleta tipos de módulo processados para o log
+                tipos_modulo_processados = list(df['TIPO_MODULO'].unique()) if 'TIPO_MODULO' in df.columns else []
+                tipo_modulo_str = ', '.join(tipos_modulo_processados) if tipos_modulo_processados else None
+                
+                # Determina o tipo de funcionalidade baseado nas ações
+                acoes_no_arquivo = list(df['ACAO'].unique()) if 'ACAO' in df.columns else []
+                tipo_funcionalidade = 'ALTERACAO'
+                if 'EXCLUSAO' in [a.upper().strip() for a in acoes_no_arquivo]:
+                    if 'ALTERACAO' in [a.upper().strip() for a in acoes_no_arquivo]:
+                        tipo_funcionalidade = 'ALTERACAO_EXCLUSAO'  # Ambos no mesmo arquivo
+                    else:
+                        tipo_funcionalidade = 'EXCLUSAO'
+                
+                # Salva log de uso
+                try:
+                    supabase_client = init_connection()
+                    save_usage_log(
+                        supabase_client=supabase_client,
+                        tipo_funcionalidade=tipo_funcionalidade,
+                        tipo_modulo=tipo_modulo_str,  # Valores de TIPO_MODULO do arquivo
+                        nome_arquivo=arquivo.name if arquivo else None,
+                        quantidade_linhas=total_rows
+                    )
+                except Exception as e:
+                    # Não interrompe o fluxo se houver erro no log
+                    pass
 
                 if modulos_nao_reconhecidos:
-                    # Obter lista de módulos válidos
                     modulos_validos = list(RegistryValidators._validators_alt_exc.keys())
-                    modulos_validos.sort()  # Ordenar alfabeticamente
+                    modulos_validos.sort()
                     
                     st.error(f"❌ **Módulos não reconhecidos:** {', '.join(modulos_nao_reconhecidos)}")
                     st.info(f"📋 **Módulos válidos disponíveis:** {', '.join(modulos_validos)}")
@@ -135,9 +162,137 @@ def main():
                     st.toast("Todos os registros estão válidos!", icon="✅")
                     st.balloons()
                 else:
-                    st.error("Validação concluída, e com erros encontrados.")
                     st.toast("Alguns registros possuem erros!", icon="⚠️")
+                    
+                    status_container = st.empty()
+                    steps_list = []
+                    current_step = None
+                    
+                    def atualizar_status(mensagem, progresso=None):
+                        """Atualiza o status das validações com steps"""
+                        nonlocal steps_list, current_step
+                        
+                        mensagem_original = mensagem
+                        mensagem_sem_emoji = mensagem.replace("🔌", "").replace("✅", "").replace("📊", "").replace("🔍", "").replace("🔗", "").replace("📋", "").replace("📦", "").replace("✓", "").replace("🎉", "").strip()
+                        
+                        if "Validando módulo" in mensagem and ":" in mensagem:
+                            modulo_nome = mensagem.split(":")[-1].strip()
+                            step_label = f"📊 Validando módulo: {modulo_nome}"
+                            if not any(step_label == s.get("label") for s in steps_list):
+                                steps_list.append({"label": step_label, "status": "running", "substeps": []})
+                            current_step = len(steps_list) - 1
+                        
+                        elif "Verificando se os IDs informados existem" in mensagem or ("Verificando" in mensagem_sem_emoji and "ID" in mensagem_sem_emoji and "existem" in mensagem_sem_emoji):
+                            if current_step is not None and current_step < len(steps_list):
+                                if "substeps" not in steps_list[current_step]:
+                                    steps_list[current_step]["substeps"] = []
+                                substep_text = mensagem_sem_emoji.replace("  ", "").strip()
+                                if not any(substep_text in s for s in steps_list[current_step]["substeps"]):
+                                    steps_list[current_step]["substeps"].append(substep_text)
+                        
+                        elif "Verificando se os valores informados são válidos" in mensagem:
+                            if current_step is not None and current_step < len(steps_list):
+                                if "substeps" not in steps_list[current_step]:
+                                    steps_list[current_step]["substeps"] = []
+                                substep_text = mensagem_sem_emoji.replace("  ", "").strip()
+                                if not any(substep_text in s for s in steps_list[current_step]["substeps"]):
+                                    steps_list[current_step]["substeps"].append(substep_text)
+                        
+                        elif "Verificando se" in mensagem_sem_emoji and ("existe" in mensagem_sem_emoji or "existem" in mensagem_sem_emoji):
+                            if current_step is not None and current_step < len(steps_list):
+                                if "substeps" not in steps_list[current_step]:
+                                    steps_list[current_step]["substeps"] = []
+                                substep_text = mensagem_sem_emoji.replace("    ", "").strip()
+                                if not any(substep_text == s for s in steps_list[current_step]["substeps"]):
+                                    steps_list[current_step]["substeps"].append(substep_text)
+                        
+                        elif "Processando lote" in mensagem:
+                            if current_step is not None and current_step < len(steps_list):
+                                if "substeps" in steps_list[current_step] and steps_list[current_step]["substeps"]:
+                                    lote_info = mensagem_sem_emoji.replace("    ", "").strip()
+                                    if steps_list[current_step]["substeps"]:
+                                        last = steps_list[current_step]["substeps"][-1]
+                                        if "lote" not in last.lower():
+                                            steps_list[current_step]["substeps"][-1] = f"{last} ({lote_info})"
+                        
+                        elif "encontrado(s)" in mensagem_sem_emoji.lower() or ("de" in mensagem_sem_emoji and "ID" in mensagem_sem_emoji and "encontrado" in mensagem_sem_emoji):
+                            if current_step is not None and current_step < len(steps_list):
+                                if "substeps" in steps_list[current_step] and steps_list[current_step]["substeps"]:
+                                    resultado = mensagem_sem_emoji.replace("    ", "").strip()
+                                    if steps_list[current_step]["substeps"]:
+                                        last = steps_list[current_step]["substeps"][-1]
+                                        if "encontrado" not in last.lower():
+                                            steps_list[current_step]["substeps"][-1] = f"{last} - {resultado}"
+                        
+                        elif "validado com sucesso" in mensagem_sem_emoji.lower() or ("Módulo" in mensagem_sem_emoji and "validado" in mensagem_sem_emoji):
+                            if current_step is not None and current_step < len(steps_list):
+                                steps_list[current_step]["status"] = "complete"
+                                steps_list[current_step]["label"] = steps_list[current_step]["label"].replace("📊", "✅")
+                        
+                        elif "Todas as validações adicionais foram concluídas" in mensagem:
+                            steps_list.append({"label": "🎉 Todas as validações adicionais foram concluídas", "status": "complete"})
+                        
+                        status_title = "🔄 Validação Adicional em andamento..." if steps_list and any(s.get("status") == "running" for s in steps_list) else "✅ Validação Adicional Concluída"
+                        with status_container.container():
+                            with st.status(status_title, expanded=True):
+                                if steps_list:
+                                    for step in steps_list:
+                                        if step["status"] == "complete":
+                                            st.success(step['label'])
+                                        else:
+                                            st.info(step['label'])
+                                            if "substeps" in step and step["substeps"]:
+                                                for substep in step["substeps"]:
+                                                    st.write(f"   └─ {substep}")
+                                else:
+                                    st.info("🔄 Aguardando início das validações...")
+                    
+                    try:
+                        atualizar_status("🔄 Iniciando validações adicionais...", 0)                        
+                        df_datalake = validar_datalake(df_final.copy(), status_callback=atualizar_status)
 
+                        if steps_list:
+                            with status_container.container():
+                                with st.status("✅ Validação Adicional Concluída", expanded=True):
+                                    for step in steps_list:
+                                        if step["status"] == "complete":
+                                            st.success(step['label'])
+                                        else:
+                                            st.info(step['label'])
+                                        if "substeps" in step and step["substeps"]:
+                                            for substep in step["substeps"]:
+                                                st.write(f"   └─ {substep}")
+                        
+                        df_final = df_datalake
+                        
+                        st.session_state['df_datalake'] = df_datalake
+                        
+                        st.session_state['datalake_results'] = {
+                            'ids_ok': (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum(),
+                            'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum(),
+                            'problemas_valores': len(df_datalake) - (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() - (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum(),
+                            'df_problemas': df_datalake[df_datalake['VALIDACAO_ADICIONAL'] != 'OK'].copy()
+                        }
+                    
+                    except Exception as e:
+                        with status_container.container():
+                            with st.status("❌ Erro na Validação do Datalake", expanded=True):
+                                for step in steps_list:
+                                    if step["status"] == "complete":
+                                        st.success(step['label'])
+                                    else:
+                                        st.info(step['label'])
+                                        if "substeps" in step and step["substeps"]:
+                                            for substep in step["substeps"]:
+                                                st.write(f"   └─ {substep}")
+                                st.error(f"Erro: {str(e)}")
+                        
+                        st.error(f"Erro ao validar no datalake: {str(e)}")
+                        st.exception(e)
+                    
+                    st.divider()
+
+                exibir_resultados(df_final)
                 oferecer_download(df_final)
 
                 st.divider()
@@ -146,9 +301,26 @@ def main():
                 col1.metric("Total de Registros", total_rows)
                 col2.metric("Registros Válidos", processed_rows)
                 col3.metric("Registros com Problemas", error_rows)
+                
+                if 'datalake_results' in st.session_state:
+                    st.divider()
+                    st.markdown("### 🔍 Validação Adicional")
+
+                    resultados_datalake = st.session_state['datalake_results']
+                    
+                    col1, col2, col3 = st.columns(3)
+                    col1.metric("✅ Validações OK", resultados_datalake['ids_ok'])
+                    col2.metric("⚠️ IDs Não Encontrados", resultados_datalake['problemas_ids'])
+                    col3.metric("⚠️ Valores Inválidos", resultados_datalake['problemas_valores'])
+                    
+                    df_problemas_datalake = resultados_datalake['df_problemas']
+                    
+                    if  df_problemas_datalake.empty:
+                        st.balloons()
+                    
+                    del st.session_state['datalake_results']
 
             else:
-                # Se não há resultados mas há módulos não reconhecidos, mostrar os módulos válidos
                 if modulos_nao_reconhecidos:
                     modulos_validos = list(RegistryValidators._validators_alt_exc.keys())
                     modulos_validos.sort()

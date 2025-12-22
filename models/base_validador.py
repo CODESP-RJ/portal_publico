@@ -8,7 +8,7 @@ from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, f
 
 class BaseValidatorIns(ABC):
     def __init__(self, df):
-        self.df = df
+        self.df = df.copy() if isinstance(df, pd.DataFrame) else df
         self.cabecalho_str = ''
         self.cabecalho = []
         self.datas_abreviadas = []
@@ -562,7 +562,7 @@ class BaseValidatorIns(ABC):
 
 class BaseValidator(ABC):
     def __init__(self, df, tipo_de_acao):
-        self.df = df
+        self.df = df.copy() if isinstance(df, pd.DataFrame) else df
         self.required_columns = []
         self.valid_attributes = []
 
@@ -589,7 +589,8 @@ class BaseValidator(ABC):
             st.stop()
 
         if 'VALIDACAO' not in self.df.columns:
-            self.df['VALIDACAO'] = ''
+            self.df = self.df.copy()
+            self.df.loc[:, 'VALIDACAO'] = ''
 
         if len(self.df['ANO_MES_REF'].unique()) > 1:
             st.error("Múltiplos períodos de referência na coluna ANO_MES_REF")

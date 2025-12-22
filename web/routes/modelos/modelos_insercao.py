@@ -121,7 +121,7 @@ try:
                                 data=fp,
                                 file_name=file,
                                 mime="text/csv",
-                                use_container_width=True
+                                width='content'
                             )
                             col_idx += 1
 except Exception as e:

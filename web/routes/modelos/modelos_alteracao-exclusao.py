@@ -89,7 +89,7 @@ try:
                                 data=fp,
                                 file_name=file,
                                 mime="text/csv",
-                                use_container_width=True,
+                                width='content',
                                 key=f"alt_{file}"
                             )
                             col_idx += 1
@@ -119,7 +119,7 @@ try:
                                 data=fp,
                                 file_name=file,
                                 mime="text/csv",
-                                use_container_width=True,
+                                width='content',
                                 key=f"exc_{file}"
                             )
                             col_idx += 1
