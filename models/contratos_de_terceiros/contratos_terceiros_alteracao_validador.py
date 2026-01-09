@@ -65,27 +65,27 @@ class ContratosTerceirosValidator(BaseValidator):
                 if attr in ['NOME DO ARQUIVO']:
                     if not isinstance(valor, str):
                         validacoes.append('NOME DO ARQUIVO INVALIDA, ')
-
-                    valor = str(valor).strip()
-
-                    # Verifica se termina com .pdf (em minúsculo)
-                    if not valor.lower().endswith('.pdf'):
-                        validacoes.append('NOME DO ARQUIVO DEVE TERMINAR COM .pdf, ')
                     else:
-                        # Garante que .pdf está em minúsculo
-                        if not valor.endswith('.pdf'):
-                            validacoes.append('A EXTENSÃO .pdf DEVE SER MINÚSCULA, ')
+                        valor = str(valor).strip()
 
-                    # Remove a extensão .pdf para validar o nome do arquivo
-                    nome_arquivo = valor[:-4] if valor.lower().endswith('.pdf') else valor
+                        # Verifica se termina com .pdf (em minúsculo)
+                        if not valor.lower().endswith('.pdf'):
+                            validacoes.append('NOME DO ARQUIVO DEVE TERMINAR COM .pdf, ')
+                        else:
+                            # Garante que .pdf está em minúsculo
+                            if not valor.endswith('.pdf'):
+                                validacoes.append('A EXTENSÃO .pdf DEVE SER MINÚSCULA, ')
 
-                    # Verifica o comprimento (considerando os 4 caracteres de .pdf)
-                    if len(valor) > 150:
-                        validacoes.append('NOME DO ARQUIVO MAIOR QUE 150 CARACTERES, ')
+                        # Remove a extensão .pdf para validar o nome do arquivo
+                        nome_arquivo = valor[:-4] if valor.lower().endswith('.pdf') else valor
 
-                    # Verifica se o nome do arquivo (sem .pdf) contém apenas letras, números e underline
-                    if not re.fullmatch(r'^[A-Z0-9_]+$', nome_arquivo):
-                        validacoes.append('NOME DO ARQUIVO SÓ PODE CONTER LETRAS MAIÚSCULAS, NÚMEROS E UNDERLINE (_), ')
+                        # Verifica o comprimento (considerando os 4 caracteres de .pdf)
+                        if len(valor) > 150:
+                            validacoes.append('NOME DO ARQUIVO MAIOR QUE 150 CARACTERES, ')
+
+                        # Verifica se o nome do arquivo (sem .pdf) contém apenas letras, números e underline
+                        if not re.fullmatch(r'^[A-Z0-9_]+$', nome_arquivo):
+                            validacoes.append('NOME DO ARQUIVO SÓ PODE CONTER LETRAS MAIÚSCULAS, NÚMEROS E UNDERLINE (_), ')
                 if attr in ['ANO INICIO', 'ANO FIM']:
                     if atributos.get('ANO INICIO') > atributos.get('ANO FIM'):
                         validacoes.append('ANO DE INÍCIO MAIOR QUE ANO DE FIM, ')

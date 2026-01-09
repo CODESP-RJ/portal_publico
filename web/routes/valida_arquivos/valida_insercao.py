@@ -284,8 +284,8 @@ def main():
                             
                             st.session_state['datalake_results'] = {
                                 'ids_ok': (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
-                                'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
-                                'problemas_valores': len(df_datalake) - ((df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0) - ((df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0),
+                                'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
+                                'problemas_valores': len(df_datalake) - ((df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0) - ((df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0),
                                 'df_problemas': df_datalake[df_datalake['VALIDACAO_ADICIONAL'] != 'OK'].copy() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else pd.DataFrame()
                             }
                         
@@ -434,8 +434,8 @@ def main():
                             
                             st.session_state['datalake_results'] = {
                                 'ids_ok': (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
-                                'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
-                                'problemas_valores': len(df_datalake) - ((df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0) - ((df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0),
+                                'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0,
+                                'problemas_valores': len(df_datalake) - ((df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0) - ((df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else 0),
                                 'df_problemas': df_datalake[df_datalake['VALIDACAO_ADICIONAL'] != 'OK'].copy() if 'VALIDACAO_ADICIONAL' in df_datalake.columns else pd.DataFrame()
                             }
                         

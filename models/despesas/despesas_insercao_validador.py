@@ -71,12 +71,14 @@ class DespesasValidator(BaseValidatorIns):
         faltantes = []
 
         for campo in campos_necessarios:
-            if campo not in self.df.columns or pd.isna(self.df.at[idx, campo]):
+            if campo not in self.df.columns:
+                faltantes.append(campo)
+            elif pd.isna(self.df.at[idx, campo]) or (isinstance(self.df.at[idx, campo], str) and not self.df.at[idx, campo].strip()):
                 faltantes.append(campo)
 
         if faltantes:
             self._registrar_erro(idx,
-                                 f"TIPO: Colunas obrigatórias faltantes se for o TIPO for NF: {', '.join(faltantes)}")
+                                 f"TIPO: Colunas obrigatórias faltantes se o TIPO for NF: {', '.join(faltantes)}")
 
     def validar_justificativa(self):
         if 'FLAG_JUSTIFICATIVA' in self.df.columns:

@@ -194,7 +194,7 @@ def verificar_ids_no_datalake(df, modulo, status_callback=None):
         
         # Adiciona a validação ao DataFrame
         df['VALIDACAO_ADICIONAL'] = df['ID'].astype(str).apply(
-            lambda x: 'OK' if x in ids_encontrados else f'ID {x} NÃO ENCONTRADO NO BANCO DE DADOS'
+            lambda x: 'OK' if x in ids_encontrados else f'ID {x} NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)'
         )
         
         return df
@@ -612,6 +612,160 @@ def validar_itens_nota_fiscal(df, client):
     
     return erros
 
+def validar_arquivos_pdf_datalake(df, campo_arquivo, client, status_callback=None):
+    """
+    Valida se os nomes de arquivos PDF existem no datalake
+    
+    Args:
+        df: DataFrame com os dados
+        campo_arquivo: Nome da coluna que contém o nome do arquivo (ex: 'DESCRICAO', 'NOME DO ARQUIVO')
+        client: Cliente BigQuery
+        status_callback: Função callback para atualizar status (opcional)
+    
+    Returns:
+        Lista de erros encontrados
+    """
+    erros = []
+    
+    if campo_arquivo not in df.columns:
+        if status_callback:
+            status_callback(f"    ⚠️ Campo '{campo_arquivo}' não encontrado no DataFrame. Colunas disponíveis: {', '.join(df.columns.tolist()[:10])}")
+        return erros
+    
+    try:
+        # Extrai os nomes de arquivos únicos (sem a extensão .pdf)
+        # Mantém o mapeamento original para comparação exata
+        arquivos_para_validar = {}  # nome_base -> set de índices
+        arquivos_por_idx = {}  # Mapeia índice -> nome do arquivo original
+        
+        valores_nao_vazios = 0
+        for idx, valor in df[campo_arquivo].items():
+            if pd.notna(valor):
+                valor_str = str(valor).strip()
+                if valor_str:  # Verifica se não está vazio após strip
+                    valores_nao_vazios += 1
+                    # Remove a extensão .pdf se existir (mantém case original)
+                    if valor_str.lower().endswith('.pdf'):
+                        nome_base = valor_str[:-4]
+                    else:
+                        nome_base = valor_str
+                    
+                    # Armazena o nome base e os índices associados
+                    if nome_base not in arquivos_para_validar:
+                        arquivos_para_validar[nome_base] = set()
+                    arquivos_para_validar[nome_base].add(idx)
+                    arquivos_por_idx[idx] = nome_base
+                    
+                    # Debug: mostra o que está sendo validado
+                    if status_callback and valores_nao_vazios <= 5:  # Mostra apenas os primeiros 5 para não poluir
+                        status_callback(f"    🔍 Validando arquivo: '{valor_str}' → nome base: '{nome_base}'")
+        
+        if status_callback:
+            status_callback(f"    📊 Encontrados {valores_nao_vazios} valor(es) não vazio(s) no campo '{campo_arquivo}'")
+        
+        if not arquivos_para_validar:
+            if status_callback:
+                status_callback(f"    ⚠️ Nenhum arquivo para validar no campo '{campo_arquivo}'")
+            return erros
+        
+        if status_callback:
+            status_callback(f"    ✓ Verificando se {len(arquivos_para_validar)} arquivo(s) PDF existem no Banco de Dados...")
+        
+        # Busca os arquivos no datalake em lotes
+        batch_size = 1000
+        arquivos_encontrados = set()
+        
+        arquivos_lista = list(arquivos_para_validar.keys())
+        total_batches = (len(arquivos_lista) + batch_size - 1) // batch_size
+        
+        for i in range(0, len(arquivos_lista), batch_size):
+            batch_num = (i // batch_size) + 1
+            batch_arquivos = arquivos_lista[i:i + batch_size]
+            
+            if status_callback and total_batches > 1:
+                status_callback(f"    📦 Processando lote {batch_num}/{total_batches} ({len(batch_arquivos)} arquivos)...")
+            
+            # Cria condições OR para buscar os arquivos (com escape de aspas)
+            # Comparação EXATA (case-sensitive)
+            # Busca tanto com quanto sem a extensão .pdf, pois o campo filename pode ter ou não a extensão
+            condicoes = []
+            for arquivo in batch_arquivos:
+                # Escapa aspas simples no nome do arquivo
+                arquivo_escaped = str(arquivo).replace("'", "''")
+                # Busca pelo campo filename - tenta tanto com quanto sem extensão .pdf
+                # O campo filename pode conter ou não a extensão .pdf
+                condicoes.append(f"(TRIM(`filename`) = '{arquivo_escaped}' OR TRIM(`filename`) = '{arquivo_escaped}.pdf')")
+            
+            where_clause = ' OR '.join(condicoes)
+            
+            query = f"""
+                SELECT DISTINCT TRIM(`filename`) as filename
+                FROM `rj-cvl-dev.mongodb.documentos_pdf_resultado`
+                WHERE {where_clause}
+            """
+            
+            if status_callback:
+                # Debug: mostra a query para os primeiros arquivos
+                if len(batch_arquivos) <= 3:
+                    status_callback(f"    🔍 Query: buscando {len(batch_arquivos)} arquivo(s): {', '.join(batch_arquivos[:3])}")
+            
+            query_job = client.query(query)
+            resultados = query_job.result()
+            resultados_list = [row.filename for row in resultados]
+            arquivos_encontrados.update(resultados_list)
+            
+            if status_callback and len(batch_arquivos) <= 3:
+                status_callback(f"    📋 Resultados encontrados: {len(resultados_list)} arquivo(s)")
+                for res in resultados_list[:3]:
+                    status_callback(f"      - {res}")
+        
+        if status_callback:
+            status_callback(f"    ✅ {len(arquivos_encontrados)} de {len(arquivos_para_validar)} arquivo(s) encontrado(s)")
+        
+        # Verifica quais arquivos não foram encontrados (comparação exata)
+        # O campo filename no BigQuery pode ter ou não a extensão .pdf
+        # Então comparamos tanto o nome base quanto o nome com .pdf
+        arquivos_nao_encontrados = 0
+        for idx, arquivo in arquivos_por_idx.items():
+            # Verifica se o arquivo foi encontrado (com ou sem extensão .pdf)
+            arquivo_encontrado = False
+            # Verifica se o nome base (sem .pdf) está nos resultados
+            if arquivo in arquivos_encontrados:
+                arquivo_encontrado = True
+            # Verifica se o nome com .pdf está nos resultados
+            elif f"{arquivo}.pdf" in arquivos_encontrados:
+                arquivo_encontrado = True
+            # Verifica se algum resultado corresponde (removendo .pdf se existir)
+            else:
+                for resultado in arquivos_encontrados:
+                    # Remove .pdf do resultado se existir e compara
+                    resultado_base = resultado[:-4] if resultado.lower().endswith('.pdf') else resultado
+                    if resultado_base == arquivo:
+                        arquivo_encontrado = True
+                        break
+            
+            if not arquivo_encontrado:
+                arquivos_nao_encontrados += 1
+                # Recupera o nome original do arquivo do DataFrame
+                valor_original = str(df.at[idx, campo_arquivo]).strip()
+                if 'ID' in df.columns:
+                    id_val = df.at[idx, 'ID']
+                    erros.append(f"ID {id_val}: {campo_arquivo} '{valor_original}' NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)")
+                else:
+                    erros.append(f"Linha {idx + 1}: {campo_arquivo} '{valor_original}' NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)")
+        
+        if status_callback and arquivos_nao_encontrados > 0:
+            status_callback(f"    ⚠️ {arquivos_nao_encontrados} arquivo(s) não encontrado(s) no banco de dados (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)")
+    
+    except Exception as e:
+        import traceback
+        erro_detalhado = f"Erro ao validar arquivos PDF: {str(e)}\n{traceback.format_exc()}"
+        erros.append(erro_detalhado)
+        if status_callback:
+            status_callback(f"    ❌ Erro na validação de PDF: {str(e)}")
+    
+    return erros
+
 def aplicar_validacoes_adicionais(df, modulo, client, status_callback=None):
     """
     Aplica validações adicionais específicas para cada módulo
@@ -633,6 +787,22 @@ def aplicar_validacoes_adicionais(df, modulo, client, status_callback=None):
             if status_callback:
                 status_callback(f"    ✓ Verificando se o código do TIPO de bem existe na lista de tipos cadastrados...")
             erros = validar_bens_patrimoniados(df, client)
+            
+            # Valida arquivos PDF (verifica todos os campos possíveis)
+            if 'NOME ARQUIVO IMAGEM' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'NOME ARQUIVO IMAGEM', client, status_callback)
+                erros.extend(erros_pdf)
+            elif 'ATRIBUTO' in df.columns and 'NOVO_VALOR' in df.columns:
+                # Arquivo de alteração - filtra linhas onde ATRIBUTO é NOME ARQUIVO IMAGEM
+                df_img = df[df['ATRIBUTO'].str.upper().str.strip() == 'NOME ARQUIVO IMAGEM'].copy()
+                if not df_img.empty:
+                    df_temp = df_img.copy()
+                    df_temp['NOME ARQUIVO IMAGEM'] = df_temp['NOVO_VALOR'].astype(str).str.strip()
+                    erros_pdf = validar_arquivos_pdf_datalake(df_temp, 'NOME ARQUIVO IMAGEM', client, status_callback)
+                    erros.extend(erros_pdf)
+            if 'IMG_NF' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'IMG_NF', client, status_callback)
+                erros.extend(erros_pdf)
         elif modulo_upper == 'DESPESAS':
             # Verifica quais atributos precisam ser validados
             atributos_para_validar = []
@@ -675,8 +845,66 @@ def aplicar_validacoes_adicionais(df, modulo, client, status_callback=None):
                         status_callback(f"    ✓ Verificando se a CONTA CORRENTE existe na lista de contas bancárias cadastradas...")
             
             erros = validar_despesas(df, client)
+            
+            # Valida arquivos PDF
+            if 'DESCRICAO' in df.columns:
+                if status_callback:
+                    status_callback(f"    ✓ Verificando arquivos PDF no campo DESCRICAO...")
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'DESCRICAO', client, status_callback)
+                if status_callback:
+                    status_callback(f"    📊 Validação PDF: {len(erros_pdf)} erro(s) encontrado(s)")
+                erros.extend(erros_pdf)
+            elif 'ATRIBUTO' in df.columns and 'NOVO_VALOR' in df.columns:
+                # Arquivo de alteração - filtra linhas onde ATRIBUTO é DESCRICAO
+                df_descr = df[df['ATRIBUTO'].str.upper().str.strip() == 'DESCRICAO'].copy()
+                if not df_descr.empty:
+                    # Cria DataFrame temporário com DESCRICAO como coluna
+                    df_temp = df_descr.copy()
+                    df_temp['DESCRICAO'] = df_temp['NOVO_VALOR'].astype(str).str.strip()
+                    if status_callback:
+                        status_callback(f"    ✓ Verificando arquivos PDF no campo DESCRICAO (alteração)...")
+                    erros_pdf = validar_arquivos_pdf_datalake(df_temp, 'DESCRICAO', client, status_callback)
+                    if status_callback:
+                        status_callback(f"    📊 Validação PDF: {len(erros_pdf)} erro(s) encontrado(s)")
+                    erros.extend(erros_pdf)
+            else:
+                # Debug: verifica quais colunas estão disponíveis
+                if status_callback:
+                    status_callback(f"    ⚠️ Campo 'DESCRICAO' não encontrado. Colunas disponíveis: {', '.join(df.columns.tolist())}")
         elif modulo_upper == 'CONTRATOS DE TERCEIROS':
             erros = validar_contratos_terceiros(df, client)
+            
+            # Valida arquivos PDF (verifica todos os campos possíveis)
+            if 'NOME DO ARQUIVO' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'NOME DO ARQUIVO', client, status_callback)
+                erros.extend(erros_pdf)
+            elif 'ATRIBUTO' in df.columns and 'NOVO_VALOR' in df.columns:
+                # Arquivo de alteração - filtra linhas onde ATRIBUTO é NOME DO ARQUIVO
+                df_nome = df[df['ATRIBUTO'].str.upper().str.strip() == 'NOME DO ARQUIVO'].copy()
+                if not df_nome.empty:
+                    df_temp = df_nome.copy()
+                    df_temp['NOME DO ARQUIVO'] = df_temp['NOVO_VALOR'].astype(str).str.strip()
+                    erros_pdf = validar_arquivos_pdf_datalake(df_temp, 'NOME DO ARQUIVO', client, status_callback)
+                    erros.extend(erros_pdf)
+            if 'IMG_CONTRATO' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'IMG_CONTRATO', client, status_callback)
+                erros.extend(erros_pdf)
+        elif modulo_upper == 'SALDOS':
+            # Valida arquivos PDF (verifica todos os campos possíveis)
+            if 'IMAGEM DO EXTRATO' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'IMAGEM DO EXTRATO', client, status_callback)
+                erros.extend(erros_pdf)
+            elif 'ATRIBUTO' in df.columns and 'NOVO_VALOR' in df.columns:
+                # Arquivo de alteração - filtra linhas onde ATRIBUTO é IMAGEM DO EXTRATO
+                df_extrato = df[df['ATRIBUTO'].str.upper().str.strip() == 'IMAGEM DO EXTRATO'].copy()
+                if not df_extrato.empty:
+                    df_temp = df_extrato.copy()
+                    df_temp['IMAGEM DO EXTRATO'] = df_temp['NOVO_VALOR'].astype(str).str.strip()
+                    erros_pdf = validar_arquivos_pdf_datalake(df_temp, 'IMAGEM DO EXTRATO', client, status_callback)
+                    erros.extend(erros_pdf)
+            if 'EXTRATO' in df.columns:
+                erros_pdf = validar_arquivos_pdf_datalake(df, 'EXTRATO', client, status_callback)
+                erros.extend(erros_pdf)
         elif modulo_upper == 'ITENS DE NOTA FISCAL':
             if status_callback:
                 status_callback(f"    ✓ Verificando se o nome do FORNECEDOR existe na lista de fornecedores cadastrados...")
@@ -722,15 +950,18 @@ def validar_datalake(df_resultado, status_callback=None):
         
         df_modulo = df_resultado[df_resultado['TIPO_MODULO'] == modulo].copy()
         
+        # Guarda o índice original antes de processar
+        df_modulo_original = df_modulo.copy()
+        
         # Validação de IDs
         if status_callback:
-            status_callback(f"  🔍 Verificando se os IDs informados existem no datalake...", int(progresso_base + 5))
+            status_callback(f"  🔍 Verificando se os IDs informados existem no Banco de Dados...", int(progresso_base + 5))
         df_validado = verificar_ids_no_datalake(df_modulo, modulo, status_callback)
         
         # Validações adicionais de valores de referência
         if status_callback:
             status_callback(f"  🔗 Verificando se os valores informados são válidos...", int(progresso_base + 10))
-        erros_adicionais = aplicar_validacoes_adicionais(df_validado, modulo, client, status_callback)
+        erros_adicionais = aplicar_validacoes_adicionais(df_modulo_original, modulo, client, status_callback)
         
         # Adiciona erros encontrados na validação adicional
         if erros_adicionais:
@@ -743,7 +974,54 @@ def validar_datalake(df_resultado, status_callback=None):
             erros_por_idx = {}
             
             for erro in erros_adicionais:
-                if 'ID ' in erro and ': ' in erro:
+                # Trata erros de exceção (erros gerais que não têm ID ou Linha)
+                if 'Erro ao validar' in erro and ('Traceback' in erro or 'Exception' in erro or 'Access Denied' in erro or '403' in erro):
+                    # Erro de exceção - aplica a todas as linhas que têm arquivo PDF
+                    # Extrai uma mensagem resumida do erro
+                    linhas_erro = erro.split('\n')
+                    msg_principal = linhas_erro[0] if linhas_erro else erro
+                    # Se tiver "Access Denied" ou similar, simplifica a mensagem
+                    if 'Access Denied' in msg_principal or '403' in msg_principal:
+                        msg_principal = "Erro ao validar arquivos PDF"
+                    elif 'Erro ao validar' in msg_principal:
+                        # Mantém apenas a primeira parte da mensagem
+                        msg_principal = msg_principal.split('\n')[0] if '\n' in msg_principal else msg_principal
+                    
+                    # Aplica o erro a todas as linhas que têm arquivo PDF
+                    campos_pdf = []
+                    if 'DESCRICAO' in df_validado.columns:
+                        campos_pdf.append('DESCRICAO')
+                    if 'NOME ARQUIVO IMAGEM' in df_validado.columns:
+                        campos_pdf.append('NOME ARQUIVO IMAGEM')
+                    if 'IMG_NF' in df_validado.columns:
+                        campos_pdf.append('IMG_NF')
+                    if 'NOME DO ARQUIVO' in df_validado.columns:
+                        campos_pdf.append('NOME DO ARQUIVO')
+                    if 'IMG_CONTRATO' in df_validado.columns:
+                        campos_pdf.append('IMG_CONTRATO')
+                    if 'IMAGEM DO EXTRATO' in df_validado.columns:
+                        campos_pdf.append('IMAGEM DO EXTRATO')
+                    if 'EXTRATO' in df_validado.columns:
+                        campos_pdf.append('EXTRATO')
+                    
+                    if campos_pdf:
+                        for idx in df_validado.index:
+                            tem_arquivo = False
+                            for campo in campos_pdf:
+                                if pd.notna(df_validado.at[idx, campo]) and str(df_validado.at[idx, campo]).strip():
+                                    tem_arquivo = True
+                                    break
+                            if tem_arquivo:
+                                if idx not in erros_por_idx:
+                                    erros_por_idx[idx] = []
+                                erros_por_idx[idx].append(msg_principal)
+                    else:
+                        # Se não encontrou campo PDF, aplica a todas as linhas
+                        for idx in df_validado.index:
+                            if idx not in erros_por_idx:
+                                erros_por_idx[idx] = []
+                            erros_por_idx[idx].append(msg_principal)
+                elif 'ID ' in erro and ': ' in erro:
                     # Formato: "ID 123: RUBRICA 456 não encontrada..."
                     id_part = erro.split('ID ')[1].split(':')[0].strip()
                     msg_erro = erro.split(': ', 1)[1] if ': ' in erro else erro
@@ -751,33 +1029,63 @@ def validar_datalake(df_resultado, status_callback=None):
                         erros_por_id[id_part] = []
                     erros_por_id[id_part].append(msg_erro)
                 elif 'Linha ' in erro and ': ' in erro:
-                    # Formato: "Linha 0: RUBRICA 456 não encontrada..."
-                    idx_part = int(erro.split('Linha ')[1].split(':')[0].strip())
-                    msg_erro = erro.split(': ', 1)[1] if ': ' in erro else erro
-                    if idx_part not in erros_por_idx:
-                        erros_por_idx[idx_part] = []
-                    erros_por_idx[idx_part].append(msg_erro)
+                    idx_part_str = erro.split('Linha ')[1].split(':')[0].strip()
+                    try:
+                        idx_part_int = int(idx_part_str)
+                        if idx_part_int == 0:
+                            idx_part = 0  # Já é 0-based
+                        else:
+                            idx_part = idx_part_int - 1  # Converte de 1-based para 0-based
+                        
+                        msg_erro = erro.split(': ', 1)[1] if ': ' in erro else erro
+                        if idx_part not in erros_por_idx:
+                            erros_por_idx[idx_part] = []
+                        erros_por_idx[idx_part].append(msg_erro)
+                    except ValueError as e:
+                        # Se não conseguir converter, adiciona o erro como está
+                        if 'erros_gerais' not in locals():
+                            erros_gerais = []
+                        erros_gerais.append(erro)
             
             # Aplica erros por ID (arquivos de alteração)
             if 'ID' in df_validado.columns and erros_por_id:
                 for idx, row in df_validado.iterrows():
                     id_val = str(row.get('ID', ''))
                     if id_val in erros_por_id:
-                        erro_msg = '; '.join(erros_por_id[id_val])
+                        erro_msg = '\n\n'.join(erros_por_id[id_val])
                         if df_validado.at[idx, 'VALIDACAO_ADICIONAL'] == 'OK':
                             df_validado.at[idx, 'VALIDACAO_ADICIONAL'] = erro_msg
                         else:
-                            df_validado.at[idx, 'VALIDACAO_ADICIONAL'] += f'; {erro_msg}'
+                            df_validado.at[idx, 'VALIDACAO_ADICIONAL'] += f'\n\n{erro_msg}'
             
             # Aplica erros por índice (arquivos de inserção)
             if erros_por_idx:
-                for idx, msgs in erros_por_idx.items():
-                    if idx < len(df_validado):
-                        erro_msg = '; '.join(msgs)
-                        if df_validado.at[idx, 'VALIDACAO_ADICIONAL'] == 'OK':
-                            df_validado.at[idx, 'VALIDACAO_ADICIONAL'] = erro_msg
+                # Garante que a coluna VALIDACAO_ADICIONAL existe no df_validado
+                if 'VALIDACAO_ADICIONAL' not in df_validado.columns:
+                    df_validado['VALIDACAO_ADICIONAL'] = 'OK'
+                
+                for idx_original, msgs in erros_por_idx.items():
+                    erro_msg = '\n\n'.join(msgs)
+                    
+                    # Tenta encontrar o índice no df_validado
+                    if idx_original in df_validado.index:
+                        # O índice original existe no DataFrame validado
+                        if df_validado.at[idx_original, 'VALIDACAO_ADICIONAL'] == 'OK':
+                            df_validado.at[idx_original, 'VALIDACAO_ADICIONAL'] = erro_msg
                         else:
-                            df_validado.at[idx, 'VALIDACAO_ADICIONAL'] += f'; {erro_msg}'
+                            df_validado.at[idx_original, 'VALIDACAO_ADICIONAL'] += f'\n\n{erro_msg}'
+                    elif isinstance(idx_original, int) and idx_original >= 0:
+                        # Se o índice não existe, tenta usar a posição (iloc)
+                        # Primeiro, verifica se os índices são sequenciais começando em 0
+                        indices_list = df_validado.index.tolist()
+                        if len(indices_list) > 0 and isinstance(indices_list[0], int) and indices_list == list(range(len(indices_list))):
+                            # Índices são sequenciais 0, 1, 2, ...
+                            if idx_original < len(df_validado):
+                                if df_validado.iloc[idx_original]['VALIDACAO_ADICIONAL'] == 'OK':
+                                    df_validado.iloc[idx_original, df_validado.columns.get_loc('VALIDACAO_ADICIONAL')] = erro_msg
+                                else:
+                                    valor_atual = df_validado.iloc[idx_original, df_validado.columns.get_loc('VALIDACAO_ADICIONAL')]
+                                    df_validado.iloc[idx_original, df_validado.columns.get_loc('VALIDACAO_ADICIONAL')] = f'{valor_atual}\n\n{erro_msg}'
         
         resultados_datalake.append(df_validado)
         

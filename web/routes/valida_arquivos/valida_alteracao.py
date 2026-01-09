@@ -269,8 +269,8 @@ def main():
                         
                         st.session_state['datalake_results'] = {
                             'ids_ok': (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum(),
-                            'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum(),
-                            'problemas_valores': len(df_datalake) - (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() - (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS', na=False)).sum(),
+                            'problemas_ids': (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum(),
+                            'problemas_valores': len(df_datalake) - (df_datalake['VALIDACAO_ADICIONAL'] == 'OK').sum() - (df_datalake['VALIDACAO_ADICIONAL'].str.contains('NÃO ENCONTRADO NO BANCO DE DADOS (OBS: HÁ UM DELAY DE ATUALIZAÇÃO DOS DADOS DE APROXIMADAMENTE 12 HORAS)', regex=False, na=False)).sum(),
                             'df_problemas': df_datalake[df_datalake['VALIDACAO_ADICIONAL'] != 'OK'].copy()
                         }
                     
