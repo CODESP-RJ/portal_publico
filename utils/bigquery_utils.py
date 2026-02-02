@@ -189,6 +189,33 @@ def verificar_ids_no_datalake(df, modulo, status_callback=None):
             # Adiciona os IDs encontrados ao conjunto
             ids_encontrados.update({row.id for row in resultados})
         
+        # Para RECEITAS e SALDOS: o ID pode ser também número de conta corrente (conta_bancaria)
+        # Aceita: id_conta_bancaria, codigo_cc, codigo_cc+digito_cc, codigo_cc+'-'+digito_cc
+        if modulo_upper in ('RECEITAS', 'SALDOS'):
+            if status_callback:
+                status_callback(f"    📋 Verificando também na tabela de conta corrente (codigo_cc, codigo_cc-digito_cc, etc.)...")
+            # Inclui contas com ou sem digito_cc (codigo_cc pode ser o único identificador)
+            query_conta = f"""
+                SELECT DISTINCT
+                    CAST(id_conta_bancaria AS STRING) as id_cb,
+                    CAST(codigo_cc AS STRING) as codigo_cc,
+                    CONCAT(CAST(codigo_cc AS STRING), CAST(COALESCE(digito_cc, '') AS STRING)) as cc_sem_hifen,
+                    CASE WHEN digito_cc IS NOT NULL AND CAST(digito_cc AS STRING) != '' 
+                         THEN CONCAT(CAST(codigo_cc AS STRING), '-', CAST(digito_cc AS STRING)) 
+                         ELSE NULL END as cc_com_hifen
+                FROM `{client.project}.adm_contrato_gestao.conta_bancaria`
+                WHERE codigo_cc IS NOT NULL
+            """
+            query_job_conta = client.query(query_conta)
+            resultados_conta = query_job_conta.result()
+            for row in resultados_conta:
+                ids_encontrados.add(row.id_cb)
+                ids_encontrados.add(row.codigo_cc)
+                if row.cc_sem_hifen:
+                    ids_encontrados.add(row.cc_sem_hifen)
+                if row.cc_com_hifen:
+                    ids_encontrados.add(row.cc_com_hifen)
+        
         if status_callback:
             status_callback(f"    ✅ {len(ids_encontrados)} de {len(ids)} ID(s) encontrado(s)")
         
