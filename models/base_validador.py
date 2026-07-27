@@ -335,6 +335,23 @@ class BaseValidatorIns(ABC):
                         except Exception as e:
                             self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
 
+    def validar_cnpj_ou_cpf(self):
+        """Valida campos que aceitam CNPJ (PJ) ou CPF (PF) no mesmo campo."""
+        self.campos_cnpj = getattr(self, 'campos_cnpj', [])
+        if not self.campos_cnpj:
+            return
+
+        for campo in self.campos_cnpj:
+            if campo in self.df.columns:
+                for idx, valor in self.df[campo].items():
+                    if pd.notna(valor):
+                        try:
+                            valor_split = str(valor).split(' ')[0]
+                            if valida_cnpj(valor_split) == False and valida_cpf(valor_split) == False:
+                                self._registrar_erro(idx, f"{campo}: CNPJ ou CPF inválido.")
+                        except Exception as e:
+                            self._registrar_erro(idx, f"{campo}: Erro na validação - {str(e)}")
+
     def validar_nome(self):
         self.campos_nome = getattr(self, 'campos_nome', [])
         if not self.campos_nome:

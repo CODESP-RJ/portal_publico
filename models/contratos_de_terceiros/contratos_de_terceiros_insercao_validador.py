@@ -30,6 +30,7 @@ class ContratosDeTerceirosValidator(BaseValidatorIns):
         self.validar_valores_monetarios()
         self.validar_contrato()
         self.validar_documentos_pdf()
-        self.validar_cnpj()
+        self.validar_cnpj_ou_cpf()
+        self.validar_razao_social()
 
 RegistryValidators.register_ins('modulo_contratos_de_terceiros', ContratosDeTerceirosValidator)
