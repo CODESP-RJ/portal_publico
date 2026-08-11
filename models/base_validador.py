@@ -58,7 +58,7 @@ class BaseValidatorIns(ABC):
             return
             
         for campo in self.datas_abreviadas:
-            if campo in ['CONTRATO_ANO_MES_INICIO', 'CONTRATO_ANO_MES_FIM']:
+            if campo in ['REF_TRI']:
                 pass
             if campo in self.df.columns:
                 valores_unicos = self.df[campo].unique()
