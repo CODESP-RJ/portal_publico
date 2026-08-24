@@ -87,11 +87,6 @@ erros = {
     "06": 'O arquivo não tem o layout de Bens Patrimoniados ou não é compatível com o modelo BENS CEP28.'
 }
 
-def obter_instituicoes():
-    with open("data/getOSUnitsListBySecretary.json", encoding='utf-8') as arqInstituicoes:
-        resposta = json.load(arqInstituicoes)
-        return [item.get('unidade_fantasia', 'Instituição não disponível') for item in resposta]
-
 def obter_tipos_bens():
     with open("data/getAssetTypes.json", encoding='utf-8') as arqTiposBens:
         resposta = json.load(arqTiposBens)
@@ -126,46 +121,6 @@ def obter_contratos():
     with open("data/getContractsList.json", encoding='utf-8') as arqContratos:
         resposta = json.load(arqContratos)
         return [item.get('num_contrato', 'Contrato não disponível') for item in resposta]
-
-def criar_dicionario_instituicoes(nomes_instituicoes):
-    return {nome: codigo for codigo, nome in (item.split(' - ', 1) for item in nomes_instituicoes if ' - ' in item)}
-
-def carrega_secretarias():
-    with open('./data/secretarias.json', encoding='utf-8') as arqSecretaria:
-        dadosSecretarias = json.load(arqSecretaria)
-    opcoes = []
-
-    for secretaria in dadosSecretarias["secretarias"]:
-        opcoes.append(secretaria["nome_secretaria"])
-
-    return opcoes
-
-def carrega_instituicoes():
-    with open("data/instituicoes.json", encoding='utf-8') as arqInstituicoes:
-        dadosInstituicoes = json.load(arqInstituicoes)
-    opcoes = []
-
-    for instituicao in dadosInstituicoes["VW_OS"]:
-        opcoes.append(instituicao["DSC_OS"])
-
-    return opcoes
-
-def carrega_contratos():
-    with open("data/contratos.json", encoding='utf-8') as arqContratos:
-        dadosContratos = json.load(arqContratos)
-    opcoes = []
-
-    for contrato in dadosContratos["VW_CONTRATO_V2"]:
-        opcoes.append(contrato["DSC_CONTRATO"])
-
-    opcoes.sort()
-    return opcoes
-
-def carrega_instrumentos():
-    with open("data/contratos.json", encoding='utf-8') as arqContratos:
-        dadosContratos = json.load(arqContratos)
-
-    return dadosContratos
 
 def detectar_codificacao(arquivo):
     conteudo = arquivo.read()
