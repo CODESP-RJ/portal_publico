@@ -1,7 +1,7 @@
 /venv
+.venv
 __pycache__
-secrets.toml
-config.toml
+.streamlit/secrets.toml
 *.log
 web/DEV_despesa_consulta.py
 web/Dev_sql_teste.py
