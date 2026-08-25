@@ -1,6 +1,6 @@
 # Portal Publico
 
-Aplicação Streamlit para validar arquivos de prestação de contas (inserção, alteração e exclusão) antes do envio ao OSINFO.
+Portal desenvolvido em Streamlit para validação de arquivos em formato CSV referentes à prestação de contas (inserção, alteração e exclusão), destinados ao processo de desbloqueio do painel OSINFO, conforme o fluxo estabelecido.
 
 ## Pré-requisitos
 
@@ -124,14 +124,6 @@ streamlit run streamlit_app.py
 ```
 
 A interface abre em `http://localhost:8501`.
-
-## O que a aplicação faz
-
-- **Portal Publico** — inserção, alteração e exclusão
-- **Arquivos modelo** — CSV de exemplo para download
-- **Catálogos de tabelas** — tabelas auxiliares
-- **Treinamentos** — vídeos
-- **Sobre** — descrição da ferramenta
 
 ## Comandos úteis (Conda)
 
