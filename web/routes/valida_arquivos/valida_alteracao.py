@@ -43,6 +43,9 @@ def main():
             st.toast("Nenhum arquivo selecionado!", icon="⚠️")
             return
 
+        # Descarta resultado de uma execução anterior que possa ter sobrado
+        st.session_state.pop('datalake_results', None)
+
         try:
             df = processar_arquivo(arquivo)
 
@@ -157,10 +160,10 @@ def main():
                     
                 if acao_nao_reconhecida:
                     st.warning(f"As linhas com as ações a seguir não são reconhecidas e por isso foram ignoradas: {', '.join(acao_nao_reconhecida)}. ")
-                if (df_final['VALIDACAO'] == 'OK').all():
+                validacao_principal_ok = bool((df_final['VALIDACAO'] == 'OK').all())
+                if validacao_principal_ok:
                     st.success("Validação concluída e sem erros encontrados.")
                     st.toast("Todos os registros estão válidos!", icon="✅")
-                    st.balloons()
                 else:
                     st.toast("Alguns registros possuem erros!", icon="⚠️")
                     
@@ -302,6 +305,8 @@ def main():
                 col2.metric("Registros Válidos", processed_rows)
                 col3.metric("Registros com Problemas", error_rows)
                 
+                validacao_adicional_ok = True
+
                 if 'datalake_results' in st.session_state:
                     st.divider()
                     st.markdown("### 🔍 Validação Adicional")
@@ -314,11 +319,20 @@ def main():
                     col3.metric("⚠️ Valores Inválidos", resultados_datalake['problemas_valores'])
                     
                     df_problemas_datalake = resultados_datalake['df_problemas']
+                    validacao_adicional_ok = df_problemas_datalake.empty
                     
-                    if  df_problemas_datalake.empty:
-                        st.balloons()
+                    if validacao_adicional_ok and not validacao_principal_ok:
+                        st.warning(
+                            f"⚠️ A validação adicional não encontrou problemas, mas a validação "
+                            f"principal apontou {error_rows} registro(s) com erro. "
+                            "Corrija-os antes de enviar o arquivo."
+                        )
                     
                     del st.session_state['datalake_results']
+
+                # Os balões só sobem quando as duas validações passam
+                if validacao_principal_ok and validacao_adicional_ok:
+                    st.balloons()
 
             else:
                 if modulos_nao_reconhecidos:

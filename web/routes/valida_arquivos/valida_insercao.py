@@ -97,6 +97,9 @@ def main():
             st.toast("Nenhum arquivo selecionado!", icon="⚠️")
             return
 
+        # Descarta resultado de uma execução anterior que possa ter sobrado
+        st.session_state.pop('datalake_results', None)
+
         try:
             df = processar_arquivo(arquivo, 1)
             selected_type = st.session_state.tipoarquivo_escolhido
@@ -153,10 +156,10 @@ def main():
                 error_count = len(resultados) - ok_count
                 error_rows += error_count
                 df_final = resultados.copy()
+                validacao_principal_ok = bool((resultados['VALIDACAO'] == 'OK').all())
                 
-                if (resultados['VALIDACAO'] == 'OK').all():
+                if validacao_principal_ok:
                     st.toast("Todos os registros estão válidos!", icon="✅")
-                    st.balloons()
                 else:
                     st.toast("Alguns registros possuem erros!", icon="⚠️")
                     
@@ -309,7 +312,7 @@ def main():
                         st.toast(f"⚠️ O módulo '{selected_type}' ainda não possui validação adicional no datalake.")
                 
                 # Validação adicional sempre executada, mesmo quando não há erros
-                if (resultados['VALIDACAO'] == 'OK').all():
+                if validacao_principal_ok:
                     # Verifica se o módulo está mapeado para o datalake ANTES de criar o modal
                     modulo_datalake = tipo_arquivo_to_modulo_datalake.get(selected_type)
                     if modulo_datalake is not None:
@@ -470,6 +473,8 @@ def main():
                 col2.metric("Registros Válidos", processed_rows)
                 col3.metric("Registros com Problemas", error_rows)
                 
+                validacao_adicional_ok = True
+
                 if 'datalake_results' in st.session_state:
                     st.divider()
                     st.markdown("### 🔍 Validação Adicional")
@@ -482,11 +487,20 @@ def main():
                     col3.metric("⚠️ Valores Inválidos", resultados_datalake['problemas_valores'])
                     
                     df_problemas_datalake = resultados_datalake['df_problemas']
+                    validacao_adicional_ok = df_problemas_datalake.empty
                     
-                    if df_problemas_datalake.empty:
-                        st.balloons()
+                    if validacao_adicional_ok and not validacao_principal_ok:
+                        st.warning(
+                            f"⚠️ A validação adicional não encontrou problemas, mas a validação "
+                            f"principal apontou {error_rows} registro(s) com erro. "
+                            "Corrija-os antes de enviar o arquivo."
+                        )
                     
                     del st.session_state['datalake_results']
+
+                # Os balões só sobem quando as duas validações passam
+                if validacao_principal_ok and validacao_adicional_ok:
+                    st.balloons()
 
             else:
                 st.toast("Nenhum registro válido encontrado no arquivo.", icon="⚠️")
