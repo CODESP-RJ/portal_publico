@@ -1,11 +1,8 @@
 import streamlit as st
 import logging
 import sys
-import os
-import time
 from pathlib import Path
-from supabase import create_client, Client
-import toml
+from supabase import create_client
 
 # Adiciona o diretório raiz ao sys.path para permitir imports absolutos
 root_dir = Path(__file__).parent
@@ -14,6 +11,11 @@ if str(root_dir) not in sys.path:
 
 # Importa componentes de seleção de usuário
 from web.components.user_selection_modal import show_user_selection_modal, get_user_info_display
+from utils.config import (
+    has_google_credentials,
+    has_supabase_credentials,
+    is_development_environment,
+)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -33,33 +35,44 @@ sys.excepthook = handle_exception
 @st.cache_resource
 def init_connection():
     """
-    Inicializa conexão com Supabase
-    Para logs, use a SERVICE_ROLE_KEY se disponível (bypassa RLS)
-    Caso contrário, usa a SUPABASE_KEY normal
+    Inicializa conexão com Supabase.
+    Em development (ou com placeholders), retorna None em vez de derrubar a aplicação.
     """
-    url = st.secrets["connections"]["supabase"]["SUPABASE_URL"]
-    
-    # Tenta usar SERVICE_KEY primeiro (para logs - bypassa RLS)
-    # Se não existir, usa a chave normal
-    if "SUPABASE_SERVICE_KEY" in st.secrets["connections"]["supabase"]:
-        key = st.secrets["connections"]["supabase"]["SUPABASE_SERVICE_KEY"]
-        # Usa a service key como parte do cache key para invalidar quando mudar
-        cache_key = f"service_{key[:20]}"
-    else:
-        key = st.secrets["connections"]["supabase"]["SUPABASE_KEY"]
-        cache_key = f"anon_{key[:20]}"
-    
-    # Cria cliente com a chave correta
-    client = create_client(url, key)
-    
-    return client
+    if not has_supabase_credentials():
+        if is_development_environment():
+            logger.info("Supabase não configurado. Modo development: conexão ignorada.")
+            return None
+        raise RuntimeError(
+            "Credenciais do Supabase não configuradas. "
+            "Copie .streamlit/secrets.toml.example para .streamlit/secrets.toml "
+            "e preencha as chaves, ou use environment = \"development\"."
+        )
 
-supabase = init_connection()
+    try:
+        url = st.secrets["connections"]["supabase"]["SUPABASE_URL"]
+        if "SUPABASE_SERVICE_KEY" in st.secrets["connections"]["supabase"]:
+            key = st.secrets["connections"]["supabase"]["SUPABASE_SERVICE_KEY"]
+        else:
+            key = st.secrets["connections"]["supabase"]["SUPABASE_KEY"]
+        return create_client(url, key)
+    except Exception as e:
+        if is_development_environment():
+            logger.warning("Falha ao conectar no Supabase em development: %s", e)
+            return None
+        raise
 
 def main():
     try:
         # Verifica se o usuário já selecionou o tipo (Secretaria ou Instituição)
         # Se não, mostra o modal de seleção
+        if is_development_environment() and (
+            not has_supabase_credentials() or not has_google_credentials()
+        ):
+            st.sidebar.warning(
+                "Modo development: logs (Supabase) e/ou validação no BigQuery "
+                "estão indisponíveis. A validação local dos arquivos continua ativa."
+            )
+
         if 'tipo_usuario' not in st.session_state or not st.session_state.tipo_usuario:
             try:
                 supabase = init_connection()

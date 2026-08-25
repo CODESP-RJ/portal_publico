@@ -5,7 +5,7 @@ import streamlit as st
 from supabase import Client
 from datetime import datetime
 import uuid
-import os
+from utils.config import is_development_environment
 
 def get_user_ip():
     """Obtém o endereço IP do usuário"""
@@ -67,39 +67,6 @@ def get_or_create_session_id():
         st.session_state.session_id = str(uuid.uuid4())
     return st.session_state.session_id
 
-def is_development_environment():
-    """
-    Verifica se está rodando em ambiente de desenvolvimento
-    
-    Retorna True se:
-    - Variável de ambiente ENVIRONMENT = 'development' ou 'dev'
-    - Configuração no secrets.toml [general].environment = 'development' ou 'dev'
-    """
-    # Verifica variável de ambiente
-    env = os.getenv('ENVIRONMENT', '').lower()
-    if env in ['development', 'dev']:
-        return True
-    
-    # Verifica configuração no secrets.toml
-    try:
-        # Tenta acessar st.secrets de forma segura
-        if hasattr(st, 'secrets'):
-            if 'general' in st.secrets:
-                if 'environment' in st.secrets['general']:
-                    env_config = str(st.secrets['general']['environment']).lower().strip()
-                    # Debug: mostra o valor lido
-                    import logging
-                    logging.info(f"Environment do secrets.toml: '{env_config}'")
-                    if env_config in ['development', 'dev']:
-                        return True
-    except Exception as e:
-        # Se houver erro ao acessar secrets, ignora e continua
-        import logging
-        logging.warning(f"Erro ao ler environment do secrets.toml: {str(e)}")
-        pass
-    
-    return False
-
 def save_usage_log(
     supabase_client: Client,
     tipo_funcionalidade: str,
@@ -119,12 +86,7 @@ def save_usage_log(
         nome_arquivo: Nome do arquivo processado
         quantidade_linhas: Quantidade de linhas no arquivo
     """
-    # Não salva logs em ambiente de desenvolvimento
-    is_dev = is_development_environment()
-    if is_dev:
-        # Log temporário para debug (pode ser removido depois)
-        import logging
-        logging.info(f"Ambiente de desenvolvimento detectado. Logs não serão salvos.")
+    if is_development_environment() or supabase_client is None:
         return None
     
     try:

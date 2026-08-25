@@ -7,6 +7,7 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 import toml
 import streamlit as st
+from utils.config import has_google_credentials, is_development_environment
 
 MODULO_TO_TABLE = {
     'DESPESAS': {
@@ -42,7 +43,15 @@ MODULO_TO_TABLE = {
 }
 
 def carregar_credenciais():
-    """Carrega as credenciais do arquivo secrets.toml"""
+    """Carrega as credenciais do Streamlit secrets ou do arquivo secrets.toml"""
+    try:
+        if "google" in st.secrets:
+            google_config = dict(st.secrets["google"])
+            if google_config:
+                return _montar_credentials_dict(google_config)
+    except Exception:
+        pass
+
     secrets_path = ".streamlit/secrets.toml"
     
     if not os.path.exists(secrets_path):
@@ -81,14 +90,16 @@ def carregar_credenciais():
     if "google" not in secrets:
         raise ValueError("Seção [google] não encontrada no secrets.toml")
     
-    google_config = secrets["google"]
-    
+    return _montar_credentials_dict(secrets["google"])
+
+
+def _montar_credentials_dict(google_config):
     def limpar_valor(valor):
         if isinstance(valor, str):
             return valor.replace(",", "").strip().strip('"').strip("'")
         return str(valor).replace(",", "").strip()
-    
-    credentials_dict = {
+
+    return {
         "type": limpar_valor(google_config.get("type", "")),
         "project_id": limpar_valor(google_config.get("project_id", "")),
         "private_key_id": limpar_valor(google_config.get("private_key_id", "")),
@@ -101,12 +112,20 @@ def carregar_credenciais():
         "client_x509_cert_url": limpar_valor(google_config.get("client_x509_cert_url", "")),
         "universe_domain": limpar_valor(google_config.get("universe_domain", "googleapis.com"))
     }
-    
-    return credentials_dict
 
 @st.cache_resource
 def get_bigquery_client():
-    """Cria e retorna um cliente BigQuery (com cache)"""
+    """Cria e retorna um cliente BigQuery (com cache). Em development, retorna None sem derrubar a app."""
+    if not has_google_credentials():
+        if is_development_environment():
+            return None
+        st.error(
+            "Credenciais do Google/BigQuery não configuradas. "
+            "Copie .streamlit/secrets.toml.example para .streamlit/secrets.toml "
+            "ou use environment = \"development\"."
+        )
+        return None
+
     try:
         credentials_dict = carregar_credenciais()
         project_id = credentials_dict["project_id"]
@@ -114,6 +133,8 @@ def get_bigquery_client():
         client = bigquery.Client(credentials=credentials, project=project_id)
         return client
     except Exception as e:
+        if is_development_environment():
+            return None
         st.error(f"Erro ao conectar com BigQuery: {str(e)}")
         return None
 
@@ -149,7 +170,10 @@ def verificar_ids_no_datalake(df, modulo, status_callback=None):
     
     client = get_bigquery_client()
     if client is None:
-        df['VALIDACAO_ADICIONAL'] = 'ERRO AO CONECTAR COM BANCO DE DADOS'
+        if is_development_environment():
+            df['VALIDACAO_ADICIONAL'] = 'VALIDAÇÃO ADICIONAL INDISPONÍVEL (ambiente de desenvolvimento)'
+        else:
+            df['VALIDACAO_ADICIONAL'] = 'ERRO AO CONECTAR COM BANCO DE DADOS'
         return df
     
     try:
@@ -962,7 +986,10 @@ def validar_datalake(df_resultado, status_callback=None):
     
     client = get_bigquery_client()
     if client is None:
-        df_resultado['VALIDACAO_ADICIONAL'] = 'ERRO AO CONECTAR COM BANCO DE DADOS'
+        if is_development_environment():
+            df_resultado['VALIDACAO_ADICIONAL'] = 'VALIDAÇÃO ADICIONAL INDISPONÍVEL (ambiente de desenvolvimento)'
+        else:
+            df_resultado['VALIDACAO_ADICIONAL'] = 'ERRO AO CONECTAR COM BANCO DE DADOS'
         return df_resultado
     
     resultados_datalake = []
