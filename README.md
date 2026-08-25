@@ -96,24 +96,24 @@ No Streamlit Cloud, as mesmas chaves podem ser coladas em **App settings → Sec
 
 ## Modo development (sem Supabase / BigQuery)
 
-Quem sobe o projeto localmente em geral **não tem** acesso ao Supabase nem à service account do BigQuery. Com `environment = "production"` (ou sem o `secrets.toml`) a aplicação falha ao conectar.
+Se você não tem acesso ao Supabase nem à service account do BigQuery (ou não possui as permissões necessárias nos datasets), não se preocupe: é possível rodar o projeto em modo de desenvolvimento.
 
-Para desenvolver mesmo assim:
+Basta seguir estes passos:
 
 1. Copie `.streamlit/secrets.toml.example` para `.streamlit/secrets.toml`
-2. Mantenha `environment = "development"` (já vem assim no modelo)
-3. Deixe as chaves como placeholder, se não tiver as reais
+2. Certifique-se de que `environment = "development"` está definido (já é o valor padrão do modelo)
+3. Mantenha as chaves com valores de placeholder, caso não possua credenciais reais
 
-Alternativa: defina a variável de ambiente `ENVIRONMENT=development` antes de subir o Streamlit.
+Como alternativa, você pode definir a variável de ambiente `ENVIRONMENT=development` antes de iniciar o Streamlit.
 
-Nesse modo a aplicação **inicia normalmente**. Ficam desligados:
+Nesse modo, a aplicação **inicia normalmente**, porém ficam desativados:
 
 - logs de uso no Supabase
-- validação extra contra o datalake (BigQuery)
+- validações extras contra o datalake (BigQuery)
 
-A validação local dos arquivos (regras de formato, campos, etc.) continua funcionando. Listas de secretarias/instituições usam o fallback embutido.
+Todas as validações locais dos arquivos (regras de formato, campos obrigatórios etc.) continuam funcionando normalmente. Listas de secretarias/instituições usam um fallback interno.
 
-Para produção, troque para `environment = "production"` e preencha as credenciais reais.
+Para produção, altere para `environment = "production"` e preencha as credenciais reais.
 
 ## Executar
 
