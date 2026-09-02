@@ -87,10 +87,19 @@ class ContratosTerceirosValidator(BaseValidator):
                         if not re.fullmatch(r'^[A-Z0-9_]+$', nome_arquivo):
                             validacoes.append('NOME DO ARQUIVO SÓ PODE CONTER LETRAS MAIÚSCULAS, NÚMEROS E UNDERLINE (_), ')
                 if attr in ['ANO INICIO', 'ANO FIM']:
-                    if atributos.get('ANO INICIO') > atributos.get('ANO FIM'):
-                        validacoes.append('ANO DE INÍCIO MAIOR QUE ANO DE FIM, ')
+                    ano_inicio = atributos.get('ANO INICIO')
+                    ano_fim = atributos.get('ANO FIM')
+                    if ano_inicio is not None and ano_fim is not None:
+                        try:
+                            if int(str(ano_inicio).split(' ')[0]) > int(str(ano_fim).split(' ')[0]):
+                                validacoes.append('ANO DE INÍCIO MAIOR QUE ANO DE FIM, ')
+                        except (ValueError, TypeError):
+                            pass
                 if attr in ['MES INICIO', 'ANO INICIO', 'MES FIM', 'ANO FIM', 'VIGENCIA']:
-                    valor_split = atributos.get('VIGENCIA').split(' ')
+                    valor_attr = atributos.get(attr)
+                    if valor_attr is None:
+                        continue
+                    valor_split = str(valor_attr).split(' ')
                     try:
                         valor_int = int(valor_split[0])
                         if valor_int < 0:
@@ -98,7 +107,7 @@ class ContratosTerceirosValidator(BaseValidator):
                         if 'MES' in attr and (valor_int > 12 or valor_int < 1):
                             validacoes.append(f'{attr.upper()} DEVE SER ENTRE 1 E 12, ')
                     except ValueError:
-                        validacoes.append(f'{atributo.upper()} NÃO É UM NÚMERO VÁLIDO, ')
+                        validacoes.append(f'{attr.upper()} NÃO É UM NÚMERO VÁLIDO, ')
 
                 if attr in ['UNIDADE']:
                     try:
