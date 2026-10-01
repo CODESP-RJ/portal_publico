@@ -117,6 +117,35 @@ def obter_contas_bancarias():
         resposta = json.load(arqContasBancarias)
         return resposta["rows"]
 
+def formatar_conta_corrente(codigo_cc, digito_cc):
+    """Número da conta sem hífen.
+    Com dígito: 13008473 + 3 vira 130084733.
+    Sem dígito (nulo ou vazio): fica só o código, por exemplo 600274700.
+    """
+    codigo = "" if codigo_cc is None else str(codigo_cc).strip()
+    if codigo.endswith(".0"):
+        codigo = codigo[:-2]
+    digito = "" if digito_cc is None else str(digito_cc).strip()
+    if digito.lower() in {"", "none", "nan", "null"}:
+        digito = ""
+    if digito.endswith(".0"):
+        digito = digito[:-2]
+    return f"{codigo}{digito}"
+
+def obter_numeros_conta_corrente():
+    """Números de conta válidos (código + dígito, sem hífen), do JSON local e do BigQuery."""
+    numeros = set()
+    for conta in obter_contas_bancarias():
+        numero = formatar_conta_corrente(conta.get("CODIGO_CC"), conta.get("DIGITO_CC"))
+        if numero:
+            numeros.add(numero)
+    try:
+        from utils.bigquery_utils import listar_contas_correntes_sem_hifen
+        numeros.update(listar_contas_correntes_sem_hifen())
+    except Exception:
+        pass
+    return numeros
+
 def obter_contratos():
     with open("data/getContractsList.json", encoding='utf-8') as arqContratos:
         resposta = json.load(arqContratos)

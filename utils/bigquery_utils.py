@@ -138,6 +138,29 @@ def get_bigquery_client():
         st.error(f"Erro ao conectar com BigQuery: {str(e)}")
         return None
 
+@st.cache_data(ttl=3600)
+def listar_contas_correntes_sem_hifen():
+    """Contas como codigo_cc + digito_cc, sem hífen. Conta sem dígito fica só com o código."""
+    client = get_bigquery_client()
+    if client is None:
+        return []
+    try:
+        query = f"""
+            SELECT DISTINCT CONCAT(
+                REGEXP_REPLACE(CAST(codigo_cc AS STRING), r'\\.0$', ''),
+                IF(
+                    digito_cc IS NULL OR TRIM(CAST(digito_cc AS STRING)) IN ('', 'None', 'null'),
+                    '',
+                    REGEXP_REPLACE(CAST(digito_cc AS STRING), r'\\.0$', '')
+                )
+            ) AS conta
+            FROM `{client.project}.adm_contrato_gestao.conta_bancaria`
+            WHERE codigo_cc IS NOT NULL
+        """
+        return [row.conta for row in client.query(query).result() if row.conta]
+    except Exception:
+        return []
+
 def verificar_ids_no_datalake(df, modulo, status_callback=None):
     """
     Verifica se os IDs do DataFrame existem no datalake BigQuery
@@ -465,9 +488,16 @@ def validar_despesas(df, client):
             contas = df_conta['NOVO_VALOR'].dropna().astype(str).unique().tolist()
             if contas:
                 query = f"""
-                    SELECT DISTINCT CONCAT(CAST(`CODIGO_CC` AS STRING), '-', CAST(`DIGITO_CC` AS STRING)) as conta_formatada
+                    SELECT DISTINCT CONCAT(
+                        REGEXP_REPLACE(CAST(codigo_cc AS STRING), r'\\.0$', ''),
+                        IF(
+                            digito_cc IS NULL OR TRIM(CAST(digito_cc AS STRING)) IN ('', 'None', 'null'),
+                            '',
+                            REGEXP_REPLACE(CAST(digito_cc AS STRING), r'\\.0$', '')
+                        )
+                    ) as conta_formatada
                     FROM `{client.project}.adm_contrato_gestao.conta_bancaria`
-                    WHERE `codigo_cc` IS NOT NULL AND `digito_cc` IS NOT NULL
+                    WHERE codigo_cc IS NOT NULL
                 """
                 query_job = client.query(query)
                 resultados = query_job.result()
@@ -589,19 +619,23 @@ def validar_despesas(df, client):
         if 'CONTA_CORRENTE' in df.columns:
             contas = df[df['CONTA_CORRENTE'].notna()]['CONTA_CORRENTE'].astype(str).unique().tolist()
             if contas:
-                # Busca contas em ambos os formatos: com hífen (codigo-digito) e sem hífen (codigodigito)
+                # Número da conta = codigo_cc + digito_cc, sem hífen (ex.: 130084733)
                 query = f"""
-                    SELECT DISTINCT 
-                        CONCAT(CAST(codigo_cc AS STRING), '-', CAST(digito_cc AS STRING)) as conta_com_hifen,
-                        CONCAT(CAST(codigo_cc AS STRING), CAST(digito_cc AS STRING)) as conta_sem_hifen
+                    SELECT DISTINCT CONCAT(
+                        REGEXP_REPLACE(CAST(codigo_cc AS STRING), r'\\.0$', ''),
+                        IF(
+                            digito_cc IS NULL OR TRIM(CAST(digito_cc AS STRING)) IN ('', 'None', 'null'),
+                            '',
+                            REGEXP_REPLACE(CAST(digito_cc AS STRING), r'\\.0$', '')
+                        )
+                    ) as conta_sem_hifen
                     FROM `{client.project}.adm_contrato_gestao.conta_bancaria`
-                    WHERE codigo_cc IS NOT NULL AND digito_cc IS NOT NULL
+                    WHERE codigo_cc IS NOT NULL
                 """
                 query_job = client.query(query)
                 resultados = query_job.result()
                 contas_validas = set()
                 for row in resultados:
-                    contas_validas.add(row.conta_com_hifen)
                     contas_validas.add(row.conta_sem_hifen)
                 
                 for idx, row in df.iterrows():

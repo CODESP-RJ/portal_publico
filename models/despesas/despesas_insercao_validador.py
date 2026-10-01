@@ -3,7 +3,7 @@ from models.registry import RegistryValidators
 import datetime
 from models.common import CONFIGURACOES_MODULOS
 import pandas as pd
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias
+from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_numeros_conta_corrente
 
 class DespesasValidator(BaseValidatorIns):
     def __init__(self, df):
@@ -30,7 +30,7 @@ class DespesasValidator(BaseValidatorIns):
         self.tipos_documento_validos = [str(d["cod_tipo_documento"]) for d in obter_tipos_documentos()]
 
     def _gerar_lista_contas(self):
-        return [f"{conta['CODIGO_CC']}{conta['DIGITO_CC']}" for conta in obter_contas_bancarias()]
+        return obter_numeros_conta_corrente()
 
     def validar_rubrica(self):
         if 'RUBRICA' in self.df.columns:
@@ -41,7 +41,7 @@ class DespesasValidator(BaseValidatorIns):
     def validar_conta_corrente(self):
         if 'CONTA_CORRENTE' in self.df.columns:
             for idx, valor in self.df['CONTA_CORRENTE'].items():
-                if pd.notna(valor) and str(valor) not in self.contas_validas:
+                if pd.notna(valor) and str(valor).strip() not in self.contas_validas:
                     self._registrar_erro(idx, "CONTA_CORRENTE: Conta não cadastrada.")
 
     def validar_tipo_de_despesa(self):

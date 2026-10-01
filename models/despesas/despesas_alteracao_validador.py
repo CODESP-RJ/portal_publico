@@ -3,7 +3,7 @@ from models.common import LISTA_ATRIBUTOS_DESPESAS
 import re
 import pandas as pd
 from utils.tratamentos import limpar_dados, padronizar_texto, string_to_float, formata_cpf, formata_cnpj, verificar_formato_brasileiro, validar_data_brasileira, valida_cnpj, valida_cpf
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_contas_bancarias, erros, obter_contratos
+from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_numeros_conta_corrente, erros, obter_contratos
 from models.registry import RegistryValidators
 
 class DespesasValidator(BaseValidator):
@@ -156,13 +156,8 @@ class DespesasValidator(BaseValidator):
                         validacoes.append('RUBRICA NÃO EXISTE, ')
 
                 if attr in ['CONTA CORRENTE']:
-                    req = obter_contas_bancarias()
-                    encontrou = False
-                    for tipos in req:
-                        conta = f"{tipos["CODIGO_CC"]}-{tipos["DIGITO_CC"]}"
-                        if str(conta) == str(atributos.get('CONTA CORRENTE')):
-                            encontrou = True
-                    if encontrou == False:
+                    conta_informada = str(atributos.get('CONTA CORRENTE') or '').strip()
+                    if conta_informada not in obter_numeros_conta_corrente():
                         validacoes.append('CONTA CORRENTE NÃO EXISTE, ')
 
                 if attr in ['TIPO DE DESPESA']:
