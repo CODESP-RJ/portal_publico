@@ -161,6 +161,22 @@ def listar_contas_correntes_sem_hifen():
     except Exception:
         return []
 
+@st.cache_data(ttl=3600)
+def listar_codigos_rubrica():
+    """Códigos de rubrica (id_rubrica) cadastrados, como texto."""
+    client = get_bigquery_client()
+    if client is None:
+        return []
+    try:
+        query = f"""
+            SELECT DISTINCT REGEXP_REPLACE(CAST(id_rubrica AS STRING), r'\\.0$', '') AS codigo
+            FROM `{client.project}.adm_contrato_gestao.rubrica`
+            WHERE id_rubrica IS NOT NULL
+        """
+        return [row.codigo for row in client.query(query).result() if row.codigo]
+    except Exception:
+        return []
+
 def verificar_ids_no_datalake(df, modulo, status_callback=None):
     """
     Verifica se os IDs do DataFrame existem no datalake BigQuery

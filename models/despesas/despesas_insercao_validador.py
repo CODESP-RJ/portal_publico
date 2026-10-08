@@ -3,7 +3,7 @@ from models.registry import RegistryValidators
 import datetime
 from models.common import CONFIGURACOES_MODULOS
 import pandas as pd
-from utils.utils import obter_tipos_rubricas, obter_tipos_despesas, obter_tipos_documentos, obter_numeros_conta_corrente
+from utils.utils import obter_codigos_rubrica, formatar_codigo_rubrica, obter_tipos_despesas, obter_tipos_documentos, obter_numeros_conta_corrente
 
 class DespesasValidator(BaseValidatorIns):
     def __init__(self, df):
@@ -24,7 +24,7 @@ class DespesasValidator(BaseValidatorIns):
         self.campos_razao_social = ['RAZAO']
         self.campos_nome = ['NOME']
         self.campos_inteiros = ['COD_OS', 'COD_UNIDADE', 'CODIGO', 'RUBRICA', 'BANCO', 'AGENCIA', 'PMT_PAGA', 'QTDE_PMT']
-        self.rubricas_validas = [str(r["id_rubrica"]) for r in obter_tipos_rubricas()]
+        self.rubricas_validas = obter_codigos_rubrica()
         self.contas_validas = self._gerar_lista_contas()
         self.tipos_despesa_validos = [str(t["cod_despesa"]) for t in obter_tipos_despesas()]
         self.tipos_documento_validos = [str(d["cod_tipo_documento"]) for d in obter_tipos_documentos()]
@@ -35,7 +35,7 @@ class DespesasValidator(BaseValidatorIns):
     def validar_rubrica(self):
         if 'RUBRICA' in self.df.columns:
             for idx, valor in self.df['RUBRICA'].items():
-                if pd.notna(valor) and str(valor) not in self.rubricas_validas:
+                if pd.notna(valor) and formatar_codigo_rubrica(valor) not in self.rubricas_validas:
                     self._registrar_erro(idx, "RUBRICA: Código não encontrado na lista de rubricas válidas.")
 
     def validar_conta_corrente(self):

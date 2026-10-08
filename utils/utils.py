@@ -146,6 +146,24 @@ def obter_numeros_conta_corrente():
         pass
     return numeros
 
+def formatar_codigo_rubrica(valor):
+    """Código da rubrica como texto: 946, '946', ' 946 ' e 946.0 viram '946'."""
+    codigo = "" if valor is None else str(valor).strip()
+    if codigo.endswith(".0"):
+        codigo = codigo[:-2]
+    return codigo
+
+def obter_codigos_rubrica():
+    """Códigos de rubrica válidos, do JSON local e do BigQuery."""
+    codigos = {formatar_codigo_rubrica(r.get("id_rubrica")) for r in obter_tipos_rubricas()}
+    try:
+        from utils.bigquery_utils import listar_codigos_rubrica
+        codigos.update(listar_codigos_rubrica())
+    except Exception:
+        pass
+    codigos.discard("")
+    return codigos
+
 def obter_contratos():
     with open("data/getContractsList.json", encoding='utf-8') as arqContratos:
         resposta = json.load(arqContratos)
