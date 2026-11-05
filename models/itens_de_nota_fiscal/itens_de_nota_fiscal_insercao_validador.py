@@ -102,6 +102,6 @@ class ItensNotaFiscalValidator(BaseValidatorIns):
         self.validar_valores_monetarios()
         self.validar_documentos_pdf()
         self.validar_cnpj()
-        self.validar_campos_cod()
+#        self.validar_campos_cod()
 
 RegistryValidators.register_ins('modulo_itens_nota_fiscal', ItensNotaFiscalValidator)
